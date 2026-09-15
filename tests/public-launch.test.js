@@ -37,6 +37,7 @@ test('访问统计默认关闭，配置仅接受公开站点 token，并覆盖�
   assert.equal(analyticsMarkup(), '');
   for (const token of ['account-secret', '<script>', '1'.repeat(33)]) assert.throws(() => analyticsMarkup(token));
   const token = 'a'.repeat(32);
+  assert.match(analyticsMarkup(token), /type="module"/);
   assert.match(analyticsMarkup(token), /"spa":false/);
   const bundle = { 'index.html': { type: 'asset', fileName: 'index.html', source: '<body>互动版</body>' }, 'read/test.html': { type: 'asset', fileName: 'read/test.html', source: '<body>正文</body>' }, 'code.js': { type: 'chunk', code: 'unchanged' } };
   analyticsPlugin().generateBundle.handler({}, bundle);
