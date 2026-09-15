@@ -2,6 +2,8 @@
 
 **从这里，学会 AI。**
 
+[GitHub 开源仓库](https://github.com/Yueyuyu/aiguide) · [自动检查](https://github.com/Yueyuyu/aiguide/actions) · [MIT License](LICENSE)
+
 面向中文读者的 AI 教程网站：按路线完成一件小事，按公司找到产品，分清应用、模型与 API，再把练习成果保存下来。
 
 当前为 **0.1.0 本地可复核版本**，尚未公开部署。第三方账号内实操与新手真人试用仍在后续计划中。详见[项目状态](docs/STATUS.md)与[迭代计划](docs/ROADMAP.md)。
@@ -24,6 +26,8 @@
 使用 **Node.js 24 LTS** 和 **pnpm 11.19.0**。版本见 [.node-version](.node-version) 与 [package.json](package.json)。本地启动无需密钥、数据库或环境变量。
 
 ```sh
+git clone https://github.com/Yueyuyu/aiguide.git
+cd aiguide
 npm install --global pnpm@11.19.0
 pnpm install --frozen-lockfile
 pnpm dev

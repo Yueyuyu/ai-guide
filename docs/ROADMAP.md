@@ -1,6 +1,6 @@
 # 后续迭代计划
 
-当前目标是保存一个可继续开发的工程基线。以下是待办与验收标准，不是已经完成的功能；可以逐项转成 GitHub Issue。
+工程基线已保存到 GitHub。以下记录待办、验收标准和已完成的仓库事项；未完成项可以逐项转成 GitHub Issue。
 
 ## P0：真实学习闭环
 
@@ -24,11 +24,11 @@
 
 ## P1：仓库与公开发布
 
-### REPO-01 GitHub 首次推送
+### REPO-01 GitHub 首次推送（已完成）
 
 - 范围：独立仓库、目标地址、公开性、首个提交与推送。
 - 验收：只含本项目；新克隆可按 README 安装、检查；GitHub Linux／Windows CI 实际通过。
-- 当前依赖：目标仓库和所有者的提交／推送安排。
+- 完成记录：2026-09-15，公开仓库 [Yueyuyu/aiguide](https://github.com/Yueyuyu/aiguide)，MIT 许可，首次提交 `cd9206e`；GitHub 新克隆的本地检查及 Linux／Windows [远程 CI](https://github.com/Yueyuyu/aiguide/actions/runs/34957331207)均已通过。
 
 ### WEB-01 正式域名与静态部署
 

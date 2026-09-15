@@ -1,5 +1,7 @@
 # GitHub 与发布指南
 
+当前公开仓库：[Yueyuyu/aiguide](https://github.com/Yueyuyu/aiguide)，主分支 `main`。首次推送已完成；后续从该仓库克隆并正常提交，已有项目无需再执行初始化步骤。
+
 ## 推送前的仓库边界
 
 本工程的仓库根应是包含 `package.json`、`src/`、`public/` 的 AIGuide 目录。不要从外层讨论、文档或多项目目录直接 `git add .`。
