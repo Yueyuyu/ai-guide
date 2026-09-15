@@ -2,9 +2,9 @@
   <img src="public/favicon.svg" width="72" height="72" alt="AIGuide 蓝色书页标识">
 </p>
 
-<h1 align="center">AIGuide · AI 学习手册</h1>
+<h1 align="center">AIGuide</h1>
 
-<p align="center"><strong>从这里，学会 AI。</strong></p>
+<p align="center"><strong>AI 学习手册 · 从这里，学会 AI。</strong></p>
 <p align="center">面向中文读者，从认识 AI 到完成第一个作品。</p>
 
 <p align="center">
