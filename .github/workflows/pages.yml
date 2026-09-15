@@ -28,7 +28,7 @@ jobs:
       - name: 验证并构建公开版本
         run: pnpm check
         env:
-          AIGUIDE_SITE_URL: https://yueyuyu.github.io/ai-guide/
+          AIGUIDE_SITE_URL: https://ai-guide.yomexa.com/
           AIGUIDE_CF_ANALYTICS_TOKEN: ${{ vars.AIGUIDE_CF_ANALYTICS_TOKEN }}
       - uses: actions/upload-pages-artifact@v3
         with:

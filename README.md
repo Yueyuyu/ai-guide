@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <a href="https://yueyuyu.github.io/ai-guide/">在线体验</a> ·
+  <a href="https://ai-guide.yomexa.com/">在线体验</a> ·
   <a href="#网站预览">网站预览</a> ·
   <a href="#快速开始">本地运行</a> ·
   <a href="docs/README.md">工程文档</a> ·
@@ -26,7 +26,7 @@
 
 按路线完成一件小事，按公司找到产品，分清应用、模型与 API，再把练习成果保存下来。**先学会使用，再慢慢深入。**
 
-> 当前版本 **0.1.0**，公开试用版：[在线体验](https://yueyuyu.github.io/ai-guide/) · [参加试用](https://yueyuyu.github.io/ai-guide/#/feedback)。部分教程仍待账号内实测；具体范围见[项目状态](docs/STATUS.md)。
+> 当前版本 **0.1.0**，公开试用版：[在线体验](https://ai-guide.yomexa.com/) · [参加试用](https://ai-guide.yomexa.com/#/feedback)。部分教程仍待账号内实测；具体范围见[项目状态](docs/STATUS.md)。
 
 ## 网站预览
 

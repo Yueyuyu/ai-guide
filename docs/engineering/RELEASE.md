@@ -55,7 +55,17 @@ Linux 检查成功后保留 `dist/` 构建产物供下载。实际远程结果�
 5. 将 `dist/` 发布到选择的静态托管服务；不要上传 `node_modules/` 或把 Vite 开发服务暴露成生产站。
 6. 在真实域名验收主页、Hash 深链接、独立阅读、图片、下载与榜单快照。
 
-GitHub Pages 可以使用 Actions 发布 `dist/`。如果采用仓库子目录地址，`AIGUIDE_SITE_URL` 应包含该子目录；自定义域名则填写域名根或实际部署目录。本仓库已选定 GitHub Pages：`https://yueyuyu.github.io/ai-guide/`。主分支推送或手动运行 [pages.yml](../../.github/workflows/pages.yml)会在检查通过后发布。使用仓库变量 `AIGUIDE_CF_ANALYTICS_TOKEN` 可接入访问统计，详见[反馈与统计](FEEDBACK.md)。不需要部署 Vite 开发服务，也不需要购买域名。
+GitHub Pages 可以使用 Actions 发布 `dist/`。如果采用仓库子目录地址，`AIGUIDE_SITE_URL` 应包含该子目录；自定义域名则填写域名根或实际部署目录。本仓库由 GitHub Pages 托管，正式地址为 `https://ai-guide.yomexa.com/`。主分支推送或手动运行 [pages.yml](../../.github/workflows/pages.yml)会在检查通过后发布。使用仓库变量 `AIGUIDE_CF_ANALYTICS_TOKEN` 可接入访问统计，详见[反馈与统计](FEEDBACK.md)。不需要部署 Vite 开发服务。
+
+### 自定义域名
+
+- Cloudflare 的 `yomexa.com` 区域：新增 `CNAME ai-guide → yueyuyu.github.io`，仅 DNS、TTL 自动。目标不包含协议或仓库路径。
+- GitHub 仓库 Settings → Pages → Custom domain：`ai-guide.yomexa.com`；证书签发后启用 Enforce HTTPS。
+- 发布工作流的 `AIGUIDE_SITE_URL`：`https://ai-guide.yomexa.com/`，不再保留 `/ai-guide/` 子目录。
+- 当前使用 Actions 自定义工作流，域名由 Pages 设置管理，GitHub 不要求或读取 `CNAME` 文件。官方依据：[管理自定义域名](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)。
+- 换域名时同步 README、仓库主页和 Web Analytics 站点，核对旧地址重定向、HTTPS、独立阅读、下载和 sitemap。
+
+浏览器记录按来源隔离。旧 GitHub Pages 地址或本地地址的学习记录不会自动迁移到新域名；已有备份可在新站“我的学习”导入。
 
 ## 发布验收清单
 

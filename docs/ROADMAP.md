@@ -32,8 +32,8 @@
 
 ### WEB-01 GitHub Pages 公开试用部署
 
-- 已选定 GitHub Pages 并加入检查后发布工作流，地址为 https://yueyuyu.github.io/ai-guide/ 。公开验收结果见 [STATUS](STATUS.md)。
-- 自定义域名、国内不同运营商可达性和搜索收录仍需后续验证。
+- 已选定 GitHub Pages 并加入检查后发布工作流，正式地址为 https://ai-guide.yomexa.com/ 。公开验收结果见 [STATUS](STATUS.md)。
+- 自定义子域名使用 Cloudflare DNS；国内不同运营商可达性和搜索收录仍需后续验证。
 - 验收：真实 HTTPS 地址可用，独立阅读与 sitemap 正确，核心路径及下载无误，回退方式已验证。
 - 边界：上传 GitHub 不等于公开站点已发布，sitemap 生成不等于已被收录。
 

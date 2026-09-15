@@ -25,7 +25,7 @@
 
 官方依据：[安装](https://developers.cloudflare.com/web-analytics/get-started/)、[SPA 统计](https://developers.cloudflare.com/web-analytics/get-started/web-analytics-spa/)、[数据收集](https://developers.cloudflare.com/web-analytics/data-metrics/data-origin-and-collection/)。2026-09-15 已读取安装与 SPA 文档。
 
-1. 在 Cloudflare 控制台选择 Web Analytics，添加 `yueyuyu.github.io`。GitHub Pages 不需要迁移 DNS，也不需要购买域名。
+1. 在 Cloudflare 控制台选择 Web Analytics，为正式域名 `ai-guide.yomexa.com` 配置站点。统计接入本身不要求迁移托管；域名指向按[发布指南](RELEASE.md)配置。
 2. 选择手动添加脚本，取得代码中的 **站点公开 token**。它不是账户 API Token，也不是 Global API Key。
 3. 在 GitHub 仓库 Settings → Secrets and variables → Actions → Variables 添加 `AIGUIDE_CF_ANALYTICS_TOKEN`。本机验证可使用忽略的 `.env.local`。
 4. 触发“发布公开网站”。发布工作流将 token 传给构建，插件只在生产构建插入官方 beacon；开发服务不插入。未配置时不发出分析请求。
