@@ -24,6 +24,7 @@
 - [当前设计](DESIGN.md)：有效的布局、品牌和交互约定。
 - [来源审计](SOURCE-AUDIT.md)：核对内容、日期与限制。
 - [资产说明](ASSETS.md)：第三方品牌、教学示意与历史素材。
+- [README 展示资产](readme/README.md)：品牌命名、热门仓库参考与实际页面截图。
 - [设计稿索引](ui-redesign/design-index.md)：历次探索与原稿。
 - [工具目录设计](ui-tools-glass/design-notes.md)：公司卡片整理依据。
 

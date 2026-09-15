@@ -1,14 +1,63 @@
-# AIGuide · AI 学习手册
+<p align="center">
+  <img src="public/favicon.svg" width="72" height="72" alt="AIGuide 蓝色书页标识">
+</p>
 
-**从这里，学会 AI。**
+<h1 align="center">AIGuide · AI 学习手册</h1>
 
-[GitHub 开源仓库](https://github.com/Yueyuyu/aiguide) · [自动检查](https://github.com/Yueyuyu/aiguide/actions) · [MIT License](LICENSE)
+<p align="center"><strong>从这里，学会 AI。</strong></p>
+<p align="center">面向中文读者，从认识 AI 到完成第一个作品。</p>
 
-面向中文读者的 AI 教程网站：按路线完成一件小事，按公司找到产品，分清应用、模型与 API，再把练习成果保存下来。
+<p align="center">
+  <a href="https://github.com/Yueyuyu/ai-guide/actions/workflows/ci.yml"><img src="https://github.com/Yueyuyu/ai-guide/actions/workflows/ci.yml/badge.svg?branch=main" alt="Linux 与 Windows 工程检查状态"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-2563EB?style=flat" alt="MIT License"></a>
+  <a href="package.json"><img src="https://img.shields.io/badge/React-19-149ECA?logo=react&amp;logoColor=white" alt="React 19"></a>
+  <a href="package.json"><img src="https://img.shields.io/badge/Vite-7-646CFF?logo=vite&amp;logoColor=white" alt="Vite 7"></a>
+  <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-16A34A" alt="欢迎贡献"></a>
+</p>
 
-当前为 **0.1.0 本地可复核版本**，尚未公开部署。第三方账号内实操与新手真人试用仍在后续计划中。详见[项目状态](docs/STATUS.md)与[迭代计划](docs/ROADMAP.md)。
+<p align="center">
+  <a href="#网站预览">网站预览</a> ·
+  <a href="#快速开始">本地运行</a> ·
+  <a href="docs/README.md">工程文档</a> ·
+  <a href="docs/ROADMAP.md">迭代计划</a> ·
+  <a href="https://github.com/Yueyuyu/ai-guide/issues/new/choose">反馈与纠错</a>
+</p>
 
-## 当前能力
+按路线完成一件小事，按公司找到产品，分清应用、模型与 API，再把练习成果保存下来。**先学会使用，再慢慢深入。**
+
+> 当前版本 **0.1.0**，可在本地运行，尚无公开在线体验地址。部分教程仍待账号内实测；具体范围见[项目状态](docs/STATUS.md)。
+
+## 网站预览
+
+**首页：给第一次学习 AI 的人一个明确起点。**
+
+![AIGuide 首页：AI 入门路线、Codex 编程与模型学习入口](docs/readme/home.jpg)
+
+| 按公司找到产品 | 跟着教程完成练习 |
+| --- | --- |
+| ![公司卡片：网页版、桌面版、API 与模型](docs/readme/tools.jpg) | ![教程正文：中文材料、可复制提示词与章节目录](docs/readme/lesson.jpg) |
+| 保留品牌原色，按四类入口组织教程。 | 学习步骤、原文与核对方法放在一起。 |
+
+<details>
+<summary><strong>查看模型排名页面</strong> · 分数、配置、来源与日期</summary>
+
+![模型排名：模型为横轴、分数为纵轴，保留来源日期和原始配置](docs/readme/ranking.jpg)
+
+</details>
+
+以上为 **2026-09-15 本地生产构建的实际页面截图**，可点击查看原图。榜单图片是一份时间明确的快照；课程中的产品账号实测状态以正文标注为准。截图与维护说明见[预览资产说明](docs/readme/README.md)。
+
+## 适合谁
+
+| 你现在的起点 | 推荐从哪里开始 | 练习目标 |
+| --- | --- | --- |
+| 第一次接触 AI | AI 入门路线 → 豆包网页版 | 根据一段通知整理并核对待办清单，保存为 TXT |
+| 已经会使用 AI，想尝试编程 | AI 编程路线 → Codex 桌面 | 创建一个个人网页，再进行修改与验收 |
+| 想理解工具背后的能力 | 模型指南 → 模型排名 → API 基础 | 分清软件、模型与接口，学会比较和核对 |
+
+每条路线先说明设备、账号、访问条件与费用。不同产品提供不同操作教程；准备好对应环境后，再进入实操。
+
+## 在这里可以学什么
 
 | 板块 | 已实现 |
 | --- | --- |
@@ -26,8 +75,8 @@
 使用 **Node.js 24 LTS** 和 **pnpm 11.19.0**。版本见 [.node-version](.node-version) 与 [package.json](package.json)。本地启动无需密钥、数据库或环境变量。
 
 ```sh
-git clone https://github.com/Yueyuyu/aiguide.git
-cd aiguide
+git clone https://github.com/Yueyuyu/ai-guide.git
+cd ai-guide
 npm install --global pnpm@11.19.0
 pnpm install --frozen-lockfile
 pnpm dev
@@ -43,7 +92,28 @@ pnpm check
 
 这个命令依次运行测试、站内内容审计、工程文档检查和生产构建，失败即停止；不会刷新外部榜单或推送代码。
 
-## 常用命令
+## 常见问题
+
+**需要 API Key 或数据库吗？** 本地运行本站不需要。学习第三方产品时，其登录、额度、费用和访问条件以对应产品为准。
+
+**学习记录保存在哪里？** 收藏、阅读位置、自查与草稿保存在当前浏览器，可导出 JSON 备份。当前没有账号同步，换设备前先导出。
+
+**模型排名会实时更新吗？** 页面显示有来源与获取日期的快照。维护者可手动刷新；当前纯静态部署不具备定时更新服务。
+
+## 一起完善 AIGuide
+
+欢迎从一个小问题开始参与，写代码和修正文案都很有价值：
+
+- **教程入口变了、步骤对不上**：[提交教程纠错](https://github.com/Yueyuyu/ai-guide/issues/new?template=content_correction.yml)，附产品版本、日期或官方来源。
+- **页面、导航或下载出现问题**：[提交功能问题](https://github.com/Yueyuyu/ai-guide/issues/new?template=bug_report.yml)，说明复现步骤。
+- **想改进代码或内容**：先读[贡献说明](CONTRIBUTING.md)和[迭代计划](docs/ROADMAP.md)，再提交 PR。
+
+当前优先补齐豆包与 Codex 的账号内实操、新手试用记录及待核对教程。发布反馈前请移除账号、密钥和私人对话。
+
+<details>
+<summary><strong>开发与维护</strong> · 常用命令、联网审计与工程结构</summary>
+
+### 常用命令
 
 | 命令 | 用途 |
 | --- | --- |
@@ -65,7 +135,7 @@ pnpm audit:content --links --output .local/content-audit.json
 
 Windows 上 Node 网络受限时增加 `--system-http`，使用系统 PowerShell 网络方式。403、限流、超时不会直接判成失效。详见[内容维护](docs/engineering/CONTENT.md)。
 
-## 工程结构
+### 工程结构
 
 ```text
 src/
@@ -83,6 +153,8 @@ docs/             工程文档、内容证据和历史设计资料
 ```
 
 `server/` 是构建工具和本地开发／预览中间件，不是已部署的业务后端。数据流、路由和存储约定见[架构说明](docs/engineering/ARCHITECTURE.md)。
+
+</details>
 
 ## 文档导航
 

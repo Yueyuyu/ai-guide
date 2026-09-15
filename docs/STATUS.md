@@ -4,13 +4,13 @@
 
 ## 开源工程基线
 
-- 公开仓库：[Yueyuyu/aiguide](https://github.com/Yueyuyu/aiguide)，主分支 `main`。
+- 公开仓库：[Yueyuyu/ai-guide](https://github.com/Yueyuyu/ai-guide)，主分支 `main`。
 - 许可：[MIT](../LICENSE)，第三方资产的适用范围见 [NOTICE](../NOTICE.md)。
 - 首次提交：`cd9206e`，2026-09-15 已推送。
-- 该提交的 [GitHub 工程检查](https://github.com/Yueyuyu/aiguide/actions/runs/34957331207)在 Linux 和 Windows 上均已通过，Linux 构建产物已上传。
+- 该提交的 [GitHub 工程检查](https://github.com/Yueyuyu/ai-guide/actions/runs/34957331207)在 Linux 和 Windows 上均已通过，Linux 构建产物已上传。
 - 从 GitHub 重新克隆后，按锁文件使用本机依赖缓存安装，并通过 46 项测试、内容审计、14 份维护文档的 63 个本地链接检查和生产构建。
 
-以上验收对应首次提交；之后的提交以 [Actions 最新结果](https://github.com/Yueyuyu/aiguide/actions)为准。代码公开与站点部署分开，尚未发布可公开访问的网站。
+以上验收对应首次提交；之后的提交以 [Actions 最新结果](https://github.com/Yueyuyu/ai-guide/actions)为准。代码公开与站点部署分开，尚未发布可公开访问的网站。
 
 ## 已有范围
 

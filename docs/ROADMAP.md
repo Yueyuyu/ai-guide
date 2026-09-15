@@ -28,7 +28,7 @@
 
 - 范围：独立仓库、目标地址、公开性、首个提交与推送。
 - 验收：只含本项目；新克隆可按 README 安装、检查；GitHub Linux／Windows CI 实际通过。
-- 完成记录：2026-09-15，公开仓库 [Yueyuyu/aiguide](https://github.com/Yueyuyu/aiguide)，MIT 许可，首次提交 `cd9206e`；GitHub 新克隆的本地检查及 Linux／Windows [远程 CI](https://github.com/Yueyuyu/aiguide/actions/runs/34957331207)均已通过。
+- 完成记录：2026-09-15，公开仓库 [Yueyuyu/ai-guide](https://github.com/Yueyuyu/ai-guide)，MIT 许可，首次提交 `cd9206e`；GitHub 新克隆的本地检查及 Linux／Windows [远程 CI](https://github.com/Yueyuyu/ai-guide/actions/runs/34957331207)均已通过。
 
 ### WEB-01 正式域名与静态部署
 
