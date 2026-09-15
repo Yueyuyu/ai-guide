@@ -2,7 +2,18 @@
 
 整理日期：2026-09-15。版本：0.1.0。本文是一份时间明确的交付记录，不是实时运行状态。
 
-## 本次公开试用版本
+## 自定义域名切换
+
+2026-09-15 22:07（北京时间）验收，正式入口为 [ai-guide.yomexa.com](https://ai-guide.yomexa.com/)。
+
+- Cloudflare 新增 `CNAME ai-guide → yueyuyu.github.io`，仅 DNS、TTL 自动；公共 DNS 已解析到 GitHub Pages。域名下原有记录保留。
+- GitHub Pages 自定义域名已保存，证书状态为 `approved`，Enforce HTTPS 已启用。新域名 HTTPS 返回 200，HTTP 返回 301 跳转 HTTPS；旧 `https://yueyuyu.github.io/ai-guide/` 返回 301 到新地址。
+- 浏览器从旧豆包课程地址刷新后跳转到新域名，保留 `#/learn/doubao-notice?path=starter`，正文正常，无控制台错误。首页、三篇独立主线、样式、练习材料、截图、图标、排名 JSON、sitemap 与 robots 共 13 个公开地址均返回 200。
+- 发布地址、README、仓库主页与 Cloudflare Web Analytics 主机名已同步；沿用原统计站点。新域名页面的官方脚本返回 200，RUM 统计请求返回 200／204；本次验收访问仍不计真人样本。
+- 提交 `014841c` 的 [Pages 发布](https://github.com/Yueyuyu/ai-guide/actions/runs/34978852835)与 [Linux／Windows CI](https://github.com/Yueyuyu/ai-guide/actions/runs/34978852586)成功。本地按新域名配置运行 49 项测试、内容审计、文档审计与构建通过；46 个 sitemap 地址均使用新域名。
+- 学习记录按浏览器来源隔离，不会从旧域名自动搬迁；可在新站“我的学习”导入已有备份。国内不同运营商可达性仍未验证。
+
+## 首次公开试用与统计验收
 
 - 地址：[AIGuide](https://yueyuyu.github.io/ai-guide/)。2026-09-15 已公开上线；统计接入提交 `5b89c5b` 的 [Pages 发布](https://github.com/Yueyuyu/ai-guide/actions/runs/34976823588)与 [Linux／Windows CI](https://github.com/Yueyuyu/ai-guide/actions/runs/34976823784)均成功。正式 HTTPS 首页、独立教程、图片、材料、排名数据、robots 和 sitemap 均返回 200；sitemap 包含 46 个正式地址。
 - 新增网络准备主线：Clash Party 安装、自己的订阅、导入、节点、系统代理、分层验证与断网恢复。登记三份官方文档和摘要哈希；个人订阅连接尚未实测。
@@ -59,7 +70,7 @@
 
 - 第三方账号内真实生成、完整安装、文件写入、追问、导出与真实 API 调用。
 - 第一次使用网站的新手测试及卡点记录。
-- 自定义域名、国内不同网络可达性、搜索引擎实际收录；本次 Pages 发布验收另记。
+- 国内不同网络可达性、搜索引擎实际收录；自定义域名与 Pages 发布验收见上方记录。
 - 定时刷新、无需登录的在线纠错接收、跨设备同步和账号体系。
 - 第三方资产的公开使用范围确认；项目原创代码、文档和练习材料已选择 MIT 许可，第三方资产不因此获得重新许可。
 
