@@ -17,6 +17,7 @@
 - [试用、统计与赞助依据](engineering/FEEDBACK.md)：反馈接收、真人记录和数据范围。
 - [质量验收](engineering/QUALITY.md)：自动检查、浏览器与真实产品实测。
 - [GitHub 与发布](engineering/RELEASE.md)：独立建仓、CI、静态发布与回退。
+- [国内访问记录](engineering/ACCESS.md)：国内节点实测、CDN 取舍与弱网阅读边界。
 - [贡献说明](../CONTRIBUTING.md)：修改范围与交付要求。
 - [项目规则](../AGENTS.md)：给后续 AI 维护者的约定。
 

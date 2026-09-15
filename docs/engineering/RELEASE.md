@@ -59,8 +59,8 @@ GitHub Pages 可以使用 Actions 发布 `dist/`。如果采用仓库子目录�
 
 ### 自定义域名
 
-- Cloudflare 的 `yomexa.com` 区域：`CNAME ai-guide → yueyuyu.github.io`，已代理、TTL 自动。访问者通过 Cloudflare 边缘访问，目标不包含协议或仓库路径。
-- Configuration Rules 中的“AIGuide 严格 HTTPS 回源”仅匹配 `(http.host eq "ai-guide.yomexa.com")`，SSL 设置为严格，验证 GitHub Pages 的源站证书。不要为了单个站点改动整个域名区域的 SSL 模式。
+- Cloudflare 的 `yomexa.com` 区域：`CNAME ai-guide → yueyuyu.github.io`，仅 DNS、TTL 自动。2026-09-15 试开代理后，国内节点测试出现移动线路明显退步，已恢复直连 GitHub Pages；过程见[国内访问记录](ACCESS.md)。目标不包含协议或仓库路径。
+- Configuration Rules 中保留“AIGuide 严格 HTTPS 回源”，仅匹配 `(http.host eq "ai-guide.yomexa.com")`，SSL 设置为严格。它只约束经过 Cloudflare 代理的请求；当前 DNS 直连访问由 GitHub Pages 提供 HTTPS。以后重启代理时应重新验收线路，不能为单个站点改动整个域名区域的 SSL 模式。
 - GitHub 仓库 Settings → Pages → Custom domain：`ai-guide.yomexa.com`；证书签发后启用 Enforce HTTPS。
 - 发布工作流的 `AIGUIDE_SITE_URL`：`https://ai-guide.yomexa.com/`，不再保留 `/ai-guide/` 子目录。
 - 当前使用 Actions 自定义工作流，域名由 Pages 设置管理，GitHub 不要求或读取 `CNAME` 文件。官方依据：[管理自定义域名](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)。
