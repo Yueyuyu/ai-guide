@@ -53,6 +53,7 @@
 ### FEEDBACK-01 在线问题接收
 
 - 已接入 GitHub Issue 预览与跳转、三条主线试用表单和本地记录留存。需要 GitHub 登录；无需登录的反馈后端暂未接入。
+- 接收演练：[维护测试 #1](https://github.com/Yueyuyu/ai-guide/issues/1) 已创建、读回并关闭；普通读者登录与提交的完整流程仍待真人试用。
 - 验收：提交成功有真实接收凭证，失败可重试；明确数据用途，避免收集密钥和私人对话。
 
 ### SEARCH-01 搜索正文与问题帮助
@@ -62,7 +63,7 @@
 
 ### DATA-02 访问数据与赞助依据
 
-- 已准备 Cloudflare Web Analytics 构建接入；账户和真实收数以 [STATUS](STATUS.md) 为准。
+- 已接入 Cloudflare Web Analytics，正式站点统计端点与控制台首条维护访问均已验证；日期与证据见 [STATUS](STATUS.md)。
 - 第一版仅统计整页访问，不宣称已具备课程完成漏斗。
 - 等有明确时间范围的实际访问和真人案例后再准备赞助资料；当前不联系商家、不发布返佣推荐。
 - 流程与口径见[反馈、统计与赞助](engineering/FEEDBACK.md)。

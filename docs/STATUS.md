@@ -4,12 +4,12 @@
 
 ## 本次公开试用版本
 
-- 地址：[AIGuide](https://yueyuyu.github.io/ai-guide/)。2026-09-15 已公开上线；提交 `8dc7ca0` 的 [Pages 发布](https://github.com/Yueyuyu/ai-guide/actions/runs/34976116179)与 [Linux／Windows CI](https://github.com/Yueyuyu/ai-guide/actions/runs/34976116018)均成功。正式 HTTPS 首页、独立教程、图片、材料、排名数据、robots 和 sitemap 均返回 200；sitemap 包含 46 个正式地址。
+- 地址：[AIGuide](https://yueyuyu.github.io/ai-guide/)。2026-09-15 已公开上线；统计接入提交 `5b89c5b` 的 [Pages 发布](https://github.com/Yueyuyu/ai-guide/actions/runs/34976823588)与 [Linux／Windows CI](https://github.com/Yueyuyu/ai-guide/actions/runs/34976823784)均成功。正式 HTTPS 首页、独立教程、图片、材料、排名数据、robots 和 sitemap 均返回 200；sitemap 包含 46 个正式地址。
 - 新增网络准备主线：Clash Party 安装、自己的订阅、导入、节点、系统代理、分层验证与断网恢复。登记三份官方文档和摘要哈希；个人订阅连接尚未实测。
 - 精修豆包的缺失信息核对、TXT 完成标准；Codex 补上网络入口、Windows 原生环境、备份命名和交付检查点。旧课程 ID 与章节位置保留。
-- 新增试用表单、教程问题预览和 GitHub Issue 跳转。公开前检查，移除常见凭据；长记录可复制粘贴，不静默截断。浏览器已验证 GitHub 登录交接，不等于已接收真人反馈。
+- 新增试用表单、教程问题预览和 GitHub Issue 跳转。公开前检查，移除常见凭据；长记录可复制粘贴，不静默截断。浏览器已验证 GitHub 登录交接；另通过 GitHub CLI 创建、读回并关闭[维护测试 #1](https://github.com/Yueyuyu/ai-guide/issues/1)，确认仓库能够接收记录。未验证普通读者登录后提交的完整流程，维护测试不计真人反馈。
 - 本轮 49 项 Node 测试、45 篇内容审计、文档审计和生产构建通过。1440、768、390、320 像素下检查首页、网络路线、三条主线正文与反馈共 24 个页面，无横向溢出和控制台错误。另验证反馈编辑后预览失效、手机按钮和键盘焦点。
-- 所有者已登录 Cloudflare，已添加 `yueyuyu.github.io` 的手动脚本站点。公开统计 token 通过仓库变量配置；正式站点收数将在本次配置发布后验收。初版只统计整页访问，不报告课程完成率或独立学习者人数。
+- Cloudflare Web Analytics 已接入。2026-09-15 21:49（北京时间）核对：正式网页的官方脚本返回 200，`cloudflareinsights.com/cdn-cgi/rum` 返回 200／204；控制台“过去 24 小时、排除自动程序”显示访问量 1、页面浏览量 1，同时提示数据不足。首条记录按维护验收流量处理，不作为真实受众；统计传输与面板接收均已确认。初版只统计整页访问，不报告课程完成率或独立学习者人数。
 - 当前没有可报告的真人样本、赞助联系或返佣推荐。流程见[反馈与统计](engineering/FEEDBACK.md)。
 
 ## 开源工程基线
