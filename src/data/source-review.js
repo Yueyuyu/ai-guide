@@ -7,6 +7,7 @@ export function getProductReview(id) {
   return registry.products[id] ? withSources(registry.products[id]) : null;
 }
 export function getLessonReview(lesson) {
+  if (registry.lessons?.[lesson.id]) return withSources(registry.lessons[lesson.id]);
   if (lesson.productId) return getProductReview(lesson.productId);
   const sourceIds = [...new Set(lesson.tools.flatMap(id => registry.products[id]?.sourceIds || []))].filter(id => registry.sources[id].status === 'reviewed');
   // 通用课引用更新后的来源时，来源核对时间不能仍早于资料的获取时间。

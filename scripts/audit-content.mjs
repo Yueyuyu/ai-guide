@@ -14,7 +14,7 @@ const report = { checkedAt: new Date().toISOString(), counts: { lessons: lessons
 const urls = new Set(Object.values(registry.sources).map(source => source.url));
 const seen = new Set();
 const routes = { learn: new Set(lessons.map(item => item.id)), tool: new Set(tools.map(item => item.id)), model: new Set(tools.filter(item => item.kind === 'model').map(item => item.id)), path: new Set(paths.map(item => item.id)), project: new Set(projects.map(item => item.id)), company: new Set(companies.map(item => item.id)) };
-const indexRoutes = new Set(['', 'tutorials', 'tools', 'models', 'ranking', 'paths', 'projects', 'library', 'about', 'search']);
+const indexRoutes = new Set(['', 'tutorials', 'tools', 'models', 'ranking', 'paths', 'projects', 'library', 'about', 'search', 'feedback']);
 
 async function checkLink(href, owner) {
   if (href.startsWith('https://')) { urls.add(href); return; }

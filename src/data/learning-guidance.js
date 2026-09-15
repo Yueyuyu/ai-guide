@@ -1,5 +1,13 @@
 // 准备条件按实际使用端整理；路线与正文共用，避免同一产品出现两套要求。
 export const learningSetups = {
+  network: {
+    title: '先把网络准备好，再用目标工具',
+    facts: [['使用设备', 'Windows 电脑；其他系统参考官方安装指南。'], ['准备材料', '官方客户端安装包、自己选择的兼容订阅。'], ['费用区别', 'Clash Party 开源免费；订阅服务由其提供方另行计费。'], ['完成标准', '记录导入、目标服务可用性和关闭代理后的恢复情况。']],
+    checks: ['我知道客户端不自带订阅线路', '我已准备官方安装包和自己的兼容订阅', '我知道个人订阅链接不能公开'],
+    entry: { label: 'Clash Party 官方下载', href: 'https://github.com/mihomo-party-org/clash-party/releases' },
+    fallback: '已能正常使用目标服务时可跳过。暂时没有订阅，也可以先学豆包网页，不用先购买。',
+    fallbackLink: { label: '从豆包网页版开始', href: '#/learn/doubao-notice?path=starter' },
+  },
   doubao: {
     title: '用豆包网页，完成第一份清单',
     facts: [
@@ -40,9 +48,18 @@ export const learningSetups = {
   },
 };
 
-export const routeSetups = { starter: 'doubao', builder: 'codex', office: 'office', developer: 'developer' };
+export const routeSetups = { network: 'network', starter: 'doubao', builder: 'codex', office: 'office', developer: 'developer' };
 
 export const lessonGuidance = {
+  'network-prepare': {
+    setup: 'network', evidence: '已核对官方安装、快速上手及常见问题。个人订阅导入、节点连接与目标服务使用尚未实测；不承诺某个服务商可用。',
+    flow: [['准备', '官方下载与自己的订阅'], ['客户端', '导入配置、选择节点'], ['浏览器与工具', '分层验证实际可用性'], ['完成后', '恢复检查与脱敏记录']],
+    help: [
+      { id: 'subscription', title: '下载完软件，却不知道订阅在哪里', section: 2, steps: ['客户端不会自动提供线路。订阅来自你选择的服务商账户。', '没有准备好时先阅读，不需要为了学习豆包购买订阅。'] },
+      { id: 'import', title: '导入失败，或没有节点', section: 3, steps: ['核对格式、有效期与链接是否复制完整。', '向服务商反馈不含凭据的报错，不公开订阅地址。'] },
+      { id: 'restore', title: '退出软件后普通网页也打不开', section: 6, steps: ['重新打开客户端，关闭系统代理，再检查普通网页。', '检查系统中是否残留本次手动代理，恢复之前的配置。'] },
+    ],
+  },
   'doubao-notice': {
     setup: 'doubao',
     evidence: '已有两张未登录官网实拍；登录后的生成、追问与复制尚未实测。参考答案为本站人工整理。',

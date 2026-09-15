@@ -14,6 +14,7 @@
 
 - [内容维护](engineering/CONTENT.md)：教程字段、来源、材料、图片与兼容约束。
 - [排名数据](engineering/RANKINGS.md)：抓取、快照、接口与失败恢复。
+- [试用、统计与赞助依据](engineering/FEEDBACK.md)：反馈接收、真人记录和数据范围。
 - [质量验收](engineering/QUALITY.md)：自动检查、浏览器与真实产品实测。
 - [GitHub 与发布](engineering/RELEASE.md)：独立建仓、CI、静态发布与回退。
 - [贡献说明](../CONTRIBUTING.md)：修改范围与交付要求。

@@ -400,6 +400,48 @@
       "scope": "Windows 官方安装入口、原生 PowerShell 环境与文件操作说明；不代表账号内生成实测。",
       "contentKind": "official markdown",
       "contentSha256": "5bbae21f535849b2ab51ec9472d43e2f1ade4f954b3d5241bcec4674e7761ad7"
+    },
+    "clash-install": {
+      "id": "clash-install",
+      "title": "Clash Party 官方安装指南",
+      "url": "https://clashparty.org/docs/install",
+      "fetchedUrl": "https://clashparty.org/docs/install",
+      "retrievedAt": "2026-09-15T13:22:01.202Z",
+      "reviewedAt": "2026-09-15T13:22:01.202Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "Windows 安装版和便携版的区别；其他系统通过官方标签阅读。",
+      "contentKind": "official text excerpt with review note",
+      "contentFile": "tutorials/network-prepare/clash-install-source.txt",
+      "contentSha256": "3a91e1f7dd7b5c91635be0d33bbae40eb61419f694a5ddc86a3e33f9b3d6c756"
+    },
+    "clash-handson": {
+      "id": "clash-handson",
+      "title": "Clash Party 官方快速上手",
+      "url": "https://clashparty.org/docs/handson",
+      "fetchedUrl": "https://clashparty.org/docs/handson",
+      "retrievedAt": "2026-09-15T13:22:01.202Z",
+      "reviewedAt": "2026-09-15T13:22:01.202Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "下载安装、导入订阅、选择节点开启代理与模式选择；原页面演示含其赞助商，不作为本站推荐依据。",
+      "contentKind": "official text excerpt with review note",
+      "contentFile": "tutorials/network-prepare/clash-handson-source.txt",
+      "contentSha256": "d92e4cb14a85cf0892fccc3b0e8b64d73c2d3bbb9fced533bbb3b729946add8c"
+    },
+    "clash-common": {
+      "id": "clash-common",
+      "title": "Clash Party 官方常见问题",
+      "url": "https://clashparty.org/docs/issues/common",
+      "fetchedUrl": "https://clashparty.org/docs/issues/common",
+      "retrievedAt": "2026-09-15T13:22:01.202Z",
+      "reviewedAt": "2026-09-15T13:22:01.202Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "开机无网络与系统代理关联；无法订阅时向节点提供商确认。",
+      "contentKind": "official text excerpt with review note",
+      "contentFile": "tutorials/network-prepare/clash-common-source.txt",
+      "contentSha256": "35bd1e09582d407df9ef2236708790d32e812f71ea6c449c0a7f42bd6a2de666"
     }
   },
   "products": {
@@ -685,6 +727,19 @@
       ],
       "scope": "已检查本站教程的入口归属，保留独立网页练习。",
       "limit": "本次没有取得足以验证全部网页步骤的官方帮助正文，未登录账号；具体按钮、附件与搜索功能仍待核对。"
+    }
+  },
+  "lessons": {
+    "network-prepare": {
+      "status": "documented",
+      "checkedAt": "2026-09-15T13:22:01.202Z",
+      "sourceIds": [
+        "clash-install",
+        "clash-handson",
+        "clash-common"
+      ],
+      "scope": "已读取官方安装、快速上手与常见问题；教程按 Windows 的安装、订阅导入、系统代理与恢复流程组织。",
+      "limit": "个人订阅导入、节点实际连接、AI 服务登录与 macOS/Linux 安装尚未实测。没有测试或推荐任何订阅服务商。不同版本以当前官方界面为准。"
     }
   }
 }

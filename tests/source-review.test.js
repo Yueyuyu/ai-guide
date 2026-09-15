@@ -11,7 +11,7 @@ test('每个产品和教程都有明确核对范围，入口参考不能冒充�
   for (const lesson of lessons) {
     const review = lesson.review;
     assert.ok(review.scope && review.limit && Number.isFinite(Date.parse(review.checkedAt)), lesson.id);
-    assert.equal(review.status === 'practice', !lesson.productId, lesson.id);
+    assert.equal(review.status === 'practice', !lesson.productId && !registry.lessons?.[lesson.id], lesson.id);
     if (review.status === 'documented') assert.ok(review.sources.length && review.sources.every(s => s.status === 'reviewed'), lesson.id);
     for (const source of review.sources) {
       assert.ok(source && source.url.startsWith('https://'), lesson.id);

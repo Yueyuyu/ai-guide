@@ -13,11 +13,12 @@ import { writingPractice, weeklyPractice } from './office-practice.js';
 import { codexPractice, websiteLessons } from './website-practice.js';
 import { apiPractice } from './api-practice.js';
 import { lessonGuidance } from './learning-guidance.js';
+import { networkPreparation } from './network-preparation.js';
 export { categories, tools, paths, projects, platforms, kindNames, officialSources } from './catalog.js';
 export { companies, companyByToolId, featuredCompanies } from './companies.js';
 
 const practiceOverrides = { 'research-first': researchPractice, 'workflow-basics': weeklyPractice, 'codex-web': codexPractice };
-export const lessons = [...foundations, ...starterLessons, ...modelLessons, ...codingLessons, ...desktopLessons, ...moreAppLessons, ...codingEntries, ...modelGuides, writingPractice, ...websiteLessons, apiPractice].map(lesson => {
+export const lessons = [...foundations, ...starterLessons, ...modelLessons, ...codingLessons, ...desktopLessons, ...moreAppLessons, ...codingEntries, ...modelGuides, writingPractice, ...websiteLessons, apiPractice, networkPreparation].map(lesson => {
   const guide = entryGuides[lesson.id];
   const { intro, ...details } = guide || {};
   const result = { platform: 'general', edited: '2026-09-07', ...lesson, ...details, cover: chineseCovers[lesson.id] || details.cover || lesson.cover, sections: intro ? [intro, ...lesson.sections] : lesson.sections };

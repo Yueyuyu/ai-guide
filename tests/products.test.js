@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import registry from '../src/data/source-review.json' with { type: 'json' };
 import { lessons, tools, platforms, projects } from '../src/data/index.js';
 import { filterLessons, catalogUrl, parseRoute } from '../src/lib/learning.js';
 
@@ -18,7 +19,8 @@ test('软件与模型分层，每个专题都有对应入口的独立教程', ()
       const tool = tools.find(item => item.id === lesson.productId);
       assert.ok(tool.platforms.includes(lesson.platform), lesson.id);
       assert.deepEqual(lesson.tools, [lesson.productId], `${lesson.id} 不应同时冒充多个软件的专属教程`);
-    } else assert.equal(lesson.platform, 'general');
+    } else if (registry.lessons?.[lesson.id]) assert.ok(platforms.some(platform => platform.id === lesson.platform));
+    else assert.equal(lesson.platform, 'general');
     assert.equal(new Set(lesson.sources.map(source => source.url)).size, lesson.sources.length);
   }
 });

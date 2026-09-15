@@ -30,9 +30,10 @@
 - 验收：只含本项目；新克隆可按 README 安装、检查；GitHub Linux／Windows CI 实际通过。
 - 完成记录：2026-09-15，公开仓库 [Yueyuyu/ai-guide](https://github.com/Yueyuyu/ai-guide)，MIT 许可，首次提交 `cd9206e`；GitHub 新克隆的本地检查及 Linux／Windows [远程 CI](https://github.com/Yueyuyu/ai-guide/actions/runs/34957331207)均已通过。
 
-### WEB-01 正式域名与静态部署
+### WEB-01 GitHub Pages 公开试用部署
 
-- 范围：选定托管、配置正式 URL、发布构建、检查静态快照。
+- 已选定 GitHub Pages 并加入检查后发布工作流，地址为 https://yueyuyu.github.io/ai-guide/ 。公开验收结果见 [STATUS](STATUS.md)。
+- 自定义域名、国内不同运营商可达性和搜索收录仍需后续验证。
 - 验收：真实 HTTPS 地址可用，独立阅读与 sitemap 正确，核心路径及下载无误，回退方式已验证。
 - 边界：上传 GitHub 不等于公开站点已发布，sitemap 生成不等于已被收录。
 
@@ -51,13 +52,20 @@
 
 ### FEEDBACK-01 在线问题接收
 
-- 在已有本地问题记录基础上选定接收方式，例如 GitHub Issue 或业务后端。
+- 已接入 GitHub Issue 预览与跳转、三条主线试用表单和本地记录留存。需要 GitHub 登录；无需登录的反馈后端暂未接入。
 - 验收：提交成功有真实接收凭证，失败可重试；明确数据用途，避免收集密钥和私人对话。
 
 ### SEARCH-01 搜索正文与问题帮助
 
 - 范围：从标题、简介和产品别名扩展到需要的正文及常见问题。
 - 验收：用“文件找不到”“保存失败”等真实查询找到正确章节；不因泛词返回大量无关结果。
+
+### DATA-02 访问数据与赞助依据
+
+- 已准备 Cloudflare Web Analytics 构建接入；账户和真实收数以 [STATUS](STATUS.md) 为准。
+- 第一版仅统计整页访问，不宣称已具备课程完成漏斗。
+- 等有明确时间范围的实际访问和真人案例后再准备赞助资料；当前不联系商家、不发布返佣推荐。
+- 流程与口径见[反馈、统计与赞助](engineering/FEEDBACK.md)。
 
 ## 后置选项
 
