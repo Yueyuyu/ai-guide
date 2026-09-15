@@ -9,6 +9,7 @@ export const learningEntries = [
 ];
 
 const companyLabels = {
+  tencent: ['WorkBuddy 办公工作台'],
   openai: ['ChatGPT · Codex · GPT', 'OpenAI API'],
   anthropic: ['Claude · Cowork', 'Claude API'],
   google: ['Gemini', 'Gemini API'],

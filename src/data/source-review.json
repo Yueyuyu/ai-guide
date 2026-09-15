@@ -3,16 +3,17 @@
   "sources": {
     "chatgpt-app": {
       "id": "chatgpt-app",
-      "title": "ChatGPT 桌面应用",
+      "title": "ChatGPT 桌面应用：安装名称与 Codex 入口",
       "url": "https://learn.chatgpt.com/docs/app",
       "fetchedUrl": "https://learn.chatgpt.com/docs/app",
-      "retrievedAt": "2026-09-15T05:26:29.769Z",
-      "reviewedAt": "2026-09-15T05:26:29.769Z",
+      "retrievedAt": "2026-09-15T14:47:13.924Z",
+      "reviewedAt": "2026-09-15T14:47:13.924Z",
       "sourceUpdatedAt": null,
       "status": "reviewed",
-      "scope": "2026-09-15公开页面再次确认安装、登录、打开文件夹以及Codex的New chat入口；保留渲染正文摘录。",
+      "scope": "确认安装的软件名为 ChatGPT；应用内仍有 Codex 编程入口。",
       "contentKind": "rendered excerpt",
-      "contentSha256": "07c6b20f04f54c499e55a91b85f3b8f8371b8eb5802bfb6144dbefeae0f7b8a3"
+      "contentFile": "tutorials/codex-web/official-entry-source.txt",
+      "contentSha256": "730dd2d15d6833720847dcfe1d2f6e05754f253fa88394d661def069be739604"
     },
     "chatgpt": {
       "id": "chatgpt",
@@ -390,16 +391,17 @@
     },
     "chatgpt-windows": {
       "id": "chatgpt-windows",
-      "title": "ChatGPT 与 Codex 的 Windows 桌面说明",
+      "title": "ChatGPT Windows 桌面应用官方说明",
       "url": "https://learn.chatgpt.com/docs/windows/windows-app",
-      "fetchedUrl": "https://learn.chatgpt.com/docs/windows/windows-app.md",
-      "retrievedAt": "2026-09-15T06:31:29.4587219Z",
-      "reviewedAt": "2026-09-15T06:31:29.4587219Z",
+      "fetchedUrl": "https://learn.chatgpt.com/docs/windows/windows-app",
+      "retrievedAt": "2026-09-15T14:47:13.924Z",
+      "reviewedAt": "2026-09-15T14:47:13.924Z",
       "sourceUpdatedAt": null,
       "status": "reviewed",
-      "scope": "Windows 官方安装入口、原生 PowerShell 环境与文件操作说明；不代表账号内生成实测。",
-      "contentKind": "official markdown",
-      "contentSha256": "5bbae21f535849b2ab51ec9472d43e2f1ade4f954b3d5241bcec4674e7761ad7"
+      "scope": "确认 Windows 安装名称及原生 Codex/PowerShell 环境；本课不以 WSL 为先决条件。",
+      "contentKind": "rendered excerpt",
+      "contentFile": "tutorials/codex-web/windows-entry-source.txt",
+      "contentSha256": "ce15966a35400fb9bd2a0444c1058668fde7fd83b1ddbf5fcbe595a0bbea50c5"
     },
     "clash-install": {
       "id": "clash-install",
@@ -442,6 +444,62 @@
       "contentKind": "official text excerpt with review note",
       "contentFile": "tutorials/network-prepare/clash-common-source.txt",
       "contentSha256": "35bd1e09582d407df9ef2236708790d32e812f71ea6c449c0a7f42bd6a2de666"
+    },
+    "workbuddy-overview": {
+      "id": "workbuddy-overview",
+      "title": "WorkBuddy 官方产品简介",
+      "url": "https://www.workbuddy.cn/docs/workbuddy/Overview",
+      "fetchedUrl": "https://www.workbuddy.cn/docs/workbuddy/Overview",
+      "retrievedAt": "2026-09-15T14:47:13.924Z",
+      "reviewedAt": "2026-09-15T14:47:13.924Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "确认腾讯产品归属及授权本地文件处理定位。",
+      "contentKind": "rendered excerpt",
+      "contentFile": "tutorials/workbuddy-first/overview-source.txt",
+      "contentSha256": "d911851d21c5599e93ab18896d1976a7ec698421f8fb8a562ed0ebb3ec3245bc"
+    },
+    "workbuddy-install": {
+      "id": "workbuddy-install",
+      "title": "WorkBuddy Windows 安装指南",
+      "url": "https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Installation-Win-Guide",
+      "fetchedUrl": "https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Installation-Win-Guide",
+      "retrievedAt": "2026-09-15T14:47:13.924Z",
+      "reviewedAt": "2026-09-15T14:47:13.924Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "核对系统要求、下载、安装及官网登录返回客户端。",
+      "contentKind": "rendered excerpt",
+      "contentFile": "tutorials/workbuddy-first/install-source.txt",
+      "contentSha256": "991328f26ce659a9c0f719a7a1cb7ebaa8544d4c5a248816fc4b560126eb3b61"
+    },
+    "workbuddy-task": {
+      "id": "workbuddy-task",
+      "title": "WorkBuddy 创建任务与工作空间",
+      "url": "https://www.workbuddy.cn/docs/workbuddy/Create-Task",
+      "fetchedUrl": "https://www.workbuddy.cn/docs/workbuddy/Create-Task",
+      "retrievedAt": "2026-09-15T14:47:13.924Z",
+      "reviewedAt": "2026-09-15T14:47:13.924Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "核对输入框处的工作空间选择、材料上下文与任务创建。",
+      "contentKind": "rendered excerpt",
+      "contentFile": "tutorials/workbuddy-first/task-source.txt",
+      "contentSha256": "13032302d7012fc24f6293540c30a02435525e431e2030276ccd77f9035bbe9e"
+    },
+    "workbuddy-results": {
+      "id": "workbuddy-results",
+      "title": "WorkBuddy 结果查看",
+      "url": "https://www.workbuddy.cn/docs/workbuddy/Results",
+      "fetchedUrl": "https://www.workbuddy.cn/docs/workbuddy/Results",
+      "retrievedAt": "2026-09-15T14:47:13.924Z",
+      "reviewedAt": "2026-09-15T14:47:13.924Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "核对产物、工作空间文件和变更查看；实际生成尚未实测。",
+      "contentKind": "rendered excerpt",
+      "contentFile": "tutorials/workbuddy-first/results-source.txt",
+      "contentSha256": "e52a33b4e17628b95bd1317f195c0480f0faed5642c5f69c7490a60fa069f749"
     }
   },
   "products": {
@@ -456,7 +514,7 @@
     },
     "chatgpt-desktop": {
       "status": "documented",
-      "checkedAt": "2026-09-15T05:26:29.769Z",
+      "checkedAt": "2026-09-15T14:47:13.924Z",
       "sourceIds": [
         "chatgpt-app"
       ],
@@ -465,7 +523,7 @@
     },
     "codex": {
       "status": "documented",
-      "checkedAt": "2026-09-15T06:31:29.4587219Z",
+      "checkedAt": "2026-09-15T14:47:13.924Z",
       "sourceIds": [
         "chatgpt-app",
         "chatgpt-windows"
@@ -727,6 +785,18 @@
       ],
       "scope": "已检查本站教程的入口归属，保留独立网页练习。",
       "limit": "本次没有取得足以验证全部网页步骤的官方帮助正文，未登录账号；具体按钮、附件与搜索功能仍待核对。"
+    },
+    "workbuddy": {
+      "status": "documented",
+      "checkedAt": "2026-09-15T14:47:13.924Z",
+      "sourceIds": [
+        "workbuddy-overview",
+        "workbuddy-install",
+        "workbuddy-task",
+        "workbuddy-results"
+      ],
+      "scope": "已核对腾讯产品归属、Windows 安装、选择工作空间、创建任务和查看结果的官方说明。",
+      "limit": "账号内登录、生成周报、文件写入及修正尚未实测；本站提供虚构练习和验收标准。"
     }
   },
   "lessons": {

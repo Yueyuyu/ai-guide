@@ -1,0 +1,8 @@
+WorkBuddy Windows 安装指南
+来源：https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Installation-Win-Guide
+核对时间：2026-09-15T14:47:13.924Z
+范围：公开官方页面的必要短摘录，不代表账号内实操。
+
+Windows 10 及以上
+访问 WorkBuddy 官网，点击 立即下载，等待安装包下载完成。
+登录成功后自动返回客户端，即可开始使用。

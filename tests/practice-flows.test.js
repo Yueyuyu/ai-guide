@@ -13,7 +13,7 @@ import registry from '../src/data/source-review.json' with { type: 'json' };
 
 test('连续路线不强制换工具，旧选学进度保留且不算入新主线', () => {
   const builder = paths.find(path => path.id === 'builder');
-  assert.deepEqual(builder.sequence, ['choose-model', 'codex-web', 'codex-iterate', 'website-check']);
+  assert.deepEqual(builder.sequence, ['network-prepare', 'choose-model', 'codex-web', 'codex-iterate', 'website-check']);
   assert.equal(readingContext('codex-web', 'builder').next.id, 'codex-iterate');
   assert.equal(readingContext('codex-iterate', 'builder').next.id, 'website-check');
   for (const path of paths) for (const id of path.electives || []) assert.ok(lessonById[id] && !path.sequence.includes(id));

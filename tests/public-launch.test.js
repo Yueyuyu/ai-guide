@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { lessons, lessonById, paths } from '../src/data/index.js';
-import { emptyLearning, normalizeLearning, getPathProgress } from '../src/lib/learning.js';
+import { emptyLearning, normalizeLearning, getPathProgress, updateLearning } from '../src/lib/learning.js';
 import { feedbackRepository, publicIssueUrl, redactFeedback } from '../src/lib/public-feedback.js';
 import { analyticsMarkup, analyticsPlugin } from '../server/analytics-plugin.js';
 
@@ -31,6 +31,24 @@ test('公开反馈移除常见订阅链接与凭据，长正文走复制而不�
   assert.equal(parsed.searchParams.get('body'), cleaned);
   assert.equal(publicIssueUrl({ title: '长反馈', body: '中文'.repeat(4000) }), feedbackRepository + '/issues/new');
   assert.equal(publicIssueUrl({ title: '反馈', body: ' ' }), null);
+});
+
+test('WorkBuddy 独立保存成果并保留可复核的桌面操作依据', async () => {
+  const lesson = lessonById['workbuddy-first'];
+  for (const source of lesson.review.sources) {
+    const content = await readFile(new URL('../public/' + source.contentFile, import.meta.url));
+    assert.equal(createHash('sha256').update(content).digest('hex'), source.contentSha256);
+  }
+  assert.equal(lesson.platform, 'desktop');
+  const material = lesson.sections.flatMap(section => section.downloads || [])[0];
+  assert.equal(material.filename, 'weekly-records.txt');
+  assert.ok(lesson.sections.some(section => section.prompt?.includes(material.filename)));
+  assert.match(lesson.review.limit, /尚未实测/);
+  const previous = updateLearning(emptyLearning(), { type: 'draft', id: 'doubao-notice', text: '原来的豆包成果' });
+  const current = normalizeLearning(updateLearning(previous, { type: 'draft', id: lesson.id, text: 'WorkBuddy 实际文件核对记录' }));
+  assert.equal(current.drafts['doubao-notice'], previous.drafts['doubao-notice']);
+  assert.notEqual(current.drafts[lesson.id], current.drafts['doubao-notice']);
+  assert.deepEqual(current.completed, []);
 });
 
 test('访问统计默认关闭，配置仅接受公开站点 token，并覆盖阅读页', () => {

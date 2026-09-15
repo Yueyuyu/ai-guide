@@ -39,13 +39,14 @@ test('公司目录和进阶区覆盖全部原产品，只有真实的专属API�
 });
 
 test('公司搜索保留公司整体，分类不制造空公司，旧链接能转换到简单分类', () => {
-  assert.equal(filterLearningCompanies().length, 12);
+  assert.equal(filterLearningCompanies().length, 13);
   const found = filterLearningCompanies({ query: '  QWEN CODE  ' });
   assert.deepEqual(found.map(group => group.company.id), ['alibaba']);
   assert.ok(found[0].advanced.some(tool => tool.id === 'qwen-code'));
   assert.deepEqual(filterLearningCompanies({ query: '谷歌', entry: 'model' }).map(group => group.sections.map(section => section.id)), [['model']]);
   assert.equal(filterLearningCompanies({ query: 'Google', entry: 'desktop' }).length, 0);
-  assert.equal(filterLearningCompanies({ entry: 'desktop' }).length, 5);
+  assert.equal(filterLearningCompanies({ entry: 'desktop' }).length, 6);
+  assert.deepEqual(filterLearningCompanies({ query: 'Workbody', entry: 'desktop' }).map(group => group.company.id), ['tencent']);
   assert.equal(filterLearningCompanies({ query: '不存在的公司' }).length, 0);
   for (const [query, expected] of [['kind=model', 'model'], ['platform=api', 'api'], ['platform=editor', 'desktop'], ['entry=all&kind=model', 'all'], ['entry=unknown', 'all']]) {
     assert.equal(resolveLearningEntry(new URLSearchParams(query)), expected);

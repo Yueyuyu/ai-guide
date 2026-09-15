@@ -1,6 +1,6 @@
 # 官方教程核对与模型榜单接入
 
-首次核对：2026-09-14；2026-09-15 补充豆包网页版公开界面核对。没有登录第三方产品账号或发起收费模型调用。
+首次核对：2026-09-14；2026-09-15 补充豆包网页版公开界面、ChatGPT 桌面名称及 WorkBuddy 官方步骤核对。没有登录第三方产品账号或发起收费模型调用。
 
 2026-09-15 实际打开豆包网页，确认“对话”、文字输入、发送和登录控件，并用本站虚构通知试填、试发。未登录试发后返回首页，未取得回答。因此豆包仍标为“部分步骤待核对”，没有把人工参考答案标为实测输出。两张实拍、原始界面文本和练习材料位于 `public/tutorials/doubao-notice/`，来源内容哈希及精确获取时间保存在 `source-review.json`。截图的中文序号在网页上叠加，原始截图保持不变。
 
@@ -8,10 +8,12 @@
 
 ## 教程核对
 
-31 个产品入口均有记录：20 个已核对关键官方说明，11 个仍有具体待核对项。44 篇教程全部附来源与核对范围；通用练习保持本站编写身份。机器可读记录见 [source-review.json](../src/data/source-review.json)，内含准确来源、获取时间、核对时间及原始页面或渲染正文的哈希（适用时）。未披露的源文档日期保留 null，不以核对当天冒充发布或更新日期。
+32 个产品入口均有记录：21 个已核对关键官方说明，11 个仍有具体待核对项。46 篇教程全部附来源与核对范围；通用练习保持本站编写身份。机器可读记录见 [source-review.json](../src/data/source-review.json)，内含准确来源、获取时间、核对时间及原始页面或渲染正文的哈希（适用时）。未披露的源文档日期保留 null，不以核对当天冒充发布或更新日期。
 
 - 豆包工作改为豆包桌面版的工作模式，官方入口改为下载页；没有确认账号内按钮与权益的部分保持明确待核对。
 - ChatGPT 与 Codex 的统一桌面入口由当前官方文档确认；保留网页、桌面、CLI、云端各自教程。
+- 本轮重新读取 ChatGPT 桌面与 Windows 说明，确认安装名称为 ChatGPT，应用内可进入 Codex；没有据此声称 Codex 已消失。摘录保存在 `public/tutorials/codex-web/official-entry-source.txt` 与 `windows-entry-source.txt`，本次获取时间及哈希已同步。
+- 新增 WorkBuddy 桌面课：依据腾讯官网的产品简介、Windows 安装、创建任务及结果查看四份说明，分别登记来源和短摘录。周报任务由本站编写，账号内生成、文件写入、修正尚未实测。
 - Claude Desktop、Cowork 与 Claude Code 分开；访问本地文件的跨端会话必须起于桌面，且桌面在线、文件夹已连接。网页 Cowork 保留 Beta 与套餐条件。
 - Gemini API 按来源 2026-09-04 UTC 的快速开始改成 Interactions，不混用旧 GenerateContent 的 contents/parts/candidates 字段；示例未执行付费调用。
 - OpenAI、Claude API 通过官方 SDK 核对关键字段。原 API 文档分别返回 403 或重定向区域不可用页，没有把这些响应误算成文档核对成功。
@@ -21,6 +23,7 @@
 
 | 产品与入口 | 状态 | 官方依据 | 范围及未覆盖内容 |
 | --- | --- | --- | --- |
+| WorkBuddy 桌面版 | 关键步骤有官方依据 | [Windows 安装](https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Installation-Win-Guide)；[创建任务](https://www.workbuddy.cn/docs/workbuddy/Create-Task)；[查看结果](https://www.workbuddy.cn/docs/workbuddy/Results) | 已核对安装、工作空间、任务和产物入口；未完成账号内生成、文件写入及修正实测。 |
 | 豆包桌面版 · 工作模式 | 部分步骤待核对 | [豆包桌面版下载与工作模式](https://www.doubao.com/download) | 已确认官方桌面下载入口，以及豆包工作属于桌面版工作模式。 未在账号内逐项操作；按钮位置、账号权益、系统要求与输出文件流程需按实际版本再核对。 |
 | ChatGPT 网页版 | 关键步骤有官方依据 | [ChatGPT 网页端](https://learn.chatgpt.com/docs/web) | 已确认网页版聊天／工作入口、文件输入和成果下载。 本次核对公开官方资料，未登录产品账号、运行练习或发起付费调用。 |
 | ChatGPT 桌面版 | 关键步骤有官方依据 | [ChatGPT 桌面应用](https://learn.chatgpt.com/docs/app) | 已确认 ChatGPT 与 Codex 位于同一桌面应用，Chat/Work 与编程入口分别学习。 本次核对公开官方资料，未登录产品账号、运行练习或发起付费调用。 |
@@ -66,7 +69,7 @@
 
 ## 更新与维护
 
-2026-09-15补充读取 [Windows桌面官方说明](https://learn.chatgpt.com/docs/windows/windows-app)，Markdown证据保存在 `public/tutorials/codex-web/official-windows-source.txt`，获取时间与SHA-256记录在 `source-review.json` 的 `chatgpt-windows` 项。支持Windows安装、原生运行环境和文件夹说明；未把资料读取扩展为账号内生成实测。
+2026-09-15 补充读取 [Windows 桌面官方说明](https://learn.chatgpt.com/docs/windows/windows-app)。此前 Markdown 证据仍保存在 `public/tutorials/codex-web/official-windows-source.txt`；当前 `source-review.json` 的 `chatgpt-windows` 项对应本轮重新读取的 `windows-entry-source.txt` 短摘录及其获取时间、SHA-256。支持 Windows 安装与原生运行环境说明；未把资料读取扩展为账号内生成实测。
 
 新增 `pnpm audit:content` 检查站内引用与资源，`--links`检查来源可达性，本机可加 `--system-http`。资料过期提示依据最早一份已核对来源计算；检查网址本身不会更新资料时间。HEAD可能被帮助站点拒绝或返回404，因此失效结论先用GET确认；403与网络失败仍需人工复核，不直接删除来源。
 

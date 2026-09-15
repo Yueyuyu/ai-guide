@@ -2,7 +2,8 @@ export const feedbackRepository = 'https://github.com/Yueyuyu/ai-guide';
 export const feedbackTracks = [
   { id: 'network', name: '网络准备', href: '#/path/network', task: '分清客户端和订阅，完成一次导入与网络验证；没有订阅可只反馈阅读卡点。' },
   { id: 'doubao', name: '豆包第一份清单', href: '#/learn/doubao-notice?path=starter', task: '发送材料、核对回答、追问一次，保存并打开自己的 TXT。' },
-  { id: 'codex', name: 'Codex 第一个网页', href: '#/path/builder', task: '创建两个实际文件、增加三个标签，再核对导航和手机宽度。' },
+  { id: 'workbuddy', name: 'WorkBuddy 第一份周报', href: '#/learn/workbuddy-first', task: '选择工作空间、生成实际文件，核对重复记录与数字，再保存自己的练习记录。' },
+  { id: 'codex', name: 'ChatGPT 第一个网页', href: '#/path/builder', task: '先准备网络与桌面应用，在 Codex 入口创建文件、修改并验收网页。' },
 ];
 
 // 公共 Issue 的正文会进入 URL。先移除常见凭据和链接，再交给读者预览；规则不能代替人工检查。

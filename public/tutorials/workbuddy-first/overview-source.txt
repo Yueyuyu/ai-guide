@@ -1,0 +1,7 @@
+WorkBuddy 官方产品简介
+来源：https://www.workbuddy.cn/docs/workbuddy/Overview
+核对时间：2026-09-15T14:47:13.924Z
+范围：公开官方页面的必要短摘录，不代表账号内实操。
+
+WorkBuddy 是腾讯出品的全场景 AI 办公工作台。
+可读取授权的电脑文件夹，进行批量处理

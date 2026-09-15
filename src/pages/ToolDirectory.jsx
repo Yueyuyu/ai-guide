@@ -2,6 +2,7 @@ import React from 'react';
 import { EmptyState, PageHeading, SearchBox } from '../components/Shared.jsx';
 import { Icon } from '../components/Icon.jsx';
 import { CompanyLearningCard } from '../components/CompanyLearningCard.jsx';
+import { NetworkPreparationLink } from '../components/NetworkPreparationLink.jsx';
 import { filterLearningCompanies, learningEntries, resolveLearningEntry } from '../lib/company-learning.js';
 import '../styles-tools.css';
 
@@ -11,7 +12,8 @@ export function Tools({ route }) {
   const apply = patch => { window.location.hash = '#/tools?' + new URLSearchParams({ q: query, entry, ...patch }); };
   const groups = filterLearningCompanies({ query, entry });
   return <div className="learning-directory">
-    <PageHeading title="选一个工具，开始学。" description="按公司找到熟悉的产品，选网页版或桌面版开始。" aside={<a href="#/path/starter" className="directory-start-link">第一次来？从入门路线开始<Icon name="arrow" size={16}/></a>}/>
+    <PageHeading title="选一个工具，开始学。" description="按公司找到熟悉的产品，选网页版或桌面版开始。" aside={<a href="#/start" className="directory-start-link">第一次来？选择入门工具<Icon name="arrow" size={16}/></a>}/>
+    <NetworkPreparationLink/>
     <div className="learning-directory-controls"><SearchBox query={query} onSearch={q => apply({ q })} placeholder="搜索公司或产品"/>
       <div className="learning-entry-filters" role="group" aria-label="教程分类">{[{ id: 'all', name: '全部' }, ...learningEntries].map(item => <button type="button" key={item.id} aria-pressed={entry === item.id} onClick={() => apply({ entry: item.id })}>{item.name}</button>)}</div>
     </div>

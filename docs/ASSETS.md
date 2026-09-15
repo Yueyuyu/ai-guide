@@ -47,6 +47,12 @@
 
 下载的公司素材均已目视核对并实际用于页面；没有使用图片生成工具重绘第三方商标。早期 V4 的图片与说明作为历史设计记录保留。
 
+## 入门选择资产 · 2026-09-15
+
+- `public/brands/workbuddy.svg`：从 WorkBuddy 官网 HTML 实际引用的 [产品图标](https://download.codebuddy.cn/web/workbuddy/93a7cd0d70556625552d16b09c6a9cf8c2e089b9/assets/workbuddy-icon-BujKiC6G.svg)原样保存，保留绿色渐变与白色图形；用于新手选择、教程和产品入口。
+- 腾讯公司入口复用已有 `public/brands/rankings/tencent_small.svg`，来源和哈希仍在 `src/data/ranking-brands.json`；公司标识与 WorkBuddy 产品图标分开。
+- 教学资料只保存实际阅读的必要官方短摘录；文件与哈希登记在 `src/data/source-review.json`，不把官方界面示例当作本站账号实测。
+
 ## 模型榜单资产 · 2026-09-14
 
 新增 27 家来源公司标识，原样取自 Artificial Analysis 榜单载荷引用的 /img/logos/ 路径，保存在 public/brands/rankings。每个文件的原 URL、获取时间、SHA-256 见 src/data/ranking-brands.json。未用 CSS 滤镜改色；这是来源页面提供的品牌文件，不宣称已获得各品牌授权。实际浏览检查完整榜单无破图。

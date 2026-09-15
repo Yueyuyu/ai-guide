@@ -2,6 +2,9 @@ import React from 'react';
 import { Icon } from '../components/Icon.jsx';
 import { CourseArt } from '../components/GuideArt.jsx';
 import { learnHref } from '../lib/discovery.js';
+import { ToolMark } from '../components/Shared.jsx';
+import { tools } from '../data/index.js';
+import '../styles-start.css';
 import '../styles-feedback.css';
 export const firstCourses = [
   { id: 'ai-first', title: '认识 AI', subtitle: 'AI 能做什么', description: '了解 AI 的基本概念、发展现状和常见应用场景。', art: 'brain', tone: 'blue' },
@@ -10,10 +13,9 @@ export const firstCourses = [
 ];
 export function Discover() {
   return <><section className="home-intro"><div className="home-eyebrow"><i/>AI 入门指南</div><h1>从这里，学会 AI。</h1><p>从认识 AI 到熟练使用工具，一步一步学清楚。</p></section>
-    <section className="mainline-links" aria-label="三条学习主线">
-      <a href="#/learn/doubao-notice?path=starter"><small>第一次使用 AI · 推荐起点</small><h2>用豆包，做一份清单</h2><p>不用安装软件，15 分钟练习提问、核对与保存。</p></a>
-      <a href="#/path/network"><small>需要准备访问环境</small><h2>先把网络准备好</h2><p>Clash Party 安装、自己的订阅、连接验证与恢复。</p></a>
-      <a href="#/path/builder"><small>已有基础 · 想做出作品</small><h2>用 Codex，做一个网页</h2><p>准备目录，创建文件，继续修改，再亲手验收。</p></a>
+    <section className="audience-paths" aria-label="按使用基础选择起点">
+      <a className="audience-card audience-beginner" href="#/start"><div className="audience-top"><span className="audience-badge">第一次使用 AI</span><span className="audience-note">推荐起点</span></div><h2>从一份小任务开始</h2><p>选豆包或 WorkBuddy，跟着步骤完成第一份成果。</p><div className="audience-products">{['doubao', 'workbuddy'].map(id => <span key={id}><ToolMark tool={tools.find(tool => tool.id === id)} size="small"/>{id === 'doubao' ? '豆包' : 'WorkBuddy'}</span>)}</div><div className="audience-action">选择我的入门工具<Icon name="arrow" size={20}/></div></a>
+      <a className="audience-card audience-builder" href="#/path/builder"><div className="audience-top"><span className="audience-badge">已有基础</span><span className="audience-note">想做出作品</span></div><h2>用 ChatGPT，做一个网页</h2><p>先检查网络与账号，再创建、修改，亲手验收网页。</p><div className="audience-products"><span><ToolMark tool={tools.find(tool => tool.id === 'chatgpt-desktop')} size="small"/>ChatGPT 桌面版</span><span className="audience-product-note">使用 Codex 编程入口</span></div><div className="audience-action">开始我的网页练习<Icon name="arrow" size={20}/></div></a>
     </section>
     <section className="starter-section" aria-label="从入门路线开始"><div className="starter-lead"><span>建议从这里开始</span><h2>AI 入门路线</h2><p>从网页开始，整理并保存第一份待办清单。</p><a className="button primary" href="#/path/starter">开始入门路线<Icon name="arrow"/></a><small>6 节课 · 实操附练习材料</small></div>
     <div className="first-courses">{firstCourses.map((course, index) => <a className={'first-course tone-' + course.tone} key={course.id} href={learnHref(course.id, 'starter')}><div className="course-copy"><span className="course-number">0{index + 1}</span><h3>{course.title}</h3><p>{course.subtitle}</p></div><CourseArt kind={course.art}/><p className="course-description">{course.description}</p><Icon className="course-mobile-arrow" name="chevron"/></a>)}</div></section>

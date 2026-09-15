@@ -7,6 +7,7 @@ import { Icon } from '../components/Icon.jsx';
 import { EmptyState, NotFound, ToolMark } from '../components/Shared.jsx';
 import { LessonList } from '../components/LessonList.jsx';
 export function ProductConnections({ tool }) {
+  if (!tool.related.length) return null;
   return <section className="related-products"><h2>相关入口，分开学习</h2><div className="product-rows">{tool.related.map(id => { const item = tools.find(t => t.id === id); return item && <a href={productHref(item)} key={id}><ToolMark tool={item} size="small"/><div><strong>{item.short}</strong><small>{kindNames[item.kind]}</small></div><Icon name="chevron"/></a>; })}</div></section>;
 }
 export function ToolDetail({ id, route }) {

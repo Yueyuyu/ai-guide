@@ -1,0 +1,7 @@
+ChatGPT Windows 桌面应用官方说明
+来源：https://learn.chatgpt.com/docs/windows/windows-app
+核对时间：2026-09-15T14:47:13.924Z
+范围：公开官方页面的必要短摘录，不代表账号内实操。
+
+Download the ChatGPT desktop app
+By default, the ChatGPT desktop app uses the Windows-native Codex agent. That means the agent runs commands in PowerShell.

@@ -21,9 +21,9 @@ export const learningSetups = {
     fallback: '暂时无法登录时，可以先读通知、做文中的事实判断练习。实际提问留到账号可用后完成。',
   },
   codex: {
-    title: '用 Codex 桌面入口，做一个本地网页',
+    title: '用 ChatGPT 桌面版，做一个本地网页',
     facts: [
-      ['使用设备', '电脑和官方桌面应用；手机可阅读，不能代替本课的电脑文件操作。'],
+      ['使用设备', '电脑和 ChatGPT 官方桌面应用，进入其中的 Codex；手机可阅读，不能代替电脑文件操作。'],
       ['账号与访问', '能访问官方服务、完成登录，并在应用中使用 Codex。网络可达不等于账号或所在地区已获支持。'],
       ['费用与安装', '本站材料免费。本课无需 API Key；Codex 的额度、支持系统与付费条件请在官网和账号内核对。'],
       ['练习成果', 'index.html、README.md，以及你填写的创建、修改和验收记录。'],
@@ -32,6 +32,21 @@ export const learningSetups = {
     entry: { label: '查看官方安装与入门', href: 'https://learn.chatgpt.com/docs/app' },
     fallback: '只有手机、无法访问或账号不可用时，先看参考作品与需求单，也可以从豆包网页路线开始。无需提前安装终端工具。',
     fallbackLink: { label: '先学豆包网页实操', href: '#/learn/doubao-notice?path=starter' },
+  },
+  builder: {
+    title: '先准备好，再一步步做出网页',
+    facts: [['路线顺序', '网络环境 → 应用与模型 → 创建网页 → 局部修改 → 亲手验收。'], ['使用工具', '安装 ChatGPT 桌面版，进入 Codex 编程入口；使用同一个练习目录。'], ['开始条件', '先检查官方服务能否打开、账号能否使用。已经准备好时可直接进入实操。'], ['最终成果', 'index.html、README.md 和自己的验收记录。']],
+    checks: ['我知道先核对网络与账号条件', '我准备使用电脑完成文件操作', '我会在独立目录练习并亲自核对结果'],
+    fallback: '暂时无法使用 ChatGPT 时，仍可以阅读本站教程，或先选择豆包、WorkBuddy 做入门练习。',
+    fallbackLink: { label: '选择入门工具', href: '#/start' },
+  },
+  workbuddy: {
+    title: '用 WorkBuddy，把记录变成一个文件',
+    facts: [['使用设备', '本课使用 Windows 10 及以上桌面版；手机可以阅读。'], ['账号与安装', '从 WorkBuddy 官网安装并登录，选择一个空的练习文件夹。'], ['费用与材料', '本站提供虚构材料；工具的可用额度和付费条件以账号页面为准。'], ['练习成果', '电脑上的 weekly-summary.txt，以及自己的核对记录。']],
+    checks: ['我已安装并登录 WorkBuddy', '我知道练习文件夹的位置', '我能找到原始记录，并检查实际生成文件'],
+    entry: { label: 'WorkBuddy 官方下载', href: 'https://www.workbuddy.cn/' },
+    fallback: '暂时不方便安装时，先读材料与核对方法，也可以从豆包网页版开始。',
+    fallbackLink: { label: '改用豆包网页版', href: '#/learn/doubao-notice?path=starter' },
   },
   office: {
     title: '沿用一个会使用的网页工具',
@@ -48,9 +63,18 @@ export const learningSetups = {
   },
 };
 
-export const routeSetups = { network: 'network', starter: 'doubao', builder: 'codex', office: 'office', developer: 'developer' };
+export const routeSetups = { network: 'network', starter: 'doubao', builder: 'builder', office: 'office', developer: 'developer' };
 
 export const lessonGuidance = {
+  'workbuddy-first': {
+    setup: 'workbuddy', evidence: '已核对官方安装、工作空间和结果查看说明。登录后的生成、文件写入与修正尚未实测；练习由本站设计。',
+    flow: [['电脑', '安装并选择练习目录'], ['WorkBuddy', '读取记录，创建周报'], ['实际文件', '打开并核对数字状态'], ['回到本站', '保存自己的练习记录']],
+    help: [
+      { id: 'install', title: '没有安装，或者登录不了', section: 0, steps: ['核对 Windows 版本和官方下载来源。', '按官网实际登录提示和账号额度处理；暂时不能用时可先阅读，不把阅读当作实操完成。'] },
+      { id: 'workspace', title: '工具说找不到记录文件', section: 1, steps: ['确认 weekly-records.txt 已下载到 workbuddy-weekly，而非仍在下载文件夹。', '通过“选择工作空间”重选正确目录，并让工具报告路径和文件名。'] },
+      { id: 'result', title: '只有回复，找不到实际周报', section: 3, steps: ['在右侧“产物”或“工作空间文件”查看 weekly-summary.txt。', '让工具报告完整文件路径，再用电脑文件管理器打开核对。'] },
+    ],
+  },
   'network-prepare': {
     setup: 'network', evidence: '已核对官方安装、快速上手及常见问题。个人订阅导入、节点连接与目标服务使用尚未实测；不承诺某个服务商可用。',
     flow: [['准备', '官方下载与自己的订阅'], ['客户端', '导入配置、选择节点'], ['浏览器与工具', '分层验证实际可用性'], ['完成后', '恢复检查与脱敏记录']],

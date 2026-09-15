@@ -11,7 +11,7 @@ export function About() {
     <section><h2>排名的日期意味着什么</h2><p>模型排名显示具体来源和获取时间；获取时间是本站取得该快照的时间，不是所有模型的评测时间。源站没有披露的日期如实写“来源未披露”。不同指标的分数不混排。</p><p>当前接入Artificial Analysis综合能力和终端编程评测。其他用途没有可靠数据时显示空状态，更新失败时保留旧快照。网站没有后台定时更新；静态版本显示构建时快照。</p><a className="text-link" href="#/ranking">查看榜单与来源<Icon name="arrow" size={16}/></a></section>
     <section><h2>你的学习记录放在哪里</h2><p>阅读位置、收藏、自查进度和填写的成果保存在当前浏览器。本站没有账号系统，也不会自动同步到另一台设备；切换浏览器、切换站点地址或清除网站数据可能看不到原记录。</p><p>在“我的学习”导出JSON备份，可以在另一浏览器导入；成果也可逐份下载为TXT。导入会合并记录，同一课程已存在的草稿优先保留。本站不会读取你在豆包、ChatGPT或其他工具中的对话。</p><a className="text-link" href="#/library?tab=drafts">查看我的成果与备份<Icon name="arrow" size={16}/></a></section>
     <section><h2>内容如何保持可复核</h2><p>教程正文会提示超过30天未复核的来源；榜单快照超过7天会提醒更新。日期按资料实际核对和快照获取计算，不会因为修改文案自动刷新。当前仍需维护者主动更新。</p><p>每篇教程末尾都能生成问题记录，附带教程、章节和你的描述。可预览后到 GitHub 提交公开问题，也可复制或下载记录留存。需要读者在 GitHub 确认发布，以 Issue 编号作为接收凭证。</p><a className="text-link" href={import.meta.env.BASE_URL + 'read/index.html'}>打开独立阅读目录<Icon name="arrow" size={16}/></a><p>每篇独立阅读页有自己的网址、标题和摘要，关闭JavaScript也能阅读。互动练习与本地进度继续在互动版使用。</p></section>
-    <section><h2>试用、数据与商业内容</h2><p>公开试用版优先完善网络准备、豆包和 Codex 三条主线。真人试用与维护测试分别记录，赞助内容会明确标识，当前没有已实测推荐的订阅商。</p><AnalyticsNotice/><a className="text-link" href="#/feedback">参加试用并反馈问题<Icon name="arrow" size={16}/></a></section>
+    <section><h2>试用、数据与商业内容</h2><p>公开试用版提供豆包与 WorkBuddy 两种入门练习，以及用 ChatGPT 做网页的进阶路线；网络准备在路线和工具教程中单列。真人试用与维护测试分别记录，赞助内容会明确标识，当前没有已实测推荐的订阅商。</p><AnalyticsNotice/><a className="text-link" href="#/feedback">参加试用并反馈问题<Icon name="arrow" size={16}/></a></section>
     <section><h2>学习之后，自己再核对一次</h2><p>工具与模型会更新，教程里的实操结果仍需要自己验证。应用会员与API费用分别核对；参考答案不代表真实产品输出。完成勾选仅代表你的自查记录，不是系统自动验收。</p></section>
   </div>;
 }

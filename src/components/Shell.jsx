@@ -12,7 +12,7 @@ export function Shell({ route, children }) {
   const { learning } = useLearning();
   const current = learning.history.find(id => !learning.completed.includes(id)) || learning.history[0];
   const continueUrl = current ? learnHref(current, learning.contexts?.[current]) : '#/library';
-  const active = ({ discover: 'paths', learn: 'paths', path: 'paths', company: 'tools', tool: 'tools', tutorials: 'tools', model: 'models', ranking: 'models' })[route.page] || route.page;
+  const active = ({ discover: 'paths', start: 'paths', learn: 'paths', path: 'paths', company: 'tools', tool: 'tools', tutorials: 'tools', model: 'models', ranking: 'models' })[route.page] || route.page;
   useEffect(() => setMenuOpen(false), [route.path]);
   useEffect(() => {
     const key = event => {
@@ -35,6 +35,6 @@ export function Shell({ route, children }) {
     </div></header>
     <main id="main" tabIndex={-1} className={'main page-' + route.page}><div className="content">{children}</div></main>
     <footer className="site-footer"><span>先学会使用，再慢慢深入。</span><nav aria-label="页尾导航"><a href="#/tutorials">全部教程</a><a href="#/projects">实战项目</a><a href="#/library">我的学习</a><a href="#/feedback">试用与反馈</a><a href="#/about">关于与来源</a></nav><a href="#/">AIGuide</a></footer>
-    <Modal open={menuOpen} onClose={() => setMenuOpen(false)} title="AIGuide" className="navigation-dialog"><small>学习导航</small><nav aria-label="手机主导航">{nav.map(item => <a key={item.page} href={item.href} onClick={() => setMenuOpen(false)}><Icon name={item.icon}/><strong>{item.title}</strong><Icon name="chevron"/></a>)}</nav><small>更多内容</small><nav aria-label="更多内容">{[['#/tutorials', '全部教程', 'file'], ['#/projects', '实战项目', 'code'], ['#/library', '我的学习', 'bookmark']].map(([href, title, icon]) => <a key={href} href={href} onClick={() => setMenuOpen(false)}><Icon name={icon}/>{title}<Icon name="chevron"/></a>)}</nav><div className="soft-panel"><h3>第一次来？</h3><p>从入门路线开始。</p><a href="#/path/starter" className="button primary" onClick={() => setMenuOpen(false)}>开始入门路线<Icon name="arrow"/></a></div></Modal>
+    <Modal open={menuOpen} onClose={() => setMenuOpen(false)} title="AIGuide" className="navigation-dialog"><small>学习导航</small><nav aria-label="手机主导航">{nav.map(item => <a key={item.page} href={item.href} onClick={() => setMenuOpen(false)}><Icon name={item.icon}/><strong>{item.title}</strong><Icon name="chevron"/></a>)}</nav><small>更多内容</small><nav aria-label="更多内容">{[['#/tutorials', '全部教程', 'file'], ['#/projects', '实战项目', 'code'], ['#/library', '我的学习', 'bookmark']].map(([href, title, icon]) => <a key={href} href={href} onClick={() => setMenuOpen(false)}><Icon name={icon}/>{title}<Icon name="chevron"/></a>)}</nav><div className="soft-panel"><h3>第一次来？</h3><p>选择豆包或 WorkBuddy，完成第一次练习。</p><a href="#/start" className="button primary" onClick={() => setMenuOpen(false)}>选择入门工具<Icon name="arrow"/></a></div></Modal>
   </>;
 }

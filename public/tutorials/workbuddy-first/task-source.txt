@@ -1,0 +1,7 @@
+WorkBuddy 创建任务与工作空间
+来源：https://www.workbuddy.cn/docs/workbuddy/Create-Task
+核对时间：2026-09-15T14:47:13.924Z
+范围：公开官方页面的必要短摘录，不代表账号内实操。
+
+点击输入框左下角的 选择工作空间，选择当前任务要使用的目录
+选择完成后，WorkBuddy 会基于该目录读取和处理文件

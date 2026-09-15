@@ -1,6 +1,7 @@
 // 用明确的归属表合并公司，避免 Qwen / 阿里巴巴等不同厂商写法产生重复分组。
 // 产品 ID 继续独立使用，保留原教程链接与学习记录。
 export const companies = [
+  { id: 'tencent', name: '腾讯', brand: 'workbuddy', logo: 'rankings/tencent_small.svg', products: 'WorkBuddy', description: '用 WorkBuddy 处理练习文件，从交代任务到检查实际产物。', toolIds: ['workbuddy'], aliases: ['Tencent', 'Workbody'] },
   {
     id: 'openai', name: 'OpenAI', brand: 'openai', products: 'ChatGPT · Codex · GPT',
     description: '用 ChatGPT 处理日常工作，用 Codex 编程，或了解 GPT 模型接入。',
