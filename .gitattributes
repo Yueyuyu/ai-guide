@@ -1,0 +1,11 @@
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.webp binary
+*.woff2 binary
+
+# 第三方品牌和来源摘录按原字节保存，避免换行转换破坏来源 SHA-256。
+public/brands/** binary
+public/tutorials/**/*source.txt binary

@@ -1,0 +1,192 @@
+{
+  "layouts": [
+    {
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "plotWidth": 1236,
+      "plotScrollWidth": 1236,
+      "chartBottom": 747.265625,
+      "baseline": [
+        595.078125,
+        595.078125,
+        595.078125,
+        595.078125,
+        595.078125,
+        595.078125,
+        595.078125,
+        595.078125,
+        595.078125,
+        595.078125
+      ],
+      "labelsBelow": true,
+      "xAscending": true,
+      "brokenImages": 0
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "viewport": 1366,
+      "pageWidth": 1366,
+      "plotWidth": 1236,
+      "plotScrollWidth": 1236,
+      "chartBottom": 747.265625,
+      "baseline": [
+        595.078125,
+        595.078125,
+        595.078125,
+        595.078125,
+        595.078125,
+        595.078125,
+        595.078125,
+        595.078125,
+        595.078125,
+        595.078125
+      ],
+      "labelsBelow": true,
+      "xAscending": true,
+      "brokenImages": 0
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "viewport": 1024,
+      "pageWidth": 1024,
+      "plotWidth": 924,
+      "plotScrollWidth": 1080,
+      "chartBottom": 747.265625,
+      "baseline": [
+        595.078125,
+        595.078125,
+        595.078125,
+        595.078125,
+        595.078125,
+        595.078125,
+        595.078125,
+        595.078125,
+        595.078125,
+        595.078125
+      ],
+      "labelsBelow": true,
+      "xAscending": true,
+      "brokenImages": 0
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "viewport": 768,
+      "pageWidth": 768,
+      "plotWidth": 668,
+      "plotScrollWidth": 1080,
+      "chartBottom": 772.265625,
+      "baseline": [
+        620.078125,
+        620.078125,
+        620.078125,
+        620.078125,
+        620.078125,
+        620.078125,
+        620.078125,
+        620.078125,
+        620.078125,
+        620.078125
+      ],
+      "labelsBelow": true,
+      "xAscending": true,
+      "brokenImages": 0
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "pageWidth": 390,
+      "plotWidth": 316,
+      "plotScrollWidth": 1080,
+      "chartBottom": 823.0625,
+      "baseline": [
+        672.578125,
+        672.578125,
+        672.578125,
+        672.578125,
+        672.578125,
+        672.578125,
+        672.578125,
+        672.578125,
+        672.578125,
+        672.578125
+      ],
+      "labelsBelow": true,
+      "xAscending": true,
+      "brokenImages": 0
+    },
+    {
+      "width": 320,
+      "height": 780,
+      "viewport": 320,
+      "pageWidth": 320,
+      "plotWidth": 246,
+      "plotScrollWidth": 1080,
+      "chartBottom": 905.34375,
+      "baseline": [
+        736.171875,
+        736.171875,
+        736.171875,
+        736.171875,
+        736.171875,
+        736.171875,
+        736.171875,
+        736.171875,
+        736.171875,
+        736.171875
+      ],
+      "labelsBelow": true,
+      "xAscending": true,
+      "brokenImages": 0
+    }
+  ],
+  "interactions": [
+    {
+      "check": "显示数量、完整116配置、真实柱高比例、固定纵轴、两端浏览控件和Home/End",
+      "passed": true,
+      "allInitial": {
+        "left": 0,
+        "width": 1236,
+        "total": 12528
+      },
+      "lastColumn": {
+        "x": 1215,
+        "y": 345.078125,
+        "width": 108,
+        "height": 366.59375
+      }
+    },
+    {
+      "check": "刷新与后退恢复URL显示范围",
+      "passed": true
+    },
+    {
+      "check": "320px全部榜单、方向键浏览、最后模型Enter详情、原始分数、Escape焦点恢复和模型学习跳转",
+      "passed": true
+    },
+    {
+      "check": "编程119配置、0–100%纵轴与柱高",
+      "passed": true
+    },
+    {
+      "check": "来源/用途空状态与503失败保留原分数和日期",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "checkedAt": "2026-09-14T10:06:51.135Z",
+  "tests": {
+    "pass": 28,
+    "fail": 0
+  },
+  "build": {
+    "modules": 71,
+    "js": "index-B-kjhWGL.js",
+    "css": "index-BZp95ksH.css"
+  }
+}

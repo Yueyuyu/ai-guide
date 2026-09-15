@@ -1,0 +1,68 @@
+{
+  "checkedAt": "2026-09-14T09:50:02.545Z",
+  "layouts": [
+    {
+      "width": 1440,
+      "scroll": 1440,
+      "lastRow": 804.46875,
+      "viewportHeight": 900
+    },
+    {
+      "width": 1366,
+      "scroll": 1366,
+      "lastRow": 761.078125,
+      "viewportHeight": 768
+    },
+    {
+      "width": 1024,
+      "scroll": 1024,
+      "lastRow": 761.078125,
+      "viewportHeight": 900
+    },
+    {
+      "width": 768,
+      "scroll": 768,
+      "lastRow": 786.078125,
+      "viewportHeight": 900
+    },
+    {
+      "width": 390,
+      "scroll": 390,
+      "lastRow": 1051.453125,
+      "viewportHeight": 900
+    },
+    {
+      "width": 320,
+      "scroll": 320,
+      "lastRow": 1115.046875,
+      "viewportHeight": 900
+    }
+  ],
+  "laptopAtTop": {
+    "width": 1366,
+    "height": 768,
+    "scrollY": 0,
+    "lastRowBottom": 761.078125
+  },
+  "flows": [
+    "前10/20/全部",
+    "URL刷新与返回恢复",
+    "柱长对应原始得分",
+    "切换数量保持刻度",
+    "编程百分比固定0至100",
+    "详情Enter和Escape及焦点恢复",
+    "详情跳转学习页",
+    "来源和用途不混用",
+    "失败保留图表和日期"
+  ],
+  "tests": {
+    "pass": 28,
+    "fail": 0
+  },
+  "build": {
+    "modules": 71,
+    "js": "index-DyYdPOOO.js",
+    "css": "index-Bt9zTlsF.css"
+  },
+  "normalPageErrors": []
+}

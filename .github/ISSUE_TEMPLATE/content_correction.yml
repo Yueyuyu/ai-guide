@@ -1,0 +1,26 @@
+name: 教程纠错
+description: 操作入口、内容、日期或资料来源需要修正
+title: "[教程] "
+body:
+  - type: input
+    id: lesson
+    attributes:
+      label: 教程标题或地址
+    validations:
+      required: true
+  - type: input
+    id: section
+    attributes:
+      label: 所在章节
+  - type: textarea
+    id: details
+    attributes:
+      label: 哪一步对不上
+      description: 可粘贴本站生成的问题记录；先去掉账号、验证码和私人对话。
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: 官方依据或实际环境
+      description: 附官方链接、检查日期与产品版本；不知道时如实说明。

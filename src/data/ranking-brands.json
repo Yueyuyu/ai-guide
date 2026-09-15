@@ -1,0 +1,164 @@
+{
+  "Z AI": {
+    "file": "zai_small.svg",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/zai_small.svg",
+    "retrievedAt": "2026-09-14T09:16:27.712Z",
+    "sha256": "07a45e8e35b0b631ed2c68cd1cb041f9721b1ceeb0bd0e34f1459b0304a741c7"
+  },
+  "Kimi": {
+    "file": "kimi.jpg",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/kimi.jpg",
+    "retrievedAt": "2026-09-14T09:16:27.713Z",
+    "sha256": "6a3bf6203d2bbbff2e3e7e9470b5acf9eeb9135872647dde8a9f645204b61682"
+  },
+  "OpenAI": {
+    "file": "openai_small.svg",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/openai_small.svg",
+    "retrievedAt": "2026-09-14T09:16:27.719Z",
+    "sha256": "f067fbdf1e3bf44575b53998d0b7e31765a02af3c37bfdc5c06c89975cca7cb7"
+  },
+  "Anthropic": {
+    "file": "anthropic_small.svg",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/anthropic_small.svg",
+    "retrievedAt": "2026-09-14T09:16:27.719Z",
+    "sha256": "621687f5746b775c46a9019e136b4678a296e879bd80b8f6caf6a6eab3b7cce0"
+  },
+  "SpaceXAI": {
+    "file": "spacexai.svg",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/spacexai.svg",
+    "retrievedAt": "2026-09-14T09:16:27.726Z",
+    "sha256": "d083b932becc3c3c1a8113aa3a212e39364cd247d891268e3ef73e2fe53ec6bb"
+  },
+  "Meta": {
+    "file": "meta_small.svg",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/meta_small.svg",
+    "retrievedAt": "2026-09-14T09:16:27.726Z",
+    "sha256": "a4434fd238babcee1042be15c65a4c7986da0fa547ba2b3bef28b9f96c12b8ea"
+  },
+  "Google": {
+    "file": "google_small.svg",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/google_small.svg",
+    "retrievedAt": "2026-09-14T09:16:27.823Z",
+    "sha256": "8b694251c4d88e7ac9f0725f502b3ef3fba57291c6e9408ca15d8df74e71a627"
+  },
+  "Alibaba": {
+    "file": "alibaba_small.svg",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/alibaba_small.svg",
+    "retrievedAt": "2026-09-14T09:16:27.830Z",
+    "sha256": "1ebf7c1daf047eba7aa8303a49f3e6935869a6a548dc1b736d09425867261b63"
+  },
+  "MiniMax": {
+    "file": "minimax_small.svg",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/minimax_small.svg",
+    "retrievedAt": "2026-09-14T09:16:27.831Z",
+    "sha256": "3e874b67c47b0cea22eaf611e521f938510887f1cbea331004d3591c7808a62b"
+  },
+  "Sapiens AI": {
+    "file": "sapiens.svg",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/sapiens.svg",
+    "retrievedAt": "2026-09-14T09:16:27.834Z",
+    "sha256": "a68870e4fda51a366d800698fa5ee5f3bd37c1dde41a561d9b5e12c5ab996821"
+  },
+  "MBZUAI Institute of Foundation Models": {
+    "file": "mbzuai_small.svg",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/mbzuai_small.svg",
+    "retrievedAt": "2026-09-14T09:16:27.834Z",
+    "sha256": "314bc638f266d233fddba3022e6add7ec0370df32c7776eb2c9c9a84889d2990"
+  },
+  "DeepSeek": {
+    "file": "deepseek_small.svg",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/deepseek_small.svg",
+    "retrievedAt": "2026-09-14T09:16:27.838Z",
+    "sha256": "b4605874bbc5aef0b11be909f17ebfe1b6507dc6b4d725799563754a126d8505"
+  },
+  "Tencent": {
+    "file": "tencent_small.svg",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/tencent_small.svg",
+    "retrievedAt": "2026-09-14T09:16:27.934Z",
+    "sha256": "ab99db1cd28c5fe9e0a88f08415f00d33d230f6f011eed84663736cafe5932fc"
+  },
+  "Multiverse Computing": {
+    "file": "multiversecomputing_small.svg",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/multiversecomputing_small.svg",
+    "retrievedAt": "2026-09-14T09:16:27.938Z",
+    "sha256": "0a83cabc913b4be820e63e33ed6a19db22e658af025f9a8641fcc3c32dc7d83b"
+  },
+  "NVIDIA": {
+    "file": "nvidia_small.svg",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/nvidia_small.svg",
+    "retrievedAt": "2026-09-14T09:16:27.939Z",
+    "sha256": "70b5f8849d61ae022496cc6257cf4942ad6e5b5a8a83048d3512ba7fb9dda30e"
+  },
+  "Thinking Machines": {
+    "file": "thinking_machines.svg",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/thinking_machines.svg",
+    "retrievedAt": "2026-09-14T09:16:27.939Z",
+    "sha256": "0274c21863e51416f64da7373e2570f000c6575d3973f5b12373fa5bc4aeb71d"
+  },
+  "InclusionAI": {
+    "file": "inclusionai_small.jpg",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/inclusionai_small.jpg",
+    "retrievedAt": "2026-09-14T09:16:27.945Z",
+    "sha256": "c81a412986ce30bb0baf85b81851455f00ca192e096943834467da18d75fd76c"
+  },
+  "Xiaomi": {
+    "file": "xiaomi_small.svg",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/xiaomi_small.svg",
+    "retrievedAt": "2026-09-14T09:16:28.010Z",
+    "sha256": "57e336f5e377fc36db3f54456ff3a55f39307457d6fa92ac1fc13fa35d1191f9"
+  },
+  "LongCat": {
+    "file": "longcat_small.svg",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/longcat_small.svg",
+    "retrievedAt": "2026-09-14T09:16:28.106Z",
+    "sha256": "21a7e6cb25f0d288aceb7d70241bfddf37699342fb836db96b5bb7ba98792ebe"
+  },
+  "Inception": {
+    "file": "inceptionlabs_small.svg",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/inceptionlabs_small.svg",
+    "retrievedAt": "2026-09-14T09:16:28.111Z",
+    "sha256": "76201af193564102680c95a6fe420bed505b9ef1f20b6dc55e587fed4f5d9832"
+  },
+  "Mistral": {
+    "file": "mistral_small.png",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/mistral_small.png",
+    "retrievedAt": "2026-09-14T09:16:28.113Z",
+    "sha256": "f7aef3e4df47f19b23c6aa07627e385fcdb2fd7002bf131e51997a1960400465"
+  },
+  "IBM": {
+    "file": "ibm_small.svg",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/ibm_small.svg",
+    "retrievedAt": "2026-09-14T09:16:28.114Z",
+    "sha256": "006d53b88338208e3535782a88480f6b2ad43f43a2d98c8bb5530cfab18c3424"
+  },
+  "OpenBMB": {
+    "file": "openbmb_small.svg",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/openbmb_small.svg",
+    "retrievedAt": "2026-09-14T09:16:28.116Z",
+    "sha256": "6ddc1413462948249f469281c5923ffbb8090b23fa1d54ba22f9b5c1a9c8d87d"
+  },
+  "Cohere": {
+    "file": "cohere_small.svg",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/cohere_small.svg",
+    "retrievedAt": "2026-09-14T09:16:28.122Z",
+    "sha256": "de25a1f35a4512c269c63477ab855bf9056ac4c43da4c3252034066a88e57249"
+  },
+  "Arcee AI": {
+    "file": "arcee_small.svg",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/arcee_small.svg",
+    "retrievedAt": "2026-09-14T09:16:28.221Z",
+    "sha256": "41a8ed8278ec89d6a12ba5c96172ee30d6fadc93474792a8c95732ad7466233e"
+  },
+  "Upstage": {
+    "file": "upstage_small.svg",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/upstage_small.svg",
+    "retrievedAt": "2026-09-14T09:16:28.224Z",
+    "sha256": "beac849f59485ebea5c7d476c66e1c919d2a91e743b8e1a7047bcb961112bbe0"
+  },
+  "Celeris": {
+    "file": "celeris.svg",
+    "sourceUrl": "https://artificialanalysis.ai/img/logos/celeris.svg",
+    "retrievedAt": "2026-09-14T09:16:28.240Z",
+    "sha256": "6a89dd31ccdc1e7fa3d0d929a2784e40b477351d1c112a05c6d8ed52015bf263"
+  }
+}

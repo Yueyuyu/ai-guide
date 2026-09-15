@@ -1,0 +1,148 @@
+{
+  "sourceUrl": "https://artificialanalysis.ai/leaderboards/models",
+  "retrievedAt": "2026-09-14T08:45:47.631Z",
+  "sourceHash": "2243c4aec87e49bb00d8681e697efc492872e63c12d2f7796a32e28b4fe32d37",
+  "note": "真实公开载荷的字段节选，仅作解析测试，不作为完整榜单。",
+  "rows": [
+    {
+      "slug": "mimo-v2-5-pro",
+      "name": "MiMo-V2.5-Pro",
+      "shortName": "MiMo-V2.5-Pro",
+      "modelCreatorName": "Xiaomi",
+      "deprecated": false,
+      "intelligenceIndexIsEstimated": false,
+      "intelligenceIndex": 26.4078138896511,
+      "terminalbenchV40": 0
+    },
+    {
+      "slug": "mercury-2",
+      "name": "Mercury 2",
+      "shortName": "Mercury 2",
+      "modelCreatorName": "Inception",
+      "deprecated": false,
+      "intelligenceIndexIsEstimated": false,
+      "intelligenceIndex": 11.5087340974661,
+      "terminalbenchV40": 0
+    },
+    {
+      "slug": "muse-spark-1-2",
+      "name": "Muse Spark 1.2 (xhigh)",
+      "shortName": "Muse Spark 1.2 (xhigh)",
+      "modelCreatorName": "Meta",
+      "deprecated": false,
+      "intelligenceIndexIsEstimated": false,
+      "intelligenceIndex": 39.8039107970943,
+      "terminalbenchV40": 0.0707070707070707
+    },
+    {
+      "slug": "gpt-5-6-luna-low",
+      "name": "GPT-5.6 Luna (low)",
+      "shortName": "GPT-5.6 Luna (low)",
+      "modelCreatorName": "OpenAI",
+      "deprecated": false,
+      "intelligenceIndexIsEstimated": false,
+      "intelligenceIndex": 21.5456033424265,
+      "terminalbenchV40": 0
+    },
+    {
+      "slug": "claude-fable-5-1-low",
+      "name": "Claude Fable 5.1 (Adaptive Reasoning, Low Effort, Default Fallback)",
+      "shortName": "Claude Fable 5.1 (low with fallback)",
+      "modelCreatorName": "Anthropic",
+      "deprecated": false,
+      "intelligenceIndexIsEstimated": false,
+      "intelligenceIndex": 47.0391672014862,
+      "terminalbenchV40": 0.404040404040404
+    },
+    {
+      "slug": "gpt-5-6-sol-low",
+      "name": "GPT-5.6 Sol (low)",
+      "shortName": "GPT-5.6 Sol (low)",
+      "modelCreatorName": "OpenAI",
+      "deprecated": false,
+      "intelligenceIndexIsEstimated": false,
+      "intelligenceIndex": 33.7979387646002,
+      "terminalbenchV40": 0.0101010101010101
+    },
+    {
+      "slug": "gemini-3-5-flash-lite",
+      "name": "Gemini 3.5 Flash-Lite",
+      "shortName": "Gemini 3.5 Flash-Lite",
+      "modelCreatorName": "Google",
+      "deprecated": false,
+      "intelligenceIndexIsEstimated": false,
+      "intelligenceIndex": 22.6606674839812,
+      "terminalbenchV40": 0.0101010101010101
+    },
+    {
+      "slug": "devstral-2",
+      "name": "Devstral 2",
+      "shortName": "Devstral 2",
+      "modelCreatorName": "Mistral",
+      "deprecated": false,
+      "intelligenceIndexIsEstimated": false,
+      "intelligenceIndex": 9.40586079574885,
+      "terminalbenchV40": 0
+    },
+    {
+      "slug": "granite-4-2-3b",
+      "name": "Granite 4.2 3B",
+      "shortName": "Granite 4.2 3B",
+      "modelCreatorName": "IBM",
+      "deprecated": false,
+      "intelligenceIndexIsEstimated": false,
+      "intelligenceIndex": 9.05588232376756,
+      "terminalbenchV40": 0
+    },
+    {
+      "slug": "inkling",
+      "name": "Inkling (xhigh)",
+      "shortName": "Inkling",
+      "modelCreatorName": "Thinking Machines",
+      "deprecated": false,
+      "intelligenceIndexIsEstimated": false,
+      "intelligenceIndex": 25.5423060999384,
+      "terminalbenchV40": 0.0101010101010101
+    },
+    {
+      "slug": "qwen3-5-397b-a17b",
+      "name": "Qwen3.5 397B A17B (Reasoning)",
+      "shortName": "Qwen3.5 397B A17B",
+      "modelCreatorName": "Alibaba",
+      "deprecated": false,
+      "intelligenceIndexIsEstimated": false,
+      "intelligenceIndex": 19.1073499294815,
+      "terminalbenchV40": 0
+    },
+    {
+      "slug": "claude-opus-5-xhigh",
+      "name": "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
+      "shortName": "Claude Opus 5 (xhigh)",
+      "modelCreatorName": "Anthropic",
+      "deprecated": false,
+      "intelligenceIndexIsEstimated": false,
+      "intelligenceIndex": 49.6514552926939,
+      "terminalbenchV40": 0.464646464646465
+    },
+    {
+      "slug": "glm-4-5v",
+      "name": "GLM-4.5V (Non-reasoning)",
+      "shortName": "GLM-4.5V (Non-reasoning)",
+      "modelCreatorName": "Z AI",
+      "deprecated": true,
+      "intelligenceIndexIsEstimated": true,
+      "intelligenceIndex": 6.69669796944385,
+      "terminalbenchV40": null
+    },
+    {
+      "slug": "qwen3-0.6b-instruct",
+      "name": "Qwen3 0.6B (Non-reasoning)",
+      "shortName": "Qwen3 0.6B (Non-reasoning)",
+      "modelCreatorName": "Alibaba",
+      "deprecated": true,
+      "intelligenceIndexIsEstimated": true,
+      "intelligenceIndex": 4.83423948,
+      "terminalbenchV40": null
+    }
+  ]
+}

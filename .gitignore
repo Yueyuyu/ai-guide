@@ -1,0 +1,25 @@
+node_modules/
+dist/
+.vite/
+*.log
+
+# 本机环境与凭据；只提交无秘密的示例
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# 临时记录、测试和编辑器状态
+.local/
+.cache/
+coverage/
+test-results/
+playwright-report/
+.idea/
+.vscode/
+*.tsbuildinfo
+.DS_Store
+Thumbs.db

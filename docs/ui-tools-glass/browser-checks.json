@@ -1,0 +1,145 @@
+{
+  "date": "2026-09-15",
+  "browser": "Codex In-app Browser",
+  "checks": [
+    {
+      "flow": "API进入正文",
+      "hash": "#/learn/gpt-api-map",
+      "title": "GPT 模型：认识应用背后的 API 调用"
+    },
+    {
+      "count": 12,
+      "flow": "清除搜索和分类",
+      "hash": "#/tools?q=&entry=all",
+      "query": "",
+      "selected": "全部"
+    },
+    {
+      "count": 1,
+      "flow": "刷新保留Qwen Code搜索",
+      "hash": "#/tools?q=Qwen+Code&entry=all",
+      "query": "Qwen Code"
+    },
+    {
+      "flow": "公司进阶教程默认折叠",
+      "open": false
+    },
+    {
+      "flow": "进阶区进入Qwen Code",
+      "hash": "#/tool/qwen-code",
+      "title": "Qwen Code 终端工具"
+    },
+    {
+      "flow": "Cowork桌面入口",
+      "hash": "#/tool/claude-cowork?platform=desktop",
+      "lessons": [
+        "Claude Cowork 桌面端：整理一个练习文件夹",
+        "把重复工作变成 AI 工作流"
+      ]
+    },
+    {
+      "flow": "Cowork切换网页入口",
+      "hash": "#/tool/claude-cowork?platform=web",
+      "lessons": [
+        "Claude Cowork 网页端：用上传材料生成文档",
+        "把重复工作变成 AI 工作流"
+      ]
+    },
+    {
+      "flow": "MiniMax手机详情",
+      "lead": "从 API 接入教程开始，或先了解模型的能力与版本。",
+      "scrollWidth": 390,
+      "sections": [
+        "API",
+        "模型"
+      ],
+      "width": 390
+    },
+    {
+      "flow": "Cursor手机详情",
+      "lead": "从桌面版教程开始，先准备电脑和安装环境。",
+      "scrollWidth": 390,
+      "sections": [
+        "桌面版"
+      ],
+      "width": 390
+    },
+    {
+      "flow": "390手机目录",
+      "brokenImages": [
+        "/brands/xai.svg",
+        "/brands/xai.svg",
+        "/brands/xai.svg",
+        "/brands/xai.svg",
+        "/brands/moonshot.svg",
+        "/brands/moonshot.svg",
+        "/brands/moonshot.svg",
+        "/brands/moonshot.svg",
+        "/brands/zhipu.svg",
+        "/brands/zhipu.svg",
+        "/brands/zhipu.svg",
+        "/brands/zhipu.svg",
+        "/brands/bytedance-company.svg",
+        "/brands/doubao.svg",
+        "/brands/doubao-work.png",
+        "/brands/doubao.svg",
+        "/brands/doubao.svg",
+        "/brands/github-company.png",
+        "/brands/githubcopilot.svg"
+      ],
+      "cards": 12,
+      "columns": 1,
+      "filterMinHeight": 44,
+      "overflowingText": [],
+      "placeholder": "搜索公司或产品",
+      "scrollWidth": 375,
+      "width": 390,
+      "phase": "导航后立即测量，图片仍在加载，结果由下方加载后的检查确认"
+    },
+    {
+      "flow": "320窄屏目录",
+      "brokenImages": [],
+      "cards": 12,
+      "columns": 1,
+      "filterMinHeight": 44,
+      "overflowingText": [],
+      "placeholder": "搜索公司或产品",
+      "scrollWidth": 305,
+      "width": 320
+    },
+    {
+      "flow": "390手机目录加载后",
+      "brokenImages": [],
+      "cards": 12,
+      "columns": 1,
+      "filterMinHeight": 44,
+      "overflowingText": [],
+      "placeholder": "搜索公司或产品",
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "flow": "768平板目录",
+      "brokenImages": [],
+      "cards": 12,
+      "columns": 2,
+      "filterMinHeight": 48,
+      "overflowingText": [],
+      "placeholder": "搜索公司或产品",
+      "scrollWidth": 753,
+      "width": 768
+    },
+    {
+      "flow": "1448桌面目录",
+      "brokenImages": [],
+      "cards": 12,
+      "columns": 3,
+      "filterMinHeight": 48,
+      "overflowingText": [],
+      "placeholder": "搜索公司或产品",
+      "scrollWidth": 1433,
+      "width": 1448
+    }
+  ],
+  "consoleErrors": []
+}

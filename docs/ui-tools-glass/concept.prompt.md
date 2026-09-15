@@ -1,0 +1,17 @@
+# 公司玻璃卡片概念生成提示
+
+2026-09-15。以下为桌面生成提示；手机概念沿用同一内容与视觉，改为单列排列。最终实现的有意调整见 design-notes.md。
+
+Use case: ui-mockup. Design a complete primary screen of the existing Chinese AI learning website AIGuide, redesigning ONLY the tools/tutorial directory. The supplied screenshot is context for the existing blue brand header, NOT a composition to copy. User intent: dramatically simplify company/product entry taxonomy for beginners into just 网页版, 桌面版, API, 模型, within frosted glass company cards. Keep existing blue open-book AIGuide logo and company original brand colors, use no invented logos. Produce a high fidelity desktop interface screenshot at 1440x1080, directly front-facing, no device frame. This is a practical React/CSS page, editable real text later, not an illustration.
+Composition: centered 1280px content. White navigation 80px: AIGuide at left; 学习路线 / 工具教程(active blue underline) / 模型指南 center; search icon and 继续学习 on right. Below, subtly tinted very pale cool blue/lavender backdrop (white dominant). Large left title exactly “选一个工具，开始学。” at 34px bold navy, subtitle exactly “按公司找到熟悉的产品，选网页版或桌面版开始。” at 15px muted. Right small simple help link “第一次来？从入门路线开始 →”. No hero badge or illustration.
+One clean horizontal toolbar: a rounded translucent search input occupying left half with placeholder “搜索公司或产品，如 ChatGPT、豆包”; right 5 simple filter buttons “全部 / 网页版 / 桌面版 / API / 模型”, 全部 selected deep blue. Under toolbar a restrained caption “按公司浏览” left and “12 家公司” right.
+Primary content: 3 columns x 2 full rows of company cards, around 410px wide by 300px high, 20px gaps. Each card is one beautiful frosted glass surface: translucent milky-white with very subtle background refraction/blur, thin white edge, faint blue-lavender shadow, 20px radius. NOT dark glass, not heavy holographic glow, no decorative blobs. Clear navy text on glass. Company header includes original brand logo with no recoloring, company name at20px semibold, one concise secondary products line.
+Inside cards use four understated horizontal category rows with small icon/label at left (网页版 / 桌面版 / API / 模型) and product tutorial links at right. Product links are plain names with tiny original icons, modest soft hover-like background only; avoid nested panels and the previous repeated huge product rows. No CLI, terminal, desktop entry, cloud edition jargon anywhere in default cards. All rows align and are separated only with hairline rules; missing categories simply omitted, do not invent products. A slim card footer says “全部教程 →”.
+Exact contents:
+OpenAI header secondary “ChatGPT · Codex · GPT”; 网页版: ChatGPT, Codex; 桌面版: ChatGPT, Codex; API: OpenAI API; 模型: GPT.
+Anthropic secondary “Claude · Cowork”; 网页版: Claude, Cowork; 桌面版: Claude, Cowork; API: Claude API; 模型: Claude.
+Google secondary “Gemini”; 网页版: Gemini; no desktop row; API: Gemini API; 模型: Gemini.
+DeepSeek secondary “DeepSeek”; 网页版: DeepSeek; no desktop row; API: DeepSeek API; 模型: DeepSeek.
+阿里巴巴 secondary “千问 Qwen”; 网页版: Qwen; API: 千问 API; 模型: Qwen.
+xAI secondary “Grok”; 网页版: Grok; API: Grok API; 模型: Grok.
+Hint of further company cards beneath if canvas allows; this is a scrolling directory of 12 companies, not only 6. Keep all six initial cards fully legible, calm density and generous whitespace. No fake counts, badges, pricing, ranking, extra navigation, unrelated sections. All UI copy simplified Chinese except official brand names, excellent Chinese typography. Responsive intent: 2 columns tablet and 1 column mobile, search and filters wrap cleanly.

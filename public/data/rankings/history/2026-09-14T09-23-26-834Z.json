@@ -1,0 +1,2145 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "aa",
+  "sourceUrl": "https://artificialanalysis.ai/leaderboards/models",
+  "sourceHash": "2243c4aec87e49bb00d8681e697efc492872e63c12d2f7796a32e28b4fe32d37",
+  "retrievedAt": "2026-09-14T09:23:26.834Z",
+  "sourceUpdatedAt": null,
+  "sourceDateNote": "该公开页面未披露统一的评测更新日期；本站获取时间只代表这份快照的时间。模型发布日期不作为评测日期。",
+  "selection": "仅含来源标为未停用且有该项数值的模型配置；综合榜排除估算分。按来源原始精度降序排序，完全同分并列。",
+  "metrics": [
+    {
+      "id": "intelligence",
+      "name": "Artificial Analysis Intelligence Index v4.3",
+      "unit": "分",
+      "methodologyUrl": "https://artificialanalysis.ai/methodology/intelligence-benchmarking",
+      "description": "以英文文本任务为主的综合评测，涵盖智能体、编程、科学推理和通用能力；不代表中文、图像或视频表现。",
+      "rows": [
+        {
+          "id": "claude-fable-5-1",
+          "name": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "shortName": "Claude Fable 5.1 (max with fallback)",
+          "creator": "Anthropic",
+          "score": 53.3737509623252,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-fable-5-1",
+          "rank": 1
+        },
+        {
+          "id": "claude-fable-5-1-xhigh",
+          "name": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "shortName": "Claude Fable 5.1 (xhigh with fallback)",
+          "creator": "Anthropic",
+          "score": 53.1840337538944,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-fable-5-1-xhigh",
+          "rank": 2
+        },
+        {
+          "id": "gpt-6-astra",
+          "name": "GPT-6 Astra (max)",
+          "shortName": "GPT-6 Astra (max)",
+          "creator": "OpenAI",
+          "score": 52.814069395513,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-6-astra",
+          "rank": 3
+        },
+        {
+          "id": "gpt-6-astra-xhigh",
+          "name": "GPT-6 Astra (xhigh)",
+          "shortName": "GPT-6 Astra (xhigh)",
+          "creator": "OpenAI",
+          "score": 52.5059027108782,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-6-astra-xhigh",
+          "rank": 4
+        },
+        {
+          "id": "claude-fable-5-1-high",
+          "name": "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "shortName": "Claude Fable 5.1 (high with fallback)",
+          "creator": "Anthropic",
+          "score": 51.2094958852237,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-fable-5-1-high",
+          "rank": 5
+        },
+        {
+          "id": "gpt-6-astra-high",
+          "name": "GPT-6 Astra (high)",
+          "shortName": "GPT-6 Astra (high)",
+          "creator": "OpenAI",
+          "score": 51.0480721636152,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-6-astra-high",
+          "rank": 6
+        },
+        {
+          "id": "claude-opus-5",
+          "name": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "shortName": "Claude Opus 5 (max)",
+          "creator": "Anthropic",
+          "score": 50.7001865797629,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-opus-5",
+          "rank": 7
+        },
+        {
+          "id": "claude-fable-5",
+          "name": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+          "shortName": "Claude Fable 5 (with fallback)",
+          "creator": "Anthropic",
+          "score": 49.6994452733378,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-fable-5",
+          "rank": 8
+        },
+        {
+          "id": "gpt-6-astra-medium",
+          "name": "GPT-6 Astra (medium)",
+          "shortName": "GPT-6 Astra (medium)",
+          "creator": "OpenAI",
+          "score": 49.6685363034369,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-6-astra-medium",
+          "rank": 9
+        },
+        {
+          "id": "claude-opus-5-xhigh",
+          "name": "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
+          "shortName": "Claude Opus 5 (xhigh)",
+          "creator": "Anthropic",
+          "score": 49.6514552926939,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-opus-5-xhigh",
+          "rank": 10
+        },
+        {
+          "id": "claude-fable-5-1-medium",
+          "name": "Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+          "shortName": "Claude Fable 5.1 (medium with fallback)",
+          "creator": "Anthropic",
+          "score": 49.0591662609523,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-fable-5-1-medium",
+          "rank": 11
+        },
+        {
+          "id": "claude-opus-5-high",
+          "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
+          "shortName": "Claude Opus 5 (high)",
+          "creator": "Anthropic",
+          "score": 48.2371932595908,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-opus-5-high",
+          "rank": 12
+        },
+        {
+          "id": "muse-spark-1-3",
+          "name": "Muse Spark 1.3 (max)",
+          "shortName": "Muse Spark 1.3 (max)",
+          "creator": "Meta",
+          "score": 48.1690107719685,
+          "sourceUrl": "https://artificialanalysis.ai/models/muse-spark-1-3",
+          "rank": 13
+        },
+        {
+          "id": "gpt-5-6-sol",
+          "name": "GPT-5.6 Sol (max)",
+          "shortName": "GPT-5.6 Sol (max)",
+          "creator": "OpenAI",
+          "score": 47.0613568915036,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-sol",
+          "rank": 14
+        },
+        {
+          "id": "claude-fable-5-1-low",
+          "name": "Claude Fable 5.1 (Adaptive Reasoning, Low Effort, Default Fallback)",
+          "shortName": "Claude Fable 5.1 (low with fallback)",
+          "creator": "Anthropic",
+          "score": 47.0391672014862,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-fable-5-1-low",
+          "rank": 15
+        },
+        {
+          "id": "gpt-6-astra-low",
+          "name": "GPT-6 Astra (low)",
+          "shortName": "GPT-6 Astra (low)",
+          "creator": "OpenAI",
+          "score": 45.9944993120341,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-6-astra-low",
+          "rank": 16
+        },
+        {
+          "id": "muse-spark-1-3-xhigh",
+          "name": "Muse Spark 1.3 (xhigh)",
+          "shortName": "Muse Spark 1.3 (xhigh)",
+          "creator": "Meta",
+          "score": 45.1612216922226,
+          "sourceUrl": "https://artificialanalysis.ai/models/muse-spark-1-3-xhigh",
+          "rank": 17
+        },
+        {
+          "id": "claude-opus-5-medium",
+          "name": "Claude Opus 5 (Adaptive Reasoning, Medium Effort)",
+          "shortName": "Claude Opus 5 (medium)",
+          "creator": "Anthropic",
+          "score": 45.0575765420613,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-opus-5-medium",
+          "rank": 18
+        },
+        {
+          "id": "glm-5-3",
+          "name": "GLM-5.3 (max)",
+          "shortName": "GLM-5.3 (max)",
+          "creator": "Z AI",
+          "score": 44.855717385614,
+          "sourceUrl": "https://artificialanalysis.ai/models/glm-5-3",
+          "rank": 19
+        },
+        {
+          "id": "grok-4-6",
+          "name": "Grok 4.6 (high)",
+          "shortName": "Grok 4.6 (high)",
+          "creator": "SpaceXAI",
+          "score": 44.4050073012592,
+          "sourceUrl": "https://artificialanalysis.ai/models/grok-4-6",
+          "rank": 20
+        },
+        {
+          "id": "grok-4-6-xhigh",
+          "name": "Grok 4.6 (xhigh)",
+          "shortName": "Grok 4.6 (xhigh)",
+          "creator": "SpaceXAI",
+          "score": 44.270160436996,
+          "sourceUrl": "https://artificialanalysis.ai/models/grok-4-6-xhigh",
+          "rank": 21
+        },
+        {
+          "id": "gpt-5-6-sol-xhigh",
+          "name": "GPT-5.6 Sol (xhigh)",
+          "shortName": "GPT-5.6 Sol (xhigh)",
+          "creator": "OpenAI",
+          "score": 44.138026369169,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-sol-xhigh",
+          "rank": 22
+        },
+        {
+          "id": "kimi-k3",
+          "name": "Kimi K3 (max)",
+          "shortName": "Kimi K3 (max)",
+          "creator": "Kimi",
+          "score": 43.7841729518782,
+          "sourceUrl": "https://artificialanalysis.ai/models/kimi-k3",
+          "rank": 23
+        },
+        {
+          "id": "grok-4-6-medium",
+          "name": "Grok 4.6 (medium)",
+          "shortName": "Grok 4.6 (medium)",
+          "creator": "SpaceXAI",
+          "score": 43.011172654063,
+          "sourceUrl": "https://artificialanalysis.ai/models/grok-4-6-medium",
+          "rank": 24
+        },
+        {
+          "id": "gpt-5-6-sol-high",
+          "name": "GPT-5.6 Sol (high)",
+          "shortName": "GPT-5.6 Sol (high)",
+          "creator": "OpenAI",
+          "score": 42.4991760420519,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-sol-high",
+          "rank": 25
+        },
+        {
+          "id": "gpt-5-6-terra",
+          "name": "GPT-5.6 Terra (max)",
+          "shortName": "GPT-5.6 Terra (max)",
+          "creator": "OpenAI",
+          "score": 42.2514998239494,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-terra",
+          "rank": 26
+        },
+        {
+          "id": "glm-5-3-flash",
+          "name": "GLM-5.3-Flash",
+          "shortName": "GLM-5.3-Flash",
+          "creator": "Z AI",
+          "score": 41.907366113455,
+          "sourceUrl": "https://artificialanalysis.ai/models/glm-5-3-flash",
+          "rank": 27
+        },
+        {
+          "id": "gemini-3-8-flash",
+          "name": "Gemini 3.8 Flash (high)",
+          "shortName": "Gemini 3.8 Flash (high)",
+          "creator": "Google",
+          "score": 41.1863571765904,
+          "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-8-flash",
+          "rank": 28
+        },
+        {
+          "id": "qwen3-8-max",
+          "name": "Qwen3.8 Max",
+          "shortName": "Qwen3.8 Max",
+          "creator": "Alibaba",
+          "score": 40.3048623585941,
+          "sourceUrl": "https://artificialanalysis.ai/models/qwen3-8-max",
+          "rank": 29
+        },
+        {
+          "id": "qwen3-8-2-4t-a95b",
+          "name": "Qwen3.8 2.4T A95B",
+          "shortName": "Qwen3.8 2.4T A95B",
+          "creator": "Alibaba",
+          "score": 40.0445723105325,
+          "sourceUrl": "https://artificialanalysis.ai/models/qwen3-8-2-4t-a95b",
+          "rank": 30
+        },
+        {
+          "id": "gemini-3-8-flash-medium",
+          "name": "Gemini 3.8 Flash (medium)",
+          "shortName": "Gemini 3.8 Flash (medium)",
+          "creator": "Google",
+          "score": 39.9993187061926,
+          "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-8-flash-medium",
+          "rank": 31
+        },
+        {
+          "id": "qwen3-8-flash-next",
+          "name": "Qwen3.8-Flash-Next",
+          "shortName": "Qwen3.8-Flash-Next",
+          "creator": "Alibaba",
+          "score": 39.9140521864741,
+          "sourceUrl": "https://artificialanalysis.ai/models/qwen3-8-flash-next",
+          "rank": 32
+        },
+        {
+          "id": "muse-spark-1-2",
+          "name": "Muse Spark 1.2 (xhigh)",
+          "shortName": "Muse Spark 1.2 (xhigh)",
+          "creator": "Meta",
+          "score": 39.8039107970943,
+          "sourceUrl": "https://artificialanalysis.ai/models/muse-spark-1-2",
+          "rank": 33
+        },
+        {
+          "id": "claude-opus-5-low",
+          "name": "Claude Opus 5 (Adaptive Reasoning, Low Effort)",
+          "shortName": "Claude Opus 5 (low)",
+          "creator": "Anthropic",
+          "score": 39.7883357992936,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-opus-5-low",
+          "rank": 34
+        },
+        {
+          "id": "deepseek-v4-1-flash",
+          "name": "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "shortName": "DeepSeek V4.1 Flash (max)",
+          "creator": "DeepSeek",
+          "score": 39.545442472527,
+          "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-1-flash",
+          "rank": 35
+        },
+        {
+          "id": "gpt-5-6-sol-medium",
+          "name": "GPT-5.6 Sol (medium)",
+          "shortName": "GPT-5.6 Sol (medium)",
+          "creator": "OpenAI",
+          "score": 39.4845585889147,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-sol-medium",
+          "rank": 36
+        },
+        {
+          "id": "gemini-3-7-flash",
+          "name": "Gemini 3.7 Flash (high)",
+          "shortName": "Gemini 3.7 Flash (high)",
+          "creator": "Google",
+          "score": 39.4295316404896,
+          "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-7-flash",
+          "rank": 37
+        },
+        {
+          "id": "grok-4-5",
+          "name": "Grok 4.5 (high)",
+          "shortName": "Grok 4.5 (high)",
+          "creator": "SpaceXAI",
+          "score": 39.0842403240657,
+          "sourceUrl": "https://artificialanalysis.ai/models/grok-4-5",
+          "rank": 38
+        },
+        {
+          "id": "claude-sonnet-5",
+          "name": "Claude Sonnet 5 (Adaptive Reasoning, Max Effort)",
+          "shortName": "Claude Sonnet 5 (max)",
+          "creator": "Anthropic",
+          "score": 38.3576962882576,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-sonnet-5",
+          "rank": 39
+        },
+        {
+          "id": "gpt-5-6-terra-xhigh",
+          "name": "GPT-5.6 Terra (xhigh)",
+          "shortName": "GPT-5.6 Terra (xhigh)",
+          "creator": "OpenAI",
+          "score": 38.1856370742927,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-terra-xhigh",
+          "rank": 40
+        },
+        {
+          "id": "gpt-5-6-luna",
+          "name": "GPT-5.6 Luna (max)",
+          "shortName": "GPT-5.6 Luna (max)",
+          "creator": "OpenAI",
+          "score": 37.5048489690841,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-luna",
+          "rank": 41
+        },
+        {
+          "id": "deepseek-v4-pro",
+          "name": "DeepSeek V4 Pro 0813 (Reasoning, Max Effort)",
+          "shortName": "DeepSeek V4 Pro 0813 (max)",
+          "creator": "DeepSeek",
+          "score": 36.2828791278402,
+          "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-pro",
+          "rank": 42
+        },
+        {
+          "id": "grok-4-6-low",
+          "name": "Grok 4.6 (low)",
+          "shortName": "Grok 4.6 (low)",
+          "creator": "SpaceXAI",
+          "score": 35.4148453482174,
+          "sourceUrl": "https://artificialanalysis.ai/models/grok-4-6-low",
+          "rank": 43
+        },
+        {
+          "id": "deepseek-v4-flash-vision",
+          "name": "DeepSeek V4 Flash Vision (Reasoning, Max Effort)",
+          "shortName": "DeepSeek V4 Flash Vision (max)",
+          "creator": "DeepSeek",
+          "score": 35.0122378035969,
+          "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-flash-vision",
+          "rank": 44
+        },
+        {
+          "id": "gpt-5-6-luna-xhigh",
+          "name": "GPT-5.6 Luna (xhigh)",
+          "shortName": "GPT-5.6 Luna (xhigh)",
+          "creator": "OpenAI",
+          "score": 34.772048822309,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-luna-xhigh",
+          "rank": 45
+        },
+        {
+          "id": "claude-sonnet-5-xhigh",
+          "name": "Claude Sonnet 5 (Adaptive Reasoning, Xhigh Effort)",
+          "shortName": "Claude Sonnet 5 (xhigh)",
+          "creator": "Anthropic",
+          "score": 34.707236557212,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-sonnet-5-xhigh",
+          "rank": 46
+        },
+        {
+          "id": "deepseek-v4-flash",
+          "name": "DeepSeek V4 Flash 0731 (Reasoning, Max Effort)",
+          "shortName": "DeepSeek V4 Flash 0731 (max)",
+          "creator": "DeepSeek",
+          "score": 34.5281879347816,
+          "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-flash",
+          "rank": 47
+        },
+        {
+          "id": "gpt-5-6-terra-high",
+          "name": "GPT-5.6 Terra (high)",
+          "shortName": "GPT-5.6 Terra (high)",
+          "creator": "OpenAI",
+          "score": 34.4910058067555,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-terra-high",
+          "rank": 48
+        },
+        {
+          "id": "gemini-3-6-flash",
+          "name": "Gemini 3.6 Flash (high)",
+          "shortName": "Gemini 3.6 Flash",
+          "creator": "Google",
+          "score": 34.3395678920714,
+          "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-6-flash",
+          "rank": 49
+        },
+        {
+          "id": "glm-5-2",
+          "name": "GLM-5.2 (max)",
+          "shortName": "GLM-5.2 (max)",
+          "creator": "Z AI",
+          "score": 34.0052322377545,
+          "sourceUrl": "https://artificialanalysis.ai/models/glm-5-2",
+          "rank": 50
+        },
+        {
+          "id": "qwen3-8-27b",
+          "name": "Qwen3.8 27B (xhigh)",
+          "shortName": "Qwen3.8 27B (xhigh)",
+          "creator": "Alibaba",
+          "score": 33.9015108057476,
+          "sourceUrl": "https://artificialanalysis.ai/models/qwen3-8-27b",
+          "rank": 51
+        },
+        {
+          "id": "gpt-5-6-sol-low",
+          "name": "GPT-5.6 Sol (low)",
+          "shortName": "GPT-5.6 Sol (low)",
+          "creator": "OpenAI",
+          "score": 33.7979387646002,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-sol-low",
+          "rank": 52
+        },
+        {
+          "id": "gemini-3-8-flash-low",
+          "name": "Gemini 3.8 Flash (low)",
+          "shortName": "Gemini 3.8 Flash (low)",
+          "creator": "Google",
+          "score": 33.7857356699132,
+          "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-8-flash-low",
+          "rank": 53
+        },
+        {
+          "id": "gpt-5-6-luna-high",
+          "name": "GPT-5.6 Luna (high)",
+          "shortName": "GPT-5.6 Luna (high)",
+          "creator": "OpenAI",
+          "score": 32.4147953501091,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-luna-high",
+          "rank": 54
+        },
+        {
+          "id": "claude-sonnet-5-high",
+          "name": "Claude Sonnet 5 (Adaptive Reasoning, High Effort)",
+          "shortName": "Claude Sonnet 5 (high)",
+          "creator": "Anthropic",
+          "score": 32.0283996664651,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-sonnet-5-high",
+          "rank": 55
+        },
+        {
+          "id": "deepseek-v4-pro-0424",
+          "name": "DeepSeek V4 Pro (Reasoning, Max Effort)",
+          "shortName": "DeepSeek V4 Pro (max)",
+          "creator": "DeepSeek",
+          "score": 30.8650601315524,
+          "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-pro-0424",
+          "rank": 56
+        },
+        {
+          "id": "k2-horizon-375b-a23b",
+          "name": "K2 Horizon 375B A23B",
+          "shortName": "K2 Horizon 375B A23B",
+          "creator": "MBZUAI Institute of Foundation Models",
+          "score": 30.7949302696723,
+          "sourceUrl": "https://artificialanalysis.ai/models/k2-horizon-375b-a23b",
+          "rank": 57
+        },
+        {
+          "id": "kimi-k3-low",
+          "name": "Kimi K3 (low)",
+          "shortName": "Kimi K3 (low)",
+          "creator": "Kimi",
+          "score": 30.4810237529068,
+          "sourceUrl": "https://artificialanalysis.ai/models/kimi-k3-low",
+          "rank": 58
+        },
+        {
+          "id": "gpt-5-6-terra-medium",
+          "name": "GPT-5.6 Terra (medium)",
+          "shortName": "GPT-5.6 Terra (medium)",
+          "creator": "OpenAI",
+          "score": 30.4205773419377,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-terra-medium",
+          "rank": 59
+        },
+        {
+          "id": "gemini-3-1-pro-preview",
+          "name": "Gemini 3.1 Pro Preview",
+          "shortName": "Gemini 3.1 Pro Preview",
+          "creator": "Google",
+          "score": 30.3596656132261,
+          "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-1-pro-preview",
+          "rank": 60
+        },
+        {
+          "id": "minimax-m3",
+          "name": "MiniMax-M3",
+          "shortName": "MiniMax-M3",
+          "creator": "MiniMax",
+          "score": 29.6125932236316,
+          "sourceUrl": "https://artificialanalysis.ai/models/minimax-m3",
+          "rank": 61
+        },
+        {
+          "id": "claude-sonnet-5-medium",
+          "name": "Claude Sonnet 5 (Adaptive Reasoning, Medium Effort)",
+          "shortName": "Claude Sonnet 5 (medium)",
+          "creator": "Anthropic",
+          "score": 28.4376468379456,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-sonnet-5-medium",
+          "rank": 62
+        },
+        {
+          "id": "gpt-5-6-terra-low",
+          "name": "GPT-5.6 Terra (low)",
+          "shortName": "GPT-5.6 Terra (low)",
+          "creator": "OpenAI",
+          "score": 27.916528401716,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-terra-low",
+          "rank": 63
+        },
+        {
+          "id": "qwen3-8-27b-medium",
+          "name": "Qwen3.8 27B (medium)",
+          "shortName": "Qwen3.8 27B (medium)",
+          "creator": "Alibaba",
+          "score": 27.8121478231586,
+          "sourceUrl": "https://artificialanalysis.ai/models/qwen3-8-27b-medium",
+          "rank": 64
+        },
+        {
+          "id": "agnes-2-5-pro-alpha",
+          "name": "Agnes 2.5 Pro Alpha",
+          "shortName": "Agnes 2.5 Pro Alpha",
+          "creator": "Sapiens AI",
+          "score": 27.797299318772,
+          "sourceUrl": "https://artificialanalysis.ai/models/agnes-2-5-pro-alpha",
+          "rank": 65
+        },
+        {
+          "id": "quasar-438b",
+          "name": "Quasar 438B (max, based on GLM-5.2)",
+          "shortName": "Quasar 438B (max)",
+          "creator": "Multiverse Computing",
+          "score": 27.1275286607816,
+          "sourceUrl": "https://artificialanalysis.ai/models/quasar-438b",
+          "rank": 66
+        },
+        {
+          "id": "gpt-5-5-instant-06-26",
+          "name": "GPT-5.5 Instant (June 2026)",
+          "shortName": "GPT-5.5 Instant (June 2026)",
+          "creator": "OpenAI",
+          "score": 26.8042923401368,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-5-instant-06-26",
+          "rank": 67
+        },
+        {
+          "id": "qwen3-8-27b-low",
+          "name": "Qwen3.8 27B (low)",
+          "shortName": "Qwen3.8 27B (low)",
+          "creator": "Alibaba",
+          "score": 26.4944478189896,
+          "sourceUrl": "https://artificialanalysis.ai/models/qwen3-8-27b-low",
+          "rank": 68
+        },
+        {
+          "id": "mimo-v2-5-pro",
+          "name": "MiMo-V2.5-Pro",
+          "shortName": "MiMo-V2.5-Pro",
+          "creator": "Xiaomi",
+          "score": 26.4078138896511,
+          "sourceUrl": "https://artificialanalysis.ai/models/mimo-v2-5-pro",
+          "rank": 69
+        },
+        {
+          "id": "kimi-k2-7-code",
+          "name": "Kimi K2.7 Code",
+          "shortName": "Kimi K2.7 Code",
+          "creator": "Kimi",
+          "score": 26.2686562401836,
+          "sourceUrl": "https://artificialanalysis.ai/models/kimi-k2-7-code",
+          "rank": 70
+        },
+        {
+          "id": "inkling-small",
+          "name": "Inkling Small",
+          "shortName": "Inkling Small",
+          "creator": "Thinking Machines",
+          "score": 26.0860584411942,
+          "sourceUrl": "https://artificialanalysis.ai/models/inkling-small",
+          "rank": 71
+        },
+        {
+          "id": "qwen3-7-plus",
+          "name": "Qwen3.7 Plus",
+          "shortName": "Qwen3.7 Plus",
+          "creator": "Alibaba",
+          "score": 25.8186965821984,
+          "sourceUrl": "https://artificialanalysis.ai/models/qwen3-7-plus",
+          "rank": 72
+        },
+        {
+          "id": "hy3",
+          "name": "Hy3",
+          "shortName": "Hy3",
+          "creator": "Tencent",
+          "score": 25.7716025731571,
+          "sourceUrl": "https://artificialanalysis.ai/models/hy3",
+          "rank": 73
+        },
+        {
+          "id": "inkling",
+          "name": "Inkling (xhigh)",
+          "shortName": "Inkling",
+          "creator": "Thinking Machines",
+          "score": 25.5423060999384,
+          "sourceUrl": "https://artificialanalysis.ai/models/inkling",
+          "rank": 74
+        },
+        {
+          "id": "gpt-5-6-luna-medium",
+          "name": "GPT-5.6 Luna (medium)",
+          "shortName": "GPT-5.6 Luna (medium)",
+          "creator": "OpenAI",
+          "score": 25.4773991440784,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-luna-medium",
+          "rank": 75
+        },
+        {
+          "id": "ling-3-0-flash-vl",
+          "name": "Ling-3.0-flash-VL",
+          "shortName": "Ling-3.0-flash-VL",
+          "creator": "InclusionAI",
+          "score": 24.7673304077875,
+          "sourceUrl": "https://artificialanalysis.ai/models/ling-3-0-flash-vl",
+          "rank": 76
+        },
+        {
+          "id": "claude-sonnet-5-low",
+          "name": "Claude Sonnet 5 (Adaptive Reasoning, Low Effort)",
+          "shortName": "Claude Sonnet 5 (low)",
+          "creator": "Anthropic",
+          "score": 24.7426143579597,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-sonnet-5-low",
+          "rank": 77
+        },
+        {
+          "id": "nvidia-nemotron-3-ultra-550b-a55b",
+          "name": "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "shortName": "Nemotron 3 Ultra",
+          "creator": "NVIDIA",
+          "score": 23.4145123422858,
+          "sourceUrl": "https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b",
+          "rank": 78
+        },
+        {
+          "id": "gemini-3-5-flash-lite",
+          "name": "Gemini 3.5 Flash-Lite",
+          "shortName": "Gemini 3.5 Flash-Lite",
+          "creator": "Google",
+          "score": 22.6606674839812,
+          "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-5-flash-lite",
+          "rank": 79
+        },
+        {
+          "id": "mimo-v2-5-0424",
+          "name": "MiMo-V2.5",
+          "shortName": "MiMo-V2.5",
+          "creator": "Xiaomi",
+          "score": 22.3038928794953,
+          "sourceUrl": "https://artificialanalysis.ai/models/mimo-v2-5-0424",
+          "rank": 80
+        },
+        {
+          "id": "qwen3-6-27b",
+          "name": "Qwen3.6 27B (Reasoning)",
+          "shortName": "Qwen3.6 27B",
+          "creator": "Alibaba",
+          "score": 21.9050652240782,
+          "sourceUrl": "https://artificialanalysis.ai/models/qwen3-6-27b",
+          "rank": 81
+        },
+        {
+          "id": "gpt-5-6-luna-low",
+          "name": "GPT-5.6 Luna (low)",
+          "shortName": "GPT-5.6 Luna (low)",
+          "creator": "OpenAI",
+          "score": 21.5456033424265,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-luna-low",
+          "rank": 82
+        },
+        {
+          "id": "longcat-2-0",
+          "name": "LongCat 2.0",
+          "shortName": "LongCat 2.0",
+          "creator": "LongCat",
+          "score": 19.6877756610623,
+          "sourceUrl": "https://artificialanalysis.ai/models/longcat-2-0",
+          "rank": 83
+        },
+        {
+          "id": "qwen3-5-397b-a17b",
+          "name": "Qwen3.5 397B A17B (Reasoning)",
+          "shortName": "Qwen3.5 397B A17B",
+          "creator": "Alibaba",
+          "score": 19.1073499294815,
+          "sourceUrl": "https://artificialanalysis.ai/models/qwen3-5-397b-a17b",
+          "rank": 84
+        },
+        {
+          "id": "qwen3-6-35b-a3b",
+          "name": "Qwen3.6 35B A3B (Reasoning)",
+          "shortName": "Qwen3.6 35B A3B",
+          "creator": "Alibaba",
+          "score": 18.8138400189843,
+          "sourceUrl": "https://artificialanalysis.ai/models/qwen3-6-35b-a3b",
+          "rank": 85
+        },
+        {
+          "id": "muse-glimmer",
+          "name": "Muse Glimmer (high)",
+          "shortName": "Muse Glimmer (high)",
+          "creator": "Meta",
+          "score": 18.0678176089465,
+          "sourceUrl": "https://artificialanalysis.ai/models/muse-glimmer",
+          "rank": 86
+        },
+        {
+          "id": "claude-4-5-haiku-reasoning",
+          "name": "Claude 4.5 Haiku (Reasoning)",
+          "shortName": "Claude 4.5 Haiku",
+          "creator": "Anthropic",
+          "score": 17.5868602291856,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-4-5-haiku-reasoning",
+          "rank": 87
+        },
+        {
+          "id": "ring-2-6-1t",
+          "name": "Ring-2.6-1T",
+          "shortName": "Ring-2.6-1T",
+          "creator": "InclusionAI",
+          "score": 17.2770613768618,
+          "sourceUrl": "https://artificialanalysis.ai/models/ring-2-6-1t",
+          "rank": 88
+        },
+        {
+          "id": "qwen3-5-122b-a10b",
+          "name": "Qwen3.5 122B A10B (Reasoning)",
+          "shortName": "Qwen3.5 122B A10B",
+          "creator": "Alibaba",
+          "score": 16.1869509312969,
+          "sourceUrl": "https://artificialanalysis.ai/models/qwen3-5-122b-a10b",
+          "rank": 89
+        },
+        {
+          "id": "gemma-4-31b",
+          "name": "Gemma 4 31B (Reasoning)",
+          "shortName": "Gemma 4 31B",
+          "creator": "Google",
+          "score": 15.4156500745828,
+          "sourceUrl": "https://artificialanalysis.ai/models/gemma-4-31b",
+          "rank": 90
+        },
+        {
+          "id": "mistral-medium-3-5",
+          "name": "Mistral Medium 3.5",
+          "shortName": "Mistral Medium 3.5",
+          "creator": "Mistral",
+          "score": 14.8946727802691,
+          "sourceUrl": "https://artificialanalysis.ai/models/mistral-medium-3-5",
+          "rank": 91
+        },
+        {
+          "id": "grok-4-3-non-reasoning",
+          "name": "Grok 4.3 (Non-reasoning)",
+          "shortName": "Grok 4.3 (Non-reasoning)",
+          "creator": "SpaceXAI",
+          "score": 14.5407059505055,
+          "sourceUrl": "https://artificialanalysis.ai/models/grok-4-3-non-reasoning",
+          "rank": 92
+        },
+        {
+          "id": "command-a-plus",
+          "name": "Command A+",
+          "shortName": "Command A+",
+          "creator": "Cohere",
+          "score": 13.9235002685349,
+          "sourceUrl": "https://artificialanalysis.ai/models/command-a-plus",
+          "rank": 93
+        },
+        {
+          "id": "nemotron-3-5-lightning",
+          "name": "Nemotron 3.5 Lightning",
+          "shortName": "Nemotron 3.5 Lightning",
+          "creator": "NVIDIA",
+          "score": 13.6352556217144,
+          "sourceUrl": "https://artificialanalysis.ai/models/nemotron-3-5-lightning",
+          "rank": 94
+        },
+        {
+          "id": "nvidia-nemotron-3-super-120b-a12b",
+          "name": "Nemotron 3 Super 120B A12B (Reasoning)",
+          "shortName": "Nemotron 3 Super",
+          "creator": "NVIDIA",
+          "score": 13.5508075290979,
+          "sourceUrl": "https://artificialanalysis.ai/models/nvidia-nemotron-3-super-120b-a12b",
+          "rank": 95
+        },
+        {
+          "id": "minicpm5-2b",
+          "name": "MiniCPM5-2B",
+          "shortName": "MiniCPM5-2B",
+          "creator": "OpenBMB",
+          "score": 13.137054831996,
+          "sourceUrl": "https://artificialanalysis.ai/models/minicpm5-2b",
+          "rank": 96
+        },
+        {
+          "id": "gpt-oss-120b",
+          "name": "gpt-oss-120b (high)",
+          "shortName": "gpt-oss-120b (high)",
+          "creator": "OpenAI",
+          "score": 12.3483931512592,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-oss-120b",
+          "rank": 97
+        },
+        {
+          "id": "ling-3-0-tiny",
+          "name": "Ling 3.0 Tiny",
+          "shortName": "Ling 3.0 Tiny",
+          "creator": "InclusionAI",
+          "score": 11.8679233769305,
+          "sourceUrl": "https://artificialanalysis.ai/models/ling-3-0-tiny",
+          "rank": 98
+        },
+        {
+          "id": "granite-4-2-8b",
+          "name": "Granite 4.2 8B",
+          "shortName": "Granite 4.2 8B",
+          "creator": "IBM",
+          "score": 11.8124212267815,
+          "sourceUrl": "https://artificialanalysis.ai/models/granite-4-2-8b",
+          "rank": 99
+        },
+        {
+          "id": "mercury-2",
+          "name": "Mercury 2",
+          "shortName": "Mercury 2",
+          "creator": "Inception",
+          "score": 11.5087340974661,
+          "sourceUrl": "https://artificialanalysis.ai/models/mercury-2",
+          "rank": 100
+        },
+        {
+          "id": "mistral-small-4",
+          "name": "Mistral Small 4 (Reasoning)",
+          "shortName": "Mistral Small 4",
+          "creator": "Mistral",
+          "score": 11.4511294141469,
+          "sourceUrl": "https://artificialanalysis.ai/models/mistral-small-4",
+          "rank": 101
+        },
+        {
+          "id": "trinity-large-thinking",
+          "name": "Trinity Large Thinking",
+          "shortName": "Trinity Large Thinking",
+          "creator": "Arcee AI",
+          "score": 10.8821425924218,
+          "sourceUrl": "https://artificialanalysis.ai/models/trinity-large-thinking",
+          "rank": 102
+        },
+        {
+          "id": "qwen3-coder-next",
+          "name": "Qwen3 Coder Next",
+          "shortName": "Qwen3 Coder Next",
+          "creator": "Alibaba",
+          "score": 10.0530720321917,
+          "sourceUrl": "https://artificialanalysis.ai/models/qwen3-coder-next",
+          "rank": 103
+        },
+        {
+          "id": "mistral-large-3",
+          "name": "Mistral Large 3",
+          "shortName": "Mistral Large 3",
+          "creator": "Mistral",
+          "score": 9.70803812860467,
+          "sourceUrl": "https://artificialanalysis.ai/models/mistral-large-3",
+          "rank": 104
+        },
+        {
+          "id": "devstral-2",
+          "name": "Devstral 2",
+          "shortName": "Devstral 2",
+          "creator": "Mistral",
+          "score": 9.40586079574885,
+          "sourceUrl": "https://artificialanalysis.ai/models/devstral-2",
+          "rank": 105
+        },
+        {
+          "id": "llama-4-maverick",
+          "name": "Llama 4 Maverick",
+          "shortName": "Llama 4 Maverick",
+          "creator": "Meta",
+          "score": 9.29902687437199,
+          "sourceUrl": "https://artificialanalysis.ai/models/llama-4-maverick",
+          "rank": 106
+        },
+        {
+          "id": "granite-4-2-3b",
+          "name": "Granite 4.2 3B",
+          "shortName": "Granite 4.2 3B",
+          "creator": "IBM",
+          "score": 9.05588232376756,
+          "sourceUrl": "https://artificialanalysis.ai/models/granite-4-2-3b",
+          "rank": 107
+        },
+        {
+          "id": "gpt-oss-20b",
+          "name": "gpt-oss-20b (high)",
+          "shortName": "gpt-oss-20b (high)",
+          "creator": "OpenAI",
+          "score": 9.0371671856126,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-oss-20b",
+          "rank": 108
+        },
+        {
+          "id": "nvidia-nemotron-3-nano-30b-a3b-reasoning",
+          "name": "NVIDIA Nemotron 3 Nano 30B A3B (Reasoning)",
+          "shortName": "Nemotron 3 Nano",
+          "creator": "NVIDIA",
+          "score": 8.8961440122188,
+          "sourceUrl": "https://artificialanalysis.ai/models/nvidia-nemotron-3-nano-30b-a3b-reasoning",
+          "rank": 109
+        },
+        {
+          "id": "devstral-small-2",
+          "name": "Devstral Small 2",
+          "shortName": "Devstral Small 2",
+          "creator": "Mistral",
+          "score": 8.3575858990318,
+          "sourceUrl": "https://artificialanalysis.ai/models/devstral-small-2",
+          "rank": 110
+        },
+        {
+          "id": "solar-pro-3",
+          "name": "Solar Pro 3",
+          "shortName": "Solar Pro 3",
+          "creator": "Upstage",
+          "score": 7.81551744502774,
+          "sourceUrl": "https://artificialanalysis.ai/models/solar-pro-3",
+          "rank": 111
+        },
+        {
+          "id": "llama-4-scout",
+          "name": "Llama 4 Scout",
+          "shortName": "Llama 4 Scout",
+          "creator": "Meta",
+          "score": 6.45126865234633,
+          "sourceUrl": "https://artificialanalysis.ai/models/llama-4-scout",
+          "rank": 112
+        },
+        {
+          "id": "celeris-1",
+          "name": "Celeris-1",
+          "shortName": "Celeris-1",
+          "creator": "Celeris",
+          "score": 6.3469533538601,
+          "sourceUrl": "https://artificialanalysis.ai/models/celeris-1",
+          "rank": 113
+        },
+        {
+          "id": "ministral-3-14b",
+          "name": "Ministral 3 14B",
+          "shortName": "Ministral 3 14B",
+          "creator": "Mistral",
+          "score": 6.04436817215002,
+          "sourceUrl": "https://artificialanalysis.ai/models/ministral-3-14b",
+          "rank": 114
+        },
+        {
+          "id": "ministral-3-8b",
+          "name": "Ministral 3 8B",
+          "shortName": "Ministral 3 8B",
+          "creator": "Mistral",
+          "score": 5.47767370454416,
+          "sourceUrl": "https://artificialanalysis.ai/models/ministral-3-8b",
+          "rank": 115
+        },
+        {
+          "id": "ministral-3-3b",
+          "name": "Ministral 3 3B",
+          "shortName": "Ministral 3 3B",
+          "creator": "Mistral",
+          "score": 4.83760020546443,
+          "sourceUrl": "https://artificialanalysis.ai/models/ministral-3-3b",
+          "rank": 116
+        }
+      ]
+    },
+    {
+      "id": "coding",
+      "name": "Terminal-Bench v4.0 · Artificial Analysis",
+      "unit": "%",
+      "methodologyUrl": "https://artificialanalysis.ai/methodology/intelligence-benchmarking#intelligence-index-evaluation-suite",
+      "description": "终端任务通过率（pass@1），按来源公开的 Terminal-Bench v4.0 数值排序；不能替代所有编程场景的体验。",
+      "rows": [
+        {
+          "id": "gpt-6-astra-xhigh",
+          "name": "GPT-6 Astra (xhigh)",
+          "shortName": "GPT-6 Astra (xhigh)",
+          "creator": "OpenAI",
+          "score": 59.5959595959596,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-6-astra-xhigh",
+          "rank": 1
+        },
+        {
+          "id": "gpt-6-astra",
+          "name": "GPT-6 Astra (max)",
+          "shortName": "GPT-6 Astra (max)",
+          "creator": "OpenAI",
+          "score": 59.09090909090911,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-6-astra",
+          "rank": 2
+        },
+        {
+          "id": "claude-fable-5-1-xhigh",
+          "name": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "shortName": "Claude Fable 5.1 (xhigh with fallback)",
+          "creator": "Anthropic",
+          "score": 55.050505050505,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-fable-5-1-xhigh",
+          "rank": 3
+        },
+        {
+          "id": "gpt-6-astra-high",
+          "name": "GPT-6 Astra (high)",
+          "shortName": "GPT-6 Astra (high)",
+          "creator": "OpenAI",
+          "score": 54.040404040404,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-6-astra-high",
+          "rank": 4
+        },
+        {
+          "id": "claude-fable-5-1",
+          "name": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "shortName": "Claude Fable 5.1 (max with fallback)",
+          "creator": "Anthropic",
+          "score": 52.020202020202,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-fable-5-1",
+          "rank": 5
+        },
+        {
+          "id": "claude-fable-5-1-high",
+          "name": "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "shortName": "Claude Fable 5.1 (high with fallback)",
+          "creator": "Anthropic",
+          "score": 52.020202020202,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-fable-5-1-high",
+          "rank": 5
+        },
+        {
+          "id": "gpt-6-astra-medium",
+          "name": "GPT-6 Astra (medium)",
+          "shortName": "GPT-6 Astra (medium)",
+          "creator": "OpenAI",
+          "score": 49.494949494949495,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-6-astra-medium",
+          "rank": 7
+        },
+        {
+          "id": "claude-opus-5",
+          "name": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "shortName": "Claude Opus 5 (max)",
+          "creator": "Anthropic",
+          "score": 48.989898989899,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-opus-5",
+          "rank": 8
+        },
+        {
+          "id": "claude-opus-5-xhigh",
+          "name": "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
+          "shortName": "Claude Opus 5 (xhigh)",
+          "creator": "Anthropic",
+          "score": 46.4646464646465,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-opus-5-xhigh",
+          "rank": 9
+        },
+        {
+          "id": "claude-opus-5-high",
+          "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
+          "shortName": "Claude Opus 5 (high)",
+          "creator": "Anthropic",
+          "score": 45.959595959596,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-opus-5-high",
+          "rank": 10
+        },
+        {
+          "id": "claude-fable-5-1-medium",
+          "name": "Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+          "shortName": "Claude Fable 5.1 (medium with fallback)",
+          "creator": "Anthropic",
+          "score": 44.949494949495,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-fable-5-1-medium",
+          "rank": 11
+        },
+        {
+          "id": "claude-fable-5",
+          "name": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+          "shortName": "Claude Fable 5 (with fallback)",
+          "creator": "Anthropic",
+          "score": 42.4242424242424,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-fable-5",
+          "rank": 12
+        },
+        {
+          "id": "glm-5-3",
+          "name": "GLM-5.3 (max)",
+          "shortName": "GLM-5.3 (max)",
+          "creator": "Z AI",
+          "score": 41.9191919191919,
+          "sourceUrl": "https://artificialanalysis.ai/models/glm-5-3",
+          "rank": 13
+        },
+        {
+          "id": "gpt-6-astra-low",
+          "name": "GPT-6 Astra (low)",
+          "shortName": "GPT-6 Astra (low)",
+          "creator": "OpenAI",
+          "score": 41.9191919191919,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-6-astra-low",
+          "rank": 13
+        },
+        {
+          "id": "claude-fable-5-1-low",
+          "name": "Claude Fable 5.1 (Adaptive Reasoning, Low Effort, Default Fallback)",
+          "shortName": "Claude Fable 5.1 (low with fallback)",
+          "creator": "Anthropic",
+          "score": 40.4040404040404,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-fable-5-1-low",
+          "rank": 15
+        },
+        {
+          "id": "gpt-5-6-sol",
+          "name": "GPT-5.6 Sol (max)",
+          "shortName": "GPT-5.6 Sol (max)",
+          "creator": "OpenAI",
+          "score": 39.8989898989899,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-sol",
+          "rank": 16
+        },
+        {
+          "id": "gpt-5-6-terra",
+          "name": "GPT-5.6 Terra (max)",
+          "shortName": "GPT-5.6 Terra (max)",
+          "creator": "OpenAI",
+          "score": 35.3535353535354,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-terra",
+          "rank": 17
+        },
+        {
+          "id": "claude-opus-5-medium",
+          "name": "Claude Opus 5 (Adaptive Reasoning, Medium Effort)",
+          "shortName": "Claude Opus 5 (medium)",
+          "creator": "Anthropic",
+          "score": 34.343434343434296,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-opus-5-medium",
+          "rank": 18
+        },
+        {
+          "id": "muse-spark-1-3",
+          "name": "Muse Spark 1.3 (max)",
+          "shortName": "Muse Spark 1.3 (max)",
+          "creator": "Meta",
+          "score": 33.3333333333333,
+          "sourceUrl": "https://artificialanalysis.ai/models/muse-spark-1-3",
+          "rank": 19
+        },
+        {
+          "id": "glm-5-3-flash",
+          "name": "GLM-5.3-Flash",
+          "shortName": "GLM-5.3-Flash",
+          "creator": "Z AI",
+          "score": 32.8282828282828,
+          "sourceUrl": "https://artificialanalysis.ai/models/glm-5-3-flash",
+          "rank": 20
+        },
+        {
+          "id": "deepseek-v4-1-flash",
+          "name": "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "shortName": "DeepSeek V4.1 Flash (max)",
+          "creator": "DeepSeek",
+          "score": 26.7676767676768,
+          "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-1-flash",
+          "rank": 21
+        },
+        {
+          "id": "claude-opus-5-low",
+          "name": "Claude Opus 5 (Adaptive Reasoning, Low Effort)",
+          "shortName": "Claude Opus 5 (low)",
+          "creator": "Anthropic",
+          "score": 26.2626262626263,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-opus-5-low",
+          "rank": 22
+        },
+        {
+          "id": "qwen3-8-flash-next",
+          "name": "Qwen3.8-Flash-Next",
+          "shortName": "Qwen3.8-Flash-Next",
+          "creator": "Alibaba",
+          "score": 25.2525252525253,
+          "sourceUrl": "https://artificialanalysis.ai/models/qwen3-8-flash-next",
+          "rank": 23
+        },
+        {
+          "id": "gpt-5-6-sol-xhigh",
+          "name": "GPT-5.6 Sol (xhigh)",
+          "shortName": "GPT-5.6 Sol (xhigh)",
+          "creator": "OpenAI",
+          "score": 24.747474747474698,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-sol-xhigh",
+          "rank": 24
+        },
+        {
+          "id": "grok-4-6",
+          "name": "Grok 4.6 (high)",
+          "shortName": "Grok 4.6 (high)",
+          "creator": "SpaceXAI",
+          "score": 21.2121212121212,
+          "sourceUrl": "https://artificialanalysis.ai/models/grok-4-6",
+          "rank": 25
+        },
+        {
+          "id": "gpt-5-6-sol-high",
+          "name": "GPT-5.6 Sol (high)",
+          "shortName": "GPT-5.6 Sol (high)",
+          "creator": "OpenAI",
+          "score": 20.7070707070707,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-sol-high",
+          "rank": 26
+        },
+        {
+          "id": "gemini-3-8-flash",
+          "name": "Gemini 3.8 Flash (high)",
+          "shortName": "Gemini 3.8 Flash (high)",
+          "creator": "Google",
+          "score": 19.6969696969697,
+          "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-8-flash",
+          "rank": 27
+        },
+        {
+          "id": "gemini-3-8-flash-medium",
+          "name": "Gemini 3.8 Flash (medium)",
+          "shortName": "Gemini 3.8 Flash (medium)",
+          "creator": "Google",
+          "score": 19.6969696969697,
+          "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-8-flash-medium",
+          "rank": 27
+        },
+        {
+          "id": "qwen3-8-max",
+          "name": "Qwen3.8 Max",
+          "shortName": "Qwen3.8 Max",
+          "creator": "Alibaba",
+          "score": 18.6868686868687,
+          "sourceUrl": "https://artificialanalysis.ai/models/qwen3-8-max",
+          "rank": 29
+        },
+        {
+          "id": "grok-4-6-xhigh",
+          "name": "Grok 4.6 (xhigh)",
+          "shortName": "Grok 4.6 (xhigh)",
+          "creator": "SpaceXAI",
+          "score": 17.171717171717198,
+          "sourceUrl": "https://artificialanalysis.ai/models/grok-4-6-xhigh",
+          "rank": 30
+        },
+        {
+          "id": "muse-spark-1-3-xhigh",
+          "name": "Muse Spark 1.3 (xhigh)",
+          "shortName": "Muse Spark 1.3 (xhigh)",
+          "creator": "Meta",
+          "score": 16.6666666666667,
+          "sourceUrl": "https://artificialanalysis.ai/models/muse-spark-1-3-xhigh",
+          "rank": 31
+        },
+        {
+          "id": "deepseek-v4-pro-0424",
+          "name": "DeepSeek V4 Pro (Reasoning, Max Effort)",
+          "shortName": "DeepSeek V4 Pro (max)",
+          "creator": "DeepSeek",
+          "score": 14.6464646464646,
+          "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-pro-0424",
+          "rank": 32
+        },
+        {
+          "id": "gpt-5-6-sol-medium",
+          "name": "GPT-5.6 Sol (medium)",
+          "shortName": "GPT-5.6 Sol (medium)",
+          "creator": "OpenAI",
+          "score": 14.6464646464646,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-sol-medium",
+          "rank": 32
+        },
+        {
+          "id": "claude-sonnet-5",
+          "name": "Claude Sonnet 5 (Adaptive Reasoning, Max Effort)",
+          "shortName": "Claude Sonnet 5 (max)",
+          "creator": "Anthropic",
+          "score": 14.1414141414141,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-sonnet-5",
+          "rank": 34
+        },
+        {
+          "id": "deepseek-v4-pro",
+          "name": "DeepSeek V4 Pro 0813 (Reasoning, Max Effort)",
+          "shortName": "DeepSeek V4 Pro 0813 (max)",
+          "creator": "DeepSeek",
+          "score": 14.1414141414141,
+          "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-pro",
+          "rank": 34
+        },
+        {
+          "id": "gemini-3-7-flash",
+          "name": "Gemini 3.7 Flash (high)",
+          "shortName": "Gemini 3.7 Flash (high)",
+          "creator": "Google",
+          "score": 13.6363636363636,
+          "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-7-flash",
+          "rank": 36
+        },
+        {
+          "id": "grok-4-6-medium",
+          "name": "Grok 4.6 (medium)",
+          "shortName": "Grok 4.6 (medium)",
+          "creator": "SpaceXAI",
+          "score": 13.1313131313131,
+          "sourceUrl": "https://artificialanalysis.ai/models/grok-4-6-medium",
+          "rank": 37
+        },
+        {
+          "id": "gpt-5-5-instant-06-26",
+          "name": "GPT-5.5 Instant (June 2026)",
+          "shortName": "GPT-5.5 Instant (June 2026)",
+          "creator": "OpenAI",
+          "score": 12.6262626262626,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-5-instant-06-26",
+          "rank": 38
+        },
+        {
+          "id": "kimi-k3",
+          "name": "Kimi K3 (max)",
+          "shortName": "Kimi K3 (max)",
+          "creator": "Kimi",
+          "score": 12.6262626262626,
+          "sourceUrl": "https://artificialanalysis.ai/models/kimi-k3",
+          "rank": 38
+        },
+        {
+          "id": "kimi-k3-low",
+          "name": "Kimi K3 (low)",
+          "shortName": "Kimi K3 (low)",
+          "creator": "Kimi",
+          "score": 12.6262626262626,
+          "sourceUrl": "https://artificialanalysis.ai/models/kimi-k3-low",
+          "rank": 38
+        },
+        {
+          "id": "deepseek-v4-flash",
+          "name": "DeepSeek V4 Flash 0731 (Reasoning, Max Effort)",
+          "shortName": "DeepSeek V4 Flash 0731 (max)",
+          "creator": "DeepSeek",
+          "score": 12.1212121212121,
+          "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-flash",
+          "rank": 41
+        },
+        {
+          "id": "deepseek-v4-flash-vision",
+          "name": "DeepSeek V4 Flash Vision (Reasoning, Max Effort)",
+          "shortName": "DeepSeek V4 Flash Vision (max)",
+          "creator": "DeepSeek",
+          "score": 12.1212121212121,
+          "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-flash-vision",
+          "rank": 41
+        },
+        {
+          "id": "gpt-5-6-luna",
+          "name": "GPT-5.6 Luna (max)",
+          "shortName": "GPT-5.6 Luna (max)",
+          "creator": "OpenAI",
+          "score": 11.6161616161616,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-luna",
+          "rank": 43
+        },
+        {
+          "id": "qwen3-8-2-4t-a95b",
+          "name": "Qwen3.8 2.4T A95B",
+          "shortName": "Qwen3.8 2.4T A95B",
+          "creator": "Alibaba",
+          "score": 11.1111111111111,
+          "sourceUrl": "https://artificialanalysis.ai/models/qwen3-8-2-4t-a95b",
+          "rank": 44
+        },
+        {
+          "id": "grok-4-5",
+          "name": "Grok 4.5 (high)",
+          "shortName": "Grok 4.5 (high)",
+          "creator": "SpaceXAI",
+          "score": 10.6060606060606,
+          "sourceUrl": "https://artificialanalysis.ai/models/grok-4-5",
+          "rank": 45
+        },
+        {
+          "id": "gemini-3-8-flash-low",
+          "name": "Gemini 3.8 Flash (low)",
+          "shortName": "Gemini 3.8 Flash (low)",
+          "creator": "Google",
+          "score": 10.1010101010101,
+          "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-8-flash-low",
+          "rank": 46
+        },
+        {
+          "id": "gpt-5-6-terra-xhigh",
+          "name": "GPT-5.6 Terra (xhigh)",
+          "shortName": "GPT-5.6 Terra (xhigh)",
+          "creator": "OpenAI",
+          "score": 10.1010101010101,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-terra-xhigh",
+          "rank": 46
+        },
+        {
+          "id": "agnes-3-0-flash",
+          "name": "Agnes 3.0 Flash",
+          "shortName": "Agnes 3.0 Flash",
+          "creator": "Sapiens AI",
+          "score": 7.07070707070707,
+          "sourceUrl": "https://artificialanalysis.ai/models/agnes-3-0-flash",
+          "rank": 48
+        },
+        {
+          "id": "claude-sonnet-5-xhigh",
+          "name": "Claude Sonnet 5 (Adaptive Reasoning, Xhigh Effort)",
+          "shortName": "Claude Sonnet 5 (xhigh)",
+          "creator": "Anthropic",
+          "score": 7.07070707070707,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-sonnet-5-xhigh",
+          "rank": 48
+        },
+        {
+          "id": "gemini-3-6-flash",
+          "name": "Gemini 3.6 Flash (high)",
+          "shortName": "Gemini 3.6 Flash",
+          "creator": "Google",
+          "score": 7.07070707070707,
+          "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-6-flash",
+          "rank": 48
+        },
+        {
+          "id": "muse-spark-1-2",
+          "name": "Muse Spark 1.2 (xhigh)",
+          "shortName": "Muse Spark 1.2 (xhigh)",
+          "creator": "Meta",
+          "score": 7.07070707070707,
+          "sourceUrl": "https://artificialanalysis.ai/models/muse-spark-1-2",
+          "rank": 48
+        },
+        {
+          "id": "qwen3-8-27b",
+          "name": "Qwen3.8 27B (xhigh)",
+          "shortName": "Qwen3.8 27B (xhigh)",
+          "creator": "Alibaba",
+          "score": 5.55555555555556,
+          "sourceUrl": "https://artificialanalysis.ai/models/qwen3-8-27b",
+          "rank": 52
+        },
+        {
+          "id": "claude-sonnet-5-high",
+          "name": "Claude Sonnet 5 (Adaptive Reasoning, High Effort)",
+          "shortName": "Claude Sonnet 5 (high)",
+          "creator": "Anthropic",
+          "score": 5.05050505050505,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-sonnet-5-high",
+          "rank": 53
+        },
+        {
+          "id": "qwen3-8-27b-medium",
+          "name": "Qwen3.8 27B (medium)",
+          "shortName": "Qwen3.8 27B (medium)",
+          "creator": "Alibaba",
+          "score": 5.05050505050505,
+          "sourceUrl": "https://artificialanalysis.ai/models/qwen3-8-27b-medium",
+          "rank": 53
+        },
+        {
+          "id": "gemini-3-1-pro-preview",
+          "name": "Gemini 3.1 Pro Preview",
+          "shortName": "Gemini 3.1 Pro Preview",
+          "creator": "Google",
+          "score": 4.04040404040404,
+          "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-1-pro-preview",
+          "rank": 55
+        },
+        {
+          "id": "gpt-5-6-luna-xhigh",
+          "name": "GPT-5.6 Luna (xhigh)",
+          "shortName": "GPT-5.6 Luna (xhigh)",
+          "creator": "OpenAI",
+          "score": 3.53535353535354,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-luna-xhigh",
+          "rank": 56
+        },
+        {
+          "id": "agnes-2-5-pro-alpha",
+          "name": "Agnes 2.5 Pro Alpha",
+          "shortName": "Agnes 2.5 Pro Alpha",
+          "creator": "Sapiens AI",
+          "score": 3.03030303030303,
+          "sourceUrl": "https://artificialanalysis.ai/models/agnes-2-5-pro-alpha",
+          "rank": 57
+        },
+        {
+          "id": "grok-4-6-low",
+          "name": "Grok 4.6 (low)",
+          "shortName": "Grok 4.6 (low)",
+          "creator": "SpaceXAI",
+          "score": 3.03030303030303,
+          "sourceUrl": "https://artificialanalysis.ai/models/grok-4-6-low",
+          "rank": 57
+        },
+        {
+          "id": "claude-sonnet-5-low",
+          "name": "Claude Sonnet 5 (Adaptive Reasoning, Low Effort)",
+          "shortName": "Claude Sonnet 5 (low)",
+          "creator": "Anthropic",
+          "score": 2.52525252525253,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-sonnet-5-low",
+          "rank": 59
+        },
+        {
+          "id": "gpt-5-6-luna-high",
+          "name": "GPT-5.6 Luna (high)",
+          "shortName": "GPT-5.6 Luna (high)",
+          "creator": "OpenAI",
+          "score": 2.52525252525253,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-luna-high",
+          "rank": 59
+        },
+        {
+          "id": "qwen3-8-27b-low",
+          "name": "Qwen3.8 27B (low)",
+          "shortName": "Qwen3.8 27B (low)",
+          "creator": "Alibaba",
+          "score": 2.52525252525253,
+          "sourceUrl": "https://artificialanalysis.ai/models/qwen3-8-27b-low",
+          "rank": 59
+        },
+        {
+          "id": "claude-sonnet-5-medium",
+          "name": "Claude Sonnet 5 (Adaptive Reasoning, Medium Effort)",
+          "shortName": "Claude Sonnet 5 (medium)",
+          "creator": "Anthropic",
+          "score": 2.02020202020202,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-sonnet-5-medium",
+          "rank": 62
+        },
+        {
+          "id": "minimax-m3",
+          "name": "MiniMax-M3",
+          "shortName": "MiniMax-M3",
+          "creator": "MiniMax",
+          "score": 2.02020202020202,
+          "sourceUrl": "https://artificialanalysis.ai/models/minimax-m3",
+          "rank": 62
+        },
+        {
+          "id": "gpt-5-6-terra-high",
+          "name": "GPT-5.6 Terra (high)",
+          "shortName": "GPT-5.6 Terra (high)",
+          "creator": "OpenAI",
+          "score": 1.51515151515152,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-terra-high",
+          "rank": 64
+        },
+        {
+          "id": "gpt-5-6-terra-low",
+          "name": "GPT-5.6 Terra (low)",
+          "shortName": "GPT-5.6 Terra (low)",
+          "creator": "OpenAI",
+          "score": 1.51515151515152,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-terra-low",
+          "rank": 64
+        },
+        {
+          "id": "k2-horizon-375b-a23b",
+          "name": "K2 Horizon 375B A23B",
+          "shortName": "K2 Horizon 375B A23B",
+          "creator": "MBZUAI Institute of Foundation Models",
+          "score": 1.51515151515152,
+          "sourceUrl": "https://artificialanalysis.ai/models/k2-horizon-375b-a23b",
+          "rank": 64
+        },
+        {
+          "id": "gemini-3-5-flash-lite",
+          "name": "Gemini 3.5 Flash-Lite",
+          "shortName": "Gemini 3.5 Flash-Lite",
+          "creator": "Google",
+          "score": 1.01010101010101,
+          "sourceUrl": "https://artificialanalysis.ai/models/gemini-3-5-flash-lite",
+          "rank": 67
+        },
+        {
+          "id": "glm-5-2",
+          "name": "GLM-5.2 (max)",
+          "shortName": "GLM-5.2 (max)",
+          "creator": "Z AI",
+          "score": 1.01010101010101,
+          "sourceUrl": "https://artificialanalysis.ai/models/glm-5-2",
+          "rank": 67
+        },
+        {
+          "id": "gpt-5-6-sol-low",
+          "name": "GPT-5.6 Sol (low)",
+          "shortName": "GPT-5.6 Sol (low)",
+          "creator": "OpenAI",
+          "score": 1.01010101010101,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-sol-low",
+          "rank": 67
+        },
+        {
+          "id": "gpt-5-6-terra-medium",
+          "name": "GPT-5.6 Terra (medium)",
+          "shortName": "GPT-5.6 Terra (medium)",
+          "creator": "OpenAI",
+          "score": 1.01010101010101,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-terra-medium",
+          "rank": 67
+        },
+        {
+          "id": "inkling",
+          "name": "Inkling (xhigh)",
+          "shortName": "Inkling",
+          "creator": "Thinking Machines",
+          "score": 1.01010101010101,
+          "sourceUrl": "https://artificialanalysis.ai/models/inkling",
+          "rank": 67
+        },
+        {
+          "id": "inkling-small",
+          "name": "Inkling Small",
+          "shortName": "Inkling Small",
+          "creator": "Thinking Machines",
+          "score": 1.01010101010101,
+          "sourceUrl": "https://artificialanalysis.ai/models/inkling-small",
+          "rank": 67
+        },
+        {
+          "id": "kimi-k2-7-code",
+          "name": "Kimi K2.7 Code",
+          "shortName": "Kimi K2.7 Code",
+          "creator": "Kimi",
+          "score": 1.01010101010101,
+          "sourceUrl": "https://artificialanalysis.ai/models/kimi-k2-7-code",
+          "rank": 67
+        },
+        {
+          "id": "quasar-438b",
+          "name": "Quasar 438B (max, based on GLM-5.2)",
+          "shortName": "Quasar 438B (max)",
+          "creator": "Multiverse Computing",
+          "score": 1.01010101010101,
+          "sourceUrl": "https://artificialanalysis.ai/models/quasar-438b",
+          "rank": 67
+        },
+        {
+          "id": "qwen3-7-plus",
+          "name": "Qwen3.7 Plus",
+          "shortName": "Qwen3.7 Plus",
+          "creator": "Alibaba",
+          "score": 1.01010101010101,
+          "sourceUrl": "https://artificialanalysis.ai/models/qwen3-7-plus",
+          "rank": 67
+        },
+        {
+          "id": "command-a-plus",
+          "name": "Command A+",
+          "shortName": "Command A+",
+          "creator": "Cohere",
+          "score": 0.505050505050505,
+          "sourceUrl": "https://artificialanalysis.ai/models/command-a-plus",
+          "rank": 76
+        },
+        {
+          "id": "gpt-5-6-luna-medium",
+          "name": "GPT-5.6 Luna (medium)",
+          "shortName": "GPT-5.6 Luna (medium)",
+          "creator": "OpenAI",
+          "score": 0.505050505050505,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-luna-medium",
+          "rank": 76
+        },
+        {
+          "id": "hy3",
+          "name": "Hy3",
+          "shortName": "Hy3",
+          "creator": "Tencent",
+          "score": 0.505050505050505,
+          "sourceUrl": "https://artificialanalysis.ai/models/hy3",
+          "rank": 76
+        },
+        {
+          "id": "muse-glimmer",
+          "name": "Muse Glimmer (high)",
+          "shortName": "Muse Glimmer (high)",
+          "creator": "Meta",
+          "score": 0.505050505050505,
+          "sourceUrl": "https://artificialanalysis.ai/models/muse-glimmer",
+          "rank": 76
+        },
+        {
+          "id": "nemotron-3-5-lightning",
+          "name": "Nemotron 3.5 Lightning",
+          "shortName": "Nemotron 3.5 Lightning",
+          "creator": "NVIDIA",
+          "score": 0.505050505050505,
+          "sourceUrl": "https://artificialanalysis.ai/models/nemotron-3-5-lightning",
+          "rank": 76
+        },
+        {
+          "id": "north-mini-code",
+          "name": "North Mini Code",
+          "shortName": "North Mini Code",
+          "creator": "Cohere",
+          "score": 0.505050505050505,
+          "sourceUrl": "https://artificialanalysis.ai/models/north-mini-code",
+          "rank": 76
+        },
+        {
+          "id": "nvidia-nemotron-3-ultra-550b-a55b",
+          "name": "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "shortName": "Nemotron 3 Ultra",
+          "creator": "NVIDIA",
+          "score": 0.505050505050505,
+          "sourceUrl": "https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b",
+          "rank": 76
+        },
+        {
+          "id": "ring-2-6-1t",
+          "name": "Ring-2.6-1T",
+          "shortName": "Ring-2.6-1T",
+          "creator": "InclusionAI",
+          "score": 0.505050505050505,
+          "sourceUrl": "https://artificialanalysis.ai/models/ring-2-6-1t",
+          "rank": 76
+        },
+        {
+          "id": "solar-pro4",
+          "name": "Solar Pro 4",
+          "shortName": "Solar Pro 4",
+          "creator": "Upstage",
+          "score": 0.505050505050505,
+          "sourceUrl": "https://artificialanalysis.ai/models/solar-pro4",
+          "rank": 76
+        },
+        {
+          "id": "trinity-large-thinking",
+          "name": "Trinity Large Thinking",
+          "shortName": "Trinity Large Thinking",
+          "creator": "Arcee AI",
+          "score": 0.505050505050505,
+          "sourceUrl": "https://artificialanalysis.ai/models/trinity-large-thinking",
+          "rank": 76
+        },
+        {
+          "id": "celeris-1",
+          "name": "Celeris-1",
+          "shortName": "Celeris-1",
+          "creator": "Celeris",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/celeris-1",
+          "rank": 86
+        },
+        {
+          "id": "claude-4-5-haiku-reasoning",
+          "name": "Claude 4.5 Haiku (Reasoning)",
+          "shortName": "Claude 4.5 Haiku",
+          "creator": "Anthropic",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/claude-4-5-haiku-reasoning",
+          "rank": 86
+        },
+        {
+          "id": "devstral-2",
+          "name": "Devstral 2",
+          "shortName": "Devstral 2",
+          "creator": "Mistral",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/devstral-2",
+          "rank": 86
+        },
+        {
+          "id": "devstral-small-2",
+          "name": "Devstral Small 2",
+          "shortName": "Devstral Small 2",
+          "creator": "Mistral",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/devstral-small-2",
+          "rank": 86
+        },
+        {
+          "id": "gemma-4-31b",
+          "name": "Gemma 4 31B (Reasoning)",
+          "shortName": "Gemma 4 31B",
+          "creator": "Google",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/gemma-4-31b",
+          "rank": 86
+        },
+        {
+          "id": "gpt-5-6-luna-low",
+          "name": "GPT-5.6 Luna (low)",
+          "shortName": "GPT-5.6 Luna (low)",
+          "creator": "OpenAI",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-5-6-luna-low",
+          "rank": 86
+        },
+        {
+          "id": "gpt-oss-120b",
+          "name": "gpt-oss-120b (high)",
+          "shortName": "gpt-oss-120b (high)",
+          "creator": "OpenAI",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-oss-120b",
+          "rank": 86
+        },
+        {
+          "id": "gpt-oss-20b",
+          "name": "gpt-oss-20b (high)",
+          "shortName": "gpt-oss-20b (high)",
+          "creator": "OpenAI",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/gpt-oss-20b",
+          "rank": 86
+        },
+        {
+          "id": "granite-4-2-3b",
+          "name": "Granite 4.2 3B",
+          "shortName": "Granite 4.2 3B",
+          "creator": "IBM",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/granite-4-2-3b",
+          "rank": 86
+        },
+        {
+          "id": "granite-4-2-8b",
+          "name": "Granite 4.2 8B",
+          "shortName": "Granite 4.2 8B",
+          "creator": "IBM",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/granite-4-2-8b",
+          "rank": 86
+        },
+        {
+          "id": "grok-4-3-non-reasoning",
+          "name": "Grok 4.3 (Non-reasoning)",
+          "shortName": "Grok 4.3 (Non-reasoning)",
+          "creator": "SpaceXAI",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/grok-4-3-non-reasoning",
+          "rank": 86
+        },
+        {
+          "id": "ling-3-0-flash-vl",
+          "name": "Ling-3.0-flash-VL",
+          "shortName": "Ling-3.0-flash-VL",
+          "creator": "InclusionAI",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/ling-3-0-flash-vl",
+          "rank": 86
+        },
+        {
+          "id": "ling-3-0-tiny",
+          "name": "Ling 3.0 Tiny",
+          "shortName": "Ling 3.0 Tiny",
+          "creator": "InclusionAI",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/ling-3-0-tiny",
+          "rank": 86
+        },
+        {
+          "id": "llama-4-maverick",
+          "name": "Llama 4 Maverick",
+          "shortName": "Llama 4 Maverick",
+          "creator": "Meta",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/llama-4-maverick",
+          "rank": 86
+        },
+        {
+          "id": "llama-4-scout",
+          "name": "Llama 4 Scout",
+          "shortName": "Llama 4 Scout",
+          "creator": "Meta",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/llama-4-scout",
+          "rank": 86
+        },
+        {
+          "id": "longcat-2-0",
+          "name": "LongCat 2.0",
+          "shortName": "LongCat 2.0",
+          "creator": "LongCat",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/longcat-2-0",
+          "rank": 86
+        },
+        {
+          "id": "mercury-2",
+          "name": "Mercury 2",
+          "shortName": "Mercury 2",
+          "creator": "Inception",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/mercury-2",
+          "rank": 86
+        },
+        {
+          "id": "mimo-v2-5-0424",
+          "name": "MiMo-V2.5",
+          "shortName": "MiMo-V2.5",
+          "creator": "Xiaomi",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/mimo-v2-5-0424",
+          "rank": 86
+        },
+        {
+          "id": "mimo-v2-5-pro",
+          "name": "MiMo-V2.5-Pro",
+          "shortName": "MiMo-V2.5-Pro",
+          "creator": "Xiaomi",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/mimo-v2-5-pro",
+          "rank": 86
+        },
+        {
+          "id": "minicpm5-2b",
+          "name": "MiniCPM5-2B",
+          "shortName": "MiniCPM5-2B",
+          "creator": "OpenBMB",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/minicpm5-2b",
+          "rank": 86
+        },
+        {
+          "id": "ministral-3-14b",
+          "name": "Ministral 3 14B",
+          "shortName": "Ministral 3 14B",
+          "creator": "Mistral",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/ministral-3-14b",
+          "rank": 86
+        },
+        {
+          "id": "ministral-3-3b",
+          "name": "Ministral 3 3B",
+          "shortName": "Ministral 3 3B",
+          "creator": "Mistral",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/ministral-3-3b",
+          "rank": 86
+        },
+        {
+          "id": "ministral-3-8b",
+          "name": "Ministral 3 8B",
+          "shortName": "Ministral 3 8B",
+          "creator": "Mistral",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/ministral-3-8b",
+          "rank": 86
+        },
+        {
+          "id": "mistral-large-3",
+          "name": "Mistral Large 3",
+          "shortName": "Mistral Large 3",
+          "creator": "Mistral",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/mistral-large-3",
+          "rank": 86
+        },
+        {
+          "id": "mistral-medium-3-5",
+          "name": "Mistral Medium 3.5",
+          "shortName": "Mistral Medium 3.5",
+          "creator": "Mistral",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/mistral-medium-3-5",
+          "rank": 86
+        },
+        {
+          "id": "mistral-small-4",
+          "name": "Mistral Small 4 (Reasoning)",
+          "shortName": "Mistral Small 4",
+          "creator": "Mistral",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/mistral-small-4",
+          "rank": 86
+        },
+        {
+          "id": "nvidia-nemotron-3-nano-30b-a3b-reasoning",
+          "name": "NVIDIA Nemotron 3 Nano 30B A3B (Reasoning)",
+          "shortName": "Nemotron 3 Nano",
+          "creator": "NVIDIA",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/nvidia-nemotron-3-nano-30b-a3b-reasoning",
+          "rank": 86
+        },
+        {
+          "id": "nvidia-nemotron-3-super-120b-a12b",
+          "name": "Nemotron 3 Super 120B A12B (Reasoning)",
+          "shortName": "Nemotron 3 Super",
+          "creator": "NVIDIA",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/nvidia-nemotron-3-super-120b-a12b",
+          "rank": 86
+        },
+        {
+          "id": "qwen3-5-122b-a10b",
+          "name": "Qwen3.5 122B A10B (Reasoning)",
+          "shortName": "Qwen3.5 122B A10B",
+          "creator": "Alibaba",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/qwen3-5-122b-a10b",
+          "rank": 86
+        },
+        {
+          "id": "qwen3-5-397b-a17b",
+          "name": "Qwen3.5 397B A17B (Reasoning)",
+          "shortName": "Qwen3.5 397B A17B",
+          "creator": "Alibaba",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/qwen3-5-397b-a17b",
+          "rank": 86
+        },
+        {
+          "id": "qwen3-6-27b",
+          "name": "Qwen3.6 27B (Reasoning)",
+          "shortName": "Qwen3.6 27B",
+          "creator": "Alibaba",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/qwen3-6-27b",
+          "rank": 86
+        },
+        {
+          "id": "qwen3-6-35b-a3b",
+          "name": "Qwen3.6 35B A3B (Reasoning)",
+          "shortName": "Qwen3.6 35B A3B",
+          "creator": "Alibaba",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/qwen3-6-35b-a3b",
+          "rank": 86
+        },
+        {
+          "id": "qwen3-coder-next",
+          "name": "Qwen3 Coder Next",
+          "shortName": "Qwen3 Coder Next",
+          "creator": "Alibaba",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/qwen3-coder-next",
+          "rank": 86
+        },
+        {
+          "id": "solar-pro-3",
+          "name": "Solar Pro 3",
+          "shortName": "Solar Pro 3",
+          "creator": "Upstage",
+          "score": 0,
+          "sourceUrl": "https://artificialanalysis.ai/models/solar-pro-3",
+          "rank": 86
+        }
+      ]
+    }
+  ]
+}

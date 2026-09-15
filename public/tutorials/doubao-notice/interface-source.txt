@@ -1,0 +1,55 @@
+- navigation:
+  - button "豆包" [disabled]:
+    - generic: 豆包
+  - generic: 新工作任务
+  - generic: Ctrl J
+  - generic: 新对话
+  - generic: Ctrl Shift K
+  - generic: API 服务
+  - generic: 更多
+  - generic: 最近
+  - status
+  - generic: 关于豆包
+- main:
+  - button:
+  - button "下载电脑版":
+    - generic: 下载电脑版
+  - button "登录":
+    - generic: 登录
+  - generic: 有什么我能帮你的吗？
+  - button "对话":
+    - generic: 对话
+  - button "工作":
+    - generic: 工作
+  - heading "为你推荐" [level=2]
+  - button "资讯：9 月 14 日伊朗爆炸引发国际市场大幅震荡":
+    - generic: 资讯：9 月 14 日伊朗爆炸引发国际市场大幅震荡
+  - button "1 亿秒等于几天？":
+    - generic: 1 亿秒等于几天？
+  - button "每天睡够几小时才算睡眠充足？":
+    - generic: 每天睡够几小时才算睡眠充足？
+  - button "100万缅甸币等于多少人民币？":
+    - generic: 100万缅甸币等于多少人民币？
+  - button:
+  - button "对话":
+    - generic "对话"
+  - button "PPT 生成":
+    - generic: PPT 生成
+  - button "图像生成":
+    - generic: 图像生成
+  - button "帮我写作":
+    - generic: 帮我写作
+  - button "视频生成":
+    - generic: 视频生成
+  - button "深入研究":
+    - generic: 深入研究
+  - button "录音转写":
+    - generic: 录音转写
+  - button "更多":
+    - generic: 更多
+  - button "豆包 快速":
+    - text: 豆包 快速
+  - textbox:
+    - paragraph: 发消息...
+- complementary
+- region "Notifications alt+T"

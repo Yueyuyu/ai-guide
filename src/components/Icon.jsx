@@ -1,0 +1,31 @@
+import React from 'react';
+
+const paths = {
+  layers: <><path d="m12 2 10 6-10 6L2 8l10-6Zm-10 11 10 6 10-6M2 18l10 6 10-6"/></>,
+  globe: <><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c5 5 5 13 0 18-5-5-5-13 0-18Z"/></>,
+  desktop: <><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M12 17v4M8 21h8"/></>,
+  arrow: <><path d="M4 12h16m-6-6 6 6-6 6" /></>,
+  external: <><path d="M14 4h6v6m0-6-9 9"/><path d="M10 5H5v14h14v-5"/></>,
+  chevron: <path d="m9 5 7 7-7 7"/>,
+  down: <path d="m6 9 6 6 6-6"/>,
+  search: <><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></>,
+  grid: <><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="3" width="6" height="6" rx="1"/><rect x="3" y="15" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/></>,
+  cap: <><path d="m2 8 10-5 10 5-10 5L2 8Zm4 3v6l6 3 6-3v-6m4-3v8"/></>,
+  box: <><path d="m12 2 9 5v10l-9 5-9-5V7l9-5Zm0 10v10M3 7l9 5 9-5M8 4l9 5"/></>,
+  code: <path d="m7 6-6 6 6 6m10-12 6 6-6 6M14 3l-4 18"/>,
+  workflow: <><rect x="3" y="9" width="5" height="6" rx="1"/><rect x="16" y="2" width="5" height="6" rx="1"/><rect x="16" y="16" width="5" height="6" rx="1"/><path d="M8 12h4m4-7h-4v14h4"/></>,
+  bookmark: <path d="M6 3h12v18l-6-4-6 4V3Z"/>,
+  check: <path d="m5 12 4 4L19 6"/>,
+  clock: <><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></>,
+  copy: <><rect x="8" y="8" width="12" height="13" rx="1"/><path d="M16 8V3H3v13h5"/></>,
+  link: <><path d="m9 15 6-6m-7 9-1 1a4 4 0 0 1-6-6l4-4a4 4 0 0 1 6 0m2-3 1-1a4 4 0 0 1 6 6l-4 4a4 4 0 0 1-6 0"/></>,
+  menu: <path d="M3 6h18M3 12h18M3 18h18"/>,
+  close: <path d="m5 5 14 14M5 19 19 5"/>,
+  file: <><path d="M5 2h9l5 5v15H5V2Zm9 0v6h5M8 12h8M8 16h6"/></>,
+  sun: <><circle cx="12" cy="12" r="4"/><path d="M12 1v2m0 18v2M1 12h2m18 0h2M4 4l2 2m12 12 2 2M4 20l2-2M18 6l2-2"/></>,
+  terminal: <><rect x="2" y="3" width="20" height="18" rx="2"/><path d="m6 8 4 4-4 4m7 0h5"/></>,
+  download: <><path d="M12 2v13m-5-5 5 5 5-5M4 16v5h16v-5"/></>,
+  upload: <><path d="M12 16V3m-5 5 5-5 5 5M4 16v5h16v-5"/></>,
+  route: <><circle cx="5" cy="5" r="2"/><circle cx="19" cy="19" r="2"/><path d="M7 5h9a4 4 0 0 1 0 8H8a3 3 0 0 0 0 6h9"/></>,
+};
+export function Icon({ name, size = 20, ...props }) { return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>{paths[name] || paths.file}</svg>; }

@@ -1,0 +1,93 @@
+.main.page-tools,.main.page-company{background:linear-gradient(125deg,#f1f5ff 0%,#f8fbff 42%,#f0f5ff 100%)}
+.learning-directory .page-heading{align-items:center;margin-bottom:26px}
+.learning-directory .page-heading h1{font-size:34px;letter-spacing:-.8px}
+.learning-directory .page-heading p{font-size:15px;margin-top:8px}
+.directory-start-link{display:flex;align-items:center;gap:10px;color:var(--accent);font-size:14px;white-space:nowrap}
+.directory-start-link:hover{text-decoration:underline;text-underline-offset:4px}
+.learning-directory-controls{display:flex;align-items:center;gap:20px}
+.learning-directory-controls .search-box{flex:1;min-width:0;margin:0;background:#ffffffa6;border:1px solid white;border-radius:15px;height:54px;box-shadow:0 3px 14px #5773a908}
+.learning-directory-controls .search-box input{font-size:14px}
+.learning-entry-filters{display:flex;gap:8px;flex-shrink:0}
+.learning-entry-filters button{min-height:48px;min-width:66px;padding:10px 18px;border:1px solid #fff;border-radius:26px;background:#ffffff94;font-size:14px;white-space:nowrap}
+.learning-entry-filters button:hover{background:#fff;border-color:#cfdbfc}
+.learning-entry-filters button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 3px 10px #2f63f326}
+.learning-directory-caption{display:flex;justify-content:space-between;align-items:center;gap:16px;margin:28px 0 16px}
+.learning-directory-caption h2{font-size:16px;font-weight:600}
+.learning-directory-caption>span{display:flex;align-items:center;gap:14px;font-size:13px;color:var(--muted)}
+.learning-directory-caption button{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--accent);min-height:32px}
+.learning-company-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:stretch}
+.learning-company-card{display:flex;flex-direction:column;min-width:0;padding:18px 14px 10px;border:1px solid #fff;border-radius:20px;background:linear-gradient(135deg,#ffffffb3,#ffffff61);box-shadow:inset 0 1px 0 #fff,0 8px 30px #5275bb0b;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.learning-company-card>header{display:flex;align-items:center;gap:14px;margin:0 8px 18px}
+.learning-company-card>header>.tool-mark{width:56px;height:56px;border-radius:14px}
+.learning-company-card>header>.tool-mark:not(.brand-moonshot){background:#ffffff73}
+.learning-company-card h2{font-size:20px;line-height:1.4;letter-spacing:-.3px}
+.learning-company-card>header p{font-size:13px;line-height:1.5;margin-top:4px}
+.company-learning-entries{display:grid;gap:5px}
+.company-learning-entry{display:grid;grid-template-columns:78px minmax(0,1fr);align-items:center;gap:8px;min-height:47px;padding:4px 10px;background:#ffffff8c;border-radius:11px}
+.company-learning-entry h3{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:500;white-space:nowrap;line-height:1.4}
+.company-entry-content{min-width:0}
+.company-entry-links{display:flex;align-items:center;flex-wrap:wrap;gap:0 6px}
+.company-entry-links>a{display:inline-flex;align-items:center;gap:6px;min-height:38px;max-width:100%;border-radius:7px;padding:3px 4px;font-size:13px;color:#354d7b;line-height:1.5}
+.company-entry-links>a>span:not(.tool-mark){overflow-wrap:anywhere}
+.company-entry-links>a>svg{display:none;color:var(--accent)}
+.company-entry-links>a:only-child{width:100%}
+.company-entry-links>a:only-child>svg{display:block;margin-left:auto}
+.company-entry-links>a:hover{background:#edf3ff;color:#244ec7}
+.company-entry-links .tool-mark.mark-small{width:21px;height:21px;border-radius:5px}
+.company-entry-links .tool-mark img{width:90%;height:90%}
+.learning-company-footer{display:flex;align-items:center;gap:8px;min-height:44px;padding:10px 8px 0;margin-top:auto;color:var(--accent);font-size:13px;width:fit-content}
+.learning-company-footer:hover{text-decoration:underline;text-underline-offset:4px}
+.company-learning-page .page-lead{font-size:16px}
+.company-learning-layout{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:28px;margin-top:28px;align-items:start}
+.company-learning-panel{padding:20px;border:1px solid white;border-radius:20px;background:#ffffff7d;box-shadow:0 8px 30px #5275bb0b}
+.company-learning-panel .company-learning-entry{padding:18px;grid-template-columns:100px minmax(0,1fr);align-items:start}
+.company-learning-panel .company-learning-entry h3{font-size:15px;margin-top:5px}
+.company-entry-content>p{font-size:13px;margin-bottom:8px}
+.company-learning-panel .company-entry-links{gap:8px 16px}
+.company-learning-panel .company-entry-links>a{background:white;padding:8px 12px;font-size:14px;min-height:44px}
+.company-learning-panel .company-entry-links>a:only-child{width:auto}
+.company-learning-panel .company-entry-links>a>svg{display:block;margin-left:6px}
+.company-learning-page .route-summary{background:#ffffffa6;border-color:white}
+.company-advanced{margin-top:26px;border-top:1px solid #dce5f1;padding-top:6px}
+.company-advanced summary{display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;min-height:50px;font-size:15px;font-weight:600;list-style:none}
+.company-advanced[open] summary>svg{transform:rotate(180deg)}
+.company-advanced>p{font-size:14px;margin-bottom:16px}
+.company-advanced .product-rows{grid-template-columns:repeat(2,minmax(0,1fr))}
+.company-advanced .product-rows strong{font-size:15px}
+@supports not (backdrop-filter:blur(1px)){.learning-company-card{background:#fafcff}}
+@media(max-width:1100px){
+  .learning-company-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .learning-directory .page-heading{display:block}
+  .directory-start-link{margin-top:14px}
+  .learning-entry-filters button{min-width:58px;padding:10px 14px}
+}
+@media(max-width:800px){
+  .learning-directory-controls{flex-wrap:wrap;gap:14px}
+  .learning-directory-controls .search-box{flex-basis:100%}
+  .company-learning-layout{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .main.page-tools{padding-top:26px}
+  .learning-directory .page-heading{margin-bottom:20px}
+  .learning-directory .page-heading h1{font-size:28px;letter-spacing:-.6px}
+  .learning-directory .page-heading p{font-size:14px;line-height:1.75}
+  .directory-start-link{font-size:12px;white-space:normal;margin-top:12px}
+  .learning-directory-controls .search-box{height:50px;border-radius:12px}
+  .learning-entry-filters{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;width:100%}
+  .learning-entry-filters button{min-width:0;min-height:44px;padding:8px 3px;font-size:12px}
+  .learning-directory-caption{margin:22px 0 14px}
+  .learning-directory-caption h2{font-size:14px}
+  .learning-company-grid{grid-template-columns:1fr;gap:16px}
+  .learning-company-card{padding:16px 12px 10px;border-radius:18px}
+  .learning-company-card>header{margin:0 4px 14px;gap:12px}
+  .learning-company-card>header>.tool-mark{width:48px;height:48px}
+  .learning-company-card h2{font-size:20px}
+  .company-learning-entry{grid-template-columns:70px minmax(0,1fr);gap:5px;padding:4px 8px}
+  .company-learning-entry h3{font-size:12px;gap:6px}
+  .company-entry-links{gap:0 3px}
+  .company-entry-links>a{font-size:12px;min-height:44px;padding:3px;gap:5px}
+  .learning-company-footer{padding-left:4px;font-size:13px}
+  .company-learning-panel{padding:10px}
+  .company-learning-panel .company-learning-entry{grid-template-columns:1fr;gap:8px;padding:14px}
+  .company-advanced .product-rows{grid-template-columns:1fr}
+}

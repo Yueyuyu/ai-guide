@@ -1,0 +1,690 @@
+{
+  "reviewedAt": "2026-09-14T09:14:16.002Z",
+  "sources": {
+    "chatgpt-app": {
+      "id": "chatgpt-app",
+      "title": "ChatGPT 桌面应用",
+      "url": "https://learn.chatgpt.com/docs/app",
+      "fetchedUrl": "https://learn.chatgpt.com/docs/app",
+      "retrievedAt": "2026-09-15T05:26:29.769Z",
+      "reviewedAt": "2026-09-15T05:26:29.769Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "2026-09-15公开页面再次确认安装、登录、打开文件夹以及Codex的New chat入口；保留渲染正文摘录。",
+      "contentKind": "rendered excerpt",
+      "contentSha256": "07c6b20f04f54c499e55a91b85f3b8f8371b8eb5802bfb6144dbefeae0f7b8a3"
+    },
+    "chatgpt": {
+      "id": "chatgpt",
+      "title": "ChatGPT 网页端",
+      "url": "https://learn.chatgpt.com/docs/web",
+      "fetchedUrl": "https://learn.chatgpt.com/docs/web",
+      "retrievedAt": "2026-09-14T08:52:21.141Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "网页 Chat/Work、文件输入与成果下载",
+      "contentKind": "source",
+      "contentSha256": "dbb62b1c1bd7a51572acc8b7a09c4868196d6ec7a8e55da725913101ec4a51f3"
+    },
+    "codex-cli": {
+      "id": "codex-cli",
+      "title": "Codex CLI 官方入门",
+      "url": "https://learn.chatgpt.com/docs/codex/cli",
+      "fetchedUrl": "https://learn.chatgpt.com/docs/codex/cli",
+      "retrievedAt": "2026-09-14T08:52:21.193Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "按系统安装、从项目目录启动、ChatGPT 登录",
+      "contentKind": "source",
+      "contentSha256": "74a42d4d8eabbca2493466cad8da5d46262cc9cd7605922cf58d45129da1366f"
+    },
+    "codex-cloud": {
+      "id": "codex-cloud",
+      "title": "Codex 云端环境",
+      "url": "https://learn.chatgpt.com/docs/cloud",
+      "fetchedUrl": "https://learn.chatgpt.com/docs/cloud",
+      "retrievedAt": "2026-09-14T08:52:21.259Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "GitHub、GitLab Beta、环境与差异审查",
+      "contentKind": "source",
+      "contentSha256": "8218a877f0217bb10ddff577565da91a83f73a33983fd9b8375b80cebf81fa49"
+    },
+    "doubao-download": {
+      "id": "doubao-download",
+      "title": "豆包桌面版下载与工作模式",
+      "url": "https://www.doubao.com/download",
+      "fetchedUrl": "https://www.doubao.com/download",
+      "retrievedAt": "2026-09-14T08:47:29.382Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "官方下载安装入口、桌面工作模式、任务暂停与接管",
+      "contentKind": "rendered-text",
+      "contentSha256": "62a62fc91d13bbfb67f5f408d6fcdd96629442177a4eb8eeab48e5e1f7bf5e88"
+    },
+    "claude-desktop": {
+      "id": "claude-desktop",
+      "title": "Claude Desktop 安装说明",
+      "url": "https://support.claude.com/en/articles/10065433-install-claude-desktop",
+      "fetchedUrl": "https://support.claude.com/en/articles/10065433-install-claude-desktop",
+      "retrievedAt": "2026-09-14T08:47:32.697Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "Windows、macOS、Linux 与 Extensions 设置",
+      "contentKind": "source",
+      "contentSha256": "a24b1a6f2468872936b0763d8e7d9619e77c5079312d7663b590c8fcdfd42431"
+    },
+    "cowork": {
+      "id": "cowork",
+      "title": "Cowork 在网页、桌面和手机上使用",
+      "url": "https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile",
+      "fetchedUrl": "https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile",
+      "retrievedAt": "2026-09-14T08:46:55.084Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "模式入口、套餐、网页测试范围及本地文件连接条件",
+      "contentKind": "source",
+      "contentSha256": "3cf982966e536478955c058a72f50692932551abfb3542cd8c6d4933785e7b06"
+    },
+    "claude-code": {
+      "id": "claude-code",
+      "title": "Claude Code 官方概览",
+      "url": "https://code.claude.com/docs/en/overview",
+      "fetchedUrl": "https://code.claude.com/docs/en/overview",
+      "retrievedAt": "2026-09-14T08:49:07.207Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "终端安装、认证及项目目录",
+      "contentKind": "source",
+      "contentSha256": "ad2a1583d3e7aaf243d01e8dac7b7ba2420a9f0c49142c08effe24e5f2da960e"
+    },
+    "claude-sdk": {
+      "id": "claude-sdk",
+      "title": "Claude Python SDK 使用示例",
+      "url": "https://github.com/anthropics/anthropic-sdk-python#usage",
+      "fetchedUrl": "https://raw.githubusercontent.com/anthropics/anthropic-sdk-python/main/README.md",
+      "retrievedAt": "2026-09-14T09:01:48.947Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "Messages 调用与 content 读取",
+      "contentKind": "source",
+      "contentSha256": "abfed505bba2888ca968565b633561379ec9d87d29b65ddee53e8fb86d571ed6"
+    },
+    "claude-message-type": {
+      "id": "claude-message-type",
+      "title": "Claude SDK：Message 响应类型",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/blob/main/src/anthropic/types/message.py",
+      "fetchedUrl": "https://raw.githubusercontent.com/anthropics/anthropic-sdk-python/main/src/anthropic/types/message.py",
+      "retrievedAt": "2026-09-14T09:08:39.447Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "content 内容块及 stop_reason 字段",
+      "contentKind": "source",
+      "contentSha256": "823891cec32da816e16b5191ada650e4a26fa22f963d6ccb644a697014fe771a"
+    },
+    "openai-sdk": {
+      "id": "openai-sdk",
+      "title": "OpenAI 官方 Node SDK",
+      "url": "https://github.com/openai/openai-node#usage",
+      "fetchedUrl": "https://raw.githubusercontent.com/openai/openai-node/master/README.md",
+      "retrievedAt": "2026-09-14T09:08:39.06Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "Responses 请求、环境变量及 output_text",
+      "contentKind": "source",
+      "contentSha256": "e5bcf7b370df5ed90a3dd02e01b3e2787b4774888962cfb09b076fae8e5520eb"
+    },
+    "gemini-models": {
+      "id": "gemini-models",
+      "title": "Gemini API 快速开始",
+      "url": "https://ai.google.dev/gemini-api/docs/quickstart",
+      "fetchedUrl": "https://ai.google.dev/gemini-api/docs/quickstart",
+      "retrievedAt": "2026-09-14T08:51:13.079Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": "2026-09-04",
+      "status": "reviewed",
+      "scope": "Interactions API 的图文 input 和 output_text",
+      "contentKind": "source",
+      "contentSha256": "4293b56683029841cd92c5d394c6c80c7ef5a3950f01583dac548d1b86ae4395"
+    },
+    "gemini-web": {
+      "id": "gemini-web",
+      "title": "Gemini 网页应用入门（中文）",
+      "url": "https://support.google.com/gemini/answer/13275745?hl=zh-Hans",
+      "fetchedUrl": "https://support.google.com/gemini/answer/13275745?hl=zh-Hans",
+      "retrievedAt": "2026-09-14T09:03:01.996Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "登录条件、文件添加与新对话",
+      "contentKind": "source",
+      "contentSha256": "6590d45692531f37bd9d02717b32245b615c768391816c86bb2e58ca2ba4c03d"
+    },
+    "gemini-cli-start": {
+      "id": "gemini-cli-start",
+      "title": "Gemini CLI 快速开始",
+      "url": "https://geminicli.com/docs/get-started/",
+      "fetchedUrl": "https://geminicli.com/docs/get-started/",
+      "retrievedAt": "2026-09-14T09:11:42.265Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "启动、Google 登录及终端工作流",
+      "contentKind": "source",
+      "contentSha256": "6d44f9de2be2154899cfa74fb1cc068807feaa2622ab6db63dfeedfcee103b3e"
+    },
+    "gemini-cli-memory": {
+      "id": "gemini-cli-memory",
+      "title": "Gemini CLI 项目说明",
+      "url": "https://geminicli.com/docs/cli/gemini-md/",
+      "fetchedUrl": "https://geminicli.com/docs/cli/gemini-md/",
+      "retrievedAt": "2026-09-14T09:11:42.259Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "GEMINI.md 的层级与 /memory show",
+      "contentKind": "source",
+      "contentSha256": "5e9c6ef59d1a9276ea0360a9798a8f9054de7961bbc2c86b654ff36f006a30e0"
+    },
+    "deepseek-api": {
+      "id": "deepseek-api",
+      "title": "DeepSeek API 快速开始",
+      "url": "https://api-docs.deepseek.com/",
+      "fetchedUrl": "https://api-docs.deepseek.com/",
+      "retrievedAt": "2026-09-14T08:51:13.268Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "模型别名、地址、思考模式请求参数",
+      "contentKind": "source",
+      "contentSha256": "460c925a1c7b720e96c00488222504b454511546af5e24ff5036032753c57afb"
+    },
+    "qwen-code-readme": {
+      "id": "qwen-code-readme",
+      "title": "Qwen Code 官方 README",
+      "url": "https://github.com/QwenLM/qwen-code#readme",
+      "fetchedUrl": "https://raw.githubusercontent.com/QwenLM/qwen-code/main/README.md",
+      "retrievedAt": "2026-09-14T08:52:18.164Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "npm 要求 Node.js 22+、qwen 启动与 /auth",
+      "contentKind": "source",
+      "contentSha256": "0fc2159f9ab32e6d28a9f47a692002540537421525e96cd3a7e37c01ceb9fdde"
+    },
+    "qwen-models": {
+      "id": "qwen-models",
+      "title": "Qwen 官方文档",
+      "url": "https://qwen.readthedocs.io/en/latest/",
+      "fetchedUrl": "https://qwen.readthedocs.io/",
+      "retrievedAt": "2026-09-14T08:50:18.693Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "权重、推理框架与部署入口；不用于判断最新版本",
+      "contentKind": "source",
+      "contentSha256": "a844f1c79c9fd8efb10cfc28f365bb26366bde3e53de7891c0fd01b36ce4ebce"
+    },
+    "cursor-quickstart": {
+      "id": "cursor-quickstart",
+      "title": "Cursor 快速开始",
+      "url": "https://cursor.com/docs/get-started/quickstart",
+      "fetchedUrl": "https://cursor.com/docs/get-started/quickstart",
+      "retrievedAt": "2026-09-14T09:01:49.174Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "文件夹、Agent 快捷键、修改与检查",
+      "contentKind": "source",
+      "contentSha256": "f5c948bdff4b005858c85a2d1844af72c146f03ffd57541ddd988219c398c4cb"
+    },
+    "copilot-setup": {
+      "id": "copilot-setup",
+      "title": "GitHub Copilot 个人设置（中文）",
+      "url": "https://docs.github.com/zh/copilot/how-tos/set-up/set-up-for-self",
+      "fetchedUrl": "https://docs.github.com/zh/copilot/how-tos/set-up/set-up-for-self",
+      "retrievedAt": "2026-09-14T09:01:49.808Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "VS Code 扩展、GitHub 登录与账号权限",
+      "contentKind": "source",
+      "contentSha256": "4d50f5becdbeab1476d3181bcfe938dad00308558c4e19491a4fd2545cffad99"
+    },
+    "glm-tools": {
+      "id": "glm-tools",
+      "title": "GLM Function Calling",
+      "url": "https://docs.bigmodel.cn/cn/guide/capabilities/function-calling",
+      "fetchedUrl": "https://docs.bigmodel.cn/cn/guide/capabilities/function-calling",
+      "retrievedAt": "2026-09-14T09:03:04.999Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "工具定义、tool_calls、工具执行及结果回传",
+      "contentKind": "source",
+      "contentSha256": "e967a78f6f3e75d427e4566026fde9c2202cacbc830324109cf4b614aee19c9d"
+    },
+    "grok-search": {
+      "id": "grok-search",
+      "title": "xAI Web Search",
+      "url": "https://docs.x.ai/developers/tools/web-search",
+      "fetchedUrl": "https://docs.x.ai/developers/tools/web-search",
+      "retrievedAt": "2026-09-14T09:03:06.941Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "Responses 的 web_search 配置与引用",
+      "contentKind": "source",
+      "contentSha256": "990c583b0e62f3fca77280cb1cd876073dea1ca5b42b4692168d4585a7d0a515"
+    },
+    "kimi-models": {
+      "id": "kimi-models",
+      "title": "Kimi API 快速开始",
+      "url": "https://platform.kimi.com/docs/get-api-key",
+      "fetchedUrl": "https://platform.moonshot.cn/docs",
+      "retrievedAt": "2026-09-14T08:50:22.13Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "认证、兼容接口与当前示例",
+      "contentKind": "source",
+      "contentSha256": "5c4be1f016470cc2656bec86c54f537fd2be8f0f1a4cbac9ce31337799f3b810"
+    },
+    "minimax-home": {
+      "id": "minimax-home",
+      "title": "MiniMax 模型概览",
+      "url": "https://platform.minimax.cn/docs/guides/models-intro",
+      "fetchedUrl": "https://platform.minimaxi.com/",
+      "retrievedAt": "2026-09-14T08:52:21.135Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "文本、语音等服务分类及当前文档入口",
+      "contentKind": "source",
+      "contentSha256": "65eb4abd269ff8325d8c1a959668e6ed8aff07ed43b12ac3af9da8c60c093c38"
+    },
+    "volc-quickstart": {
+      "id": "volc-quickstart",
+      "title": "火山方舟快速入门",
+      "url": "https://www.volcengine.com/docs/82379/1399008",
+      "fetchedUrl": "https://www.volcengine.com/docs/82379/1399008",
+      "retrievedAt": "2026-09-14T09:09:15.52Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "API Key、模型开通、arkruntime 与 Responses 示例",
+      "contentKind": "rendered-text",
+      "contentSha256": "f7977eb7cb07b8758eb8aa8d6d26244d00a5faf64587d9d3860a29c5f8c03a7b"
+    },
+    "doubao-entry": {
+      "id": "doubao-entry",
+      "title": "豆包网页版公开界面",
+      "url": "https://www.doubao.com/chat/",
+      "retrievedAt": "2026-09-15T05:04:13.232Z",
+      "reviewedAt": "2026-09-15T05:04:13.232Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "contentKind": "rendered-text",
+      "contentSha256": "4fd588006d4a1c766839ee4d9bb5985b9e2532d27221e7e0427622fbe579a9f8",
+      "scope": "实际读取未登录网页，确认对话、消息输入、发送和登录入口；保存真实界面截图。未登录试发后返回首页，未取得回答。"
+    },
+    "qwen-entry": {
+      "id": "qwen-entry",
+      "title": "Qwen 官方网站",
+      "url": "https://qwen.ai/",
+      "retrievedAt": "2026-09-14T08:50:16.243Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "entry-only",
+      "scope": "产品入口参考，不作为按钮或功能已核对的证据。"
+    },
+    "kimi-entry": {
+      "id": "kimi-entry",
+      "title": "Kimi 官方网站",
+      "url": "https://www.kimi.com/",
+      "retrievedAt": "2026-09-14T08:50:17.549Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "entry-only",
+      "scope": "产品入口参考，不作为按钮或功能已核对的证据。"
+    },
+    "glm-entry": {
+      "id": "glm-entry",
+      "title": "智谱清言",
+      "url": "https://chatglm.cn/",
+      "retrievedAt": "2026-09-14T08:50:18.082Z",
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "entry-only",
+      "scope": "产品入口参考，不作为按钮或功能已核对的证据。"
+    },
+    "deepseek-entry": {
+      "id": "deepseek-entry",
+      "title": "DeepSeek 官方网站",
+      "url": "https://www.deepseek.com/",
+      "retrievedAt": null,
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "entry-only",
+      "scope": "产品入口参考，不作为按钮或功能已核对的证据。"
+    },
+    "grok-entry": {
+      "id": "grok-entry",
+      "title": "Grok 官方入口",
+      "url": "https://grok.com/",
+      "retrievedAt": null,
+      "reviewedAt": "2026-09-14T09:14:16.002Z",
+      "sourceUpdatedAt": null,
+      "status": "entry-only",
+      "scope": "产品入口参考，不作为按钮或功能已核对的证据。"
+    },
+    "chatgpt-windows": {
+      "id": "chatgpt-windows",
+      "title": "ChatGPT 与 Codex 的 Windows 桌面说明",
+      "url": "https://learn.chatgpt.com/docs/windows/windows-app",
+      "fetchedUrl": "https://learn.chatgpt.com/docs/windows/windows-app.md",
+      "retrievedAt": "2026-09-15T06:31:29.4587219Z",
+      "reviewedAt": "2026-09-15T06:31:29.4587219Z",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "scope": "Windows 官方安装入口、原生 PowerShell 环境与文件操作说明；不代表账号内生成实测。",
+      "contentKind": "official markdown",
+      "contentSha256": "5bbae21f535849b2ab51ec9472d43e2f1ade4f954b3d5241bcec4674e7761ad7"
+    }
+  },
+  "products": {
+    "chatgpt": {
+      "status": "documented",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "chatgpt"
+      ],
+      "scope": "已确认网页版聊天／工作入口、文件输入和成果下载。",
+      "limit": "本次核对公开官方资料，未登录产品账号、运行练习或发起付费调用。"
+    },
+    "chatgpt-desktop": {
+      "status": "documented",
+      "checkedAt": "2026-09-15T05:26:29.769Z",
+      "sourceIds": [
+        "chatgpt-app"
+      ],
+      "scope": "已确认 ChatGPT 与 Codex 位于同一桌面应用，Chat/Work 与编程入口分别学习。",
+      "limit": "本次核对公开官方资料，未登录产品账号、运行练习或发起付费调用。"
+    },
+    "codex": {
+      "status": "documented",
+      "checkedAt": "2026-09-15T06:31:29.4587219Z",
+      "sourceIds": [
+        "chatgpt-app",
+        "chatgpt-windows"
+      ],
+      "scope": "已确认统一桌面应用中的 Codex、项目文件夹和新聊天流程。",
+      "limit": "本次核对公开官方资料，未登录产品账号、运行练习或发起付费调用。"
+    },
+    "codex-cli": {
+      "status": "documented",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "codex-cli"
+      ],
+      "scope": "已确认按系统安装、项目目录启动与首次认证流程。",
+      "limit": "本次核对公开官方资料，未登录产品账号、运行练习或发起付费调用。"
+    },
+    "codex-cloud": {
+      "status": "documented",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "codex-cloud"
+      ],
+      "scope": "已确认仓库连接、云端环境和差异审查；GitLab 仍标注 Beta。",
+      "limit": "本次核对公开官方资料，未登录产品账号、运行练习或发起付费调用。"
+    },
+    "doubao-work": {
+      "status": "partial",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "doubao-download"
+      ],
+      "scope": "已确认官方桌面下载入口，以及豆包工作属于桌面版工作模式。",
+      "limit": "未在账号内逐项操作；按钮位置、账号权益、系统要求与输出文件流程需按实际版本再核对。"
+    },
+    "claude-desktop": {
+      "status": "documented",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "claude-desktop",
+        "cowork"
+      ],
+      "scope": "已确认桌面安装、聊天／Cowork／Code 区分及扩展设置。",
+      "limit": "本次核对公开官方资料，未登录产品账号、运行练习或发起付费调用。"
+    },
+    "claude-cowork": {
+      "status": "documented",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "cowork"
+      ],
+      "scope": "已确认模式入口与跨端条件：访问本地文件的会话需起于桌面，桌面应用在线且文件夹已连接。",
+      "limit": "本次核对公开官方资料，未登录产品账号、运行练习或发起付费调用。"
+    },
+    "claude-code": {
+      "status": "documented",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "claude-code"
+      ],
+      "scope": "已确认 Windows winget 安装、终端启动和登录；桌面 Code 是另一个入口。",
+      "limit": "本次核对公开官方资料，未登录产品账号、运行练习或发起付费调用。"
+    },
+    "gemini": {
+      "status": "documented",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "gemini-web"
+      ],
+      "scope": "已确认网页输入、附件入口与登录条件；账号和地区可用性另行核对。",
+      "limit": "本次核对公开官方资料，未登录产品账号、运行练习或发起付费调用。"
+    },
+    "gemini-cli": {
+      "status": "documented",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "gemini-cli-start",
+        "gemini-cli-memory"
+      ],
+      "scope": "已确认终端启动、Google 认证与 GEMINI.md 项目说明机制。",
+      "limit": "本次核对公开官方资料，未登录产品账号、运行练习或发起付费调用。"
+    },
+    "qwen-code": {
+      "status": "documented",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "qwen-code-readme"
+      ],
+      "scope": "已确认独立安装器／npm 两种方式，npm 需要 Node.js 22+，会话中用 /auth 配置服务。",
+      "limit": "本次核对公开官方资料，未登录产品账号、运行练习或发起付费调用。"
+    },
+    "cursor": {
+      "status": "documented",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "cursor-quickstart"
+      ],
+      "scope": "已确认打开项目、Ctrl+I／Cmd+I 打开 Agent 与查看改动的流程。",
+      "limit": "本次核对公开官方资料，未登录产品账号、运行练习或发起付费调用。"
+    },
+    "copilot": {
+      "status": "documented",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "copilot-setup"
+      ],
+      "scope": "已确认 VS Code 扩展与 GitHub 账号设置，补全和聊天分开练习。",
+      "limit": "本次核对公开官方资料，未登录产品账号、运行练习或发起付费调用。"
+    },
+    "gpt-models": {
+      "status": "documented",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "openai-sdk"
+      ],
+      "scope": "已通过官方 SDK 核对 Responses 的 model、input 和 output_text；示例是接口阅读练习。",
+      "limit": "本次核对公开官方资料，未登录产品账号、运行练习或发起付费调用。"
+    },
+    "claude-models": {
+      "status": "documented",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "claude-sdk",
+        "claude-message-type"
+      ],
+      "scope": "已通过官方 SDK 核对 Messages、content 内容块和停止原因。",
+      "limit": "本次核对公开官方资料，未登录产品账号、运行练习或发起付费调用。"
+    },
+    "gemini-models": {
+      "status": "documented",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "gemini-models"
+      ],
+      "scope": "已按 2026-09-04 更新的官方快速开始修正为 Interactions 图文输入；不混用旧 GenerateContent 字段。",
+      "limit": "本次核对公开官方资料，未登录产品账号、运行练习或发起付费调用。"
+    },
+    "deepseek-models": {
+      "status": "partial",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "deepseek-api"
+      ],
+      "scope": "已确认服务地址、模型别名和 thinking 请求参数。",
+      "limit": "思考模式专页本次连接超时，响应中推理字段的完整协议尚待复核；未发起 API 调用。"
+    },
+    "qwen-models": {
+      "status": "documented",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "qwen-models"
+      ],
+      "scope": "已确认权重、推理与部署入口。本课只比较运行方式，不把文档首页版本当作最新模型。",
+      "limit": "本次核对公开官方资料，未登录产品账号、运行练习或发起付费调用。"
+    },
+    "glm-models": {
+      "status": "documented",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "glm-tools"
+      ],
+      "scope": "已确认 tools、tool_calls、JSON 参数与 tool_call_id 回传流程；库存练习为本站自编。",
+      "limit": "本次核对公开官方资料，未登录产品账号、运行练习或发起付费调用。"
+    },
+    "grok-models": {
+      "status": "documented",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "grok-search"
+      ],
+      "scope": "已确认 Responses 的 web_search 工具配置；实时性必须有实际工具结果及引用。",
+      "limit": "本次核对公开官方资料，未登录产品账号、运行练习或发起付费调用。"
+    },
+    "kimi-models": {
+      "status": "partial",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "kimi-models"
+      ],
+      "scope": "已确认 Kimi 当前开发平台、认证、兼容地址和调用示例。",
+      "limit": "长文分段和引用练习为本站自编；文件解析接口的完整格式、各模型限制与账号调用尚待复核。"
+    },
+    "minimax": {
+      "status": "partial",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "minimax-home"
+      ],
+      "scope": "已替换失效文档链接，确认文本与语音分别属于不同服务。",
+      "limit": "本次核对到模型概览；具体语音接口字段、音频返回方式和账号内调用尚待逐项核对。"
+    },
+    "doubao-models": {
+      "status": "documented",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "volc-quickstart"
+      ],
+      "scope": "已读取动态官网正文，确认 API Key、模型开通、官方 SDK、区域地址及 Responses 示例。",
+      "limit": "本次核对公开官方资料，未登录产品账号、运行练习或发起付费调用。"
+    },
+    "claude": {
+      "status": "partial",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "cowork"
+      ],
+      "scope": "已通过官方跨端说明确认 Home 中 Chat 与 Cowork 的模式区别。",
+      "limit": "逐段写作是本站练习；网页账号中的附件、编辑操作尚未逐项实操。"
+    },
+    "doubao": {
+      "status": "partial",
+      "checkedAt": "2026-09-15T05:04:13.232Z",
+      "sourceIds": [
+        "doubao-entry"
+      ],
+      "scope": "已实拍并核对公开网页的对话入口、文字粘贴和发送控件。未登录试发后返回首页，没有取得回答；教程附虚构材料和人工参考答案。",
+      "limit": "未完成账号登录，回答生成、追问与回答复制尚未实测；附件、搜索、账号权益和其他设备也未覆盖。本站的成果编辑和下载属于 AIGuide 功能。"
+    },
+    "qwen": {
+      "status": "partial",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "qwen-entry"
+      ],
+      "scope": "已检查本站教程的入口归属，保留独立网页练习。",
+      "limit": "本次没有取得足以验证全部网页步骤的官方帮助正文，未登录账号；具体按钮、附件与搜索功能仍待核对。"
+    },
+    "kimi": {
+      "status": "partial",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "kimi-entry"
+      ],
+      "scope": "已检查本站教程的入口归属，保留独立网页练习。",
+      "limit": "本次没有取得足以验证全部网页步骤的官方帮助正文，未登录账号；具体按钮、附件与搜索功能仍待核对。"
+    },
+    "glm": {
+      "status": "partial",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "glm-entry"
+      ],
+      "scope": "已检查本站教程的入口归属，保留独立网页练习。",
+      "limit": "本次没有取得足以验证全部网页步骤的官方帮助正文，未登录账号；具体按钮、附件与搜索功能仍待核对。"
+    },
+    "deepseek": {
+      "status": "partial",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "deepseek-entry"
+      ],
+      "scope": "已检查本站教程的入口归属，保留独立网页练习。",
+      "limit": "本次没有取得足以验证全部网页步骤的官方帮助正文，未登录账号；具体按钮、附件与搜索功能仍待核对。"
+    },
+    "grok": {
+      "status": "partial",
+      "checkedAt": "2026-09-14T09:14:16.002Z",
+      "sourceIds": [
+        "grok-entry"
+      ],
+      "scope": "已检查本站教程的入口归属，保留独立网页练习。",
+      "limit": "本次没有取得足以验证全部网页步骤的官方帮助正文，未登录账号；具体按钮、附件与搜索功能仍待核对。"
+    }
+  }
+}

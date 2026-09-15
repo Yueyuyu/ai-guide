@@ -1,0 +1,23 @@
+{
+  "name": "aiguide",
+  "version": "0.1.0",
+  "private": true,
+  "description": "面向中文读者的 AI 教程、学习路线与有来源的模型排名网站",
+  "license": "MIT",
+  "packageManager": "pnpm@11.19.0",
+  "engines": { "node": ">=24.0.0 <25", "pnpm": ">=11.19.0 <12" },
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 4186 --strictPort --configLoader native",
+    "build": "vite build --configLoader native",
+    "preview": "vite preview --host 127.0.0.1 --port 4186 --strictPort --configLoader native",
+    "test": "node --test tests/*.test.js",
+    "refresh:rankings": "node scripts/refresh-rankings.mjs",
+    "resources": "node scripts/build-practice-resources.mjs",
+    "audit:content": "node scripts/audit-content.mjs",
+    "audit:docs": "node scripts/audit-docs.mjs",
+    "check": "node scripts/check-project.mjs"
+  },
+  "dependencies": { "react": "^19.1.1", "react-dom": "^19.1.1" },
+  "devDependencies": { "vite": "^7.1.4" }
+}

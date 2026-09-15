@@ -1,0 +1,490 @@
+{
+  "checkedAt": "2026-09-14T09:33:32.154Z",
+  "viewportReport": [
+    {
+      "route": "#/ranking",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "#/tool/doubao-work",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "#/model/gemini-models",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/gemini-api-parts",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/claude-cowork-web",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "route": "#/ranking",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "#/tool/doubao-work",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "#/model/gemini-models",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/gemini-api-parts",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/claude-cowork-web",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "route": "#/ranking",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "#/tool/doubao-work",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "#/model/gemini-models",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/gemini-api-parts",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/claude-cowork-web",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "route": "#/ranking",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "#/tool/doubao-work",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "#/model/gemini-models",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/gemini-api-parts",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/claude-cowork-web",
+      "width": 320,
+      "overflow": false
+    }
+  ],
+  "detailsReport": [
+    {
+      "route": "#/learn/ai-first",
+      "sourceCount": 3,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/choose-model",
+      "sourceCount": 5,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/prompt-template",
+      "sourceCount": 2,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/workflow-basics",
+      "sourceCount": 4,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/compare-models",
+      "sourceCount": 3,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/api-first",
+      "sourceCount": 8,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/choose-tool",
+      "sourceCount": 3,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/doubao-work-start",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/research-first",
+      "sourceCount": 2,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/chatgpt-files",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/claude-writing",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/gemini-research",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/deepseek-reasoning",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/qwen-structured",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/kimi-documents",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/grok-research",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/codex-web",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/claude-code-repo",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/cursor-debug",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/cli-workflow",
+      "sourceCount": 2,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/chatgpt-desktop-start",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/claude-desktop-start",
+      "sourceCount": 2,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/claude-cowork-desktop",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/claude-cowork-web",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/doubao-notice",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/glm-web-choice",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/codex-cloud-start",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/codex-cli-start",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/qwen-code-start",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/copilot-vscode-start",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/gpt-api-map",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/claude-api-blocks",
+      "sourceCount": 2,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/gemini-api-parts",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/deepseek-api-reasoning",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/qwen-deployment-choice",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/glm-tool-calling",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/minimax-api-types",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/grok-api-sources",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/kimi-api-context",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/learn/doubao-ark-start",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/tool/doubao-work",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/tool/chatgpt",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/tool/chatgpt-desktop",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/tool/claude",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/tool/claude-desktop",
+      "sourceCount": 2,
+      "overflow": false
+    },
+    {
+      "route": "#/tool/claude-cowork",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/tool/gemini",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/tool/deepseek",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/tool/qwen",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/tool/grok",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/tool/kimi",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/tool/glm",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/tool/doubao",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/tool/codex",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/tool/codex-cloud",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/tool/codex-cli",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/tool/claude-code",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/tool/cursor",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/tool/gemini-cli",
+      "sourceCount": 2,
+      "overflow": false
+    },
+    {
+      "route": "#/tool/qwen-code",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/tool/copilot",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/model/gpt-models",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/model/claude-models",
+      "sourceCount": 2,
+      "overflow": false
+    },
+    {
+      "route": "#/model/gemini-models",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/model/deepseek-models",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/model/qwen-models",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/model/glm-models",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/model/minimax",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/model/grok-models",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/model/kimi-models",
+      "sourceCount": 1,
+      "overflow": false
+    },
+    {
+      "route": "#/model/doubao-models",
+      "sourceCount": 1,
+      "overflow": false
+    }
+  ],
+  "normalErrors": [],
+  "scenarios": [
+    "真实更新与重载",
+    "分页与完整配置",
+    "来源/用途分离",
+    "503保留旧数据和日期",
+    "无快照",
+    "损坏快照",
+    "恢复读取",
+    "静态部署无后端",
+    "失败尝试日期",
+    "构建版并发更新与落盘",
+    "不同Origin拒绝"
+  ],
+  "fullRankingRows": {
+    "intelligence": 116,
+    "coding": 119,
+    "brokenImages": 0
+  },
+  "latestTests": {
+    "passed": 26,
+    "failed": 0
+  },
+  "latestBuild": {
+    "modules": 68,
+    "js": "index-Ca5Jt2va.js",
+    "css": "index-DDp2tARy.css"
+  }
+}

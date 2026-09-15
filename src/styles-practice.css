@@ -1,0 +1,57 @@
+.tutorial-image-button{display:block;width:100%;padding:0;text-align:left;border:1px solid var(--line);border-radius:12px;overflow:hidden;cursor:zoom-in}
+.tutorial-image-frame{position:relative;width:100%;background:white}
+.tutorial-image-frame img{display:block;width:100%;height:auto}
+.tutorial-image-marker{position:absolute;transform:translate(-50%,-50%);display:grid;place-items:center;width:25px;height:25px;border:2px solid white;border-radius:50%;background:#235be3;color:white;box-shadow:0 1px 5px #14213d44;font-size:13px;font-weight:700}
+.tutorial-image-notes{list-style:none!important;padding:0!important;display:grid;gap:12px;margin-top:18px}
+.tutorial-image-notes li{display:flex;align-items:flex-start;gap:10px;font-size:14px}
+.tutorial-image-notes li>span{display:grid;place-items:center;width:24px;height:24px;flex-shrink:0;background:var(--blue);color:var(--accent);border-radius:50%;font-size:12px;font-weight:700}
+.tutorial-image-notes p{font-size:14px;margin-top:3px}
+.guide-dialog.tutorial-image-dialog{width:min(1350px,calc(100% - 24px))}
+.lesson-resource-links{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0}
+.lesson-reference{border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:24px 0}
+.lesson-reference>p{padding:12px 16px;background:var(--blue);color:var(--ink);font-size:13px}
+.lesson-reference-scroll{overflow-x:auto;max-width:100%}
+.lesson-reference table{border-collapse:collapse;width:100%;min-width:570px;font-size:14px;line-height:1.8}
+.lesson-reference th,.lesson-reference td{padding:14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+.lesson-reference thead{background:#fafcff}
+.lesson-reference th{font-weight:600;color:var(--ink)}
+.lesson-reference th:first-child{min-width:105px}
+.lesson-reference td{color:#445674}
+.lesson-reference tr:last-child>*{border-bottom:0}
+.lesson-result-editor{padding:22px;border:1px solid #ccdfed;background:#f7fbff;border-radius:12px;margin:20px 0}
+.lesson-result-editor>label{display:block;font-size:18px;font-weight:600}
+.lesson-result-editor>p{font-size:13px;margin:10px 0;line-height:1.8}
+.lesson-result-editor textarea{display:block;resize:vertical;width:100%;min-height:250px;max-height:700px;border:1px solid #c4d4e5;border-radius:8px;padding:14px;background:white;color:var(--ink);font-family:inherit;font-size:15px;line-height:1.85}
+.lesson-result-actions{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0 8px}
+.lesson-faq{border-top:1px solid var(--line);margin:20px 0}
+.lesson-faq details{border-bottom:1px solid var(--line);padding:4px 0}
+.lesson-faq summary{cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:52px;padding:10px 0;font-size:15px;font-weight:600;list-style:none}
+.lesson-faq summary svg{flex-shrink:0}
+.lesson-faq details[open] summary svg{transform:rotate(180deg)}
+.lesson-faq details>p{margin:0 0 16px;font-size:15px;line-height:1.9}
+.starter-practice-link{margin-top:16px;display:flex;align-items:center;gap:8px;color:var(--accent);font-size:14px;line-height:1.8}
+.starter-elective{margin-top:28px;padding-top:24px;border-top:1px solid var(--line)}
+.starter-elective h2{font-size:21px;margin-bottom:12px}
+.starter-elective p{font-size:15px;line-height:1.9;margin-bottom:12px}
+@media(max-width:600px){.lesson-result-editor{padding:16px}.lesson-result-actions .button{width:100%;font-size:14px}.tutorial-image-marker{width:20px;height:20px;font-size:11px}.lesson-reference table{font-size:13px}.lesson-resource-links .button{font-size:14px;max-width:100%}}
+.route-electives{border-top:1px solid var(--line);margin-top:28px;padding-top:20px}
+.route-electives summary{display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-weight:600;min-height:44px;list-style:none}
+.route-electives>p{font-size:14px;color:var(--muted);margin:10px 0}
+.route-electives>a{display:flex;justify-content:space-between;gap:16px;min-height:44px;padding:8px 0;font-size:14px}
+.project-resources{margin-bottom:28px}
+.project-resources p{margin-top:8px;line-height:1.8}
+.result-library{display:grid;gap:18px}
+.result-library-card{border:1px solid var(--line);border-radius:14px;padding:24px;background:white;min-width:0}
+.result-library-card h2{font-size:20px;margin:12px 0 6px}
+.result-excerpt{margin:18px 0;white-space:pre-wrap;overflow-wrap:anywhere;color:#40516e;font-size:14px;line-height:1.9;padding:16px;border-radius:8px;background:#f6f8fc}
+.api-response-lab{border:1px solid #ccdaef;border-radius:14px;background:#f7faff;padding:24px;margin:24px 0}
+.lab-heading{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;align-items:center}
+.lab-heading strong{font-size:18px}.lab-heading span{font-size:12px;color:#5c6e8b}
+.lab-examples{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.lab-examples .button{font-size:13px;min-height:40px;padding:8px 12px}
+.api-response-lab label{display:block;font-weight:600;margin-bottom:10px}
+.api-response-lab textarea{display:block;width:100%;min-height:230px;resize:vertical;max-height:600px;background:white;border:1px solid #bdcce4;border-radius:8px;padding:14px;font:14px/1.8 Consolas,monospace;color:var(--ink);tab-size:2}
+.api-response-lab #api-response-help{font-size:13px;line-height:1.8;margin:12px 0 18px}
+.lab-result:empty{display:none}.lab-result{border-top:1px solid var(--line);padding-top:18px;margin-top:20px}.lab-result p,.lab-result li{font-size:14px;line-height:1.85}
+.about-page{max-width:860px;margin:auto}.about-page>section{margin:32px 0}.about-page h2{font-size:23px;margin-bottom:16px}.about-page p{line-height:1.95;color:#50617d;margin:12px 0}.about-definitions{margin:16px 0}.about-definitions>div{padding:18px 0;border-bottom:1px solid var(--line)}.about-definitions dt{font-weight:600;margin-bottom:8px}.about-definitions dd{margin:0;color:#50617d;line-height:1.9}
+@media(max-width:600px){.result-library-card,.api-response-lab{padding:18px}.library-tabs{gap:0!important}.library-tabs button{padding-left:9px;padding-right:9px;font-size:13px}.library-tabs button span{margin-left:4px}.result-library-card h2{font-size:18px}.lab-examples .button{min-height:44px}.project-resources .lesson-resource-links{flex-direction:column;align-items:flex-start}}
