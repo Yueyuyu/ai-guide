@@ -59,13 +59,22 @@ GitHub Pages 可以使用 Actions 发布 `dist/`。如果采用仓库子目录�
 
 ### 自定义域名
 
-- Cloudflare 的 `yomexa.com` 区域：新增 `CNAME ai-guide → yueyuyu.github.io`，仅 DNS、TTL 自动。目标不包含协议或仓库路径。
+- Cloudflare 的 `yomexa.com` 区域：`CNAME ai-guide → yueyuyu.github.io`，已代理、TTL 自动。访问者通过 Cloudflare 边缘访问，目标不包含协议或仓库路径。
+- Configuration Rules 中的“AIGuide 严格 HTTPS 回源”仅匹配 `(http.host eq "ai-guide.yomexa.com")`，SSL 设置为严格，验证 GitHub Pages 的源站证书。不要为了单个站点改动整个域名区域的 SSL 模式。
 - GitHub 仓库 Settings → Pages → Custom domain：`ai-guide.yomexa.com`；证书签发后启用 Enforce HTTPS。
 - 发布工作流的 `AIGUIDE_SITE_URL`：`https://ai-guide.yomexa.com/`，不再保留 `/ai-guide/` 子目录。
 - 当前使用 Actions 自定义工作流，域名由 Pages 设置管理，GitHub 不要求或读取 `CNAME` 文件。官方依据：[管理自定义域名](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)。
 - 换域名时同步 README、仓库主页和 Web Analytics 站点，核对旧地址重定向、HTTPS、独立阅读、下载和 sitemap。
 
 浏览器记录按来源隔离。旧 GitHub Pages 地址或本地地址的学习记录不会自动迁移到新域名；已有备份可在新站“我的学习”导入。
+
+### 国内访问与弱网验收
+
+站内脚本、样式、品牌图片、教程截图、练习下载和榜单快照由本站提供。唯一外部统计脚本使用异步加载；它不可达不应阻止阅读。主程序下载失败时，首页保留三篇主线及全部独立阅读页的入口；这些 HTML 正文无需主程序。
+
+CDN 是否生效以公共 DNS、`Server: cloudflare` 和 `CF-RAY` 为准，不能只看控制台的代理开关。验证时使用不经过请求代理的 HTTPS 请求，保留证书校验；若本机启用了 VPN 的虚拟网卡或全局隧道，单独声明测试范围。另使用国内运营商检测节点核对成功率、失败地点和响应时间，保留采集日期，不能把少数节点成功写成全国稳定可达。
+
+Cloudflare 全球网络不等同于中国大陆 CDN。大陆长期稳定性仍需真实线路持续验证；若需要大陆节点，应单独核对备案、服务商接入和费用。GitHub 反馈提交及教程中的第三方官网有各自的访问条件，本站加速不会改变那些网站的可达性。
 
 ## 发布验收清单
 
