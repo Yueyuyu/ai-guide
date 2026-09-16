@@ -500,6 +500,21 @@
       "contentKind": "rendered excerpt",
       "contentFile": "tutorials/workbuddy-first/results-source.txt",
       "contentSha256": "e52a33b4e17628b95bd1317f195c0480f0faed5642c5f69c7490a60fa069f749"
+    },
+    "workbuddy-task-bar": {
+      "retrievedAt": "2026-09-16T04:01:32.0068950Z",
+      "sourceUpdatedLabel": "2026/9/14 14:45（页面未说明时区）",
+      "sourceUpdatedAt": null,
+      "reviewedAt": "2026-09-16T04:01:32.0068950Z",
+      "fetchedUrl": "https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Task-Bar",
+      "status": "reviewed",
+      "contentSha256": "406f37a6c577bf77dc851ca6d0a36505fb452017e036aea74b2095168ba268f2",
+      "scope": "核对本地工作空间选择、Plan 确认执行与 Ask 不执行的区别。",
+      "id": "workbuddy-task-bar",
+      "contentKind": "rendered excerpt",
+      "title": "WorkBuddy 新建任务栏与工作模式",
+      "url": "https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Task-Bar",
+      "contentFile": "tutorials/workbuddy-first/task-bar-source.txt"
     }
   },
   "products": {
@@ -788,12 +803,13 @@
     },
     "workbuddy": {
       "status": "documented",
-      "checkedAt": "2026-09-15T14:47:13.924Z",
+      "checkedAt": "2026-09-16T04:01:32.0068950Z",
       "sourceIds": [
         "workbuddy-overview",
         "workbuddy-install",
         "workbuddy-task",
-        "workbuddy-results"
+        "workbuddy-results",
+        "workbuddy-task-bar"
       ],
       "scope": "已核对腾讯产品归属、Windows 安装、选择工作空间、创建任务和查看结果的官方说明。",
       "limit": "账号内登录、生成周报、文件写入及修正尚未实测；本站提供虚构练习和验收标准。"

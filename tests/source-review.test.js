@@ -30,3 +30,25 @@ test('榜单品牌资产与所记录的来源文件一致，使用原始文件�
     assert.equal(createHash('sha256').update(file).digest('hex'), asset.sha256, creator);
   }
 });
+
+test('WorkBuddy 教学截图保留官方原图、尺寸与来源哈希，不冒充练习产物', async () => {
+  const manifest = JSON.parse(await readFile(new URL('../public/tutorials/workbuddy-first/images.json', import.meta.url), 'utf8'));
+  const lesson = lessons.find(item => item.id === 'workbuddy-first');
+  const screenshots = lesson.sections.filter(section => section.screenshot).map(section => section.screenshot);
+  assert.equal(screenshots.length, manifest.length);
+  for (const item of manifest) {
+    const bytes = await readFile(new URL('../public/tutorials/workbuddy-first/' + item.file, import.meta.url));
+    assert.equal(createHash('sha256').update(bytes).digest('hex'), item.sha256);
+    assert.equal(bytes.subarray(0, 8).toString('hex'), '89504e470d0a1a0a');
+    const screenshot = screenshots.find(image => image.src.endsWith('/' + item.file));
+    assert.equal(bytes.readUInt32BE(16), screenshot.width);
+    assert.equal(bytes.readUInt32BE(20), screenshot.height);
+    assert.equal(screenshot.sourceUrl, item.pageUrl);
+    assert.match(screenshot.caption, /官方.*非本课实测/u);
+  }
+  const source = registry.sources['workbuddy-task-bar'];
+  const bytes = await readFile(new URL('../public/' + source.contentFile, import.meta.url));
+  assert.equal(createHash('sha256').update(bytes).digest('hex'), source.contentSha256);
+  assert.equal(source.sourceUpdatedAt, null);
+  assert.match(lesson.review.limit, /尚未.*实测/u);
+});

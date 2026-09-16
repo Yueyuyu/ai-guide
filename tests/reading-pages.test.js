@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { lessons } from '../src/data/index.js';
+import { lessons, lessonById } from '../src/data/index.js';
 import { escapeHtml, siteBase, renderReadingPage, renderReadingIndex, renderSitemap } from '../server/reading-pages.js';
 
 test('每篇教程生成独立正文与来源，交互入口保留对应章节', () => {
@@ -30,4 +30,26 @@ test('发布地址支持子目录，只在配置真实地址后生成 canonical 
   assert.doesNotMatch(sitemap, /#\/|localhost|127\.0\.0\.1/);
   assert.equal(renderSitemap(null), null);
   assert.equal(escapeHtml('<script>"&\''), '&lt;script&gt;&quot;&amp;&#39;');
+});
+
+test('图文与补充说明在独立页保留，旧章节定位和材料文件名不变', () => {
+  for (const id of ['doubao-notice', 'workbuddy-first']) {
+    const lesson = lessonById[id];
+    const html = renderReadingPage(id);
+    for (const section of lesson.sections) {
+      if (section.screenshot) {
+        assert.ok(html.includes(`src="../${section.screenshot.src}"`));
+        assert.ok(html.includes(escapeHtml(section.screenshot.caption.replace('点击图片放大。', ''))));
+        if (section.screenshot.sourceUrl) assert.ok(html.includes(escapeHtml(section.screenshot.sourceUrl)));
+      }
+      for (const text of section.supplement?.paragraphs || []) assert.ok(html.includes(escapeHtml(text)));
+    }
+    assert.ok(html.includes(`../#/learn/${id}?section=section-5`));
+    assert.match(html, /<details class="setup"><summary>/u);
+  }
+  const workbuddy = renderReadingPage('workbuddy-first');
+  assert.equal((workbuddy.match(/class="tutorial-image"/gu) || []).length, 5);
+  assert.match(workbuddy, /download="weekly-records.txt"/u);
+  assert.equal(lessonById['workbuddy-first'].sections.length, 6);
+  assert.equal(lessonById['doubao-notice'].sections.length, 7);
 });

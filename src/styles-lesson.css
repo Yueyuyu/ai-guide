@@ -1,0 +1,26 @@
+.lesson-brief{display:flex;align-items:center;gap:18px;padding:14px 0;margin:20px 0 12px;border-block:1px solid var(--line)}
+.lesson-brief>span{flex-shrink:0;color:var(--accent);font-size:13px;font-weight:600}
+.lesson-brief p{font-size:14px;line-height:1.8;color:var(--muted);margin:0}
+.lesson-supplement{border-bottom:1px solid var(--line);margin:8px 0;font-size:14px}
+.lesson-supplement>summary,.lesson-reference>summary{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px;cursor:pointer;list-style:none;font-weight:600;padding:10px 0}
+.lesson-supplement>summary svg,.lesson-reference>summary svg{flex-shrink:0}
+.lesson-supplement[open]>summary svg,.lesson-reference[open]>summary svg{transform:rotate(180deg)}
+.lesson-supplement>p,.lesson-supplement>ul{font-size:14px!important;line-height:1.85!important;margin:10px 0 16px!important}
+.reader-preparation .readiness-panel{margin:8px 0 16px}
+.reader .reader-quick-actions{margin:14px 0 24px;gap:22px}
+.reader-quick-actions .text-link{min-height:36px;font-size:13px}
+.lesson-visual-step{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:24px;align-items:start;margin:16px 0}
+.lesson-visual-step .tutorial-figure{margin:0;min-width:0}
+.lesson-instructions{min-width:0}
+.lesson-instructions>p{margin:0 0 14px;font-size:16px;line-height:1.9;color:#445674}
+.lesson-visual-step .lesson-instructions>p,.lesson-visual-step .lesson-action-steps{font-size:14px;line-height:1.85}
+.lesson-visual-step .lesson-action-steps{margin:0;padding-left:22px}
+.lesson-visual-step .lesson-action-steps li{margin:0 0 12px;padding-left:2px}
+.lesson-visual-step .lesson-action-steps li::marker{font-weight:700;color:var(--accent)}
+.lesson-visual-step .tutorial-image-frame img{max-height:340px;object-fit:contain}
+.lesson-visual-step .tutorial-image-marker{width:22px;height:22px;font-size:11px}
+.tutorial-zoom-hint{display:block;text-align:center;padding:7px 12px;background:#f2f6fc;color:#34609b;font-size:12px}
+.tutorial-figure figcaption{font-size:11px!important;line-height:1.7!important;margin-top:8px!important}
+.lesson-reference>summary{padding:12px 16px;font-size:14px;background:#f7faff}
+.lesson-reference>p{margin:0}
+@media(max-width:680px){.lesson-brief{display:block}.lesson-brief p{margin-top:6px}.lesson-visual-step{grid-template-columns:1fr;gap:14px}.lesson-visual-step .tutorial-image-frame img{max-height:330px}.lesson-visual-step .lesson-action-steps li{margin-bottom:8px}}

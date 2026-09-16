@@ -3,16 +3,17 @@ import { lessonById } from '../data/index.js';
 import { useLearning } from '../lib/hooks.jsx';
 import { learnHref, readingContext, typeName } from '../lib/discovery.js';
 import { Icon } from '../components/Icon.jsx';
-import { NotFound, PromptBlock, SaveButton } from '../components/Shared.jsx';
+import { NotFound, SaveButton } from '../components/Shared.jsx';
 import { LessonEntry } from '../components/LessonEntry.jsx';
 import { RelationshipDiagram } from '../components/GuideArt.jsx';
 import { SourceReview } from '../components/SourceReview.jsx';
 import { reviewLabels, reviewDate } from '../data/source-review.js';
 import { Modal } from '../components/Modal.jsx';
-import { LessonPractice } from '../components/LessonPractice.jsx';
+import { LessonSection } from '../components/LessonSection.jsx';
 import { LessonFlow, ReadinessPanel, Troubleshooter } from '../components/LearningGuide.jsx';
 import { LessonFeedback } from '../components/LessonFeedback.jsx';
 import '../styles-practice.css';
+import '../styles-lesson.css';
 
 export function Reader({ id, pathId, startSection }) {
   const lesson = Object.hasOwn(lessonById, id) ? lessonById[id] : undefined;
@@ -57,19 +58,18 @@ export function Reader({ id, pathId, startSection }) {
     <nav className="breadcrumb" aria-label="面包屑"><a href={context.path ? '#/path/' + context.path.id : '#/tutorials'}>{context.path?.title || '全部教程'}</a><span>/</span><span>{context.path ? '第 ' + String(context.index + 1).padStart(2, '0') + ' 课' : typeName(lesson)}</span></nav>
     <h1>{lesson.title}</h1><p className="article-description">{lesson.description}</p><div className="article-actions"><span>{typeName(lesson)}</span><a className="review-badge" href="#sources" onClick={e => { e.preventDefault(); go('sources'); }}>{reviewLabels[lesson.review.status]} · {reviewDate(lesson.review.checkedAt)}</a><SaveButton lesson={lesson} text/>{completed && <span className="tag">已完成</span>}</div>
     <details ref={mobileToc} className="mobile-toc"><summary>本篇目录<Icon name="down"/></summary>{contents}</details>
-    <section className="goals-box article-section" id="goals"><Icon name="cap" size={26}/><div><h2>这一课，你会弄清楚</h2><p>{lesson.goals.join('；')}。</p></div></section>
-    {lesson.productId && !lesson.guide?.setup && <LessonEntry lesson={lesson}/>}
+    <section className="lesson-brief article-section" id="goals" tabIndex={-1}><span>约 {lesson.minutes} 分钟</span><p>{lesson.goals.join(' → ')}</p></section>
+    {lesson.productId && !lesson.guide?.setup && <details className="lesson-supplement"><summary>本课使用的工具与官方入口<Icon name="down" size={16}/></summary><LessonEntry lesson={lesson}/></details>}
     {lesson.draft && <div className="notice warning"><Icon name="file"/><p>本篇为准备与练习清单，产品具体按钮、版本与账号条件待实测核对。</p></div>}
-    {lesson.guide?.setup ? <ReadinessPanel setupId={lesson.guide.setup}><button className="button primary" type="button" onClick={() => go('section-0')}>准备好了，开始第 1 步<Icon name="arrow" size={16}/></button></ReadinessPanel> : <details className="prerequisite" open={Boolean(lesson.guide)}><summary>开始前准备<Icon name="down" size={17}/></summary><p>{lesson.prerequisite}</p></details>}
+    <details className="lesson-supplement reader-preparation"><summary>开始前准备 · 设备、账号与费用<Icon name="down" size={16}/></summary>{lesson.guide?.setup ? <ReadinessPanel setupId={lesson.guide.setup}/> : <p>{lesson.prerequisite}</p>}</details>
     {lesson.guide && <>
-      <p className="lesson-evidence">核对范围：{lesson.guide.evidence}</p>
-      <LessonFlow steps={lesson.guide.flow}/>
+      <details className="lesson-supplement"><summary>查看流程与实测范围<Icon name="down" size={16}/></summary><p className="lesson-evidence">{lesson.guide.evidence}</p><LessonFlow steps={lesson.guide.flow}/></details>
       <div className="reader-quick-actions">
-        <button className="button secondary" type="button" onClick={() => go('help')}>遇到问题？在这里找办法<Icon name="arrow" size={16}/></button>
-        <button className="button secondary" type="button" onClick={() => go(resultSection)}>保存我的成果<Icon name="arrow" size={16}/></button>
+        <button className="text-link" type="button" onClick={() => go('help')}>遇到问题<Icon name="arrow" size={16}/></button>
+        <button className="text-link" type="button" onClick={() => go(resultSection)}>保存我的成果<Icon name="arrow" size={16}/></button>
       </div>
     </>}
-    {lesson.sections.map((section, index) => <section key={section.title} id={'section-' + index} tabIndex={-1} className="article-section prose-section"><h2><span>{index + 1}</span>{section.title}</h2>{section.paragraphs.map(p => <p key={p}>{p}</p>)}{section.actionSteps && <ol className="lesson-action-steps">{section.actionSteps.map(step => <li key={step}>{step}</li>)}</ol>}{section.diagram && <figure><button type="button" className="diagram-button" onClick={() => setZoom(true)} aria-label="放大公司、软件与模型关系示意"><RelationshipDiagram/></button><figcaption>关系示意 · 点击可放大</figcaption></figure>}{section.list && <ul>{section.list.map(item => <li key={item}>{item}</li>)}</ul>}{section.prompt && <PromptBlock text={section.prompt} label={section.promptLabel}/>} {section.code && <PromptBlock text={section.code} label={section.language}/>}<LessonPractice section={section} lesson={lesson}/>{section.checkpoint && <div className="step-check"><Icon name="check"/><p>{section.checkpoint}</p></div>}</section>)}
+    {lesson.sections.map((section, index) => <LessonSection key={section.title} section={section} index={index} lesson={lesson} onZoom={() => setZoom(true)}/>)}
     {lesson.guide?.help && <section id="help" tabIndex={-1} className="article-section lesson-help-section"><h2>遇到问题，找到下一步</h2><Troubleshooter items={lesson.guide.help} onGo={go}/></section>}
     {id === 'choose-model' && <section className="quiz-box"><h2>做一个小判断</h2><p>你打开 ChatGPT 网页并输入问题，此时正在操作的是？</p><fieldset><legend className="sr-only">选择答案</legend>{[['app', '应用软件'], ['model', '模型本身']].map(([value, label]) => <label key={value}><input type="radio" name="software-question" checked={answer === value} onChange={() => { setAnswer(value); setExplanation(false); }}/>{label}</label>)}</fieldset><button type="button" className="button secondary" onClick={() => setExplanation(true)}>查看解析</button>{explanation && <p className="quiz-feedback" role="status">{!answer ? '请先选择一个答案。' : answer === 'app' ? '答对了。你直接操作的是 ChatGPT 应用，模型在背后处理输入。' : '再想一想：你看到并操作的是应用界面，模型为它提供能力。'}</p>}</section>}
     <aside className="takeaway"><strong>带走这一点</strong><p>{lesson.takeaway}</p></aside>

@@ -40,7 +40,7 @@ test('练习材料、截图与来源证据真实可读，人工答案不伪装�
   assert.equal(createHash('sha256').update(source).digest('hex'), registry.sources['doubao-entry'].contentSha256);
   assert.equal(lesson.review.status, 'partial');
   assert.match(lesson.review.limit, /尚未实测/);
-  assert.equal(lesson.edited, '2026-09-15');
+  assert.equal(lesson.edited, '2026-09-16');
 });
 
 test('成果草稿可恢复和清空，拒绝无效导入且不会自动标记课程完成', () => {

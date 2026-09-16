@@ -1,0 +1,57 @@
+[
+  {
+    "evidence": "官方原图；未经改绘；非本站账号实测",
+    "pageUrl": "https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Installation-Win-Guide",
+    "sha256": "80351b1c5d7c75eea4af730975b1881a4b4265f21c7d169ee1f30e33e9f98de6",
+    "sourceUrl": "https://www.workbuddy.cn/docs/static/image-8.CK0afJ4M.png",
+    "height": 1220,
+    "retrievedAt": "2026-09-16T04:01:32.0068950Z",
+    "bytes": 169973,
+    "file": "login.png",
+    "width": 1820
+  },
+  {
+    "evidence": "官方原图；未经改绘；非本站账号实测",
+    "pageUrl": "https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Task-Bar",
+    "sha256": "f29bf05d25b8878791684fba63a3aa96fea17402a83bc2212f2bfdd17c4b472f",
+    "sourceUrl": "https://www.workbuddy.cn/docs/static/image-6.CGRDyKxH.png",
+    "height": 734,
+    "retrievedAt": "2026-09-16T04:01:32.0068950Z",
+    "bytes": 95228,
+    "file": "workspace-menu.png",
+    "width": 520
+  },
+  {
+    "evidence": "官方原图；未经改绘；非本站账号实测",
+    "pageUrl": "https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Task-Bar",
+    "sha256": "2214d86d23f59e35a069fc564b978e677df2d6d44730d12b67682d2d1a4536e9",
+    "sourceUrl": "https://www.workbuddy.cn/docs/static/task-mode.zukHuTdD.png",
+    "height": 893,
+    "retrievedAt": "2026-09-16T04:01:32.0068950Z",
+    "bytes": 270827,
+    "file": "task-mode.png",
+    "width": 1672
+  },
+  {
+    "evidence": "官方原图；未经改绘；非本站账号实测",
+    "pageUrl": "https://www.workbuddy.cn/docs/workbuddy/Results",
+    "sha256": "4c068f7a47efd9c01888f25b404a8db49b619e878e546ecdf366c2f141eee41e",
+    "sourceUrl": "https://www.workbuddy.cn/docs/static/results-5.BQcGOAhv.png",
+    "height": 1282,
+    "retrievedAt": "2026-09-16T04:01:32.0068950Z",
+    "bytes": 470627,
+    "file": "files.png",
+    "width": 1923
+  },
+  {
+    "evidence": "官方原图；未经改绘；非本站账号实测",
+    "pageUrl": "https://www.workbuddy.cn/docs/workbuddy/Results",
+    "sha256": "0ebbe4327a68d7836701352829d8c27417d163965b4280710d23361bf9c6098f",
+    "sourceUrl": "https://www.workbuddy.cn/docs/static/results-6.CgDwNO45.png",
+    "height": 1271,
+    "retrievedAt": "2026-09-16T04:01:32.0068950Z",
+    "bytes": 459436,
+    "file": "changes.png",
+    "width": 1938
+  }
+]

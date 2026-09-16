@@ -2,7 +2,6 @@ import React from 'react';
 import { useLearning, copyText } from '../lib/hooks.jsx';
 import { MAX_RESULT_LENGTH, practiceResultText } from '../lib/practice-files.js';
 import { Icon } from './Icon.jsx';
-import { TutorialImage } from './TutorialImage.jsx';
 import { ApiResponseLab } from './ApiResponseLab.jsx';
 import { NoticeReviewLab } from './NoticeReviewLab.jsx';
 
@@ -25,9 +24,7 @@ function ResultEditor({ lesson }) {
 
 export function LessonPractice({ section, lesson }) {
   return <>
-    {section.downloads && <div className="lesson-resource-links">{section.downloads.map(item => <a key={item.href} href={import.meta.env.BASE_URL + item.href} download={item.filename} className="button secondary"><Icon name="download"/>{item.label}</a>)}</div>}
-    {section.screenshot && <TutorialImage screenshot={section.screenshot}/>}
-    {section.reference && <div className="lesson-reference"><p>{section.reference.label}</p><div className="lesson-reference-scroll" tabIndex={0} role="region" aria-label="人工参考答案，可横向滚动"><table><caption className="sr-only">{section.reference.label}</caption><thead><tr>{section.reference.columns.map(column => <th key={column} scope="col">{column}</th>)}</tr></thead><tbody>{section.reference.rows.map(row => <tr key={row[0]}>{row.map((cell, i) => i === 0 ? <th key={i} scope="row">{cell}</th> : <td key={i}>{cell}</td>)}</tr>)}</tbody></table></div></div>}
+    {section.reference && <details className="lesson-reference"><summary>对照人工参考答案<Icon name="down" size={16}/></summary><p>{section.reference.label}</p><div className="lesson-reference-scroll" tabIndex={0} role="region" aria-label="人工参考答案，可横向滚动"><table><caption className="sr-only">{section.reference.label}</caption><thead><tr>{section.reference.columns.map(column => <th key={column} scope="col">{column}</th>)}</tr></thead><tbody>{section.reference.rows.map(row => <tr key={row[0]}>{row.map((cell, i) => i === 0 ? <th key={i} scope="row">{cell}</th> : <td key={i}>{cell}</td>)}</tr>)}</tbody></table></div></details>}
     {section.resultEditor && <ResultEditor lesson={lesson}/>}
     {section.apiLab && <ApiResponseLab/>}
     {section.noticeReview && <NoticeReviewLab/>}

@@ -38,7 +38,10 @@ for (const lesson of lessons) {
   if (lesson.review.status === 'partial') report.pendingPractice.push({ id: lesson.id, scope: lesson.review.limit });
   for (const section of lesson.sections) {
     for (const link of [...(section.links || []), ...(section.downloads || [])]) await checkLink(link.href, lesson.id);
-    if (section.screenshot) await checkLink(section.screenshot.src, lesson.id);
+    if (section.screenshot) {
+      await checkLink(section.screenshot.src, lesson.id);
+      if (section.screenshot.sourceUrl) await checkLink(section.screenshot.sourceUrl, lesson.id);
+    }
   }
   for (const item of lesson.guide?.help || []) if (!lesson.sections[item.section]) report.errors.push(`${lesson.id}：问题帮助指向无效章节 ${item.id}`);
 }
