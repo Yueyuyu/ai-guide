@@ -1,0 +1,22 @@
+.lesson-visual{min-width:0;margin:0;border:1px solid #dce6f4;border-radius:14px;background:linear-gradient(140deg,#f8faff,#edf4fc);padding:18px;color:#243c5b}
+.lesson-visual figcaption{margin:0 0 15px!important;display:grid;gap:4px}
+.lesson-visual figcaption>span{font-size:11px;color:#657895}
+.lesson-visual figcaption>strong{font-size:16px;line-height:1.6;color:#243c5b}
+.lesson-visual .lesson-visual-items{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.lesson-visual-items>li{position:relative;display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid #e2eaf6;border-radius:9px;margin:0!important;padding:12px!important;min-width:0}
+.lesson-visual-items .visual-index{flex:none;color:#3268b9;font:600 12px/22px ui-monospace,monospace}
+.lesson-visual-items>li>div{min-width:0}
+.lesson-visual-items strong{font-size:14px;line-height:1.7;font-weight:600}
+.lesson-visual-items p{margin:3px 0 0!important;font-size:13px!important;line-height:1.75!important;color:#536a86!important;overflow-wrap:anywhere;white-space:pre-line}
+.lesson-visual-items code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;font:13px/1.8 Consolas,monospace;color:#234877;margin:4px 0 0}
+.visual-copy{display:block;background:transparent;color:#3562a1;border:0;padding:8px 0;min-height:36px;font-size:12px;cursor:pointer}
+.lesson-visual-flow .lesson-visual-items>li:not(:last-child)::after{content:'↓';position:absolute;bottom:-15px;left:17px;font-size:12px;color:#7691b4;z-index:1}
+.lesson-visual-compare .lesson-visual-items{grid-template-columns:1fr 1fr}
+.lesson-visual-compare .visual-index{display:none}
+.lesson-visual-compare .lesson-visual-items>li:last-child{background:#f0f5ff;border-color:#d1dff4}
+.lesson-visual-files .lesson-visual-items>li{border-left:3px solid #80a5d7}
+.lesson-visual-files .lesson-visual-items>li:not(:first-child){margin-left:18px!important}
+.lesson-visual .visual-note{font-size:12px!important;line-height:1.75!important;color:#5f7693!important;margin:12px 0 0!important}
+.prompt-block .prompt-preview{margin:0;padding:16px 19px;font-size:14px;line-height:1.8;color:#4e6380;white-space:pre-line}
+.prompt-full{padding:0 18px 12px}.prompt-full>summary{min-height:36px;padding:8px 0;cursor:pointer;color:#3562a1;font-size:13px}.prompt-full pre{margin-top:8px!important}
+@media(max-width:380px){.lesson-visual{padding:14px}.lesson-visual-compare .lesson-visual-items{grid-template-columns:1fr}}

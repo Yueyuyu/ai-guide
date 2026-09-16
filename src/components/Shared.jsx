@@ -22,7 +22,12 @@ export function SearchBox({ query = '', onSearch, compact = false, variant = 'de
 
 export function PageHeading({ title, description, aside }) { return <header className="page-heading"><div><h1>{title}</h1>{description && <p>{description}</p>}</div>{aside}</header>; }
 export function EmptyState({ title = '还没有找到相关教程', description = '换一个关键词，或调整筛选条件试试。', href = '#/tutorials', action = '浏览全部教程', icon = 'search', onAction }) { return <div className="empty-state"><Icon name={icon} size={36}/><h2>{title}</h2><p>{description}</p>{onAction ? <button type="button" className="button secondary" onClick={onAction}>{action}<Icon name="arrow" size={17}/></button> : <a className="button secondary" href={href}>{action}<Icon name="arrow" size={17}/></a>}</div>; }
-export function PromptBlock({ text, label = '任务提示词' }) { const { notify } = useLearning(); return <div className="prompt-block"><div className="prompt-toolbar"><span>{label}</span><button type="button" onClick={() => copyText(text, notify)}><Icon name="copy" size={15}/>复制</button></div><pre><code>{text}</code></pre></div>; }
+export function PromptBlock({ text, label = '任务提示词', preview }) {
+  const { notify } = useLearning();
+  return <div className="prompt-block"><div className="prompt-toolbar"><span>{label}</span><button type="button" onClick={() => copyText(text, notify)}><Icon name="copy" size={15}/>{preview ? '复制完整内容' : '复制'}</button></div>
+    {preview ? <><p className="prompt-preview">{preview}</p><details className="prompt-full"><summary>展开完整内容</summary><pre><code>{text}</code></pre></details></> : <pre><code>{text}</code></pre>}
+  </div>;
+}
 function BrandMark({ brand, label, size, asset }) { return <span className={`tool-mark brand-${brand} mark-${size}`}><img src={import.meta.env.BASE_URL + 'brands/' + (asset || brand + '.svg')} alt={label} width="32" height="32"/></span>; }
 export function ToolMark({ tool, size = 'normal' }) { return tool ? <BrandMark brand={tool.brand} asset={tool.logo} label={`${tool.maker} · ${tool.short} 图标`} size={size}/> : null; }
 export function CompanyMark({ company, size = 'normal' }) { return <BrandMark brand={company.brand} asset={company.logo} label={`${company.name} · ${company.products} 品牌图标`} size={size}/>; }

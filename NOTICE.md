@@ -10,4 +10,4 @@ React、React DOM、Vite 及其依赖遵循各自许可证，具体版本记录�
 
 ## 网络准备教程来源
 
-Clash Party 为独立的 GPL-3.0 开源客户端，项目与文档归原作者所有。本站教程为中文操作整理，来源摘录仅用于核对；未转载其赞助推荐或个人订阅配置。官方项目：https://github.com/mihomo-party-org/clash-party ，文档：https://clashparty.org/docs/handson 。
+Clash Party 为独立的 GPL-3.0 开源客户端，项目与文档归原作者所有。本站教程为中文操作整理，保留两张官方界面示例并注明来源；图中显示旧名称 Mihomo Party v1.19.1，服务商文字属于官方示例，不代表本站推荐或合作。本站不发布用户的个人订阅配置。官方项目：https://github.com/mihomo-party-org/clash-party ，文档：https://clashparty.org/docs/handson 。

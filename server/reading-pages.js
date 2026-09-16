@@ -32,9 +32,17 @@ function renderSection(section, index, lessonId) {
     const markers = (image.markers || []).map((marker, i) => `<span class="image-marker" style="left:${Number(marker.x)}%;top:${Number(marker.y)}%" aria-hidden="true">${Number(marker.number) || i + 1}</span>`).join('');
     body = `<div class="visual-step"><div>${body}</div><figure><a href="${imageUrl}" aria-label="${escapeHtml('查看原图：' + image.alt)}"><div class="image-frame"><img class="tutorial-image" src="${imageUrl}" width="${image.width}" height="${image.height}" alt="${escapeHtml(image.alt)}" loading="lazy">${markers}</div><span class="zoom-hint">点击看原图 ↗</span></a><figcaption>${escapeHtml(image.caption.replace('点击图片放大。', ''))}${image.sourceUrl ? ' · ' + link(image.sourceUrl, '官方来源') : ''}</figcaption>${!section.actionSteps && image.markers?.length ? list(image.markers.map(marker => marker.title + '：' + marker.description)) : ''}</figure></div>`;
   }
+  if (section.visual && !section.screenshot) {
+    const visual = section.visual;
+    body = `<div class="visual-step"><div>${body}</div><figure class="lesson-visual lesson-visual-${escapeHtml(visual.kind || 'flow')}"><figcaption><span>${escapeHtml(visual.label || '步骤图解 · 非软件截图')}</span><strong>${escapeHtml(visual.title)}</strong></figcaption><ol class="lesson-visual-items">${visual.items.map((item, i) => `<li><span class="visual-index" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span><div><strong>${escapeHtml(item.title)}</strong>${item.text ? `<p>${escapeHtml(item.text)}</p>` : ''}${item.code ? `<code>${escapeHtml(item.code)}</code>` : ''}</div></li>`).join('')}</ol>${visual.note ? `<p class="visual-note">${escapeHtml(visual.note)}</p>` : ''}</figure></div>`;
+  }
   if (section.list) body += list(section.list);
   if (section.diagram) body += '<aside class="note">关系示意：公司开发应用与模型；应用提供操作界面，模型在背后处理输入。互动版可查看并放大关系图。</aside>';
-  if (section.prompt || section.code) body += `<figure><figcaption>${escapeHtml(section.promptLabel || section.language || '任务提示词')}</figcaption><pre><code>${escapeHtml(section.prompt || section.code)}</code></pre></figure>`;
+  for (const [text, label, preview] of [[section.prompt, section.promptLabel || '任务提示词', section.promptPreview], [section.code, section.language || '代码示例']]) {
+    if (!text) continue;
+    const content = `<pre><code>${escapeHtml(text)}</code></pre>`;
+    body += `<figure><figcaption>${escapeHtml(label)}</figcaption>${preview ? `<p>${escapeHtml(preview)}</p><details><summary>展开完整内容</summary>${content}</details>` : content}</figure>`;
+  }
   if (section.reference) {
     const reference = section.reference;
     body += `<details><summary>对照人工参考答案</summary><div class="table-scroll" tabindex="0" role="region" aria-label="参考答案，可横向滚动"><table><caption>${escapeHtml(reference.label)}</caption><thead><tr>${reference.columns.map(column => `<th scope="col">${escapeHtml(column)}</th>`).join('')}</tr></thead><tbody>${reference.rows.map(row => `<tr>${row.map((cell, i) => i === 0 ? `<th scope="row">${escapeHtml(cell)}</th>` : `<td>${escapeHtml(cell)}</td>`).join('')}</tr>`).join('')}</tbody></table></div></details>`;

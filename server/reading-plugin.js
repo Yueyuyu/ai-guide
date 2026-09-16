@@ -5,13 +5,15 @@ import { renderReadingPage, renderReadingIndex, renderSitemap, siteBase } from '
 export function readingPlugin({ siteUrl = process.env.AIGUIDE_SITE_URL } = {}) {
   const base = siteBase(siteUrl);
   const stylesheet = new URL('../src/styles-reading.css', import.meta.url);
+  const visualStylesheet = new URL('../src/styles-tutorial-visual.css', import.meta.url);
+  const styles = async () => (await Promise.all([readFile(stylesheet, 'utf8'), readFile(visualStylesheet, 'utf8')])).join('\n');
   return {
     name: 'aiguide-readable-pages',
     configureServer(server) {
       server.middlewares.use(async (request, response, next) => {
         const path = request.url?.split('?')[0];
         if (!path?.startsWith('/read/') || !['GET', 'HEAD'].includes(request.method)) return next();
-        if (path === '/read/styles.css') { response.setHeader('Content-Type', 'text/css; charset=utf-8'); response.end(await readFile(stylesheet, 'utf8')); return; }
+        if (path === '/read/styles.css') { response.setHeader('Content-Type', 'text/css; charset=utf-8'); response.end(await styles()); return; }
         const id = path.slice('/read/'.length).replace(/\.html$/u, '');
         const html = ['', 'index'].includes(id) ? renderReadingIndex(base) : path.endsWith('.html') ? renderReadingPage(id, base) : null;
         response.setHeader('Content-Type', 'text/html; charset=utf-8');
@@ -20,7 +22,7 @@ export function readingPlugin({ siteUrl = process.env.AIGUIDE_SITE_URL } = {}) {
       });
     },
     async generateBundle() {
-      this.emitFile({ type: 'asset', fileName: 'read/styles.css', source: await readFile(stylesheet, 'utf8') });
+      this.emitFile({ type: 'asset', fileName: 'read/styles.css', source: await styles() });
       this.emitFile({ type: 'asset', fileName: 'read/index.html', source: renderReadingIndex(base) });
       for (const lesson of lessons) this.emitFile({ type: 'asset', fileName: 'read/' + lesson.id + '.html', source: renderReadingPage(lesson.id, base) });
       if (base) {

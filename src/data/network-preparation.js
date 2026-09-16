@@ -2,21 +2,306 @@ export const networkPreparation = {
   id: 'network-prepare', title: '网络准备：用 Clash Party 配置自己的订阅',
   description: '分清客户端与订阅，按 Windows 安装、导入、选节点、验证，并学会恢复网络。',
   category: 'basics', platform: 'desktop', lessonType: 'setup', tools: [],
-  level: '入门', minutes: 25, color: 'blue', edited: '2026-09-15',
+  level: '入门', minutes: 25, color: 'blue', edited: '2026-09-16',
   cover: ['先把网络准备好', '客户端 · 订阅 · 验证'],
   goals: ['分清开源客户端和收费订阅服务', '按步骤导入自己的订阅并验证', '知道失败时查哪里、如何恢复网络'],
   prerequisite: '本课以 Windows 电脑为例。准备能取得官方安装包的网络，以及你自己选择的、与 Mihomo / Clash 配置兼容的订阅。已经能正常使用目标服务的读者可跳过；豆包网页入门不以配置代理为前提。',
   resultSaving: { material: '记录日期、系统、客户端版本、导入是否成功、目标服务是否可用、关闭代理后能否恢复。不要记录个人订阅链接、节点地址、密码或 Token。', filename: 'AIGuide-网络准备检查记录.txt', label: '我的网络检查记录', placeholder: '日期与系统：\n客户端版本：\n订阅导入：成功 / 失败 / 未尝试\n目标服务：可使用 / 仅可打开 / 不可用\n关闭代理后的普通网页：\n尚未解决的问题（不含凭据）：' },
   sections: [
-    { title: '先分清：客户端、订阅、节点', paragraphs: ['Clash Party 是开源代理客户端，负责读取配置并转发连接；它本身不附送可用线路。订阅服务商提供配置，通常按流量、周期或套餐收费。开源客户端免费，不等于订阅服务免费。', '订阅链接是你从服务商账户取得的配置地址；节点是配置中的连接选项。节点显示延迟，只说明某项探测有回应，不代表目标 AI 服务一定可用。'], reference: { label: '三个词，一次分清', columns: ['名称', '是什么', '从哪里获得'], rows: [['客户端', '安装在电脑上的软件', 'Clash Party 官方仓库'], ['订阅', '包含节点和规则的配置', '你选择的订阅服务商账户'], ['节点', '客户端里的连接选项', '成功导入的配置']] }, checkpoint: '我知道下载客户端之后，还需要自己准备兼容订阅。' },
-    { title: '从官方入口下载 Windows 安装包', actionSteps: ['打开下方官方发行页，优先选正式版本，展开 Assets（附件）。', '在 Windows“设置 → 系统 → 系统信息”查看系统类型，再选对应的 x64 或 arm64 文件；不要只凭文件排列顺序下载。', '第一次使用优先选 .exe 安装包；.7z 是便携压缩包，需要自己解压。文件命名和支持系统以当前发行说明为准。', '安装后从开始菜单打开 Clash Party，记下版本号。安装失败先核对发行说明和系统支持，不反复安装来源不明的同名软件。'], links: [{ label: 'Clash Party 官方发行页', href: 'https://github.com/mihomo-party-org/clash-party/releases', external: true }, { label: '官方安装指南', href: 'https://clashparty.org/docs/install', external: true }], paragraphs: ['GitHub 下载页面可能显示英文。Releases 是版本发布，Assets 是安装文件，Pre-release 表示预发布。本课不固定某个旧版本的文件名。Mac 与 Linux 用户请切换官方安装指南中的系统标签，本课没有声称在这些系统实测。'], checkpoint: '软件已经打开，并且我知道自己安装的版本。' },
-    { title: '准备自己的订阅，先看兼容和费用', paragraphs: ['如果你已经购买过订阅，先登录原服务商的官网账户，寻找订阅或配置入口，不要重复购买。需要的是该服务支持的 Clash / Mihomo 配置；官网首页地址、付款页面和个人订阅地址是不同的链接。', '还没有服务商时，先核对兼容客户端、计费周期、流量额度、设备限制、退款或试用规则，以及你要用的服务是否支持。能打开官网或有某种节点名称，都不能替代实际体验。本站目前没有已实测推荐的订阅商，也没有合作返佣链接。'], list: ['不要把个人订阅链接粘贴到 AIGuide 的反馈、草稿、公共 Issue 或在线转换站。链接可能直接包含账户凭据。', '服务商让你选配置格式时，按其官方说明选择兼容格式。无法确认就先询问该服务商，不随意转换。', '若链接曾公开泄露，在原服务商账户中重置订阅，再更新客户端配置。'], checkpoint: '我在自己的账户中取得了兼容配置；个人链接只在客户端中使用。' },
-    { title: '导入订阅，确认配置真正加载', actionSteps: ['保持本教程打开，切换到 Clash Party 的订阅管理页面。对照下方官方快速上手中的导入演示识别入口。', '在订阅链接输入处粘贴自己的地址，执行导入，等待操作结束。不同版本的按钮位置可能不同。', '确认出现订阅配置及节点列表，再选用该配置。只有一条名称、空列表或错误提示时，不能当作导入成功。', '首次导入失败时先确认复制完整、套餐有效、格式兼容；记下不含凭据的错误提示。'], links: [{ label: '官方快速上手：导入订阅与开启代理', href: 'https://clashparty.org/docs/handson', external: true }], paragraphs: ['官方演示采用其赞助商作例子。这里沿用操作流程，请换成你自己的服务商；演示中的商业推广不代表本站测试或推荐。'], checkpoint: '能看到并选用自己的配置，节点列表不是空的。' },
-    { title: '选择节点，再打开系统代理', actionSteps: ['打开代理节点页面，找到当前配置的代理组，选择一个你有权限使用的节点；如果配置支持延迟检测，可先运行一次。', '初次练习使用配置的规则模式，理解为按规则决定哪些连接经过代理。规则来自你的配置，并不保证每个应用都按预期连接。', '打开“系统代理”开关，保留客户端运行，再回浏览器验证。先不要同时切换 TUN、覆写或 DNS 等设置。'], paragraphs: ['系统代理主要影响遵循系统代理设置的应用。有的桌面应用、命令行工具使用自己的网络设置，所以浏览器成功不等于 Codex 的所有请求都成功。全局模式和 TUN 是不同机制，不需要为了第一次提问全部开启。'], checkpoint: '选中了节点，系统代理已开启，客户端仍在运行。' },
-    { title: '按三个层次验证，再进入 Codex', actionSteps: ['先打开一个原本可用的普通网页，检查基础网络仍然正常。', '再打开目标 AI 服务的官方页面，记录是可打开、超时还是有明确的地区或账号提示。', '在产品支持的账号与地区条件下完成登录，再发一个不含私人信息的简单任务。需要实际得到回答或文件，才能写“可使用”。'], links: [{ label: '检查 OpenAI 官方桌面入口', href: 'https://learn.chatgpt.com/docs/app', external: true }, { label: '准备好了：进入 Codex 编程路线', href: '#/path/builder' }, { label: '先做国内网页练习：豆包', href: '#/learn/doubao-notice?path=starter' }], paragraphs: ['网页可达、账号能登录、实际功能可用，是三个不同的检查结果。代理不会赋予产品地区支持或账号权益；出现明确限制时，按产品官方说明处理。'], checkpoint: '我能说清自己完成了哪一层检查，没有把测速成功当成 AI 已可用。' },
-    { title: '不通时只改一个地方，也要会恢复', paragraphs: ['先找到失败发生在哪一步，每次只改一项再重试。保留修改前的网络设置，避免排错时丢失原来的配置。'], faq: [['导入失败或列表是空的？', '核对订阅格式、链接完整性和有效期。若配置来自服务商，向其反馈客户端版本和脱敏后的错误，不发送截图中的个人订阅链接。'], ['节点有延迟，但目标网页打不开？', '先确认当前配置与节点已选中、系统代理开启。换一个服务商提供的可用节点后重试同一个页面；记录差异，不一次修改所有设置。'], ['浏览器能用，Codex 不行？', '记录 Codex 的具体错误和版本，核对产品登录与服务状态，以及应用是否使用系统代理。不能仅凭这个现象断定必须开启 TUN。'], ['退出客户端后普通网页也打不开？', '先重新打开客户端并关闭系统代理，再正常退出。仍不恢复时，检查 Windows“设置 → 网络和 Internet → 代理”中是否残留这次配置的手动代理；恢复本次改动前的设置，保留原有单位或学校网络配置。']], links: [{ label: '官方常见问题：开机没网、无法订阅', href: 'https://clashparty.org/docs/issues/common', external: true }], checkpoint: '我知道关闭本次系统代理后，如何重新检查普通网页。' },
-    { title: '留下检查记录，按实际情况完成自查', paragraphs: ['下面只记录版本、成功或失败及脱敏错误。不要粘贴配置内容、个人订阅 URL 或账户信息。记录保存在当前浏览器，可以下载 TXT；尚未做过的检查请写“未尝试”。'], resultEditor: true },
-    { title: '以后再学的设置与其他客户端', paragraphs: ['需要了解分流规则、TUN、覆写或配置转换时，再按当前软件版本阅读官方说明。换客户端也不等于换订阅服务，先确认配置兼容。Clash Verge Rev 可作另一款开源客户端的参考，本课没有混用它的按钮步骤。'], links: [{ label: 'Clash Party 官方指南', href: 'https://clashparty.org/docs/handson', external: true }, { label: 'Clash Verge Rev 开源仓库', href: 'https://github.com/clash-verge-rev/clash-verge-rev', external: true }, { label: '提交这次试用的卡点', href: '#/feedback?track=network' }], checkpoint: '基础流程完成后，再决定是否需要进阶设置。' },
+    {
+      "title": "先分清：客户端、订阅、节点",
+      "paragraphs": [
+        "客户端负责连接；订阅提供配置；节点是配置里的连接选项。安装客户端后，还要准备自己的兼容订阅。"
+      ],
+      "checkpoint": "我知道下载客户端之后，还需要自己准备兼容订阅。",
+      "visual": {
+        "title": "三个东西，各有来源",
+        "items": [
+          {
+            "title": "客户端",
+            "text": "从官方来源安装 Clash Party"
+          },
+          {
+            "title": "订阅配置",
+            "text": "从自己的服务商账户取得"
+          },
+          {
+            "title": "节点",
+            "text": "导入后，在配置里选择"
+          }
+        ]
+      },
+      "supplement": {
+        "title": "费用与测速怎么看",
+        "paragraphs": [
+          "开源客户端免费，不等于订阅服务免费。节点有延迟只表示探测得到回应，不代表目标 AI 服务一定可用。"
+        ]
+      }
+    },
+    {
+      "title": "从官方入口下载 Windows 安装包",
+      "actionSteps": [
+        "打开下方官方发行页，展开 Assets（安装文件）。",
+        "按系统选择 x64 或 arm64 的正式版 .exe，安装并打开。",
+        "记下客户端版本，方便后面核对界面。"
+      ],
+      "links": [
+        {
+          "label": "Clash Party 官方发行页",
+          "href": "https://github.com/mihomo-party-org/clash-party/releases",
+          "external": true
+        },
+        {
+          "label": "官方安装指南",
+          "href": "https://clashparty.org/docs/install",
+          "external": true
+        }
+      ],
+      "paragraphs": [
+        "先在 Windows“设置 → 系统 → 系统信息”查看系统类型。"
+      ],
+      "checkpoint": "软件已经打开，并且我知道自己安装的版本。",
+      "visual": {
+        "title": "安装包怎么选",
+        "items": [
+          {
+            "title": "系统类型",
+            "text": "x64 与 arm64 要对应电脑"
+          },
+          {
+            "title": "正式版本",
+            "text": "跳过标为 Pre-release 的预发布"
+          },
+          {
+            "title": ".exe 安装包",
+            "text": "首次使用更方便；.7z 需自行解压"
+          }
+        ]
+      },
+      "supplement": {
+        "title": "Mac、Linux 或安装失败",
+        "paragraphs": [
+          "Mac 与 Linux 按官方安装指南切换系统标签。安装失败先核对发行说明与系统支持，不反复安装来源不明的同名软件。文件命名以当前发行页为准。"
+        ]
+      }
+    },
+    {
+      "title": "准备自己的订阅，先看兼容和费用",
+      "paragraphs": [
+        "登录自己的服务商账户，取得 Clash / Mihomo 兼容订阅。已有订阅先核对有效期，无需重复购买。"
+      ],
+      "list": [
+        "个人订阅链接只粘贴到客户端，不放到本站草稿、反馈或公共 Issue。"
+      ],
+      "checkpoint": "我在自己的账户中取得了兼容配置；个人链接只在客户端中使用。",
+      "visual": {
+        "title": "复制前检查",
+        "items": [
+          {
+            "title": "格式兼容",
+            "text": "选择 Clash / Mihomo 配置"
+          },
+          {
+            "title": "套餐有效",
+            "text": "核对到期时间、流量与设备限制"
+          },
+          {
+            "title": "个人订阅地址",
+            "text": "不是官网首页，也不是付款页面"
+          }
+        ]
+      },
+      "supplement": {
+        "title": "没有订阅或链接泄露时",
+        "paragraphs": [
+          "没有订阅时先比较费用、试用或退款规则以及目标服务支持情况。本站没有已实测推荐的订阅商或合作返佣链接。",
+          "无法确认格式时询问服务商，不把个人链接交给在线转换站。链接曾泄露，应在原服务商账户重置后重新导入。"
+        ]
+      }
+    },
+    {
+      "title": "导入订阅，确认配置真正加载",
+      "actionSteps": [
+        "打开订阅管理，选择订阅卡片。",
+        "粘贴自己的订阅地址，点击“导入”。",
+        "等配置加载后选用它，确认节点列表不是空的。"
+      ],
+      "links": [
+        {
+          "label": "官方快速上手：导入订阅与开启代理",
+          "href": "https://clashparty.org/docs/handson",
+          "external": true
+        }
+      ],
+      "paragraphs": ["下图沿用官方旧版界面说明位置，请导入自己的订阅。"],
+      "checkpoint": "能看到并选用自己的配置，节点列表不是空的。",
+      "screenshot": {
+        "src": "tutorials/visual-guide/clash-import.png",
+        "alt": "官方导入示例：订阅卡片、地址输入处、导入按钮",
+        "width": 2166,
+        "height": 1442,
+        "title": "Clash Party 官方操作图",
+        "sourceUrl": "https://clashparty.org/docs/handson",
+        "caption": "官方旧版配图（图内名为 Mihomo Party）；2026-09-16 获取，非本课实测。当前版本布局可能不同，图中服务商不是本站推荐。"
+      },
+      "supplement": {
+        "title": "导入失败怎么办",
+        "paragraphs": [
+          "先检查链接是否复制完整、套餐是否有效、格式是否兼容。记录脱敏错误，只有配置名称或空列表不算成功。"
+        ]
+      }
+    },
+    {
+      "title": "选择节点，再打开系统代理",
+      "actionSteps": [
+        "打开“代理组”，展开分组并选择自己的节点。",
+        "开启“系统代理”，保持客户端运行。",
+        "回到浏览器，按下一节验证实际访问。"
+      ],
+      "paragraphs": [
+        "先按配置的规则模式连接；本次不需要同时调整 TUN、覆写或 DNS。"
+      ],
+      "checkpoint": "选中了节点，系统代理已开启，客户端仍在运行。",
+      "screenshot": {
+        "src": "tutorials/visual-guide/clash-nodes.png",
+        "alt": "官方连接示例：代理组、节点列表与系统代理开关",
+        "width": 2166,
+        "height": 1442,
+        "title": "Clash Party 官方操作图",
+        "sourceUrl": "https://clashparty.org/docs/handson",
+        "caption": "官方旧版配图（图内名为 Mihomo Party）；2026-09-16 获取，非本课实测。当前版本布局可能不同，图中服务商不是本站推荐。"
+      },
+      "supplement": {
+        "title": "浏览器能用，桌面软件不一定能用",
+        "paragraphs": [
+          "系统代理只影响遵循系统设置的应用。桌面软件和命令行可能有自己的网络设置；全局模式与 TUN 也不是同一机制。节点测速不能替代目标服务检查。"
+        ]
+      }
+    },
+    {
+      "title": "按三个层次验证，再进入 Codex",
+      "links": [
+        {
+          "label": "检查 OpenAI 官方桌面入口",
+          "href": "https://learn.chatgpt.com/docs/app",
+          "external": true
+        },
+        {
+          "label": "准备好了：进入 Codex 编程路线",
+          "href": "#/path/builder"
+        },
+        {
+          "label": "先做国内网页练习：豆包",
+          "href": "#/learn/doubao-notice?path=starter"
+        }
+      ],
+      "paragraphs": [
+        "每通过一层再检查下一层。出现明确地区或账号限制时，按产品官方说明处理。"
+      ],
+      "checkpoint": "已记录成功到哪一层；登录或测速成功不等于任务可用。",
+      "visual": {
+        "title": "三层检查，逐个确认",
+        "items": [
+          {
+            "title": "基础网络",
+            "text": "打开一个原本可用的普通网页"
+          },
+          {
+            "title": "官方服务",
+            "text": "打开目标官网，核对能否登录"
+          },
+          {
+            "title": "真实任务",
+            "text": "发送一句测试问题，实际收到回答"
+          }
+        ]
+      }
+    },
+    {
+      "title": "不通时只改一个地方，也要会恢复",
+      "paragraphs": [
+        "每次只改一个设置，记下原值。普通网页异常时先恢复本次代理改动。"
+      ],
+      "faq": [
+        [
+          "导入失败或列表是空的？",
+          "核对订阅格式、链接完整性和有效期。若配置来自服务商，向其反馈客户端版本和脱敏后的错误，不发送截图中的个人订阅链接。"
+        ],
+        [
+          "节点有延迟，但目标网页打不开？",
+          "先确认当前配置与节点已选中、系统代理开启。换一个服务商提供的可用节点后重试同一个页面；记录差异，不一次修改所有设置。"
+        ],
+        [
+          "浏览器能用，Codex 不行？",
+          "记录 Codex 的具体错误和版本，核对产品登录与服务状态，以及应用是否使用系统代理。不能仅凭这个现象断定必须开启 TUN。"
+        ],
+        [
+          "退出客户端后普通网页也打不开？",
+          "先重新打开客户端并关闭系统代理，再正常退出。仍不恢复时，检查 Windows“设置 → 网络和 Internet → 代理”中是否残留这次配置的手动代理；恢复本次改动前的设置，保留原有单位或学校网络配置。"
+        ]
+      ],
+      "links": [
+        {
+          "label": "官方常见问题：开机没网、无法订阅",
+          "href": "https://clashparty.org/docs/issues/common",
+          "external": true
+        }
+      ],
+      "checkpoint": "普通网页恢复可用；原有单位或学校网络配置保留。",
+      "visual": {
+        "title": "退出前，先恢复网络",
+        "items": [
+          {
+            "title": "关闭系统代理",
+            "text": "先在 Clash Party 里关开关"
+          },
+          {
+            "title": "正常退出客户端",
+            "text": "重新打开普通网页"
+          },
+          {
+            "title": "仍打不开",
+            "text": "检查 Windows 代理设置，仅恢复本次改动"
+          }
+        ]
+      }
+    },
+    {
+      "title": "留下检查记录，按实际情况完成自查",
+      "paragraphs": [
+        "填写版本、检查结果和脱敏错误；没做过的写“未尝试”。不要保存个人订阅链接或配置内容。"
+      ],
+      "resultEditor": true
+    },
+    {
+      "title": "以后再学的设置与其他客户端",
+      "paragraphs": [
+        "基础流程完成后，再按需要学习规则、TUN 或其他客户端。换客户端前先确认订阅兼容。"
+      ],
+      "links": [
+        {
+          "label": "Clash Party 官方指南",
+          "href": "https://clashparty.org/docs/handson",
+          "external": true
+        },
+        {
+          "label": "Clash Verge Rev 开源仓库",
+          "href": "https://github.com/clash-verge-rev/clash-verge-rev",
+          "external": true
+        },
+        {
+          "label": "提交这次试用的卡点",
+          "href": "#/feedback?track=network"
+        }
+      ],
+      "checkpoint": "基础流程完成后，再决定是否需要进阶设置。",
+      "supplement": {
+        "title": "其他客户端",
+        "paragraphs": [
+          "Clash Verge Rev 可作开源客户端参考，本课没有混用它的按钮步骤。进阶设置请按当前软件版本阅读官方说明。"
+        ]
+      }
+    },
   ],
   exercises: ['我能分清客户端、订阅和节点，并从官方来源安装软件', '我已导入自己的配置，并记录目标服务的实际可用层次', '我已检查关闭代理后的网络恢复，记录中不含订阅或凭据'],
   takeaway: '先把每一层验证清楚，再开始工具实操。',

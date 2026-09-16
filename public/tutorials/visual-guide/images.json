@@ -1,0 +1,46 @@
+[
+  {
+    "file": "clash-import.png",
+    "sourceUrl": "https://clashparty.org/_next/static/media/import_sub.19140a53.png",
+    "pageUrl": "https://clashparty.org/docs/handson",
+    "width": 2166,
+    "height": 1442,
+    "bytes": 184553,
+    "sha256": "f9ceea0ca80680f4803daac78ffce17514ac3f81756a3b87fec952fa3709ac35",
+    "retrievedAt": "2026-09-16T04:30:56.261Z",
+    "evidence": "官方原图；未经改绘；非本站账号实测"
+  },
+  {
+    "file": "clash-nodes.png",
+    "sourceUrl": "https://clashparty.org/_next/static/media/party_nodes.00697277.png",
+    "pageUrl": "https://clashparty.org/docs/handson",
+    "width": 2166,
+    "height": 1442,
+    "bytes": 592353,
+    "sha256": "b6f847118ea33b830b9084fd0520ab5454e992fa7d1d7b826c44a078bd042126",
+    "retrievedAt": "2026-09-16T04:30:57.106Z",
+    "evidence": "官方原图；未经改绘；非本站账号实测"
+  },
+  {
+    "file": "chatgpt-web.webp",
+    "sourceUrl": "https://learn.chatgpt.com/images/codex/chatgpt-web.webp",
+    "pageUrl": "https://learn.chatgpt.com/docs/web",
+    "width": 1599,
+    "height": 984,
+    "bytes": 48728,
+    "sha256": "668dbe1c4158023809deb6fcbb68bff61029f55a22463ef74dfb159c11b3cb02",
+    "retrievedAt": "2026-09-16T04:30:57.378Z",
+    "evidence": "官方原图；未经改绘；非本站账号实测"
+  },
+  {
+    "file": "chatgpt-desktop.webp",
+    "sourceUrl": "https://learn.chatgpt.com/codex/get-started-with-work/comparison-spreadsheet.webp",
+    "pageUrl": "https://learn.chatgpt.com/codex/use-chatgpt",
+    "width": 1540,
+    "height": 988,
+    "bytes": 187760,
+    "sha256": "40f9c2c14af71bb3cf393bdb14114eb5127be82b52c4e53e1a476ecacd0d48cd",
+    "retrievedAt": "2026-09-16T04:32:35.252Z",
+    "evidence": "官方原图；未经改绘；非本站账号实测"
+  }
+]
