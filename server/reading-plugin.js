@@ -1,17 +1,24 @@
 import { readFile } from 'node:fs/promises';
 import { lessons } from '../src/data/index.js';
 import { renderReadingPage, renderReadingIndex, renderSitemap, siteBase } from './reading-pages.js';
+import { artifactPreviews, renderArtifactPreview } from './artifact-pages.js';
 
 export function readingPlugin({ siteUrl = process.env.AIGUIDE_SITE_URL } = {}) {
   const base = siteBase(siteUrl);
   const stylesheet = new URL('../src/styles-reading.css', import.meta.url);
   const visualStylesheet = new URL('../src/styles-tutorial-visual.css', import.meta.url);
-  const styles = async () => (await Promise.all([readFile(stylesheet, 'utf8'), readFile(visualStylesheet, 'utf8')])).join('\n');
+  const comparisonStylesheet = new URL('../src/styles-artifact-comparison.css', import.meta.url);
+  const styles = async () => (await Promise.all([stylesheet, visualStylesheet, comparisonStylesheet].map(file => readFile(file, 'utf8')))).join('\n');
   return {
     name: 'aiguide-readable-pages',
     configureServer(server) {
       server.middlewares.use(async (request, response, next) => {
         const path = request.url?.split('?')[0];
+        if (path && artifactPreviews.has(path.slice(1)) && ['GET', 'HEAD'].includes(request.method)) {
+          response.setHeader('Content-Type', 'text/html; charset=utf-8');
+          response.end(request.method === 'HEAD' ? '' : await renderArtifactPreview(path.slice(1)));
+          return;
+        }
         if (!path?.startsWith('/read/') || !['GET', 'HEAD'].includes(request.method)) return next();
         if (path === '/read/styles.css') { response.setHeader('Content-Type', 'text/css; charset=utf-8'); response.end(await styles()); return; }
         const id = path.slice('/read/'.length).replace(/\.html$/u, '');
@@ -24,6 +31,7 @@ export function readingPlugin({ siteUrl = process.env.AIGUIDE_SITE_URL } = {}) {
     async generateBundle() {
       this.emitFile({ type: 'asset', fileName: 'read/styles.css', source: await styles() });
       this.emitFile({ type: 'asset', fileName: 'read/index.html', source: renderReadingIndex(base) });
+      for (const path of artifactPreviews.keys()) this.emitFile({ type: 'asset', fileName: path, source: await renderArtifactPreview(path) });
       for (const lesson of lessons) this.emitFile({ type: 'asset', fileName: 'read/' + lesson.id + '.html', source: renderReadingPage(lesson.id, base) });
       if (base) {
         this.emitFile({ type: 'asset', fileName: 'sitemap.xml', source: renderSitemap(base) });

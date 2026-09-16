@@ -1,5 +1,6 @@
 import { weeklyMaterial, resourceLink } from './practice-resources.js';
 import { photoStep } from './tutorial-captures.js';
+import { workbuddyComparison } from './workbuddy-comparison.js';
 
 const docs = 'https://www.workbuddy.cn/docs/workbuddy/';
 const installSource = docs + 'From-Beginner-to-Expert-Guide/Installation-Win-Guide';
@@ -59,7 +60,7 @@ export const workbuddyPractice = {
       title: '修正后，再看一次变更', paragraphs: ['继续原任务，指出错误的记录编号；没有错误时，补一份“待确认事项”。'],
       walkthrough: [photoStep('workbuddy-revised', '复查修正版', '发送下方修正要求，重新打开周报，对照原文和初稿检查。', '保留“下周”安排，补齐待确认事项，原始记录未改写。')],
       downloads: [{ href: 'practice/workbuddy-session/weekly-summary.txt', filename: 'weekly-summary.txt', label: '下载本次真实修正版' }],
-      supplement: { title: '这一次具体改了什么？', paragraphs: ['修正版补回“虚构练习材料”标识，W4 恢复“下周安排”，删除重复备注，单列 W3 交付时间与 W4 评审日期。已核对磁盘文件和原文哈希；未重新安装或登录，也未测试系统记事本。'] },
+      comparison: workbuddyComparison,
       prompt: '对照 weekly-records.txt，只修正 weekly-summary.txt 中的错误、重复项和无依据内容。原始记录保持不变。末尾列出“待确认事项”，不补造日期。完成后说明修改位置。',
     },
     {

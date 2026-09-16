@@ -60,6 +60,10 @@ function renderSection(section, index, lessonId) {
   }
   if (section.list) body += list(section.list);
   if (section.walkthrough) body += `<div class="reading-walkthrough">${section.walkthrough.map((step, i) => `<article><h3>${i + 1}. ${escapeHtml(step.title)}</h3><p>${escapeHtml(step.action)}</p>${renderStepImage(step.screenshot)}<aside class="note">完成标准：${escapeHtml(step.checkpoint)}</aside></article>`).join('')}</div>`;
+  if (section.comparison) {
+    const comparison = section.comparison;
+    body += `<div class="artifact-comparison"><h3>${escapeHtml(comparison.title)}</h3><p class="artifact-comparison-caption">${escapeHtml(comparison.caption)}</p>${comparison.items.map(item => `<details name="${escapeHtml(lessonId + '-comparison-' + index)}"><summary>${escapeHtml(item.title)}${symbol('down', 16)}</summary><div class="artifact-versions">${item.versions.map((version, i) => `<div class="artifact-version artifact-version-${i}"><strong class="artifact-version-label"><span aria-hidden="true">${i + 1}</span>${escapeHtml(version.label)}</strong>${version.excerpts.map(text => `<blockquote>${escapeHtml(text)}</blockquote>`).join('')}${version.note ? `<p class="artifact-version-note">${escapeHtml(version.note)}</p>` : ''}<a href="${escapeHtml(contentLink(version.href + '.html'))}" target="_blank" rel="noreferrer" aria-label="${escapeHtml('查看' + version.label + '完整文件（新窗口）')}">查看完整文件 ↗</a></div>`).join('')}</div><p class="artifact-takeaway">${escapeHtml(item.takeaway)}</p></details>`).join('')}</div>`;
+  }
   if (section.diagram) body += '<aside class="note">关系示意：公司开发应用与模型；应用提供操作界面，模型在背后处理输入。互动版可查看并放大关系图。</aside>';
   for (const [text, label, preview] of [[section.prompt, section.promptLabel || '任务提示词', section.promptPreview], [section.code, section.language || '代码示例']]) {
     if (!text) continue;

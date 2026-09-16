@@ -6,6 +6,7 @@ import { TutorialImage } from './TutorialImage.jsx';
 import { LessonPractice } from './LessonPractice.jsx';
 import { LessonVisual } from './LessonVisual.jsx';
 import { LessonWalkthrough } from './LessonWalkthrough.jsx';
+import { ArtifactComparison } from './ArtifactComparison.jsx';
 
 export function LessonSection({ section, index, lesson, onZoom }) {
   const instructions = <div className="lesson-instructions">
@@ -17,6 +18,7 @@ export function LessonSection({ section, index, lesson, onZoom }) {
     <h2><span>{index + 1}</span>{section.title}</h2>
     {section.screenshot ? <div className="lesson-visual-step">{instructions}<TutorialImage screenshot={section.screenshot} showNotes={!section.actionSteps}/></div> : section.visual ? <div className="lesson-diagram-step">{instructions}<LessonVisual visual={section.visual}/></div> : instructions}
     {section.walkthrough && <LessonWalkthrough steps={section.walkthrough} title={section.title}/>}
+    {section.comparison && <ArtifactComparison comparison={section.comparison} group={lesson.id + '-comparison-' + index}/>}
     {section.diagram && <figure><button type="button" className="diagram-button" onClick={onZoom} aria-label="放大公司、软件与模型关系示意"><RelationshipDiagram/></button><figcaption>关系示意 · 点击可放大</figcaption></figure>}
     {section.list && <ul>{section.list.map(item => <li key={item}>{item}</li>)}</ul>}
     {section.prompt && <PromptBlock text={section.prompt} label={section.promptLabel} preview={section.promptPreview}/>}

@@ -96,3 +96,7 @@ Windows 可加 `--system-http`。退出码：0 为所选检查通过，1 为内�
 同一章节有连续操作时配置 `walkthrough: [{ title, action, checkpoint, screenshot }]`，每项一句操作、一张图、一个完成标准。互动版切换当前步骤，独立阅读版完整展开；切换不修改学习记录。不要同时保留重复的 `actionSteps`、`visual` 或 `screenshot`。
 
 本轮原始截图与哈希位于 `public/tutorials/live-20260916/images.json`，实测范围与产物哈希见同目录 `evidence.json`；课程通过 `tutorial-captures.js` 引用。编号是 HTML 叠加，图片应保持原始宽高比，不能用固定高度拉伸导致标注错位。真实生成文件放在 `public/practice/*-session/`，与人工参考作品分开。
+
+真实产物可配置 `comparison: { title, caption, items }`，每项含 `title`、`takeaway` 与三份 `versions: [{ label, href, excerpts, note }]`。摘录必须逐字来自公开文件，解释放进 `note` 或 `takeaway`，不能改写成所谓模型原话。使用同源文件链接，不放私人文件路径。互动版与独立阅读版共用折叠对照样式，默认收起，手机纵向排列；摘录与文件的对应关系纳入测试，文件链接纳入内容审计。
+
+`href` 指向原始 TXT；构建工具只为这些登记的文件生成同路径加 `.html` 的中文预览页，声明 UTF-8 并转义全文，保留下载和返回原章节入口。避免让浏览器直接猜测 TXT 编码；不能为此改写实测文件或哈希。

@@ -38,6 +38,7 @@ for (const lesson of lessons) {
   if (lesson.review.status === 'partial') report.pendingPractice.push({ id: lesson.id, scope: lesson.review.limit });
   for (const section of lesson.sections) {
     for (const link of [...(section.links || []), ...(section.downloads || [])]) await checkLink(link.href, lesson.id);
+    for (const item of section.comparison?.items || []) for (const version of item.versions) await checkLink(version.href, lesson.id);
     for (const image of [section.screenshot, ...(section.walkthrough || []).map(step => step.screenshot)].filter(Boolean)) {
       await checkLink(image.src, lesson.id);
       if (image.sourceUrl) await checkLink(image.sourceUrl, lesson.id);

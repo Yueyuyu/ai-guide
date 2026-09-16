@@ -17,6 +17,7 @@ export const tutorialSymbols = {
   message: 'M3 3h18v14H9l-6 4z M7 8h10 M7 12h7',
   compare: 'M3 4h7v16H3z M14 4h7v16h-7z',
   arrow: 'M4 12h16 m-6-6 6 6-6 6',
+  down: 'm6 9 6 6 6-6',
   external: 'M14 4h6v6 m0-6-9 9 M10 5H5v14h14v-5',
 };
 

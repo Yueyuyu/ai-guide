@@ -5,6 +5,7 @@ import { createHash } from 'node:crypto';
 import { lessons } from '../src/data/index.js';
 import { weeklyMaterial } from '../src/data/practice-resources.js';
 import { renderReadingPage, escapeHtml } from '../server/reading-pages.js';
+import { artifactPreviews, renderArtifactPreview } from '../server/artifact-pages.js';
 import captures from '../public/tutorials/live-20260916/images.json' with { type: 'json' };
 import evidence from '../public/tutorials/live-20260916/evidence.json' with { type: 'json' };
 
@@ -62,4 +63,39 @@ test('网页局部修改仅增加指定标签及其样式，其他内容保持�
   assert.deepEqual([...after.matchAll(/<span class="project-tag">(.*?)<\/span>/g)].map(match => match[1]), ['阅读', '计划', '记录']);
   assert.equal(after.replace(/<span class="project-tag">.*?<\/span>/g, '').replace(/<style>\.project-tag\{[^}]*\}<\/style>\r?\n/, ''), before);
   assert.doesNotMatch(after, /<script|<link[^>]+stylesheet|<img|https?:\/\//i, '交付网页无需外部依赖');
+});
+
+test('真实产物对照逐字来自公开文件，独立阅读保留所有摘录与来源', async () => {
+  const lesson = lessons.find(item => item.id === 'workbuddy-first');
+  const comparison = lesson.sections[4].comparison;
+  const html = renderReadingPage(lesson.id);
+  for (const item of comparison.items) {
+    assert.ok(html.includes(escapeHtml(item.takeaway)));
+    assert.equal(item.versions.length, 3);
+    for (const version of item.versions) {
+      const original = (await publicFile(version.href)).toString('utf8');
+      for (const excerpt of version.excerpts) {
+        assert.ok(original.includes(excerpt), version.href + ': ' + excerpt);
+        assert.ok(html.includes(escapeHtml(excerpt)));
+      }
+      assert.ok(html.includes('href="../' + version.href + '.html"'));
+    }
+  }
+  assert.equal(lesson.sections.length, 6);
+  assert.equal(lesson.sections.findIndex(section => section.resultEditor), 5);
+});
+
+test('完整产物预览声明 UTF-8，保留原文件全文，只生成登记过的公开文件', async () => {
+  assert.equal(artifactPreviews.size, 3);
+  for (const [path, artifact] of artifactPreviews) {
+    const text = (await publicFile(artifact.href)).toString('utf8');
+    const html = await renderArtifactPreview(path);
+    assert.ok(html.includes('<meta charset="UTF-8">'));
+    assert.ok(html.includes('<pre>' + escapeHtml(text) + '</pre>'));
+    assert.ok(html.includes('href="../../#/learn/workbuddy-first?section=section-4"'));
+    assert.ok(html.includes('download="' + artifact.href.split('/').pop() + '"'));
+    assert.doesNotMatch(html, /<script\b/);
+  }
+  assert.equal(await renderArtifactPreview('../../package.json'), null);
+  assert.equal(await renderArtifactPreview('practice/missing.txt.html'), null);
 });
