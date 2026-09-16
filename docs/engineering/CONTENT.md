@@ -92,3 +92,7 @@ Windows 可加 `--system-http`。退出码：0 为所选检查通过，1 为内�
 概念图采用说明在上、全宽图解在下的布局：步骤横排、对照双列，手机按阅读顺序竖排；文件关系和命令保持纵向。不要把两行解释和多层竖卡强行并排。真实截图仍与短操作左右对应，并支持放大。教程标题附近显示软件原始图标、名称、使用平台和官方入口，独立阅读页保持相同标识。
 
 长提示词可提供 `promptPreview` 摘要，完整内容仍保存在 `prompt`。折叠只影响展示，“复制完整内容”必须复制原文全部材料。独立阅读版使用原生 details；同节有 `prompt` 和 `code` 时两者都保留。图解与摘要样式由 `src/styles-tutorial-visual.css` 共享，构建时合入独立阅读页，不能只改 React 版。
+
+同一章节有连续操作时配置 `walkthrough: [{ title, action, checkpoint, screenshot }]`，每项一句操作、一张图、一个完成标准。互动版切换当前步骤，独立阅读版完整展开；切换不修改学习记录。不要同时保留重复的 `actionSteps`、`visual` 或 `screenshot`。
+
+本轮原始截图与哈希位于 `public/tutorials/live-20260916/images.json`，实测范围与产物哈希见同目录 `evidence.json`；课程通过 `tutorial-captures.js` 引用。编号是 HTML 叠加，图片应保持原始宽高比，不能用固定高度拉伸导致标注错位。真实生成文件放在 `public/practice/*-session/`，与人工参考作品分开。

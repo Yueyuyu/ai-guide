@@ -1,0 +1,92 @@
+{
+  "date": "2026-09-16",
+  "workbuddy": {
+    "version": "5.3.8.0",
+    "platform": "Windows",
+    "account": "已有登录状态",
+    "verified": [
+      "选择隔离练习目录",
+      "只读核对材料",
+      "生成前计划与文字确认",
+      "实际创建 TXT",
+      "产物预览与磁盘核对",
+      "同任务修正结果",
+      "原文内容保持不变"
+    ],
+    "unverified": [
+      "安装向导",
+      "重新登录",
+      "系统记事本打开"
+    ],
+    "files": [
+      {
+        "path": "practice/workbuddy-session/weekly-records.txt",
+        "bytes": 746,
+        "sha256": "a07ca560a4b846d1ef86aa3bd6d279639df481e2ba7ad40ab3c71254eeef44d1"
+      },
+      {
+        "path": "practice/workbuddy-session/weekly-summary-before.txt",
+        "bytes": 1072,
+        "sha256": "4b1fe03abfb09c0d84f5c956b1244cfbd3a86947858acbf29de9a45efa7f1c56"
+      },
+      {
+        "path": "practice/workbuddy-session/weekly-summary.txt",
+        "bytes": 1084,
+        "sha256": "9d68e99a8a29382305a12db5b6f6f8752dc27493e15e71152a670d5f6236c4fe"
+      }
+    ]
+  },
+  "codex": {
+    "scope": "本站当前 Codex 会话创建与修改作品",
+    "verified": [
+      "生成实际 HTML 与说明文件",
+      "三个标签的局部修改",
+      "静态页面导航、键盘、刷新、1440/390/320px"
+    ],
+    "unverified": [
+      "桌面安装登录与目录选择实拍",
+      "原生双击 file://",
+      "真实手机",
+      "文字放大"
+    ],
+    "files": [
+      {
+        "path": "practice/codex-session/index-before-tags.html",
+        "bytes": 2818,
+        "sha256": "aec2814ce4bdd3d61ae4a9a3fc03305e7a0663aa40c70125dc01f7c7b32433e6"
+      },
+      {
+        "path": "practice/codex-session/index.html",
+        "bytes": 3121,
+        "sha256": "0c58efae54fbc703b8b105d2aeac7766bb4404b1b0dad30da35924e1ae2136b7"
+      },
+      {
+        "path": "practice/codex-session/README.md",
+        "bytes": 735,
+        "sha256": "481ff717d97554a9d664c794240ec4298bf701643908699d885e586fddfc26bf"
+      }
+    ]
+  },
+  "network": {
+    "verified": [
+      "官方 2.0.2 发行页下载入口",
+      "官方 Windows 安装说明",
+      "目标官方文档加载"
+    ],
+    "unverified": [
+      "安装向导实拍",
+      "当前版本订阅导入与节点切换",
+      "代理连接与恢复实测"
+    ],
+    "note": "未修改本机代理；导入和节点沿用官方 v1.19.1 图，不能视为新版实测"
+  },
+  "doubao": {
+    "verified": [
+      "未登录入口"
+    ],
+    "unverified": [
+      "登录后的生成、追问、复制"
+    ],
+    "note": "等待账号登录，未用人工参考答案冒充豆包输出"
+  }
+}

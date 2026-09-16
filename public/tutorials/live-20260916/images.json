@@ -1,0 +1,303 @@
+[
+  {
+    "id": "chatgpt-quickstart-zh",
+    "file": "chatgpt-quickstart-zh.jpg",
+    "src": "tutorials/live-20260916/chatgpt-quickstart-zh.jpg",
+    "height": 720,
+    "width": 1280,
+    "title": "ChatGPT 官方安装与登录说明",
+    "alt": "ChatGPT 官方中文文档的下载和登录步骤，页面由官网自动翻译。",
+    "caption": "官方中文说明页实拍 · 非安装登录实拍 · 2026-09-16",
+    "sourceUrl": "https://learn.chatgpt.com/zh-Hans/docs/app#getting-started",
+    "version": null,
+    "markers": [
+      {
+        "x": 40,
+        "y": 73,
+        "title": "官方下载",
+        "description": "在官方页面下载适合系统的安装包。"
+      }
+    ],
+    "capturedOn": "2026-09-16",
+    "sha256": "198d2123944dcfdf4b916e90f205bbc08872ce3b41fb95757bb08ff18675c4e6",
+    "bytes": 51619,
+    "processing": "原始截图未裁剪或修改；编号由网页叠加。"
+  },
+  {
+    "id": "chatgpt-folder-guide-zh",
+    "file": "chatgpt-folder-guide-zh.jpg",
+    "src": "tutorials/live-20260916/chatgpt-folder-guide-zh.jpg",
+    "height": 720,
+    "width": 1280,
+    "title": "ChatGPT 官方目录与任务说明",
+    "alt": "官方中文文档说明选择工作位置，以及在 Codex 中新建聊天。",
+    "caption": "官方中文说明页实拍 · 非桌面操作实拍 · 2026-09-16",
+    "sourceUrl": "https://learn.chatgpt.com/zh-Hans/docs/app#getting-started",
+    "version": null,
+    "markers": [],
+    "capturedOn": "2026-09-16",
+    "sha256": "55b2c79498128bb8133e1bb7aec67838f600610830a445145a5a65d4012d5969",
+    "bytes": 61091,
+    "processing": "原始截图未裁剪或修改；编号由网页叠加。"
+  },
+  {
+    "id": "clash-download",
+    "file": "clash-download.jpg",
+    "src": "tutorials/live-20260916/clash-download.jpg",
+    "height": 712,
+    "width": 1265,
+    "title": "下载 Windows 安装版",
+    "alt": "GitHub 官方发行页的 Windows10/11 安装版下载入口，显示 2.0.2。",
+    "caption": "官方发行页实拍 · 2026-09-16 · v2.0.2",
+    "sourceUrl": "https://github.com/mihomo-party-org/clash-party/releases",
+    "version": "v2.0.2",
+    "markers": [
+      {
+        "x": 32,
+        "y": 55,
+        "title": "64位安装版",
+        "description": "x64 电脑选择这一项。"
+      }
+    ],
+    "capturedOn": "2026-09-16",
+    "sha256": "b0503dd0e0a227e821fa95bb66bcbbbba540e4d31573eeac379f781caaa2cf9d",
+    "bytes": 55112,
+    "processing": "原始截图未裁剪或修改；编号由网页叠加。"
+  },
+  {
+    "id": "clash-install-guide",
+    "file": "clash-install-guide.jpg",
+    "src": "tutorials/live-20260916/clash-install-guide.jpg",
+    "height": 712,
+    "width": 1265,
+    "title": "安装说明",
+    "alt": "Clash Party 官方安装页，Windows 手动安装说明。",
+    "caption": "官方安装说明实拍 · 非安装向导 · 2026-09-16",
+    "sourceUrl": "https://clashparty.org/docs/install",
+    "version": null,
+    "markers": [
+      {
+        "x": 27,
+        "y": 20,
+        "title": "Windows",
+        "description": "按自己的系统阅读安装说明。"
+      }
+    ],
+    "capturedOn": "2026-09-16",
+    "sha256": "289900c1ee1a76cbd091b09806579c6f7dae214b23edfc48e9792ad271054868",
+    "bytes": 40087,
+    "processing": "原始截图未裁剪或修改；编号由网页叠加。"
+  },
+  {
+    "id": "workbuddy-workspace-menu",
+    "file": "workbuddy-workspace-menu.jpg",
+    "src": "tutorials/live-20260916/workbuddy-workspace-menu.jpg",
+    "height": 1094,
+    "width": 1679,
+    "title": "打开练习文件夹",
+    "alt": "WorkBuddy 的工作空间菜单，底部是打开本地文件夹入口。",
+    "caption": "登录后实拍 · 菜单入口 · 2026-09-16 · 5.3.8",
+    "sourceUrl": null,
+    "version": "5.3.8",
+    "markers": [
+      {
+        "x": 36,
+        "y": 56,
+        "title": "打开本地文件夹",
+        "description": "选择只放虚构材料的练习目录。"
+      }
+    ],
+    "capturedOn": "2026-09-16",
+    "sha256": "80fb0bdafc651f34d4c595e3b8c373109c290bf1be1950a939882562643f64ac",
+    "bytes": 76074,
+    "processing": "原始截图未裁剪或修改；编号由网页叠加。"
+  },
+  {
+    "id": "workbuddy-workspace-selected",
+    "file": "workbuddy-workspace-selected.jpg",
+    "src": "tutorials/live-20260916/workbuddy-workspace-selected.jpg",
+    "height": 1094,
+    "width": 1679,
+    "title": "确认目录名称",
+    "alt": "WorkBuddy 输入框下方已选择 workbuddy-weekly，使用默认权限。",
+    "caption": "登录后实拍 · 已选练习目录 · 2026-09-16 · 5.3.8",
+    "sourceUrl": null,
+    "version": "5.3.8",
+    "markers": [
+      {
+        "x": 32,
+        "y": 60,
+        "title": "练习目录",
+        "description": "目录名称是 workbuddy-weekly。"
+      }
+    ],
+    "capturedOn": "2026-09-16",
+    "sha256": "dacabff3b14e5cff5a387687012fbccfe461caea8f7d67b3f65209af9cebe223",
+    "bytes": 74096,
+    "processing": "原始截图未裁剪或修改；编号由网页叠加。"
+  },
+  {
+    "id": "workbuddy-check-prompt",
+    "file": "workbuddy-check-prompt.jpg",
+    "src": "tutorials/live-20260916/workbuddy-check-prompt.jpg",
+    "height": 1094,
+    "width": 1679,
+    "title": "核对材料",
+    "alt": "WorkBuddy 输入框中准备发送只读目录核对语句。",
+    "caption": "登录后实拍 · 只读核对 · 2026-09-16 · 5.3.8",
+    "sourceUrl": null,
+    "version": "5.3.8",
+    "markers": [
+      {
+        "x": 72,
+        "y": 55,
+        "title": "发送",
+        "description": "先核对目录，不修改文件。"
+      }
+    ],
+    "capturedOn": "2026-09-16",
+    "sha256": "3698babb39c67d144faaa7c02b974ef2149a4b98417323b6a4bf3a8934016c57",
+    "bytes": 75672,
+    "processing": "原始截图未裁剪或修改；编号由网页叠加。"
+  },
+  {
+    "id": "workbuddy-plan",
+    "file": "workbuddy-plan.jpg",
+    "src": "tutorials/live-20260916/workbuddy-plan.jpg",
+    "height": 1094,
+    "width": 1679,
+    "title": "阅读执行计划",
+    "alt": "WorkBuddy 给出周报分组、去重和数字处理计划，等待确认。",
+    "caption": "账号内实测 · 生成前计划 · 2026-09-16 · 5.3.8",
+    "sourceUrl": null,
+    "version": "5.3.8",
+    "markers": [],
+    "capturedOn": "2026-09-16",
+    "sha256": "09681c2bc591e19c74a79310d99b2c1094ac4d4d340c81efceadbcf81b149f25",
+    "bytes": 141476,
+    "processing": "原始截图未裁剪或修改；编号由网页叠加。"
+  },
+  {
+    "id": "workbuddy-confirm",
+    "file": "workbuddy-confirm.jpg",
+    "src": "tutorials/live-20260916/workbuddy-confirm.jpg",
+    "height": 1094,
+    "width": 1679,
+    "title": "确认生成",
+    "alt": "输入框中确认仅新建 weekly-summary.txt，计划等待发送确认。",
+    "caption": "账号内实测 · 确认任务 · 2026-09-16 · 5.3.8",
+    "sourceUrl": null,
+    "version": "5.3.8",
+    "markers": [
+      {
+        "x": 77,
+        "y": 94,
+        "title": "发送确认",
+        "description": "计划范围正确后再发送。"
+      }
+    ],
+    "capturedOn": "2026-09-16",
+    "sha256": "b70aea82432542ba0635d351f1c0af79b7191c04099e941be7455441a83b24dc",
+    "bytes": 142030,
+    "processing": "原始截图未裁剪或修改；编号由网页叠加。"
+  },
+  {
+    "id": "workbuddy-result",
+    "file": "workbuddy-result.jpg",
+    "src": "tutorials/live-20260916/workbuddy-result.jpg",
+    "height": 1094,
+    "width": 1679,
+    "title": "打开生成文件",
+    "alt": "WorkBuddy 全屏产物预览，展示实际 weekly-summary.txt 的四组内容。",
+    "caption": "账号内实测 · 实际文件初稿 · 2026-09-16 · 5.3.8",
+    "sourceUrl": null,
+    "version": "5.3.8",
+    "markers": [
+      {
+        "x": 95.5,
+        "y": 10,
+        "title": "所在文件夹",
+        "description": "打开生成文件所在的电脑目录。"
+      }
+    ],
+    "capturedOn": "2026-09-16",
+    "sha256": "cf27b26ff01b26dc15093b589282c0b629e2f60e9054457d4d209cdbab3bc2bf",
+    "bytes": 99365,
+    "processing": "原始截图未裁剪或修改；编号由网页叠加。"
+  },
+  {
+    "id": "workbuddy-revised",
+    "file": "workbuddy-revised.jpg",
+    "src": "tutorials/live-20260916/workbuddy-revised.jpg",
+    "height": 1094,
+    "width": 1679,
+    "title": "复查修正版",
+    "alt": "WorkBuddy 预览修改后的周报，末尾增加待确认事项，保留原文编号。",
+    "caption": "账号内实测 · 实际文件修正版 · 2026-09-16 · 5.3.8",
+    "sourceUrl": null,
+    "version": "5.3.8",
+    "markers": [
+      {
+        "x": 19,
+        "y": 45,
+        "title": "待确认事项",
+        "description": "检查 W3 交付时间与 W4 评审日期。"
+      }
+    ],
+    "capturedOn": "2026-09-16",
+    "sha256": "9aeeb5e7c3ea15945cb9c8dae5e262b763dd6e409d50359c7860620bc620b77b",
+    "bytes": 98617,
+    "processing": "原始截图未裁剪或修改；编号由网页叠加。"
+  },
+  {
+    "id": "codex-before",
+    "file": "codex-before.jpg",
+    "src": "tutorials/live-20260916/codex-before.jpg",
+    "height": 987,
+    "width": 1265,
+    "title": "实际网页初稿",
+    "alt": "根据课程需求生成的林同学个人主页，包含简介、三个项目和联系说明。",
+    "caption": "本站 Codex 会话生成 · 浏览器实拍 · 2026-09-16",
+    "sourceUrl": null,
+    "version": null,
+    "markers": [],
+    "capturedOn": "2026-09-16",
+    "sha256": "22f8e1889b5c0d25d8f86766fc75d1bbac71893c8088c519088d46c19a6cf465",
+    "bytes": 56321,
+    "processing": "原始截图未裁剪或修改；编号由网页叠加。"
+  },
+  {
+    "id": "codex-after",
+    "file": "codex-after.jpg",
+    "src": "tutorials/live-20260916/codex-after.jpg",
+    "height": 1020,
+    "width": 1265,
+    "title": "实际网页修改后",
+    "alt": "同一网页增加阅读、计划、记录三个标签，其余内容保持一致。",
+    "caption": "本站 Codex 会话生成 · 浏览器实拍 · 2026-09-16",
+    "sourceUrl": null,
+    "version": null,
+    "markers": [],
+    "capturedOn": "2026-09-16",
+    "sha256": "1f66c83556ba07691bf58da6283c5b6f3318184cfdde5fd9218164aaf112a0ca",
+    "bytes": 59000,
+    "processing": "原始截图未裁剪或修改；编号由网页叠加。"
+  },
+  {
+    "id": "codex-mobile",
+    "file": "codex-mobile.jpg",
+    "src": "tutorials/live-20260916/codex-mobile.jpg",
+    "height": 1382,
+    "width": 375,
+    "title": "手机宽度检查",
+    "alt": "实际网页在390像素模拟宽度下显示为单列，三个标签没有溢出。",
+    "caption": "本站生成作品 · 390px 浏览器模拟 · 2026-09-16",
+    "sourceUrl": null,
+    "version": null,
+    "markers": [],
+    "capturedOn": "2026-09-16",
+    "sha256": "d36ddac77e1366a8fe7760088cf12261b2da3dd9dce943631703330b5c6225b9",
+    "bytes": 44918,
+    "processing": "原始截图未裁剪或修改；编号由网页叠加。"
+  }
+]

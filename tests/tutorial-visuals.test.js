@@ -7,7 +7,7 @@ import { renderReadingPage, escapeHtml } from '../server/reading-pages.js';
 import { personalBrief } from '../src/data/practice-resources.js';
 
 test('主线保留旧章节与草稿位置，折叠预览不会丢失完整任务', () => {
-  const expected = { 'network-prepare': [9, 7], 'codex-web': [5, 4], 'codex-iterate': [4, 3], 'website-check': [5, 4] };
+  const expected = { 'network-prepare': [9, 7], 'codex-web': [5, 4], 'codex-iterate': [4, 3], 'website-check': [5, 4], 'workbuddy-first': [6, 5], 'doubao-notice': [7, 5] };
   for (const [id, [count, editor]] of Object.entries(expected)) {
     const lesson = lessonById[id];
     assert.equal(lesson.sections.length, count, id);
@@ -50,7 +50,7 @@ test('新增官方图原样本地托管，文件哈希和文中来源一致', as
     const bytes = await readFile(new URL('../public/tutorials/visual-guide/' + item.file, import.meta.url));
     assert.equal(createHash('sha256').update(bytes).digest('hex'), item.sha256, item.file);
     assert.equal(bytes.length, item.bytes);
-    const images = Object.values(lessonById).flatMap(lesson => lesson.sections.map(s => s.screenshot).filter(Boolean)).filter(image => image.src === 'tutorials/visual-guide/' + item.file);
+    const images = Object.values(lessonById).flatMap(lesson => lesson.sections.flatMap(s => [s.screenshot, ...(s.walkthrough || []).map(step => step.screenshot)]).filter(Boolean)).filter(image => image.src === 'tutorials/visual-guide/' + item.file);
     assert.ok(images.length > 0, item.file);
     for (const image of images) {
       assert.equal(image.sourceUrl, item.pageUrl);

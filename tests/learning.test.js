@@ -8,7 +8,9 @@ test('内容目录 ID 唯一，所有教程、专题、路线和项目相互引�
   for (const lesson of lessons) {
     assert.ok(categories.some(category => category.id === lesson.category));
     assert.ok(lesson.sections.length >= 3 && lesson.exercises.length >= 3 && lesson.goals.length >= 3);
-    assert.ok(lesson.sections.every(section => section.paragraphs.length >= 1));
+    assert.ok(lesson.sections.every(section => Array.isArray(section.paragraphs) && (
+      section.paragraphs.length >= 1 || (section.walkthrough?.length > 0 && section.walkthrough.every(step => step.action && step.checkpoint && step.screenshot))
+    )), lesson.id + ' 每节应有正文或完整图文操作');
     lesson.tools.forEach(id => assert.ok(tools.some(tool => tool.id === id), `${lesson.id} 引用了未知专题 ${id}`));
   }
   for (const tool of tools) { assert.ok(lessons.some(lesson => lesson.tools.includes(tool.id))); assert.equal(new URL(tool.docs).protocol, 'https:'); }

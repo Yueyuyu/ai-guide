@@ -33,6 +33,17 @@ function renderIdentity(lesson) {
   return '<a class="lesson-product" href="' + escapeHtml(identity.href) + '" aria-label="' + escapeHtml(identity.name + ' 官方入口') + '"><span class="lesson-product-logo brand-' + escapeHtml(identity.brand) + '"><img src="../brands/' + escapeHtml(identity.logo) + '" width="28" height="28" alt=""></span><strong>' + escapeHtml(identity.name) + '</strong><span class="lesson-product-platform">' + escapeHtml(identity.platform) + '</span>' + symbol('external', 14) + '</a>';
 }
 
+function renderStepImage(image) {
+  const imageUrl = escapeHtml(contentLink(image.src));
+  const markers = (image.markers || []).map((marker, i) => `<span class="image-marker" style="left:${Number(marker.x)}%;top:${Number(marker.y)}%" aria-hidden="true">${Number(marker.number) || i + 1}</span>`).join('');
+  const content = `<img class="tutorial-image" src="${imageUrl}" width="${image.width}" height="${image.height}" alt="${escapeHtml(image.alt)}" loading="lazy">${markers}`;
+  const focus = image.focus;
+  const frame = focus
+    ? `<div class="image-frame image-focus" style="aspect-ratio:${image.width * focus.width / (image.height * focus.height)}"><div class="image-plane" style="width:${10000 / focus.width}%;left:${-100 * focus.x / focus.width}%;top:${-100 * focus.y / focus.height}%">${content}</div></div>`
+    : `<div class="image-frame${image.height > image.width * 1.8 ? ' image-portrait' : ''}">${content}</div>`;
+  return `<figure><a href="${imageUrl}" aria-label="${escapeHtml('查看原图：' + image.alt)}">${frame}<span class="zoom-hint">${focus ? '操作区域放大 · 点击看完整原图' : '点击看原图'} ↗</span></a><figcaption>${escapeHtml(image.caption)}${image.sourceUrl ? ' · ' + link(image.sourceUrl, '官方来源') : ''}</figcaption></figure>`;
+}
+
 function renderSection(section, index, lessonId) {
   let body = paragraphs(section.paragraphs);
   if (section.downloads) body += `<div class="links">${section.downloads.map(item => `<a href="${escapeHtml(contentLink(item.href))}" download="${escapeHtml(item.filename || '')}">${escapeHtml(item.label)}</a>`).join('')}</div>`;
@@ -48,6 +59,7 @@ function renderSection(section, index, lessonId) {
     body = `<div class="lesson-diagram-step"><div>${body}</div><figure class="lesson-visual lesson-visual-${escapeHtml(visual.kind || 'flow')}"><figcaption><strong>${escapeHtml(visual.title)}</strong><span>${escapeHtml(visual.label || '步骤图解 · 非软件截图')}</span></figcaption><ol class="lesson-visual-items visual-count-${visual.items.length}">${visual.items.map((item, i) => `<li><span class="visual-symbol" aria-hidden="true">${item.logo ? '<img src="../brands/' + escapeHtml(item.logo) + '" alt="" width="28" height="28">' : symbol(visualSymbol(item, visual, i))}</span><div class="visual-item-content"><strong><span class="visual-index" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span>${escapeHtml(item.title)}</strong>${item.text ? `<p>${escapeHtml(item.text)}</p>` : ''}${item.code ? `<code>${escapeHtml(item.code)}</code>` : ''}</div></li>`).join('')}</ol>${visual.note ? `<p class="visual-note">${escapeHtml(visual.note)}</p>` : ''}</figure></div>`;
   }
   if (section.list) body += list(section.list);
+  if (section.walkthrough) body += `<div class="reading-walkthrough">${section.walkthrough.map((step, i) => `<article><h3>${i + 1}. ${escapeHtml(step.title)}</h3><p>${escapeHtml(step.action)}</p>${renderStepImage(step.screenshot)}<aside class="note">完成标准：${escapeHtml(step.checkpoint)}</aside></article>`).join('')}</div>`;
   if (section.diagram) body += '<aside class="note">关系示意：公司开发应用与模型；应用提供操作界面，模型在背后处理输入。互动版可查看并放大关系图。</aside>';
   for (const [text, label, preview] of [[section.prompt, section.promptLabel || '任务提示词', section.promptPreview], [section.code, section.language || '代码示例']]) {
     if (!text) continue;

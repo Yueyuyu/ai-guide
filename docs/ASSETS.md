@@ -72,3 +72,11 @@
 - `clash-import.png`、`clash-nodes.png` 来自 Clash Party 官方入门文档，说明订阅导入和节点位置。图中是旧名 Mihomo Party v1.19.1，布局可能与当前版本不同；示例服务商不构成本站推荐或合作。
 - `chatgpt-web.webp` 来自 ChatGPT 官方网页指南，截图选中 Work；本课操作明确先切到 Chat。`chatgpt-desktop.webp` 是官方表格任务预览，不是本课生成的工作清单。
 - 其他课程的流程、文件结构、前后对照和命令卡片由 HTML／CSS 表达，标注为步骤图解、预期结构或验收示意。未生成或重绘第三方软件截图，也未将官方示例登记为账号内实测。
+
+## 主线实拍与实际产物 · 2026-09-16
+
+- 新增 14 张原始 JPEG：7 张 WorkBuddy 5.3.8 登录后实拍、3 张当前 Codex 会话生成网页的浏览器实拍、4 张官方网站说明页实拍。文件、尺寸、来源、日期与 SHA-256 见 `public/tutorials/live-20260916/images.json`。
+- WorkBuddy 使用虚构材料及独立工作目录，截图通过正常收起侧栏、产物全屏预览避免显示私人任务与路径；未裁剪、重绘或改写像素。数字由网页叠加。旧官方图继续保存来源存档，正文只保留安装登录图，其余由本次真实任务替换。
+- Codex 网页初稿、修改版及实际差异位于 `public/practice/codex-session/`；WorkBuddy 原文、初稿和修正版位于 `public/practice/workbuddy-session/`。均不含真实联系方式或客户资料。
+- ChatGPT 安装、选目录图是官网中文自动翻译说明页，不能冒充桌面操作；Clash 下载与安装图也是官方网页，安装向导仍缺。豆包登录后回答未取得，保留旧入口实拍和人工参考答案的标识。
+- 实测范围见 `public/tutorials/live-20260916/evidence.json`；商标和第三方界面权利仍归原权利人，不因仓库 MIT 许可改变。

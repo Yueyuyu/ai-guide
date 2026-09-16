@@ -1,13 +1,53 @@
+import { photoStep } from './tutorial-captures.js';
+
+const importImage = {
+  "src": "tutorials/visual-guide/clash-import.png",
+  "alt": "官方导入示例：订阅卡片、地址输入处、导入按钮",
+  "width": 2166,
+  "height": 1442,
+  "title": "Clash Party 官方操作图",
+  "sourceUrl": "https://clashparty.org/docs/handson",
+  "caption": "官方 v1.19.1 旧版配图 · 2026-09-16 获取 · 非本课实测；当前界面可能不同，图中服务商不是本站推荐。"
+};
+const nodesImage = {
+  "src": "tutorials/visual-guide/clash-nodes.png",
+  "alt": "官方连接示例：代理组、节点列表与系统代理开关",
+  "width": 2166,
+  "height": 1442,
+  "title": "Clash Party 官方操作图",
+  "sourceUrl": "https://clashparty.org/docs/handson",
+  "caption": "官方 v1.19.1 旧版配图 · 2026-09-16 获取 · 非本课实测；当前界面可能不同，图中服务商不是本站推荐。"
+};
+
 export const networkPreparation = {
-  id: 'network-prepare', title: '网络准备：用 Clash Party 配置自己的订阅',
-  description: '分清客户端与订阅，按 Windows 安装、导入、选节点、验证，并学会恢复网络。',
-  category: 'basics', platform: 'desktop', lessonType: 'setup', tools: [],
-  level: '入门', minutes: 25, color: 'blue', edited: '2026-09-16',
-  cover: ['先把网络准备好', '客户端 · 订阅 · 验证'],
-  goals: ['分清开源客户端和收费订阅服务', '按步骤导入自己的订阅并验证', '知道失败时查哪里、如何恢复网络'],
-  prerequisite: '本课以 Windows 电脑为例。准备能取得官方安装包的网络，以及你自己选择的、与 Mihomo / Clash 配置兼容的订阅。已经能正常使用目标服务的读者可跳过；豆包网页入门不以配置代理为前提。',
-  resultSaving: { material: '记录日期、系统、客户端版本、导入是否成功、目标服务是否可用、关闭代理后能否恢复。不要记录个人订阅链接、节点地址、密码或 Token。', filename: 'AIGuide-网络准备检查记录.txt', label: '我的网络检查记录', placeholder: '日期与系统：\n客户端版本：\n订阅导入：成功 / 失败 / 未尝试\n目标服务：可使用 / 仅可打开 / 不可用\n关闭代理后的普通网页：\n尚未解决的问题（不含凭据）：' },
-  sections: [
+  "id": "network-prepare",
+  "title": "网络准备：用 Clash Party 配置自己的订阅",
+  "description": "分清客户端与订阅，按 Windows 安装、导入、选节点、验证，并学会恢复网络。",
+  "category": "basics",
+  "platform": "desktop",
+  "lessonType": "setup",
+  "tools": [],
+  "level": "入门",
+  "minutes": 25,
+  "color": "blue",
+  "edited": "2026-09-16",
+  "cover": [
+    "先把网络准备好",
+    "客户端 · 订阅 · 验证"
+  ],
+  "goals": [
+    "分清开源客户端和收费订阅服务",
+    "按步骤导入自己的订阅并验证",
+    "知道失败时查哪里、如何恢复网络"
+  ],
+  "prerequisite": "本课以 Windows 电脑为例。准备能取得官方安装包的网络，以及你自己选择的、与 Mihomo / Clash 配置兼容的订阅。已经能正常使用目标服务的读者可跳过；豆包网页入门不以配置代理为前提。",
+  "resultSaving": {
+    "material": "记录日期、系统、客户端版本、导入是否成功、目标服务是否可用、关闭代理后能否恢复。不要记录个人订阅链接、节点地址、密码或 Token。",
+    "filename": "AIGuide-网络准备检查记录.txt",
+    "label": "我的网络检查记录",
+    "placeholder": "日期与系统：\n客户端版本：\n订阅导入：成功 / 失败 / 未尝试\n目标服务：可使用 / 仅可打开 / 不可用\n关闭代理后的普通网页：\n尚未解决的问题（不含凭据）："
+  },
+  "sections": [
     {
       "title": "先分清：客户端、订阅、节点",
       "paragraphs": [
@@ -43,12 +83,7 @@ export const networkPreparation = {
       }
     },
     {
-      "title": "从官方入口下载 Windows 安装包",
-      "actionSteps": [
-        "打开下方官方发行页，展开 Assets（安装文件）。",
-        "按系统选择 x64 或 arm64 的正式版 .exe，安装并打开。",
-        "记下客户端版本，方便后面核对界面。"
-      ],
+      "title": "下载并安装 Windows 版",
       "links": [
         {
           "label": "Clash Party 官方发行页",
@@ -62,35 +97,18 @@ export const networkPreparation = {
         }
       ],
       "paragraphs": [
-        "先在 Windows“设置 → 系统 → 系统信息”查看系统类型。"
+        "先在 Windows“系统信息”查看系统类型。下图为 2.0.2 发行页与官方说明，尚未补安装向导实拍。"
       ],
-      "checkpoint": "软件已经打开，并且我知道自己安装的版本。",
-      "visual": {
-        "title": "安装包怎么选",
-        "items": [
-          {
-            "title": "系统类型",
-            "icon": "desktop",
-            "text": "x64 与 arm64 要对应电脑"
-          },
-          {
-            "title": "正式版本",
-            "icon": "check",
-            "text": "跳过标为 Pre-release 的预发布"
-          },
-          {
-            "title": ".exe 安装包",
-            "icon": "download",
-            "text": "首次使用更方便；.7z 需自行解压"
-          }
-        ]
-      },
       "supplement": {
         "title": "Mac、Linux 或安装失败",
         "paragraphs": [
           "Mac 与 Linux 按官方安装指南切换系统标签。安装失败先核对发行说明与系统支持，不反复安装来源不明的同名软件。文件命名以当前发行页为准。"
         ]
-      }
+      },
+      "walkthrough": [
+        photoStep("clash-download", "下载", "在发行页的 Windows10/11 安装版中，按系统选“64位”或“ARM64”。", "下载文件后缀为 setup.exe，架构与电脑一致。"),
+        photoStep("clash-install-guide", "安装", "双击下载的 .exe，按安装向导完成后打开 Clash Party。", "客户端已打开，并记下版本；这张图只是官方安装说明。")
+      ]
     },
     {
       "title": "准备自己的订阅，先看兼容和费用",
@@ -131,11 +149,6 @@ export const networkPreparation = {
     },
     {
       "title": "导入订阅，确认配置真正加载",
-      "actionSteps": [
-        "打开订阅管理，选择订阅卡片。",
-        "粘贴自己的订阅地址，点击“导入”。",
-        "等配置加载后选用它，确认节点列表不是空的。"
-      ],
       "links": [
         {
           "label": "官方快速上手：导入订阅与开启代理",
@@ -143,50 +156,55 @@ export const networkPreparation = {
           "external": true
         }
       ],
-      "paragraphs": ["下图沿用官方旧版界面说明位置，请导入自己的订阅。"],
-      "checkpoint": "能看到并选用自己的配置，节点列表不是空的。",
-      "screenshot": {
-        "src": "tutorials/visual-guide/clash-import.png",
-        "alt": "官方导入示例：订阅卡片、地址输入处、导入按钮",
-        "width": 2166,
-        "height": 1442,
-        "title": "Clash Party 官方操作图",
-        "sourceUrl": "https://clashparty.org/docs/handson",
-        "caption": "官方旧版配图（图内名为 Mihomo Party）；2026-09-16 获取，非本课实测。当前版本布局可能不同，图中服务商不是本站推荐。"
-      },
+      "paragraphs": [
+        "按官方旧版图找相应入口；个人订阅链接只粘贴到客户端。"
+      ],
       "supplement": {
         "title": "导入失败怎么办",
         "paragraphs": [
           "先检查链接是否复制完整、套餐是否有效、格式是否兼容。记录脱敏错误，只有配置名称或空列表不算成功。"
         ]
-      }
+      },
+      "walkthrough": [
+        {
+          "title": "粘贴订阅",
+          "action": "打开订阅卡片，将自己的兼容订阅粘贴到地址框。",
+          "checkpoint": "地址完整，来源是自己的订阅账户。",
+          "screenshot": importImage
+        },
+        {
+          "title": "导入配置",
+          "action": "点“导入”，等待完成后选用这份配置。",
+          "checkpoint": "配置被选用，代理组里有节点；空卡片不算成功。",
+          "screenshot": importImage
+        }
+      ]
     },
     {
       "title": "选择节点，再打开系统代理",
-      "actionSteps": [
-        "打开“代理组”，展开分组并选择自己的节点。",
-        "开启“系统代理”，保持客户端运行。",
-        "回到浏览器，按下一节验证实际访问。"
-      ],
       "paragraphs": [
         "先按配置的规则模式连接；本次不需要同时调整 TUN、覆写或 DNS。"
       ],
-      "checkpoint": "选中了节点，系统代理已开启，客户端仍在运行。",
-      "screenshot": {
-        "src": "tutorials/visual-guide/clash-nodes.png",
-        "alt": "官方连接示例：代理组、节点列表与系统代理开关",
-        "width": 2166,
-        "height": 1442,
-        "title": "Clash Party 官方操作图",
-        "sourceUrl": "https://clashparty.org/docs/handson",
-        "caption": "官方旧版配图（图内名为 Mihomo Party）；2026-09-16 获取，非本课实测。当前版本布局可能不同，图中服务商不是本站推荐。"
-      },
       "supplement": {
         "title": "浏览器能用，桌面软件不一定能用",
         "paragraphs": [
           "系统代理只影响遵循系统设置的应用。桌面软件和命令行可能有自己的网络设置；全局模式与 TUN 也不是同一机制。节点测速不能替代目标服务检查。"
         ]
-      }
+      },
+      "walkthrough": [
+        {
+          "title": "选择节点",
+          "action": "打开“代理组”，展开分组，点击自己配置中的可用节点。",
+          "checkpoint": "所选节点有选中状态；只看延迟还不算验证通过。",
+          "screenshot": nodesImage
+        },
+        {
+          "title": "开启系统代理",
+          "action": "打开“系统代理”开关，保持客户端运行。",
+          "checkpoint": "开关开启；接下来到目标服务验证实际访问。",
+          "screenshot": nodesImage
+        }
+      ]
     },
     {
       "title": "按三个层次验证，再进入 Codex",
@@ -206,27 +224,16 @@ export const networkPreparation = {
         }
       ],
       "paragraphs": [
-        "每通过一层再检查下一层。出现明确地区或账号限制时，按产品官方说明处理。"
+        "先打开一个平时可用的普通网页，再检查目标服务；下图仅证明本次官方文档能加载。"
       ],
-      "checkpoint": "已记录成功到哪一层；登录或测速成功不等于任务可用。",
-      "visual": {
-        "title": "三层检查，逐个确认",
-        "items": [
-          {
-            "title": "基础网络",
-            "icon": "globe",
-            "text": "打开一个原本可用的普通网页"
-          },
-          {
-            "title": "官方服务",
-            "icon": "user",
-            "text": "打开目标官网，核对能否登录"
-          },
-          {
-            "title": "真实任务",
-            "icon": "message",
-            "text": "发送一句测试问题，实际收到回答"
-          }
+      "walkthrough": [
+        photoStep("chatgpt-quickstart-zh", "验证目标网页", "打开下方 OpenAI 官方入口，确认能看到完整页面。", "记录“网页可打开”；继续登录并取得测试回答后，才能记为“服务可使用”。")
+      ],
+      "supplement": {
+        "title": "网页打开后还要测什么？",
+        "paragraphs": [
+          "用自己的账号登录目标产品，再发送一句无私人信息的测试问题。实际收到回答才说明这条使用路径可用。地区、账号或额度限制按官方说明处理。",
+          "本次没有修改本机代理、导入订阅或更换节点；这张官网截图不代表完成了代理安装连接实测。"
         ]
       }
     },
@@ -317,8 +324,12 @@ export const networkPreparation = {
           "Clash Verge Rev 可作开源客户端参考，本课没有混用它的按钮步骤。进阶设置请按当前软件版本阅读官方说明。"
         ]
       }
-    },
+    }
   ],
-  exercises: ['我能分清客户端、订阅和节点，并从官方来源安装软件', '我已导入自己的配置，并记录目标服务的实际可用层次', '我已检查关闭代理后的网络恢复，记录中不含订阅或凭据'],
-  takeaway: '先把每一层验证清楚，再开始工具实操。',
+  "exercises": [
+    "我能分清客户端、订阅和节点，并从官方来源安装软件",
+    "我已导入自己的配置，并记录目标服务的实际可用层次",
+    "我已检查关闭代理后的网络恢复，记录中不含订阅或凭据"
+  ],
+  "takeaway": "先把每一层验证清楚，再开始工具实操。"
 };

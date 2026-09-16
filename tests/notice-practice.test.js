@@ -28,8 +28,8 @@ test('练习材料、截图与来源证据真实可读，人工答案不伪装�
   const material = await readFile(new URL('../public/tutorials/doubao-notice/notice.txt', import.meta.url), 'utf8');
   assert.equal(material.replace(/^\uFEFF/u, '').trim(), noticeMaterial);
   assert.ok(noticePrompt.includes(noticeMaterial));
-  for (const section of lesson.sections.filter(section => section.screenshot)) {
-    const bytes = await readFile(new URL('../public/' + section.screenshot.src, import.meta.url));
+  for (const image of lesson.sections.flatMap(section => [section.screenshot, ...(section.walkthrough || []).map(step => step.screenshot)]).filter(Boolean)) {
+    const bytes = await readFile(new URL('../public/' + image.src, import.meta.url));
     assert.equal(bytes.subarray(0, 3).toString('hex'), 'ffd8ff');
     assert.ok(bytes.length > 1024);
   }

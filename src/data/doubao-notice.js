@@ -13,6 +13,11 @@ export const noticePrompt = `请只根据下面的通知，整理一份待办清
 ${noticeMaterial}`;
 
 const imageRoot = 'tutorials/doubao-notice/';
+const entryImage = {
+  title: '豆包：登录与对话入口', src: imageRoot + 'web-entry.jpg', width: 1280, height: 720,
+  alt: '豆包未登录网页：右上角登录，中间对话选项，底部消息输入框。',
+  caption: '豆包官网实拍 · 2026-09-15 · 未登录状态，电脑浏览器。',
+};
 
 export const doubaoNotice = {
   id: 'doubao-notice', title: '豆包网页版：整理并保存第一份待办清单',
@@ -26,22 +31,13 @@ export const doubaoNotice = {
   sections: [
     {
       title: '打开豆包，找到“对话”',
-      actionSteps: ['打开下方官网链接，按右上角“登录”完成登录。', '选择中间的“对话”。', '找到底部“发消息…”输入框。'],
-      paragraphs: ['保留教程标签页，照图找到这三个位置。'],
+      paragraphs: ['保留教程标签页，逐步找到入口；登录后的回答截图仍待补。'],
+      walkthrough: [
+        { title: '登录', action: '打开豆包官网，点右上角“登录”，按官方提示完成。', checkpoint: '自己的账号已登录；本图仅展示登录入口。', screenshot: { ...entryImage, markers: [{ x: 94, y: 9, title: '登录', description: '按官网提示登录自己的账号。' }] } },
+        { title: '选择对话', action: '选择“对话”，找到底部“发消息…”输入框。', checkpoint: '已进入文字对话，而非工作模式。', screenshot: { ...entryImage, markers: [{ x: 51, y: 43, title: '对话', description: '本课使用文字对话。' }, { x: 29, y: 88, title: '输入框', description: '下一步在此粘贴完整提示词。' }] } },
+      ],
       supplement: { title: '登录与截图说明', paragraphs: ['截图来自 2026-09-15 的电脑未登录页面。核对时，未登录发送会返回首页，未取得回答；登录后的生成尚未实测。手机布局可能不同，按文字识别入口。'] },
       links: [{ label: '打开豆包网页版', href: 'https://www.doubao.com/chat/', external: true }],
-      screenshot: {
-        title: '豆包：登录与对话入口',
-        src: imageRoot + 'web-entry.jpg', width: 1280, height: 720,
-        alt: '豆包网页版真实截图：右上角登录，中间对话选项，底部消息输入框。',
-        caption: '豆包官网实拍 · 2026-09-15 · 未登录状态，电脑浏览器。点击图片放大。',
-        markers: [
-          { x: 94, y: 9, title: '先看登录状态', description: '右上角显示“登录”时，先按官网提示处理。' },
-          { x: 51, y: 43, title: '选择“对话”', description: '本课使用文字对话；“工作”是另一个学习入口。' },
-          { x: 29, y: 88, title: '在这里输入', description: '在底部“发消息…”输入框粘贴下面的完整内容。' },
-        ],
-      },
-      checkpoint: '能够找到对话输入框，并确认自己的登录状态。',
     },
     {
       title: '准备一份能逐项核对的通知',
@@ -51,7 +47,7 @@ export const doubaoNotice = {
     },
     {
       title: '复制完整提示词，发送第一次提问',
-      actionSteps: ['复制下方完整提示词。', '切到豆包输入框，粘贴（Ctrl + V；Mac 用 Command + V）。', '确认末句“主持人尚未确定”也在，点右下角向上箭头发送。'],
+      actionSteps: ['复制完整提示词，粘贴到豆包输入框，确认末句完整后点右下角箭头。'],
       paragraphs: ['看到实际回答后，再进入下一步。登录后的生成尚未实测。'],
       prompt: noticePrompt, promptLabel: '第一次提问 · 已包含完整通知',
       screenshot: {

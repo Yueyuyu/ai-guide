@@ -812,10 +812,24 @@
         "workbuddy-task-bar"
       ],
       "scope": "已核对腾讯产品归属、Windows 安装、选择工作空间、创建任务和查看结果的官方说明。",
-      "limit": "账号内登录、生成周报、文件写入及修正尚未实测；本站提供虚构练习和验收标准。"
+      "limit": "安装与重新登录尚未实测。2026-09-16 已在 Windows 5.3.8 登录状态下完成本课周报生成、文件预览与修正；范围见教程实测记录，不代表所有功能已测。"
     }
   },
   "lessons": {
+    "codex-web": {
+      "status": "documented",
+      "checkedAt": "2026-09-15T14:47:13.924Z",
+      "sourceIds": ["chatgpt-app", "chatgpt-windows"],
+      "scope": "桌面入口有官方资料依据；2026-09-16 本站 Codex 会话已生成真实网页文件，并核对导航、键盘和三个宽度。",
+      "limit": "桌面安装、重新登录与选目录操作尚未实拍。网页通过 localhost 验收，未验证原生双击 file://、真实手机与文字放大。"
+    },
+    "codex-iterate": {
+      "status": "documented",
+      "checkedAt": "2026-09-15T14:47:13.924Z",
+      "sourceIds": ["chatgpt-app", "chatgpt-windows"],
+      "scope": "2026-09-16 本站 Codex 会话已完成三个标签的局部修改，保留前后文件、实际差异与浏览器截图。",
+      "limit": "这是本站会话生成和验收的作品，未补桌面客户端点击与文件差异界面实拍。"
+    },
     "network-prepare": {
       "status": "documented",
       "checkedAt": "2026-09-15T13:22:01.202Z",

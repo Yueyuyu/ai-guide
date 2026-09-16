@@ -48,7 +48,7 @@ test('图文与补充说明在独立页保留，旧章节定位和材料文件�
     assert.match(html, /<details class="setup"><summary>/u);
   }
   const workbuddy = renderReadingPage('workbuddy-first');
-  assert.equal((workbuddy.match(/class="tutorial-image"/gu) || []).length, 5);
+  assert.equal((workbuddy.match(/class="tutorial-image"/gu) || []).length, 8);
   assert.match(workbuddy, /download="weekly-records.txt"/u);
   assert.equal(lessonById['workbuddy-first'].sections.length, 6);
   assert.equal(lessonById['doubao-notice'].sections.length, 7);
