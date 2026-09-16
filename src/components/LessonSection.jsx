@@ -14,7 +14,7 @@ export function LessonSection({ section, index, lesson, onZoom }) {
   </div>;
   return <section id={'section-' + index} tabIndex={-1} className="article-section prose-section">
     <h2><span>{index + 1}</span>{section.title}</h2>
-    {section.screenshot ? <div className="lesson-visual-step">{instructions}<TutorialImage screenshot={section.screenshot} showNotes={!section.actionSteps}/></div> : section.visual ? <div className="lesson-visual-step">{instructions}<LessonVisual visual={section.visual}/></div> : instructions}
+    {section.screenshot ? <div className="lesson-visual-step">{instructions}<TutorialImage screenshot={section.screenshot} showNotes={!section.actionSteps}/></div> : section.visual ? <div className="lesson-diagram-step">{instructions}<LessonVisual visual={section.visual}/></div> : instructions}
     {section.diagram && <figure><button type="button" className="diagram-button" onClick={onZoom} aria-label="放大公司、软件与模型关系示意"><RelationshipDiagram/></button><figcaption>关系示意 · 点击可放大</figcaption></figure>}
     {section.list && <ul>{section.list.map(item => <li key={item}>{item}</li>)}</ul>}
     {section.prompt && <PromptBlock text={section.prompt} label={section.promptLabel} preview={section.promptPreview}/>}

@@ -24,14 +24,17 @@ export const modelLessons = [
         "items": [
           {
             "title": "原文片段",
+            "icon": "file",
             "text": "先保留原句"
           },
           {
             "title": "章节或页码",
+            "icon": "search",
             "text": "标出材料中的位置"
           },
           {
             "title": "行动项",
+            "icon": "check",
             "text": "负责人和时间缺失就写“未明确”"
           }
         ],
@@ -138,14 +141,17 @@ export const modelLessons = [
         "items": [
           {
             "title": "共同事实",
+            "icon": "check",
             "text": "A 和 B 都支持什么"
           },
           {
             "title": "存在分歧",
+            "icon": "compare",
             "text": "分别是哪份资料的观点"
           },
           {
             "title": "尚未确定",
+            "icon": "search",
             "text": "当前材料不能回答什么"
           }
         ],
@@ -225,14 +231,17 @@ export const modelLessons = [
         "items": [
           {
             "title": "name / tags",
+            "icon": "file",
             "text": "名称是字符串；标签是字符串数组"
           },
           {
             "title": "price",
+            "icon": "file",
             "text": "数字，缺失时为 null"
           },
           {
             "title": "currency",
+            "icon": "globe",
             "text": "币种，缺失时为 null"
           }
         ],
@@ -280,14 +289,17 @@ export const modelLessons = [
         "items": [
           {
             "title": "标题与作者",
+            "icon": "file",
             "text": "记录报告名、作者或机构"
           },
           {
             "title": "日期与版本",
+            "icon": "file",
             "text": "没有发布日期就写“未提供”"
           },
           {
             "title": "来源地址",
+            "icon": "link",
             "text": "以后能回到原文件"
           }
         ],
@@ -336,14 +348,17 @@ export const modelLessons = [
         "items": [
           {
             "title": "官方事实",
+            "icon": "check",
             "text": "保留原公告与日期"
           },
           {
             "title": "第三方报道",
+            "icon": "link",
             "text": "标出报道者和引用依据"
           },
           {
             "title": "用户观点",
+            "icon": "message",
             "text": "保留观点归属，不当成已证实事实"
           }
         ],

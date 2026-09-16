@@ -54,14 +54,17 @@ export const entryGuides = {
         "items": [
           {
             "title": "原稿",
+            "icon": "file",
             "text": "在同一会话保留全文"
           },
           {
             "title": "三处问题",
+            "icon": "search",
             "text": "先问哪里重复、哪里不清楚"
           },
           {
             "title": "一段改稿",
+            "icon": "file",
             "text": "确认方向后再逐段修改"
           }
         ]
@@ -180,14 +183,17 @@ export const entryGuides = {
         "items": [
           {
             "title": "文件名",
+            "icon": "file",
             "text": "与你选择的报告一致"
           },
           {
             "title": "标题和目录",
+            "icon": "search",
             "text": "与原报告逐项对应"
           },
           {
             "title": "一段正文",
+            "icon": "file",
             "text": "扫描页也要抽查文字识别"
           }
         ]
@@ -214,14 +220,17 @@ export const entryGuides = {
         "items": [
           {
             "title": "明确时间",
+            "icon": "file",
             "text": "用起止日期替代“最近”"
           },
           {
             "title": "检查搜索",
+            "icon": "search",
             "text": "正文自称搜索不等于有检索证据"
           },
           {
             "title": "打开原链接",
+            "icon": "link",
             "text": "核对发布主体、日期和上下文"
           }
         ]
@@ -285,14 +294,17 @@ export const entryGuides = {
         "items": [
           {
             "title": "实际表单文件",
+            "icon": "code",
             "text": "检查路径与当前项目一致"
           },
           {
             "title": "校验函数",
+            "icon": "code",
             "text": "选中与空格问题相关的代码"
           },
           {
             "title": "复现步骤",
+            "icon": "terminal",
             "text": "输入空格 → 点击保存 → 仍然提交"
           }
         ]

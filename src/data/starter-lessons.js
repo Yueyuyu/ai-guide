@@ -52,14 +52,17 @@ export const starterLessons = [
         "items": [
           {
             "title": "官方桌面版",
+            "icon": "desktop",
             "text": "安装系统匹配的版本"
           },
           {
             "title": "工作模式",
+            "icon": "message",
             "text": "当前账号能看到并可使用"
           },
           {
             "title": "费用范围",
+            "icon": "file",
             "text": "限时体验不等于永久免费"
           }
         ]

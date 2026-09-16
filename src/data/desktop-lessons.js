@@ -19,14 +19,17 @@ export const desktopLessons = [
         "items": [
           {
             "title": "选择系统",
+            "icon": "desktop",
             "text": "Windows / macOS / Linux 按官方要求"
           },
           {
             "title": "启动应用",
+            "icon": "desktop",
             "text": "从开始菜单或应用目录打开"
           },
           {
             "title": "登录账号",
+            "icon": "user",
             "text": "安装成功不等于获得付费权益"
           }
         ]
@@ -49,14 +52,17 @@ export const desktopLessons = [
         "items": [
           {
             "title": "Chat · 聊天",
+            "icon": "message",
             "text": "提问、解释、讨论"
           },
           {
             "title": "Work · 工作",
+            "icon": "file",
             "text": "处理材料、生成文档"
           },
           {
             "title": "Codex · 编程",
+            "icon": "code",
             "text": "读取项目、修改代码、运行检查"
           }
         ]
@@ -148,14 +154,18 @@ export const desktopLessons = [
         "items": [
           {
             "title": "官方安装包",
+            "icon": "download",
             "text": "系统与架构按下载页选择"
           },
           {
             "title": "Claude 桌面应用",
+            "icon": "desktop",
+            "logo": "anthropic.svg",
             "text": "从开始菜单或应用目录启动"
           },
           {
             "title": "Chat · 聊天",
+            "icon": "message",
             "text": "登录后先做一次小问答"
           }
         ]
@@ -179,14 +189,17 @@ export const desktopLessons = [
         "items": [
           {
             "title": "Chat",
+            "icon": "message",
             "text": "问答与短文整理"
           },
           {
             "title": "Cowork",
+            "icon": "folder",
             "text": "处理多步骤工作"
           },
           {
             "title": "Code",
+            "icon": "code",
             "text": "操作代码项目"
           }
         ],
@@ -238,14 +251,17 @@ export const desktopLessons = [
         "items": [
           {
             "title": "首页输入框",
+            "icon": "message",
             "text": "查看当前任务模式"
           },
           {
             "title": "Cowork",
+            "icon": "folder",
             "text": "确认已从 Chat 切换"
           },
           {
             "title": "工作会话",
+            "icon": "message",
             "text": "下一步再连接练习文件夹"
           }
         ]
@@ -358,14 +374,17 @@ export const desktopLessons = [
         "items": [
           {
             "title": "方案 A + B",
+            "icon": "file",
             "text": "两份附件均上传完成"
           },
           {
             "title": "对照文档",
+            "icon": "file",
             "text": "场地、人数、费用和缺失信息"
           },
           {
             "title": "原文依据",
+            "icon": "search",
             "text": "每项都标明来自哪份方案"
           }
         ]
@@ -391,14 +410,17 @@ export const desktopLessons = [
         "items": [
           {
             "title": "预览",
+            "icon": "search",
             "text": "看清文档内容"
           },
           {
             "title": "下载并打开",
+            "icon": "download",
             "text": "确认文件已在电脑上"
           },
           {
             "title": "找回会话",
+            "icon": "search",
             "text": "后续修改还能继续"
           }
         ]

@@ -66,6 +66,8 @@
 
 ## 网络与 ChatGPT 图文扩展 · 2026-09-16
 
+- 教程补充 Clash Party 官方应用图标：`public/brands/clash-party.png`，2026-09-16 从官方仓库 `https://raw.githubusercontent.com/mihomo-party-org/clash-party/smart_core/resources/icon.png` 原样保存；SHA-256：`acc0de8df78d515ebdfb3efa9054b758bc147ed85cbba02655ab233b72c8d08f`。图标已目视核对，不改变原始灰色。其他课程复用现有产品品牌资产。
+
 - 新增四张官方原图，保存在 `public/tutorials/visual-guide/`；原图地址、正文来源、获取时间、尺寸、字节数与 SHA-256 见同目录 `images.json`。原始字节不变，同源加载，不依赖读者访问第三方图片域名。
 - `clash-import.png`、`clash-nodes.png` 来自 Clash Party 官方入门文档，说明订阅导入和节点位置。图中是旧名 Mihomo Party v1.19.1，布局可能与当前版本不同；示例服务商不构成本站推荐或合作。
 - `chatgpt-web.webp` 来自 ChatGPT 官方网页指南，截图选中 Work；本课操作明确先切到 Chat。`chatgpt-desktop.webp` 是官方表格任务预览，不是本课生成的工作清单。

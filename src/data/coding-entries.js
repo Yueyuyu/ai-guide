@@ -20,14 +20,17 @@ export const codingEntries = [
         "items": [
           {
             "title": "远程练习仓库",
+            "icon": "folder",
             "text": "练习代码已在仓库里"
           },
           {
             "title": "选择授权范围",
+            "icon": "folder",
             "text": "只连接本次需要的仓库"
           },
           {
             "title": "Codex 云端",
+            "icon": "network",
             "text": "不能直接读取电脑上未上传的文件"
           }
         ]
@@ -43,14 +46,17 @@ export const codingEntries = [
         "items": [
           {
             "title": "README",
+            "icon": "file",
             "text": "找到项目运行要求"
           },
           {
             "title": "构建配置",
+            "icon": "code",
             "text": "核对工具与依赖"
           },
           {
             "title": "练习数据",
+            "icon": "file",
             "text": "不把本地密钥粘贴进任务"
           }
         ]
@@ -80,14 +86,17 @@ export const codingEntries = [
         "items": [
           {
             "title": "云端任务完成",
+            "icon": "check",
             "text": "本篇只验收到检查差异"
           },
           {
             "title": "创建与合并请求",
+            "icon": "network",
             "text": "另按项目正常流程处理"
           },
           {
             "title": "本地同步",
+            "icon": "download",
             "text": "合入后仍需拉取，电脑文件才更新"
           }
         ]
@@ -147,14 +156,17 @@ export const codingEntries = [
         "items": [
           {
             "title": "AGENTS.md",
+            "icon": "file",
             "text": "项目约定"
           },
           {
             "title": "README",
+            "icon": "file",
             "text": "用途与运行说明"
           },
           {
             "title": "构建配置",
+            "icon": "code",
             "text": "实际入口与测试命令"
           }
         ]
@@ -239,14 +251,17 @@ export const codingEntries = [
         "items": [
           {
             "title": "正常文字",
+            "icon": "file",
             "text": "原输出保持可用"
           },
           {
             "title": "空字符串",
+            "icon": "file",
             "text": "进入空输入处理"
           },
           {
             "title": "纯空格",
+            "icon": "file",
             "text": "也能识别为空输入"
           }
         ],
@@ -280,14 +295,18 @@ export const codingEntries = [
         "items": [
           {
             "title": "VS Code",
+            "icon": "code",
             "text": "打开练习代码"
           },
           {
             "title": "GitHub Copilot",
+            "icon": "code",
+            "logo": "githubcopilot.svg",
             "text": "使用官方扩展与登录账号"
           },
           {
             "title": "账号权益",
+            "icon": "user",
             "text": "能使用本次补全和聊天功能"
           }
         ]
@@ -305,14 +324,17 @@ export const codingEntries = [
         "items": [
           {
             "title": "选中函数",
+            "icon": "code",
             "text": "只提供这次要解释的片段"
           },
           {
             "title": "加入上下文",
+            "icon": "link",
             "text": "检查引用的是正确文件与选区"
           },
           {
             "title": "询问边界",
+            "icon": "message",
             "text": "输入、返回值与空值行为"
           }
         ]

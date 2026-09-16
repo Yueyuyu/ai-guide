@@ -10,6 +10,7 @@ import { SourceReview } from '../components/SourceReview.jsx';
 import { reviewLabels, reviewDate } from '../data/source-review.js';
 import { Modal } from '../components/Modal.jsx';
 import { LessonSection } from '../components/LessonSection.jsx';
+import { LessonIdentity } from '../components/LessonIdentity.jsx';
 import { LessonFlow, ReadinessPanel, Troubleshooter } from '../components/LearningGuide.jsx';
 import { LessonFeedback } from '../components/LessonFeedback.jsx';
 import '../styles-practice.css';
@@ -56,6 +57,7 @@ export function Reader({ id, pathId, startSection }) {
   const resultSection = 'section-' + lesson.sections.findIndex(section => section.resultEditor);
   return <div className="reader-layout"><article className="reader">
     <nav className="breadcrumb" aria-label="面包屑"><a href={context.path ? '#/path/' + context.path.id : '#/tutorials'}>{context.path?.title || '全部教程'}</a><span>/</span><span>{context.path ? '第 ' + String(context.index + 1).padStart(2, '0') + ' 课' : typeName(lesson)}</span></nav>
+    <LessonIdentity lesson={lesson}/>
     <h1>{lesson.title}</h1><p className="article-description">{lesson.description}</p><div className="article-actions"><span>{typeName(lesson)}</span><a className="review-badge" href="#sources" onClick={e => { e.preventDefault(); go('sources'); }}>{reviewLabels[lesson.review.status]} · {reviewDate(lesson.review.checkedAt)}</a><SaveButton lesson={lesson} text/>{completed && <span className="tag">已完成</span>}</div>
     <details ref={mobileToc} className="mobile-toc"><summary>本篇目录<Icon name="down"/></summary>{contents}</details>
     <section className="lesson-brief article-section" id="goals" tabIndex={-1}><span>约 {lesson.minutes} 分钟</span><p>{lesson.goals.join(' → ')}</p></section>

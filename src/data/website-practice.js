@@ -43,14 +43,19 @@ export const codexPractice = {
         "items": [
           {
             "title": "ChatGPT 桌面应用",
+            "icon": "desktop",
+            "logo": "openai.svg",
             "text": "安装名称与编程入口是两回事"
           },
           {
             "title": "Codex → New chat",
+            "icon": "code",
+            "logo": "openai.svg",
             "text": "开始电脑上的编程任务"
           },
           {
             "title": "personal-page",
+            "icon": "folder",
             "text": "返回的路径必须与练习目录一致"
           }
         ]
@@ -89,14 +94,17 @@ export const codexPractice = {
         "items": [
           {
             "title": "简介",
+            "icon": "user",
             "text": "林同学与一段学习介绍"
           },
           {
             "title": "三个项目",
+            "icon": "code",
             "text": "读书清单 / 活动计划 / 学习手记"
           },
           {
             "title": "联系说明",
+            "icon": "message",
             "text": "练习页面，不留真实联系方式"
           }
         ],
@@ -289,14 +297,17 @@ export const websiteLessons = [
         "items": [
           {
             "title": "简介",
+            "icon": "user",
             "text": "看到人物介绍"
           },
           {
             "title": "项目",
+            "icon": "code",
             "text": "三个项目和对应标签都在"
           },
           {
             "title": "联系",
+            "icon": "message",
             "text": "看到练习用联系说明"
           }
         ]
@@ -339,14 +350,17 @@ export const websiteLessons = [
         "items": [
           {
             "title": "Tab",
+            "icon": "terminal",
             "text": "移动到下一个链接"
           },
           {
             "title": "看到焦点框",
+            "icon": "search",
             "text": "知道当前选中哪里"
           },
           {
             "title": "Enter",
+            "icon": "terminal",
             "text": "完成与鼠标点击相同的动作"
           }
         ]

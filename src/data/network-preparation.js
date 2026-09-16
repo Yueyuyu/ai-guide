@@ -19,14 +19,18 @@ export const networkPreparation = {
         "items": [
           {
             "title": "客户端",
+            "icon": "desktop",
+            "logo": "clash-party.png",
             "text": "从官方来源安装 Clash Party"
           },
           {
             "title": "订阅配置",
+            "icon": "link",
             "text": "从自己的服务商账户取得"
           },
           {
             "title": "节点",
+            "icon": "network",
             "text": "导入后，在配置里选择"
           }
         ]
@@ -66,14 +70,17 @@ export const networkPreparation = {
         "items": [
           {
             "title": "系统类型",
+            "icon": "desktop",
             "text": "x64 与 arm64 要对应电脑"
           },
           {
             "title": "正式版本",
+            "icon": "check",
             "text": "跳过标为 Pre-release 的预发布"
           },
           {
             "title": ".exe 安装包",
+            "icon": "download",
             "text": "首次使用更方便；.7z 需自行解压"
           }
         ]
@@ -99,14 +106,17 @@ export const networkPreparation = {
         "items": [
           {
             "title": "格式兼容",
+            "icon": "file",
             "text": "选择 Clash / Mihomo 配置"
           },
           {
             "title": "套餐有效",
+            "icon": "check",
             "text": "核对到期时间、流量与设备限制"
           },
           {
             "title": "个人订阅地址",
+            "icon": "link",
             "text": "不是官网首页，也不是付款页面"
           }
         ]
@@ -204,14 +214,17 @@ export const networkPreparation = {
         "items": [
           {
             "title": "基础网络",
+            "icon": "globe",
             "text": "打开一个原本可用的普通网页"
           },
           {
             "title": "官方服务",
+            "icon": "user",
             "text": "打开目标官网，核对能否登录"
           },
           {
             "title": "真实任务",
+            "icon": "message",
             "text": "发送一句测试问题，实际收到回答"
           }
         ]
@@ -253,14 +266,17 @@ export const networkPreparation = {
         "items": [
           {
             "title": "关闭系统代理",
+            "icon": "network",
             "text": "先在 Clash Party 里关开关"
           },
           {
             "title": "正常退出客户端",
+            "icon": "desktop",
             "text": "重新打开普通网页"
           },
           {
             "title": "仍打不开",
+            "icon": "search",
             "text": "检查 Windows 代理设置，仅恢复本次改动"
           }
         ]

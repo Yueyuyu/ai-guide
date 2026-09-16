@@ -23,14 +23,17 @@ export const codingLessons = [
         "items": [
           {
             "title": "项目约定",
+            "icon": "file",
             "text": "CLAUDE.md / README"
           },
           {
             "title": "当前状态",
+            "icon": "file",
             "text": "保留已有未提交修改"
           },
           {
             "title": "运行入口",
+            "icon": "terminal",
             "text": "每条命令都指向实际配置文件"
           }
         ]
@@ -146,14 +149,17 @@ export const codingLessons = [
         "items": [
           {
             "title": "文件差异",
+            "icon": "compare",
             "text": "改动是否限于约定范围"
           },
           {
             "title": "命令退出状态",
+            "icon": "check",
             "text": "成功或失败如实记录"
           },
           {
             "title": "实际输出",
+            "icon": "terminal",
             "text": "与输入和预期对应"
           }
         ]
