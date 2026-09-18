@@ -16,6 +16,8 @@
     "resources": "node scripts/build-practice-resources.mjs",
     "audit:content": "node scripts/audit-content.mjs",
     "audit:docs": "node scripts/audit-docs.mjs",
+    "check:updates": "node --use-system-ca scripts/check-tutorial-updates.mjs check",
+    "review:updates": "node scripts/check-tutorial-updates.mjs review",
     "check": "node scripts/check-project.mjs"
   },
   "dependencies": { "react": "^19.1.1", "react-dom": "^19.1.1" },

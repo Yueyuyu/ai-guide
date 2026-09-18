@@ -124,6 +124,8 @@ pnpm check
 | `pnpm test` | Node 内置测试，无需外部账号 |
 | `pnpm audit:content` | 检查教程、路线、章节与练习资源 |
 | `pnpm audit:docs` | 检查维护文档中的本地链接及机器专属路径 |
+| `pnpm check:updates` | 检查官方教程资料变化，生成需核对的步骤清单 |
+| `pnpm review:updates` | 登记局部维护结论与证据，参数见[更新维护](docs/engineering/UPDATES.md) |
 | `pnpm check` | 测试 → 内容审计 → 文档审计 → 构建 |
 | `pnpm resources` | 从内容源生成六份中文 TXT 材料 |
 | `pnpm refresh:rankings` | 联网刷新榜单，失败保留有效快照 |
@@ -149,6 +151,7 @@ src/
   styles*.css     共享与分页面样式
 server/           Vite 插件、阅读页生成、榜单获取与存储
 scripts/          材料生成、审计和项目检查
+maintenance/      官方资料检查、步骤影响映射和维护记录
 public/           品牌资产、教程证据、练习文件和榜单快照
 tests/            Node 测试与小型测试数据
 docs/             工程文档、内容证据和历史设计资料

@@ -13,6 +13,7 @@
 ## 工程与维护
 
 - [内容维护](engineering/CONTENT.md)：教程字段、来源、材料、图片与兼容约束。
+- [教程更新检查](engineering/UPDATES.md)：每周检查官方资料、判断影响、只修改受影响步骤。
 - [排名数据](engineering/RANKINGS.md)：抓取、快照、接口与失败恢复。
 - [试用、统计与赞助依据](engineering/FEEDBACK.md)：反馈接收、真人记录和数据范围。
 - [质量验收](engineering/QUALITY.md)：自动检查、浏览器与真实产品实测。

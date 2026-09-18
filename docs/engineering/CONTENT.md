@@ -49,6 +49,8 @@
 
 ## 来源与证据
 
+软件持续更新的维护流程见[教程更新检查](UPDATES.md)。自动检查只生成差异和步骤核对范围，不自动刷新下述资料日期或实测状态。
+
 `source-review.json` 的 `sources` 保存 URL、标题、获取时间、核对时间、源更新日期、状态、范围和 SHA-256；`products` 用 `sourceIds` 关联来源，并写 `scope` 与 `limit`。
 
 - `documented`：关键步骤有官方资料依据，不代表账号内实测。
