@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { apiExamples, validateTaskOutput } from '../lib/api-output.js';
+import { apiExampleCases, apiPracticeNotice } from '../data/api-examples.js';
 
 export function ApiResponseLab() {
   const [value, setValue] = useState(apiExamples.valid);
@@ -7,8 +8,8 @@ export function ApiResponseLab() {
   const change = text => { setValue(text); setResult(null); };
   return <div className="api-response-lab">
     <div className="lab-heading"><strong>响应校验练习台</strong><span>仅在本页检查格式</span></div>
-    <p>原通知：小林周五前整理报名表，活动地点未定。</p>
-    <div className="lab-examples">{[['valid', '有效数据'], ['missing', '缺少字段'], ['inaccurate', '事实有误']].map(([id, label]) => <button key={id} className="button secondary" type="button" onClick={() => change(apiExamples[id])}>填入{label}</button>)}</div>
+    <p>原通知：{apiPracticeNotice}</p>
+    <div className="lab-examples">{apiExampleCases.map(example => <button key={example.id} className="button secondary" type="button" onClick={() => change(example.value)}>填入{example.label}</button>)}</div>
     <label htmlFor="api-response-input">待检查的 JSON</label>
     <textarea id="api-response-input" spellCheck={false} value={value} maxLength={12000} onChange={event => change(event.target.value)} aria-describedby="api-response-help"/>
     <p id="api-response-help">不发送网络请求，不需要密钥，不产生模型调用费用。切换示例会替换框内内容。</p>

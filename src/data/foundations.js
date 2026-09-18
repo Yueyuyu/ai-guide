@@ -1,3 +1,5 @@
+import { apiIntroduction } from './api-introduction.js';
+
 export const foundations = [
   {
     id: 'ai-first', title: '第一次使用 AI：从提问到核对结果', description: '学会有效提问，理解输出结果，并进行可靠核对。', category: 'basics', level: '入门', minutes: 25, tools: ['chatgpt', 'claude', 'gemini', 'deepseek', 'qwen', 'doubao'], color: 'sage', cover: ['AI /', 'FIRST STEPS'], featured: true,
@@ -47,14 +49,5 @@ export const foundations = [
       { title: '重复测试，并限定结论', paragraphs: ['至少使用几个不同输入，包含正常案例和边界案例。费用要按你实际使用入口记录，不把 API 价格直接套到订阅使用上。', '最后写“在这组资料整理任务中，A 更少遗漏，B 更快”，而不是“某模型永远更好”。工具或模型更新后，旧结论需要重新检查。'] },
     ], exercises: ['为同一个任务写出验收表', '保存两种工具的原始输出', '记录人工修改并写一句有范围的比较结论'], takeaway: '有用的比较，是能帮助你完成具体工作的比较。',
   },
-  {
-    id: 'api-first', title: '第一次接入模型 API：先跑通调用链', description: '理解密钥、模型、消息和结果，把 API 与应用订阅分清。', category: 'automation', level: '进阶', minutes: 35, tools: ['glm-models', 'deepseek-models', 'qwen-models', 'minimax', 'gpt-models', 'claude-models', 'gemini-models'], color: 'lilac', cover: ['{ request }', 'HELLO, API'],
-    goals: ['理解前端到模型的调用链', '识别必需的请求配置', '设计输出校验与错误处理'], prerequisite: '需要基本编程知识。准备一个测试项目，并通过所选厂商官方平台查看当前 API 文档；账号和调用费用由你自行确认。',
-    sections: [
-      { title: '理解三段调用链', paragraphs: ['常见结构是：网页前端 → 你自己的服务端 → 模型 API。服务端保存密钥、校验输入、限制调用频率，再把经过处理的结果交给前端。', '不要把 API 密钥写进前端 JavaScript、公开仓库或教程截图中。对话产品的订阅权益不能直接视为 API 可用余额。'] },
-      { title: '从官方最小示例开始', paragraphs: ['确认接口地址、认证方式、当前可用模型 ID 和请求格式。不同厂商的接口可能有兼容部分，但流式输出、工具调用和其他参数仍有差异。', '复制所选厂商文档中的最小示例，在本地服务端通过环境变量读取密钥。只发送一句简单的测试问题，先确认返回状态与文本结构。'], list: ['Base URL：请求发送到哪个官方服务。', 'API Key：服务端读取的认证凭据。', 'Model ID：当前账号可以使用的准确模型标识。', 'Messages / Input：输入内容，按所选接口格式组织。'] },
-      { title: '处理错误，再连接界面', paragraphs: ['分别处理认证失败、没有权限、达到限额、网络超时和返回格式错误。错误提示可以说明下一步，但不要把密钥和完整敏感请求写入日志。', '如果前端期待一个 JSON 对象，服务端必须解析并校验字段。模型生成了看似正确的文本，不代表它满足你的业务数据结构。'] },
-      { title: '把第一次成功变成稳定流程', paragraphs: ['为请求设置超时、最大输入长度与输出预算。重试仅适用于部分临时错误，且要有次数上限；不要对认证失败无限重试。', '保存经过脱敏的运行记录，区分模型回复成功与用户任务完成。涉及写入数据的操作，应在验证输出后再执行。'] },
-    ], exercises: ['画出前端、服务端、模型 API 三段调用链', '从官方文档确认地址、模型和认证方式', '为认证失败、超时和格式错误写出处理方案'], takeaway: '接入完成的标准不仅是收到文字，还包括错误可处理、数据可验证。',
-  },
+  apiIntroduction,
 ];

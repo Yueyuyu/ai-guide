@@ -2,6 +2,7 @@ import { lessons, lessonById } from '../src/data/index.js';
 import { tutorialSymbols, visualSymbol, lessonIdentity } from '../src/data/tutorial-presentation.js';
 import { learningSetups } from '../src/data/learning-guidance.js';
 import { reviewLabels, reviewDate } from '../src/data/source-review.js';
+import { apiExampleCases, apiPracticeNotice } from '../src/data/api-examples.js';
 
 export const escapeHtml = value => String(value ?? '').replace(/[&<>"']/gu, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
 
@@ -76,6 +77,7 @@ function renderSection(section, index, lessonId) {
   }
   if (section.supplement) body += `<details><summary>${escapeHtml(section.supplement.title || '补充说明')}</summary>${paragraphs(section.supplement.paragraphs)}${section.supplement.list ? list(section.supplement.list) : ''}</details>`;
   if (section.checkpoint) body += `<aside class="note">这一步完成的标志：${escapeHtml(section.checkpoint)}</aside>`;
+  if (section.apiLab) body += `<p>原通知：${escapeHtml(apiPracticeNotice)}</p><p>本站教学样例 · 不调用模型，不是厂商原始响应。</p>` + apiExampleCases.map(example => `<details><summary>${escapeHtml(example.label)}</summary><pre><code>${escapeHtml(example.value)}</code></pre><p><strong>${escapeHtml(example.result)}</strong>：${escapeHtml(example.check)}</p></details>`).join('');
   if (section.faq) body += section.faq.map(([question, answer]) => `<details><summary>${escapeHtml(question)}</summary><p>${escapeHtml(answer)}</p></details>`).join('');
   if (section.resultEditor || section.apiLab || section.noticeReview) body += `<aside class="note">${section.resultEditor ? '保存自己的成果' : section.apiLab ? '使用本地 JSON 练习台' : '练习判断原文依据'}：<a href="${interactive(lessonId)}?section=section-${index}">进入本节互动练习</a>。练习不会自动标记为完成。</aside>`;
   if (section.links) body += `<div class="links">${section.links.map(item => link(item.href, item.label)).join('')}</div>`;
