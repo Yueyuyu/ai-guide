@@ -8,9 +8,15 @@ import { renderReadingPage, escapeHtml } from '../server/reading-pages.js';
 import { artifactPreviews, renderArtifactPreview } from '../server/artifact-pages.js';
 import captures from '../public/tutorials/live-20260916/images.json' with { type: 'json' };
 import evidence from '../public/tutorials/live-20260916/evidence.json' with { type: 'json' };
+import doubaoCaptures from '../public/tutorials/doubao-live-20260918/images.json' with { type: 'json' };
+import frontendCaptures from '../src/data/tutorial-images.json' with { type: 'json' };
 
 const publicFile = path => readFile(new URL('../public/' + path, import.meta.url));
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
+
+test('前端截图索引与公开证据完全对应，避免开发模式直接导入 public', () => {
+  assert.deepEqual(frontendCaptures, [...captures, ...doubaoCaptures], '修改截图清单后请运行 pnpm resources');
+});
 
 test('逐步图文有操作和完成标准，无脚本阅读包含所有步骤而非只第一步', () => {
   let count = 0;
