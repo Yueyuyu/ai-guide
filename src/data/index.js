@@ -28,7 +28,8 @@ export const lessons = [...foundations, ...starterLessons, ...modelLessons, ...c
   Object.assign(result, practiceOverrides[lesson.id] || {});
   result.guide = lessonGuidance[lesson.id];
   result.review = getLessonReview(result);
-  result.sources = result.review.sources.map(({ title, url }) => ({ title, url }));
+  // 同一官网可以有多次核对记录；来源入口去重，完整证据仍保留在 review 中。
+  result.sources = [...new Map(result.review.sources.map(({ title, url }) => [url, { title, url }])).values()];
   return result;
 });
 export const lessonById = Object.fromEntries(lessons.map(lesson => [lesson.id, lesson]));

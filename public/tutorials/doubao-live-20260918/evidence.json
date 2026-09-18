@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-18",
+  "product": "豆包网页版",
+  "modeLabel": "豆包 快速",
+  "modelId": null,
+  "platform": "Windows 电脑浏览器",
+  "account": "用户本人完成登录后开始记录",
+  "material": "本站虚构读书会通知",
+  "verified": [
+    "新对话发送完整任务",
+    "复制并逐项核对真实初稿",
+    "同一对话追问修正",
+    "复制真实修正版",
+    "粘贴到本站成果编辑器",
+    "下载 TXT 并读取磁盘文件核对原文与回答"
+  ],
+  "unverified": [
+    "登录过程截图",
+    "系统记事本打开",
+    "真实手机",
+    "附件与搜索",
+    "底层模型 ID"
+  ],
+  "finding": "初稿把报名与参加读书会合并；追问后分开列出，报名截止和活动时间各自对应。",
+  "privacy": "收起侧栏后截取原始页面；不含账号、历史列表或私人会话地址。图片不改像素，点击标注由网页叠加。",
+  "files": [
+    {
+      "path": "practice/doubao-session/prompt.txt",
+      "bytes": 532,
+      "sha256": "b42280b90a05702694f3e9b01bc51124665f1d4b64ebfba4170c246f2a14da5b"
+    },
+    {
+      "path": "practice/doubao-session/first-answer.txt",
+      "bytes": 824,
+      "sha256": "61f68bd54c80242a823c4ab6a762543e47e8a4171003b0f8b7a326a554d87905"
+    },
+    {
+      "path": "practice/doubao-session/followup.txt",
+      "bytes": 509,
+      "sha256": "95251ed3cba3ce73b312e724a415d8d4e44e1f1c49ea9bcf2e2f2d9a62fb3f3b"
+    },
+    {
+      "path": "practice/doubao-session/revised-answer.txt",
+      "bytes": 1223,
+      "sha256": "bad26332fb0aaaf3284770875e5c352b04cd9a9a8993b97b7c9286ce5f8be403"
+    },
+    {
+      "path": "practice/doubao-session/saved-result.txt",
+      "bytes": 1723,
+      "sha256": "c255ecb9760f1ffaa0ac52fc2bc6d4f7b492981a51292679b6f7c2c0a717205b"
+    }
+  ]
+}

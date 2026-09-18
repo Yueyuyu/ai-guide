@@ -1,0 +1,215 @@
+[
+  {
+    "id": "doubao-entry",
+    "src": "tutorials/doubao-live-20260918/01-entry.jpg",
+    "width": 829,
+    "height": 927,
+    "bytes": 36936,
+    "sha256": "bf1650e82d8aab25b4ea9e3ec9b0c396b4ffa74bf26cc38b82d17c8f0f8abac9",
+    "capturedOn": "2026-09-18",
+    "savedAt": "2026-09-18T02:53:08.903Z",
+    "title": "登录后的对话入口",
+    "alt": "豆包登录后的新对话页面，中央选择对话，底部显示发消息输入框。",
+    "caption": "豆包网页版实拍 · 2026-09-18 · 本站虚构通知练习",
+    "sourceUrl": "https://www.doubao.com/chat/",
+    "markers": [
+      {
+        "x": 40,
+        "y": 47,
+        "title": "选择对话",
+        "description": "本课练习文字对话。"
+      },
+      {
+        "x": 28,
+        "y": 90,
+        "title": "消息输入框",
+        "description": "在这里粘贴完整提示词。"
+      }
+    ],
+    "focus": {
+      "x": 0,
+      "y": 35,
+      "width": 100,
+      "height": 64
+    }
+  },
+  {
+    "id": "doubao-prompt",
+    "src": "tutorials/doubao-live-20260918/02-prompt.jpg",
+    "width": 829,
+    "height": 927,
+    "bytes": 56121,
+    "sha256": "0e3e99b86a6baa89c14aa793b6421ded4339820c41f8bbec399dfb1e82e4ff0a",
+    "capturedOn": "2026-09-18",
+    "savedAt": "2026-09-18T02:53:20.868Z",
+    "title": "发送完整通知",
+    "alt": "豆包输入框已填入本站虚构通知和完整任务，右下角有蓝色发送箭头。",
+    "caption": "豆包网页版实拍 · 2026-09-18 · 本站虚构通知练习",
+    "sourceUrl": "https://www.doubao.com/chat/",
+    "markers": [
+      {
+        "x": 95,
+        "y": 95,
+        "title": "发送",
+        "description": "确认最后一句完整后发送。"
+      }
+    ],
+    "focus": {
+      "x": 0,
+      "y": 63,
+      "width": 100,
+      "height": 36
+    }
+  },
+  {
+    "id": "doubao-first-answer",
+    "src": "tutorials/doubao-live-20260918/03-first-answer.jpg",
+    "width": 829,
+    "height": 927,
+    "bytes": 85765,
+    "sha256": "a442eb688c859554f60365da1a759706f2fe33cc32fd2d49d2e2fd75af759f7a",
+    "capturedOn": "2026-09-18",
+    "savedAt": "2026-09-18T02:54:38.098Z",
+    "title": "核对真实初稿",
+    "alt": "豆包初稿把参加读书会和填写报名表合成一项，时间显示为报名截止时间。",
+    "caption": "豆包网页版实拍 · 2026-09-18 · 本站虚构通知练习",
+    "sourceUrl": "https://www.doubao.com/chat/",
+    "markers": [
+      {
+        "x": 56,
+        "y": 53,
+        "title": "两件事混在一起",
+        "description": "报名和活动应分别对应自己的时间。"
+      }
+    ],
+    "focus": {
+      "x": 0,
+      "y": 44,
+      "width": 100,
+      "height": 40
+    }
+  },
+  {
+    "id": "doubao-followup",
+    "src": "tutorials/doubao-live-20260918/04-followup.jpg",
+    "width": 829,
+    "height": 927,
+    "bytes": 100092,
+    "sha256": "4cbe12789b08764140e1b66de86ec48a8ff6136f1c8b31f8bcb9d9f0e8703188",
+    "capturedOn": "2026-09-18",
+    "savedAt": "2026-09-18T02:54:46.316Z",
+    "title": "在原对话中追问",
+    "alt": "原对话输入框已填写拆分事项和保留待确认项的追问，尚未发送。",
+    "caption": "豆包网页版实拍 · 2026-09-18 · 本站虚构通知练习",
+    "sourceUrl": "https://www.doubao.com/chat/",
+    "markers": [
+      {
+        "x": 95,
+        "y": 95,
+        "title": "发送追问",
+        "description": "沿用同一对话，让它修正刚才的清单。"
+      }
+    ],
+    "focus": {
+      "x": 0,
+      "y": 71,
+      "width": 100,
+      "height": 28
+    }
+  },
+  {
+    "id": "doubao-revised-answer",
+    "src": "tutorials/doubao-live-20260918/05-revised-answer.jpg",
+    "width": 829,
+    "height": 927,
+    "bytes": 81875,
+    "sha256": "51ad2209119f38d98af0d9c8c44b1da77cfef0b9206c3e2d63fc7d5a9c4c2d6d",
+    "capturedOn": "2026-09-18",
+    "savedAt": "2026-09-18T02:55:32.502Z",
+    "title": "核对真实修正版",
+    "alt": "豆包修正版把填写报名表和参加读书会列为两项，分别写出报名截止时间和活动时间。",
+    "caption": "豆包网页版实拍 · 2026-09-18 · 本站虚构通知练习",
+    "sourceUrl": "https://www.doubao.com/chat/",
+    "markers": [
+      {
+        "x": 57,
+        "y": 20,
+        "title": "报名截止",
+        "description": "10月10日18:00前。"
+      },
+      {
+        "x": 57,
+        "y": 33,
+        "title": "活动时间",
+        "description": "10月12日14:00。"
+      }
+    ],
+    "focus": {
+      "x": 0,
+      "y": 7,
+      "width": 100,
+      "height": 69
+    }
+  },
+  {
+    "id": "doubao-copy-answer",
+    "src": "tutorials/doubao-live-20260918/06-copy-answer.jpg",
+    "width": 829,
+    "height": 927,
+    "bytes": 74491,
+    "sha256": "2550367b65acd9490e214c2368a42683c1776c9fd6b9be720797cb663534f0b2",
+    "capturedOn": "2026-09-18",
+    "savedAt": "2026-09-18T02:55:41.473Z",
+    "title": "复制已核对的回答",
+    "alt": "豆包修正版下方列有待确认问题，回答底部左侧有复制图标。",
+    "caption": "豆包网页版实拍 · 2026-09-18 · 本站虚构通知练习",
+    "sourceUrl": "https://www.doubao.com/chat/",
+    "markers": [
+      {
+        "x": 3.4,
+        "y": 65.1,
+        "title": "复制回答",
+        "description": "复制的是这一整条修正版回答。"
+      }
+    ],
+    "focus": {
+      "x": 0,
+      "y": 28,
+      "width": 100,
+      "height": 40
+    }
+  },
+  {
+    "id": "doubao-save-result",
+    "src": "tutorials/doubao-live-20260918/07-save-result.jpg",
+    "width": 1265,
+    "height": 712,
+    "bytes": 70446,
+    "sha256": "ed73fd0c09965e55f8289883eca830d88e15c4daf6fb8575f8f58e95f2d97d0e",
+    "capturedOn": "2026-09-18",
+    "savedAt": "2026-09-18T02:56:39.375Z",
+    "title": "回到本站保存",
+    "alt": "AIGuide 的我的整理结果文本框已粘贴豆包真实修正版，下方下载按钮已可用。",
+    "caption": "本站保存操作实拍 · 2026-09-18 · 本站虚构通知练习",
+    "markers": [
+      {
+        "x": 20,
+        "y": 39,
+        "title": "粘贴回答",
+        "description": "把自己的完整回答放进文本框。"
+      },
+      {
+        "x": 14,
+        "y": 73,
+        "title": "下载成果",
+        "description": "TXT 包含原通知和填写的回答。"
+      }
+    ],
+    "focus": {
+      "x": 3,
+      "y": 19,
+      "width": 71,
+      "height": 70
+    }
+  }
+]

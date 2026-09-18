@@ -1,4 +1,5 @@
 import captures from '../../public/tutorials/live-20260916/images.json' with { type: 'json' };
+import doubaoCaptures from '../../public/tutorials/doubao-live-20260918/images.json' with { type: 'json' };
 
 // 仅控制网页中的查看区域；原始截图字节与放大弹窗中的完整画面保持不变。
 const focusAreas = {
@@ -10,6 +11,6 @@ const focusAreas = {
   'workbuddy-result': { x: 0, y: 7, width: 100, height: 55 },
   'workbuddy-revised': { x: 3, y: 14, width: 50, height: 39 },
 };
-const images = Object.fromEntries(captures.map(({ id, src, width, height, title, alt, caption, sourceUrl, markers }) => [id, { src, width, height, title, alt, caption, sourceUrl, markers, focus: focusAreas[id] }]));
+const images = Object.fromEntries([...captures, ...doubaoCaptures].map(({ id, src, width, height, title, alt, caption, sourceUrl, markers, focus }) => [id, { src, width, height, title, alt, caption, sourceUrl, markers, focus: focus || focusAreas[id] }]));
 export const capture = id => images[id];
 export const photoStep = (id, title, action, checkpoint) => ({ title, action, checkpoint, screenshot: capture(id) });

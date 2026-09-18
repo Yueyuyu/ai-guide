@@ -339,6 +339,19 @@
       "contentSha256": "4fd588006d4a1c766839ee4d9bb5985b9e2532d27221e7e0427622fbe579a9f8",
       "scope": "实际读取未登录网页，确认对话、消息输入、发送和登录入口；保存真实界面截图。未登录试发后返回首页，未取得回答。"
     },
+    "doubao-practice": {
+      "id": "doubao-practice",
+      "title": "豆包网页版真实通知练习",
+      "url": "https://www.doubao.com/chat/",
+      "retrievedAt": "2026-09-18",
+      "reviewedAt": "2026-09-18",
+      "sourceUpdatedAt": null,
+      "status": "reviewed",
+      "contentKind": "account-practice-answer",
+      "contentPath": "practice/doubao-session/revised-answer.txt",
+      "contentSha256": "bad26332fb0aaaf3284770875e5c352b04cd9a9a8993b97b7c9286ce5f8be403",
+      "scope": "2026-09-18 登录后使用本站虚构材料实测提问、追问与复制；保留真实初稿、修正版、七张截图及本站实际下载文件。界面标签为豆包 快速，未确认底层模型 ID。"
+    },
     "qwen-entry": {
       "id": "qwen-entry",
       "title": "Qwen 官方网站",
@@ -749,12 +762,13 @@
     },
     "doubao": {
       "status": "partial",
-      "checkedAt": "2026-09-15T05:04:13.232Z",
+      "checkedAt": "2026-09-18",
       "sourceIds": [
-        "doubao-entry"
+        "doubao-entry",
+        "doubao-practice"
       ],
-      "scope": "已实拍并核对公开网页的对话入口、文字粘贴和发送控件。未登录试发后返回首页，没有取得回答；教程附虚构材料和人工参考答案。",
-      "limit": "未完成账号登录，回答生成、追问与回答复制尚未实测；附件、搜索、账号权益和其他设备也未覆盖。本站的成果编辑和下载属于 AIGuide 功能。"
+      "scope": "2026-09-18 用户本人登录后，已实测本课网页提问、核对、同一对话追问和复制；回到本站下载 TXT，并读取磁盘文件核对完整内容。",
+      "limit": "未录制登录过程；系统记事本打开、真实手机、附件与搜索尚未实测。界面标签为豆包 快速，未确认底层模型 ID。成果编辑和下载属于 AIGuide 功能。"
     },
     "qwen": {
       "status": "partial",
