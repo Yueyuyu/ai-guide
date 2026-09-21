@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { lessons, lessonById } from '../src/data/index.js';
+import { manualCatalog } from '../src/data/manual-catalog.js';
 import { escapeHtml, siteBase, renderReadingPage, renderReadingIndex, renderSitemap } from '../server/reading-pages.js';
 
 test('每篇教程生成独立正文与来源，交互入口保留对应章节', () => {
@@ -26,7 +27,7 @@ test('发布地址支持子目录，只在配置真实地址后生成 canonical 
   assert.ok(renderReadingPage('doubao-notice', base).includes('href="https://example.test/guide/read/doubao-notice.html"'));
   assert.ok(renderReadingIndex(base).includes('https://example.test/guide/read/index.html'));
   const sitemap = renderSitemap(base);
-  assert.equal([...sitemap.matchAll(/<loc>/gu)].length, lessons.length + 1);
+  assert.equal([...sitemap.matchAll(/<loc>/gu)].length, lessons.length + manualCatalog.length + 2);
   assert.doesNotMatch(sitemap, /#\/|localhost|127\.0\.0\.1/);
   assert.equal(renderSitemap(null), null);
   assert.equal(escapeHtml('<script>"&\''), '&lt;script&gt;&quot;&amp;&#39;');

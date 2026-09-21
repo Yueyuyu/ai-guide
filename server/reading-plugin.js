@@ -2,6 +2,8 @@ import { readFile } from 'node:fs/promises';
 import { lessons } from '../src/data/index.js';
 import { renderReadingPage, renderReadingIndex, renderSitemap, siteBase } from './reading-pages.js';
 import { artifactPreviews, renderArtifactPreview } from './artifact-pages.js';
+import { manualCatalog } from '../src/data/manual-catalog.js';
+import { renderManualPage, renderManualIndex } from './manual-pages.js';
 
 export function readingPlugin({ siteUrl = process.env.AIGUIDE_SITE_URL } = {}) {
   const base = siteBase(siteUrl);
@@ -14,6 +16,14 @@ export function readingPlugin({ siteUrl = process.env.AIGUIDE_SITE_URL } = {}) {
     configureServer(server) {
       server.middlewares.use(async (request, response, next) => {
         const path = request.url?.split('?')[0];
+        if (path?.startsWith('/manuals/') && ['GET', 'HEAD'].includes(request.method)) {
+          const id = path.slice('/manuals/'.length).replace(/\.html$/u, '');
+          const html = ['', 'index'].includes(id) ? renderManualIndex(base) : path.endsWith('.html') ? renderManualPage(id, base) : null;
+          response.setHeader('Content-Type', 'text/html; charset=utf-8');
+          if (!html) response.statusCode = 404;
+          response.end(request.method === 'HEAD' ? '' : html || '<!doctype html><html lang="zh-CN"><meta charset="UTF-8"><h1>手册未找到</h1><a href="/manuals/index.html">返回使用手册</a></html>');
+          return;
+        }
         if (path && artifactPreviews.has(path.slice(1)) && ['GET', 'HEAD'].includes(request.method)) {
           response.setHeader('Content-Type', 'text/html; charset=utf-8');
           response.end(request.method === 'HEAD' ? '' : await renderArtifactPreview(path.slice(1)));
@@ -31,6 +41,8 @@ export function readingPlugin({ siteUrl = process.env.AIGUIDE_SITE_URL } = {}) {
     async generateBundle() {
       this.emitFile({ type: 'asset', fileName: 'read/styles.css', source: await styles() });
       this.emitFile({ type: 'asset', fileName: 'read/index.html', source: renderReadingIndex(base) });
+      this.emitFile({ type: 'asset', fileName: 'manuals/index.html', source: renderManualIndex(base) });
+      for (const manual of manualCatalog) this.emitFile({ type: 'asset', fileName: 'manuals/' + manual.id + '.html', source: renderManualPage(manual.id, base) });
       for (const path of artifactPreviews.keys()) this.emitFile({ type: 'asset', fileName: path, source: await renderArtifactPreview(path) });
       for (const lesson of lessons) this.emitFile({ type: 'asset', fileName: 'read/' + lesson.id + '.html', source: renderReadingPage(lesson.id, base) });
       if (base) {

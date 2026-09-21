@@ -5,7 +5,7 @@ import { Icon } from './Icon.jsx';
 import { BrandLogo } from './GuideArt.jsx';
 import { Modal } from './Modal.jsx';
 
-const nav = [{ page: 'paths', href: '#/paths', title: '学习路线', icon: 'route' }, { page: 'tools', href: '#/tools', title: '工具教程', icon: 'grid' }, { page: 'models', href: '#/models', title: '模型指南', icon: 'box' }];
+const nav = [{ page: 'paths', href: '#/paths', title: '学习路线', icon: 'route' }, { page: 'tools', href: '#/tools', title: '工具教程', icon: 'grid' }, { page: 'manuals', href: '#/manuals', title: '使用手册', icon: 'file' }, { page: 'models', href: '#/models', title: '模型指南', icon: 'box' }];
 export function Shell({ route, children }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuButton = useRef(null);

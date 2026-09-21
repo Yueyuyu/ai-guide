@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>周末阅读角 · 待修复布局练习</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f7f9fc; color: #233953; font: 16px/1.8 system-ui, sans-serif; }
+    main { max-width: 1040px; margin: auto; padding: 32px 20px; }
+    .note { color: #576d86; }
+    /* 教学起始缺陷：固定三列的最小宽度会超出手机屏幕。 */
+    .books { display: grid; grid-template-columns: repeat(3, minmax(260px, 1fr)); gap: 20px; }
+    article { background: white; border: 1px solid #dce5ef; border-radius: 12px; padding: 24px; }
+    h2 { font-size: 20px; }
+    footer { margin-top: 28px; color: #576d86; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="note">教学起始文件 · 含待修复布局 · 非 ZCode 生成结果</p>
+    <h1>周末阅读角</h1>
+    <p>三本虚构书，给周末留一点阅读时间。</p>
+    <div class="books">
+      <article><h2>窗边的星期六</h2><p>用短篇故事记录一座小城的日常。</p></article>
+      <article><h2>慢慢画地图</h2><p>沿着步行路线观察街角与树木。</p></article>
+      <article><h2>给未来的便笺</h2><p>把每周学会的一件小事写下来。</p></article>
+    </div>
+    <footer>所有书名与介绍均为虚构练习材料。</footer>
+  </main>
+</body>
+</html>

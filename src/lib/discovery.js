@@ -1,4 +1,5 @@
 import { tools, lessons, paths, companies, lessonById } from '../data/index.js';
+import { searchManuals } from '../data/manual-catalog.js';
 
 export const lessonTypes = [
   { id: 'all', name: '全部' }, { id: 'concept', name: '基础概念' }, { id: 'setup', name: '安装准备' },
@@ -29,5 +30,5 @@ export function searchContent(query) {
   const products = tools.filter(tool => matches([tool.name, tool.maker, ...tool.use, ...(tool.aliases || []), companies.find(c => c.toolIds.includes(tool.id))?.name || '']));
   const foundLessons = lessons.filter(lesson => matches([lesson.title, lesson.description, ...lesson.tools.flatMap(id => { const tool = tools.find(t => t.id === id); return tool ? [tool.name, tool.maker, ...(tool.aliases || [])] : []; })]));
   const routes = paths.filter(path => matches([path.title, path.subtitle, ...path.sequence.map(id => lessonById[id]?.title || '')]));
-  return { products: products.filter(t => t.kind !== 'model'), models: products.filter(t => t.kind === 'model'), lessons: foundLessons, paths: routes };
+  return { products: products.filter(t => t.kind !== 'model'), models: products.filter(t => t.kind === 'model'), lessons: foundLessons, paths: routes, manuals: searchManuals(query) };
 }

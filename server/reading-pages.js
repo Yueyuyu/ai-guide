@@ -3,6 +3,7 @@ import { tutorialSymbols, visualSymbol, lessonIdentity } from '../src/data/tutor
 import { learningSetups } from '../src/data/learning-guidance.js';
 import { reviewLabels, reviewDate } from '../src/data/source-review.js';
 import { apiExampleCases, apiPracticeNotice } from '../src/data/api-examples.js';
+import { manualCatalog } from '../src/data/manual-catalog.js';
 
 export const escapeHtml = value => String(value ?? '').replace(/[&<>"']/gu, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
 
@@ -97,10 +98,11 @@ export function renderReadingPage(id, base = null) {
 }
 
 export function renderReadingIndex(base = null) {
-  return shell({ title: '中文 AI 教程阅读目录', description: '按任务阅读 AI 教程，核对来源，并进入互动版保存自己的成果。', canonical: base ? new URL('read/index.html', base).href : null, body: `<p class="eyebrow">AIGuide · 阅读目录</p><h1>从一篇教程开始。</h1><p class="description">${lessons.length} 篇中文教程。独立页面可直接阅读；练习、收藏与进度在互动版使用。</p><div class="reading-list">${lessons.map(lesson => `<article><h2><a href="${escapeHtml(lesson.id)}.html">${escapeHtml(lesson.title)}</a></h2><p>${escapeHtml(lesson.description)}</p><small>内容整理 ${escapeHtml(lesson.edited)}</small></article>`).join('')}</div>` });
+  return shell({ title: '中文 AI 教程阅读目录', description: '按任务阅读 AI 教程，核对来源，并进入互动版保存自己的成果。', canonical: base ? new URL('read/index.html', base).href : null, body: `<p class="eyebrow">AIGuide · 阅读目录</p><h1>从一篇教程开始。</h1><p class="description">${lessons.length} 篇中文教程。独立页面可直接阅读；练习、收藏与进度在互动版使用。</p><a class="button" href="../manuals/index.html">阅读四款产品的使用手册与官方文档</a><div class="reading-list">${lessons.map(lesson => `<article><h2><a href="${escapeHtml(lesson.id)}.html">${escapeHtml(lesson.title)}</a></h2><p>${escapeHtml(lesson.description)}</p><small>内容整理 ${escapeHtml(lesson.edited)}</small></article>`).join('')}</div>` });
 }
 
 export function renderSitemap(base) {
   if (!base) return null;
-  return `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>${escapeHtml(new URL('read/index.html', base).href)}</loc></url>${lessons.map(lesson => `<url><loc>${escapeHtml(new URL('read/' + lesson.id + '.html', base).href)}</loc><lastmod>${escapeHtml(lesson.edited)}</lastmod></url>`).join('')}</urlset>`;
+  const manualUrls = ['index', ...manualCatalog.map(manual => manual.id)].map(id => `<url><loc>${escapeHtml(new URL('manuals/' + id + '.html', base).href)}</loc></url>`).join('');
+  return `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>${escapeHtml(new URL('read/index.html', base).href)}</loc></url>${lessons.map(lesson => `<url><loc>${escapeHtml(new URL('read/' + lesson.id + '.html', base).href)}</loc><lastmod>${escapeHtml(lesson.edited)}</lastmod></url>`).join('')}${manualUrls}</urlset>`;
 }

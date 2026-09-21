@@ -33,6 +33,8 @@ flowchart TD
 | `src/data/catalog.js` | 路线顺序、项目与基础目录 | 下一课、选学和进度计算 |
 | `src/data/products.js`、`companies.js` | 产品入口、公司归属、品牌 | 网页／桌面／API／模型区分 |
 | `src/data/source-review.json` | 资料获取证据和产品核对范围 | 日期、哈希、未覆盖项 |
+| `src/data/manual-catalog.js`、`src/data/manuals/` | 使用手册目录、本站正文与官方来源 | 产品别名搜索、章节深链、核对与实测边界 |
+| `src/pages/Manuals.jsx`、`server/manual-pages.js` | 手册互动版与独立阅读版 | 双入口、正文一致、复制、窄屏与来源 |
 | `server/reading-*.js` | 独立正文、元信息与构建输出 | HTML 转义、相对路径和来源 |
 | `server/ranking-*.js` | 榜单获取、校验、存储、本地接口 | 失败保留、并发、来源变化 |
 
@@ -48,11 +50,17 @@ flowchart TD
 | `/#/learn/doubao-notice?section=section-5` | 定位成果章节 |
 | `/#/tools`、`/#/company/openai` | 工具目录、公司专题 |
 | `/#/models`、`/#/ranking` | 模型学习与榜单 |
+| `/#/manuals`、`/#/manuals/zcode?section=workspace` | 使用手册目录及章节深链 |
+| `/manuals/index.html`、`/manuals/zcode.html` | 无脚本手册目录与完整正文 |
 | `/#/library?tab=drafts` | 我的成果 |
 | `/read/index.html` | 独立阅读目录 |
 | `/read/doubao-notice.html` | 可直接取得正文的独立页面 |
 
 独立页不使用另一套课程文案。Vite 开发中间件即时生成，构建插件写入 `dist/read/`。交互练习返回同源的 Hash 页面，因此不丢失原有本地记录。
+
+使用手册同样由 `reading-plugin` 在开发模式生成并在构建时写入 `dist/manuals/`，纳入 sitemap。目录元数据用于全站搜索和标题，正文随页面按需加载。新手册尚未接入每周资料变化检查；正文不计入旧课程学习状态，不修改原有课程 ID。
+
+每份手册保留原五节，扩展内容放在 `src/data/manuals/*-workflows.js`，由 `manuals/index.js` 合并来源与章节。`kind` 统一驱动分类入口，`faq` 使用原生折叠，`caseStudy` 区分已有实测和教学练习。资源链接经 `manualResourceHref` 转为互动课程深链、独立阅读章节或带部署前缀的公开文件路径。`public/practice/manuals/` 存放故意保留缺陷的起始材料；它们不属于站点运行逻辑，也不纳入默认通过型测试集合。
 
 ## 学习状态约定
 

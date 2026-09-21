@@ -5,16 +5,20 @@ import { lessons, lessonById, tools, paths, projects, companies } from '../src/d
 import { reviewFreshness, ageInDays } from '../src/lib/content-maintenance.js';
 import registry from '../src/data/source-review.json' with { type: 'json' };
 import { checkPublicLink } from './content-links.mjs';
+import { manuals } from '../src/data/manuals/index.js';
+import { manualResourceHref } from '../src/data/manual-catalog.js';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const external = process.argv.includes('--links');
 const outputIndex = process.argv.indexOf('--output');
 if (outputIndex >= 0 && !process.argv[outputIndex + 1]) throw new Error('--output 后需要文件路径');
-const report = { checkedAt: new Date().toISOString(), counts: { lessons: lessons.length }, errors: [], staleReviews: [], pendingPractice: [], links: [], ranking: null };
+const report = { checkedAt: new Date().toISOString(), counts: { lessons: lessons.length, manuals: manuals.length }, errors: [], staleReviews: [], pendingPractice: [], links: [], ranking: null };
 const urls = new Set(Object.values(registry.sources).map(source => source.url));
 const seen = new Set();
 const routes = { learn: new Set(lessons.map(item => item.id)), tool: new Set(tools.map(item => item.id)), model: new Set(tools.filter(item => item.kind === 'model').map(item => item.id)), path: new Set(paths.map(item => item.id)), project: new Set(projects.map(item => item.id)), company: new Set(companies.map(item => item.id)) };
 const indexRoutes = new Set(['', 'tutorials', 'tools', 'models', 'ranking', 'paths', 'projects', 'library', 'about', 'search', 'feedback']);
+routes.manuals = new Set(manuals.map(manual => manual.id));
+indexRoutes.add('manuals');
 
 async function checkLink(href, owner) {
   if (href.startsWith('https://')) { urls.add(href); return; }
@@ -47,6 +51,18 @@ for (const lesson of lessons) {
   for (const item of lesson.guide?.help || []) if (!lesson.sections[item.section]) report.errors.push(`${lesson.id}：问题帮助指向无效章节 ${item.id}`);
 }
 for (const route of paths) for (const id of [...route.sequence, ...(route.electives || [])]) if (!lessonById[id]) report.errors.push(`${route.id}：课程不存在 ${id}`);
+for (const manual of manuals) {
+  await checkLink(manual.officialUrl, manual.id);
+  for (const source of manual.sources) await checkLink(source.url, manual.id);
+  for (const lesson of manual.lessons) await checkLink('#/learn/' + lesson.id, manual.id);
+  for (const section of manual.sections) for (const link of section.links || []) {
+    await checkLink(link.lessonId ? manualResourceHref(link) : link.path, manual.id + ':' + section.id);
+    if (link.lessonId && link.section) {
+      const index = Number(link.section.replace(/^section-/u, ''));
+      if (!/^section-\d+$/u.test(link.section) || !lessonById[link.lessonId]?.sections[index]) report.errors.push(`${manual.id}：案例指向无效章节 ${link.section}`);
+    }
+  }
+}
 const snapshot = JSON.parse(await readFile(resolve(root, 'public/data/rankings/current.json'), 'utf8'));
 report.ranking = { retrievedAt: snapshot.retrievedAt, ageDays: ageInDays(snapshot.retrievedAt), metrics: snapshot.metrics.map(metric => ({ id: metric.id, rows: metric.rows.length })) };
 

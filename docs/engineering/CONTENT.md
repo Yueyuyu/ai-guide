@@ -15,6 +15,20 @@
 | 准备条件和问题帮助 | `src/data/learning-guidance.js` |
 | 练习材料 | `src/data/practice-resources.js` |
 | 来源登记 | `src/data/source-review.json` |
+| 独立使用手册 | `src/data/manual-catalog.js`、`src/data/manuals/` |
+
+## 使用手册
+
+手册与原有课程独立，当前四份各 10 节。产品目录、别名和搜索主题放在 `manual-catalog.js`；原五节位于对应产品文件，新增功能、FAQ 与案例放在 `*-workflows.js`。既有章节 ID 和顺序保持稳定，扩展章节附加于后。
+
+- `kind` 使用 `basics`、`feature`、`advanced`、`faq`、`case`，每份手册均提供这五类。正文保留 `paragraphs`、`check` 和有效的 `sourceIds`。
+- `faq` 为 `{ question, answer }` 数组；`caseStudy` 包含 `status`、`scope`、`result`，状态只用 `recorded`（已有实测记录）或 `practice`（教学练习），并明确实际覆盖范围。
+- `links` 使用 `{ label, lessonId, section? }` 关联课程，或 `{ label, path, download? }` 引用 `public/` 下资源。统一通过 `manualResourceHref` 处理互动版、独立阅读版与子目录部署路径。
+- 每节注明官方参考，手册 `scope` 区分已核对资料、新教学任务与已有产品实测；资料核对日期不能自动升级为实测日期。手册来源尚未接入每周变化检查。
+- ZCode 的 `zcode-reading-starter.html` 故意保留手机横向溢出；Claude Code 的 `claude-total.mjs` 故意保留类型错误。不要把教学起始缺陷当作网站 Bug 修掉，也不要将它们的预期失败加入 `pnpm test`。单独检查可复现性，并用项目外参考修复验证验收条件。
+- `claude-total-practice.zip` 只打包同目录的实现与测试，便于一次下载；修改这两个源文件后同步重新打包并核对内容，不能放入参考答案、依赖或个人文件。
+
+修改后检查 `Manuals.jsx` 与 `server/manual-pages.js` 的显示一致性、分类跳转、FAQ 键盘操作、提示词复制、下载和关联课程；运行 `pnpm check`，再检查桌面／平板／手机。原课程学习记录不随手册阅读自动变化。
 
 ## 课程字段
 
