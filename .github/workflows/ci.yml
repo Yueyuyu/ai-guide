@@ -2,18 +2,46 @@ name: 工程检查
 
 on:
   push:
+    branches: [main]
   pull_request:
   workflow_dispatch:
+  workflow_call:
+    inputs:
+      publish:
+        type: boolean
+        default: false
 
 permissions:
   contents: read
 
 concurrency:
-  group: check-${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  group: check-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
+  scope:
+    name: 变更范围与文档检查
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      code: ${{ steps.scope.outputs.code }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: node --test .github/scripts/change-scope.test.mjs
+      - id: scope
+        run: node .github/scripts/change-scope.mjs
+      - name: 检查文档链接与资源引用
+        run: node scripts/audit-docs.mjs
+
   check:
+    needs: scope
+    if: needs.scope.outputs.code == 'true'
     name: 检查 (${{ matrix.os }})
     runs-on: ${{ matrix.os }}
     timeout-minutes: 15
@@ -33,11 +61,36 @@ jobs:
         run: pnpm install --frozen-lockfile
       - name: 测试、审计和构建
         run: pnpm check
-      - name: 保存静态构建
-        if: matrix.os == 'ubuntu-latest'
+        env:
+          AIGUIDE_SITE_URL: https://ai-guide.yomexa.com/
+          AIGUIDE_CF_ANALYTICS_TOKEN: ${{ vars.AIGUIDE_CF_ANALYTICS_TOKEN }}
+      - name: 保存本次验证的发布产物
+        if: matrix.os == 'ubuntu-latest' && (github.ref == 'refs/heads/main' && (github.event_name == 'push' || inputs.publish == true))
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - name: 保存手动检查产物
+        if: matrix.os == 'ubuntu-latest' && github.event_name == 'workflow_dispatch' && inputs.publish != true
         uses: actions/upload-artifact@v4
         with:
           name: aiguide-dist
           path: dist/
           if-no-files-found: error
-          retention-days: 14
+          retention-days: 7
+  deploy:
+    needs: check
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || inputs.publish == true)
+    runs-on: ubuntu-latest
+    concurrency:
+      group: github-pages
+      cancel-in-progress: false
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 发布已通过双平台检查的构建
+        id: deployment
+        uses: actions/deploy-pages@v4

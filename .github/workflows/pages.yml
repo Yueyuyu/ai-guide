@@ -1,48 +1,17 @@
 name: 发布公开网站
 
+# 自动发布由 ci.yml 复用同一份已验证产物；这里只保留手动完整重建与发布入口。
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
   contents: read
-
-concurrency:
-  group: github-pages
-  cancel-in-progress: false
+  pages: write
+  id-token: write
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version-file: .node-version
-      - uses: pnpm/action-setup@v4
-        with:
-          run_install: false
-      - run: pnpm install --frozen-lockfile
-      - name: 验证并构建公开版本
-        run: pnpm check
-        env:
-          AIGUIDE_SITE_URL: https://ai-guide.yomexa.com/
-          AIGUIDE_CF_ANALYTICS_TOKEN: ${{ vars.AIGUIDE_CF_ANALYTICS_TOKEN }}
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: 发布 GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+  publish:
+    if: github.ref == 'refs/heads/main'
+    uses: ./.github/workflows/ci.yml
+    with:
+      publish: true
